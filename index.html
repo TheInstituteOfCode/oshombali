@@ -8,11 +8,10 @@ bg-video:
 
 <section class="flex justify-center items-center min-h-100 ">
   <div class="absolute top-0 left-0 w-full h-full">
-    <video class="min-h-100 absolute top-0 left-0 h-full object-cover -z-10" width="100%" height="100%" autoplay loop controls>
+    <video class="min-h-100 absolute top-0 left-0 h-full object-cover -z-10" width="100%" height="100%" autoplay loop muted>
         {% for video in page.bg-video %}
         <source src="{{video.video_path}}" type="{{video.type}}" />
         {% endfor %}
-        <source src="/uploads/sea-24216-360p.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
   
