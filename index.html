@@ -1,16 +1,13 @@
 ---
 layout: default
 bg-video:
-  - video_path: movie.mp4
+  - video_path: /uploads/sea-24216-540p.mp4
     type: video/mp4
-  - video_path: movie.ogg
-    type: video/ogg
 ---
-
 <video src="min-h-100 absolute top-0 left-0 w-full" autoplay>
   <!-- <video width="320" height="240" controls> -->
     {% for video in page.bg-video %}
-    <source src="{{video.video_path}}" type="{{video.type}}">
+    <source src="{{video.video_path}}" type="{{video.type}}" />
     {% endfor %}
     Your browser does not support the video tag.
   <!-- </video>  -->
