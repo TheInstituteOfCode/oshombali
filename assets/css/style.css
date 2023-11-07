@@ -413,8 +413,14 @@ video {
 .left-0 {
   left: 0px;
 }
+.-z-10 {
+  z-index: -10;
+}
 .flex {
   display: flex;
+}
+.h-full {
+  height: 100%;
 }
 .min-h-100 {
   min-height: 100vh;
@@ -434,6 +440,17 @@ video {
 .border-black {
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.p-4 {
+  padding: 1rem;
 }
 
 /* Custom CSS */

@@ -4,17 +4,20 @@ bg-video:
   - video_path: /uploads/sea-24216-540p.mp4
     type: video/mp4
 ---
-<video src="min-h-100 absolute top-0 left-0 w-full" autoplay>
-  <!-- <video width="320" height="240" controls> -->
-    {% for video in page.bg-video %}
-    <source src="{{video.video_path}}" type="{{video.type}}" />
-    {% endfor %}
-    Your browser does not support the video tag.
-  <!-- </video>  -->
-</video>
 
-<section class="flex justify-center items-center min-h-100 absolute top-0 left-0 w-full">
-  <div class="border-black border editable">
+
+<section class="flex justify-center items-center min-h-100 ">
+  <div class="absolute top-0 left-0 w-full h-full">
+    <video class="min-h-100 absolute top-0 left-0 h-full object-cover -z-10" width="100%" height="100%" autoplay loop controls>
+        {% for video in page.bg-video %}
+        <source src="{{video.video_path}}" type="{{video.type}}" />
+        {% endfor %}
+        <source src="/uploads/sea-24216-360p.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+  
+  </div>
+  <div class="border-black border editable p-4 bg-white">
     <h1>coming soom</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate repellendus nostrum assumenda voluptates, ex reprehenderit amet aut enim quibusdam nobis odio ab vel odit aperiam quidem perspiciatis eveniet. Dicta, adipisci.</p>
   </div>
