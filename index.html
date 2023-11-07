@@ -1,75 +1,24 @@
 ---
 layout: default
+bg-video:
+  - src: movie.mp4
+    type: video/mp4
+  - src: movie.ogg
+    type: video/ogg
 ---
 
-<!-- <style> {% include universal-styles.html %} </style> -->
+<video src="min-h-100 absolute top-0 left-0 w-full" autoplay>
+  <!-- <video width="320" height="240" controls> -->
+    {% for video in page.bg-video %}
+    <source src="{{video.src}}" type="{{video.type}}">
+    {% endfor %}
+    Your browser does not support the video tag.
+  <!-- </video>  -->
+</video>
 
-<section id="universal-styles">
-  <div class="heading-block grid-spaceBetween">
-    <h2 class="col">Universal Styles</h2>
-    <div class="col right">
-      <a class="demo button" onclick="$('#universal-styles .demo-info').slideToggle()">Show Universal Styles</a>
-    </div>
-  </div>
-
-  <div class="demo-info padded">
-    <pre>
-  <code class="language-css">
-  {% include universal-styles.html %}
-  </code>
-  </pre>
+<section class="flex justify-center items-center min-h-100 absolute top-0 left-0 w-full">
+  <div class="border-black border editable">
+    <h1>coming soom</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate repellendus nostrum assumenda voluptates, ex reprehenderit amet aut enim quibusdam nobis odio ab vel odit aperiam quidem perspiciatis eveniet. Dicta, adipisci.</p>
   </div>
 </section>
-
-{% for block in site.blocks %}
-<section id="{{forloop.index}}-section">
-  <style media="screen">
-    {{block.css_code_block}}
-  </style>
-  <div class="bg-white example-block">
-    {{block.html_code_block}}
-  </div>
-
-  <div class="heading-block grid grid-cols-2">
-    <h2 class="">{{block.heading}}</h2>
-    <div class=" text-right">
-      <a class="demo button" onclick="$('#{{forloop.index}}-section .demo-info').slideToggle()">Show Code </a>
-    </div>
-  </div>
-
-  
-
-  <div class="demo-info p-5p">
-    <div>
-      <h3>HTML</h3>
-      <pre>
-            <code class="language-html">
-              {{block.html_code_block | replace: "<", "&#60;"}}
-            </code>
-          </pre>
-    </div>
-    {% if block.css_code_block %}
-    <div>
-      <h3>CSS</h3>
-      <pre>
-            <code class="language-css">
-              {{block.css_code_block}}
-            </code>
-          </pre>
-    </div>
-    <style> {{block.css_code_block}} </style>
-    {% endif %}
-
-    {% if block.js_code_block %}
-    <div>
-      <h3>JS</h3>
-      <pre>
-            <code class="language-js">
-              {{block.js_code_block}}
-            </code>
-          </pre>
-    </div>
-    {% endif %}
-
-</section>
-{% endfor %}
