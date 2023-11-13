@@ -8,7 +8,7 @@ bg-video:
 
 <section class="flex justify-center items-center min-h-100 ">
   <div class="absolute top-0 left-0 w-full h-full">
-    <video class="min-h-100 absolute top-0 left-0 h-full object-cover -z-10" width="100%" height="100%" autoplay loop muted>
+    <video class="min-h-100 absolute top-0 left-0 h-full object-cover -z-10 grayscale" width="100%" height="100%" autoplay loop muted>
         {% for video in page.bg-video %}
         <source src="{{video.video_path}}" type="{{video.type}}" />
         {% endfor %}
@@ -17,7 +17,20 @@ bg-video:
   
   </div>
   <div class="border-black border p-4">
-    <h1 class="editable">coming soom</h1>
-    <p class="editable">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate repellendus nostrum assumenda voluptates, ex reprehenderit amet aut enim quibusdam nobis odio ab vel odit aperiam quidem perspiciatis eveniet. Dicta, adipisci.</p>
+    <img src="/logo.png"> 
+    <h1 class="editable">Opening 2024</h1>
+    <p class="editable">A new luxury hotel & retreat center in the heart of Nyani beach.</p>
   </div>
 </section>
+
+
+
+<style> 
+
+  .grayscale {
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1); 
+  filter: grayscale(100%); 
+}
+
+</style>
