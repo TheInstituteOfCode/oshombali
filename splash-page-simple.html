@@ -6,9 +6,9 @@ bg-video:
 ---
 
 
-<section class="flex justify-center items-center min-h-90">
+<section class="flex justify-center items-center min-h-100 ">
   <div class="absolute top-0 left-0 w-full h-full">
-    <video class="min-h-90 absolute top-0 left-0 h-full object-cover -z-10 grayscale" width="100%" height="100%" autoplay loop muted>
+    <video class="min-h-100 absolute top-0 left-0 h-full object-cover -z-10 grayscale" width="100%" height="100%" autoplay loop muted>
         {% for video in page.bg-video %}
         <source src="{{video.video_path}}" type="{{video.type}}" />
         {% endfor %}
@@ -19,14 +19,9 @@ bg-video:
 
   <img src="/logo.png" class="mx-auto absolute top-8 w-64"> 
 
-  </section>
-
-  <section class="bg-light">
-
-  <div class="max-w-screen-md mx-auto p-4 mb-10vh text-center">
-    <h1 class="editable text-2xl editable">Elevated Boutique Experience</h1>
-    <p class="editable text-lg editable">Discover the perfect getaway at Oshom, nestled inside the heart of Nuanu City and just steps away from the enchanting Nyanyi beach. We offer
-      you more than just a stay - we offer you a unique escape, providing an unparalleled luxury experience for those seeking relaxation, adventure, and memories to treasure.</p>
+  <div class="max-w-screen-md mx-auto p-4 text-white mb-10vh text-center">
+    <h1 class="editable text-2xl text-white">Opening 2024</h1>
+    <p class="editable text-lg text-white">A new luxury hotel & retreat center in the heart of Nuanu, overlooking Nyani beach.</p>
 
     <style type="text/css">@import url("https://assets.mlcdn.com/fonts.css?version=1699449");</style>
     <style type="text/css">
@@ -618,7 +613,6 @@ bg-video:
       }
     </style>
 
-    <!-- Mailerlite form  -->
     <div id="mlb2-9291945" class="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-9291945">
       <div class="ml-form-align-center ">
         <div class="ml-form-embedWrapper embedForm">
@@ -680,27 +674,34 @@ bg-video:
           </div>
         </div>
       </div>
-    </div>
+  </div>
 
-    </div>
-  </section>
+  <div> 
+
    
+    </div>
 
-  <!-- Mailerlite scripts -->
+  
+
+  
+  
   <script>
     function ml_webform_success_9291945() {
       var $ = ml_jQuery || jQuery;
       $('.ml-subscribe-form-9291945 .row-success').show();
       $('.ml-subscribe-form-9291945 .row-form').hide();
     }
-  </script>
-  <script src="https://groot.mailerlite.com/js/w/webforms.min.js?v1f25ee4b05f240a833e02c19975434a4" type="text/javascript"></script>
-  <script>
-     fetch("https://assets.mailerlite.com/jsonp/663673/forms/104696908200543763/takel")
-   </script>
+      </script>
+  
+  
+      <script src="https://groot.mailerlite.com/js/w/webforms.min.js?v1f25ee4b05f240a833e02c19975434a4" type="text/javascript"></script>
+        <script>
+            fetch("https://assets.mailerlite.com/jsonp/663673/forms/104696908200543763/takel")
+        </script>
 
 
-
+  </div>
+</section>
 
 <style> 
 
