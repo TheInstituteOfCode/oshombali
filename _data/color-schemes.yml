@@ -1,0 +1,7 @@
+schemes:
+  - bg-color: '#272'
+    text-color: '#fff'
+  - bg-color: '#722'
+    text-color: '#000'
+  - bg-color: '#227'
+    text-color: '#fff'
