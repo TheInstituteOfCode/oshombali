@@ -36,7 +36,7 @@ body {
   font-weight: 300;
 }
 
-body > *{
+section{
   position: relative;
   z-index: 1;
   padding: 1rem 5%;
@@ -50,6 +50,7 @@ img {
   max-width:100%;
 }
 a {
+  display: inline-block;
   text-decoration: none;
     color: inherit;
 }
@@ -57,6 +58,10 @@ a {
 h1, h2, h3, h4 {
   font-family: 'Cormorant Infant', serif;
   margin-bottom: 0.5em;
+}
+
+h5,h6,p,span {
+  margin-bottom: .5em;
 }
 
 
