@@ -10,9 +10,9 @@ _inputs:
     type: select
     options:
       values:
-        - 1: Square 
-        - Portraight: 2/4 
-        - 4/3: Landscape 
+        1: Square 
+        2/4: Portraight 
+        4/3: Landscape 
 
 _structures:
   bg-video:
