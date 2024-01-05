@@ -15,7 +15,7 @@
         {% if block.paragraph %}
             <p>{{block.paragraph}}</p>
        {% endif %}
-
+ 
         </div>
         <div class="grid grid-cols-1 gap-4" style="grid-template-columns: repeat({{block.cols.size}}, minmax(0, 1fr));">
         {% for col in block.cols %}
@@ -33,7 +33,7 @@
             {% endif %}
     
             {% if col.button_link %}
-            <a href="{{col.button_link}}" class="button-1">{{col.button_link}}</a>
+            <a href="{{col.button_link}}" class="button-1">{% if col.button_text %} {{col.button_text}} {% else %} read more {% endif %}</a>
             {% endif %}
         </div>
           {% endfor %}
