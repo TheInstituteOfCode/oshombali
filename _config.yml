@@ -6,6 +6,13 @@ _inputs:
     type: number
   bottom-text:
     type: text
+  img_apsect: 
+    type: select
+    options:
+      values:
+        - 1: Square 
+        - 2/4: Portraight 
+        - 4/3: Landscape 
 
 _structures:
   bg-video:
@@ -23,6 +30,12 @@ _structures:
           img_alt: bear pic
           button_text: text
           button_link: #
+  imgs:
+    values:
+    - value:
+        img_path: https://picsum.photos/id/1020/600/400
+        img_alt: text describing the image
+        img_apsect: square
   blocks:
     values:
       - label: Video banner
@@ -43,6 +56,16 @@ _structures:
           heading: Basic heading
           pre-heading: Pre heading text
           paragraph: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          cols:
+          imgs:
+            - img_path: https://picsum.photos/id/1020/600/400
+              img_alt: text describing the image
+              img_apsect: square
+            - img_path: https://picsum.photos/id/1020/600/400
+              img_alt: text describing the image
+              img_apsect: square
+            - img_path: https://picsum.photos/id/1020/600/400
+              img_alt: text describing the image
+              img_apsect: square
+          image_default_ratio: false
           text_alignment: center
           color-scheme: 1
