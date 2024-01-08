@@ -71,6 +71,11 @@ h5,h6,p,span {
 }
 
 @layer components {
+
+  .heading-1{
+    @apply text-[3rem]
+  }
+
   .flex-center {
     @apply flex justify-center items-center;
   }

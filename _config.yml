@@ -12,7 +12,20 @@ _inputs:
       values:
         1: Square 
         2/4: Portraight 
-        4/3: Landscape 
+        4/3: Landscape
+        default: Images Native
+  img-position:
+    type: select
+    options:
+      values:
+        - left
+        - right
+  heading_style:
+    type: select
+    option:
+      values:
+        heading-1: large 
+        heading-2: subtle
 
 _structures:
   bg-video:
@@ -50,6 +63,20 @@ _structures:
             - video_path: /uploads/sea-24216-540p.mp4
               type: mp4
           bottom-text: Scrool down to discover
+      - label: Banner with side image
+        value:
+          _id: sidebanner
+          heading: our community 
+          color-scheme: 1
+          img:
+            img_path: https://picsum.photos/id/1020/600/400
+            img_alt: text describing the image
+            img_apsect: square
+          bottom-text: Scrool down to discover
+          img-position: right
+          img_width_percentage: 60%
+          banner-content-html: >
+            <a href="#apply" class="uppercase border-white py-2 px-4"> get on the list </a>
       - label: Basic col section
         value:
           _id: col-section-basic
@@ -58,6 +85,7 @@ _structures:
           paragraph: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           cols:
             - heading: Suite
+              heading_style:
               text_alinment: center
               paragraph: >-
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto

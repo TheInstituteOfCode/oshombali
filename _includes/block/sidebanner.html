@@ -1,0 +1,18 @@
+<!-- videobanner -->
+<section class="grid gap-2 items-center scheme-{{block.color-scheme}}" style="grid-template-columns:{% if block.img-position == 'left' %} {{ block.img_width_percentage }} {% endif %} 1fr {% if block.img-position == 'right' %} {{ block.img_width_percentage }} {% endif %}">
+  {% if block.img-position == 'left' %} 
+  <div>
+    <img src="{{block.img.img_path}}" alt="{{block.img.img_path}}">
+  </div>
+  {% endif %}
+
+  <div>
+    <h2>{{block.heading}}</h2>
+    {{block.banner-content-html}}
+  </div> 
+  {% if block.img-position == 'right' %} 
+  <div>
+    <img src="{{block.img.img_path}}" alt="{{block.img.img_path}}" class="w-full">
+  </div>
+  {% endif %}
+</section>

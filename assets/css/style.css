@@ -424,6 +424,9 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+.heading-1 {
+  font-size: 3rem;
+}
 .flex-center {
   display: flex;
   align-items: center;
@@ -533,6 +536,9 @@ video {
 }
 .gap-4 {
   gap: 1rem;
+}
+.gap-2 {
+  gap: 0.5rem;
 }
 .overflow-scroll {
   overflow: scroll;
