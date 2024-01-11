@@ -11,7 +11,7 @@
         {% for col in block.cols %}
           <div style="text-align: {{block.text_alignment}};">
             {% if col.img_path %}
-                <img src="{{col.img_path}}" alt="{{col.img-alt}}" class="mb-4 object-cover object-center" {% unless block.image_default_ratio %} style="aspect-ratio:{{img.img_apsect}};" {% endunless %}>
+                <img src="{{col.img_path}}" alt="{{col.img-alt}}" class="mb-4 object-cover object-center" {% unless block.image_default_ratio %} style="aspect-ratio:{{col.img_apsect}};" {% endunless %}>
             {% endif %}
        
             {{col.col-content-html}}
