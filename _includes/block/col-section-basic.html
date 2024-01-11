@@ -4,17 +4,7 @@
       <div class="max-w-screen-xl mx-auto">
         <div class="heading-div" style="text-align: {{block.text_alignment}};">
        
-        {% if block.pre-heading %}
-             <h4>{{block.pre-heading}}</h4>
-       {% endif %}
-
-       {% if block.heading %}
-            <h2>{{block.heading}}</h2>
-        {% endif %}
-        
-        {% if block.paragraph %}
-            <p>{{block.paragraph}}</p>
-       {% endif %}
+          {{block.block-content-html}}
  
         </div>
         <div class="grid grid-cols-1 gap-4" style="grid-template-columns: repeat({{block.cols.size}}, minmax(0, 1fr));">
@@ -33,7 +23,7 @@
             {% endif %}
     
             {% if col.button_link %}
-            <a href="{{col.button_link}}" class="button-1">{% if col.button_text %} {{col.button_text}} {% else %} read more {% endif %}</a>
+            <a href="{{col.button_link}}" class="{{col.button_style}}">{% if col.button_text %} {{col.button_text}} {% else %} read more {% endif %}</a>
             {% endif %}
         </div>
           {% endfor %}

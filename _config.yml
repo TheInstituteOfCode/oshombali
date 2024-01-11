@@ -26,7 +26,20 @@ _inputs:
       values:
         heading-1: large 
         heading-2: subtle
-
+  min-height:
+    type: select
+    option:
+      values:
+        50vh: half screen min-min
+        75vh: three quater screen min-min
+        90vh: just short of full screen
+        100vh: full screen
+  button_style:
+    type: select
+    options:
+      values:
+        button: normal
+        button-featured: featured
 _structures:
   bg-video:
     values:
@@ -75,7 +88,7 @@ _structures:
           bottom-text: Scrool down to discover
           img-position: right
           img_width_percentage: 60%
-          banner-content-html: >
+          block-content-html: >
             <a href="#apply" class="uppercase border-white py-2 px-4"> get on the list </a>
       - label: Basic col section
         value:

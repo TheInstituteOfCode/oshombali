@@ -1,8 +1,23 @@
 ---
 layout: default
 blocks:
+  - _id: text-banner
+    heading: our community
+    heading_style: heading-1
+    color-scheme: 2
+    img:
+      img_path: https://picsum.photos/id/1020/600/400
+      img_alt: text describing the image
+      img_apsect: square
+    bottom-text: Scrool down to discover
+    img-position: right
+    img_width_percentage: 60%
+    min-height: 60vh
+    block-content-html: >
+      <a href="#apply" class="uppercase border-white py-2 px-4 button"> get on the list </a>
   - _id: sidebanner
-    heading: our community 
+    heading: our community
+    heading_style: heading-1
     color-scheme: 1
     img:
       img_path: https://picsum.photos/id/1020/600/400
@@ -11,15 +26,16 @@ blocks:
     bottom-text: Scrool down to discover
     img-position: right
     img_width_percentage: 60%
-    banner-content-html: >
-      <a href="#apply" class="uppercase border-white py-2 px-4"> get on the list </a>
+    min-height: 60vh
+    block-content-html: >
+      <a href="#apply" class="button"> get on the list </a>
   - _id: video-banner
     color-scheme: 1
     bg-video:
       - video_path: /uploads/sea-24216-540p.mp4
         type: mp4
     bottom-text: Scrool down to discover
-    center-content-html: >
+    block-content-html: >
       <img src="/logo.png" class="mx-auto max-w-sm">  <h2 class="uppercase 
       text-center text-xl">Opening in Summer 2024 </h2>  <a href="#apply"
       class="uppercase  border-white py-2 px-4"> get on the list </a>
@@ -46,7 +62,8 @@ blocks:
         img_path: https://picsum.photos/id/1020/600/400
         img_alt: bear pic
         button_text: text
-        button_link:
+        button_link: '#'
+        button_style: button
       - heading: treehouse
         heading_style: heading-1
         text_alinment: center
@@ -58,14 +75,15 @@ blocks:
         img_path: https://picsum.photos/id/1024/600/400
         img_alt: eagle pic
         button_text: text
-        button_link:
+        button_link: '#'
+        button_style: button
     image_default_ratio: false
     text_alignment: center
     color-scheme: 2
   - _id: horizontal-screen-gallery
     heading: Basic heading
     pre-heading: Pre heading text
-    paragraph: >-
+    paragraph: 
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
       veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea

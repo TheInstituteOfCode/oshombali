@@ -1,7 +1,9 @@
 schemes:
-  - bg-color: '#272'
-    text-color: '#fff'
-  - bg-color: '#722'
-    text-color: '#000'
-  - bg-color: '#227'
-    text-color: '#fff'
+  - bg-color: '#9CA592'
+    text-color: '#FFF'
+    colored-button-bg-color: "#fff"
+    colored-button-text-color: "#000"
+  - bg-color: '#ECE5DD'
+    text-color: '#1D1D1B'
+    colored-button-bg-color: '#1D1D1B'
+    colored-button-text-color: '#ECE5DD'

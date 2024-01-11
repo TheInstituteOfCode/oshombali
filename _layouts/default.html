@@ -9,13 +9,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap" rel="stylesheet"> 
 
+    <link rel="stylesheet" href="/editor.css">
     <link rel="stylesheet" href="/assets/css/style.css">
 
 <style>
     :root,{% for scheme in site.data.color-schemes.schemes %}
         .scheme-{{forloop.index}} {
             --bg-color: {{scheme.bg-color}};
-            --text-color: {{scheme.text-color}}
+            --text-color: {{scheme.text-color}};
+            --button-bg: {{scheme.colored-button-bg-color}};
+            --button-text: {{scheme.colored-button-text-color}};
         }
     {% endfor %}
 </style>
@@ -34,7 +37,7 @@
                     <img src="/logo.png" class="mx-auto"> 
                 </h2>
                 <div class="text-right">
-                    <a href="" class="button-1">book now</a>
+                    <a href="" class="button-featured">book now</a>
                 </div>
             </div>
         </div>
