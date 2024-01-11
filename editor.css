@@ -15,5 +15,9 @@ h2.heading-1,h3.heading-1{
     border: 1px solid var(--button-bg);
     background-color: var(--button-bg);
     color: var(--button-text);
-
   }
+
+
+  .text-left  {text-align: left;}
+  .text-center{text-align:center;}
+  .text-right {text-align: right;}
