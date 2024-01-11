@@ -13,7 +13,11 @@
     <link rel="stylesheet" href="/assets/css/style.css">
 
 <style>
-    :root,{% for scheme in site.data.color-schemes.schemes %}
+    :root{
+        --max-width: {{site.data.style_guide.max-width}}px;
+        --side-gap: calc( var(50vw - {{site.data.style_guide.max-width | divided_by: 2}}px ))
+    }
+    :root,{% for scheme in site.data.style_guide.schemes %}
         .scheme-{{forloop.index}} {
             --bg-color: {{scheme.bg-color}};
             --text-color: {{scheme.text-color}};
@@ -21,13 +25,14 @@
             --button-text: {{scheme.colored-button-text-color}};
         }
     {% endfor %}
+
 </style>
 
 </head>
 <body>
     <header class="relative scheme-1 p-0 z-10">
         <div class="relative z-10">
-            <div class="max-w-screen-xl mx-auto p-8 grid grid-cols-3 items-center">
+            <div class="max-width p-8 grid grid-cols-3 items-center">
                 <div class="burger-button">
                     <span class="burger-top"></span>
                     <span class="burger-middle"></span>

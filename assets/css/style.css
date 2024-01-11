@@ -452,8 +452,29 @@ video {
 .left-0 {
   left: 0px;
 }
+.left-\[\] {
+  left: ;
+}
+.right-\[50vw\] {
+  right: 50vw;
+}
 .top-0 {
   top: 0px;
+}
+.left-\[var\(--side-gap\)\] {
+  left: var(--side-gap);
+}
+.bottom-0 {
+  bottom: 0px;
+}
+.right-\[50\%\] {
+  right: 50%;
+}
+.right-\[75\%\] {
+  right: 75%;
+}
+.right-\[25\%\] {
+  right: 25%;
 }
 .-z-10 {
   z-index: -10;
@@ -467,9 +488,6 @@ video {
 }
 .mb-0 {
   margin-bottom: 0px;
-}
-.mb-4 {
-  margin-bottom: 1rem;
 }
 .ml-auto {
   margin-left: auto;
@@ -489,23 +507,29 @@ video {
 .grid {
   display: grid;
 }
+.hidden {
+  display: none;
+}
 .h-full {
   height: 100%;
 }
 .max-h-\[70vh\] {
   max-height: 70vh;
 }
+.min-h-100 {
+  min-height: 100vh;
+}
 .min-h-90 {
   min-height: 90vh;
+}
+.min-h-\[75vh\] {
+  min-height: 75vh;
 }
 .w-full {
   width: 100%;
 }
 .max-w-\[initial\] {
   max-width: initial;
-}
-.max-w-screen-xl {
-  max-width: 1280px;
 }
 .max-w-sm {
   max-width: 24rem;
@@ -550,6 +574,13 @@ video {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
+.bg-transparent {
+  background-color: transparent;
+}
+.object-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -557,6 +588,18 @@ video {
 .object-center {
   -o-object-position: center;
      object-position: center;
+}
+.object-right {
+  -o-object-position: right;
+     object-position: right;
+}
+.object-right-bottom {
+  -o-object-position: right bottom;
+     object-position: right bottom;
+}
+.object-left-bottom {
+  -o-object-position: left bottom;
+     object-position: left bottom;
 }
 .p-0 {
   padding: 0px;
@@ -620,6 +663,11 @@ body {
   color: #1D1D1B;
   font-family: 'Inter', sans-serif;
   font-weight: 300;
+}
+
+.max-width{
+  max-width: var(--max-width);
+  margin: auto;
 }
 
 section{
@@ -742,4 +790,26 @@ header div {
 }
 .burger-menu.active{
 bottom: -100%;
+}
+@media (min-width: 768px) {
+  .md\:absolute {
+    position: absolute;
+  }
+  .md\:block {
+    display: block;
+  }
+  .md\:min-h-100 {
+    min-height: 100vh;
+  }
+  .md\:min-h-\[75vh\] {
+    min-height: 75vh;
+  }
+  .md\:bg-transparent {
+    background-color: transparent;
+  }
+}
+@media (min-width: 1024px) {
+  .lg\:right-\[50\%\] {
+    right: 50%;
+  }
 }

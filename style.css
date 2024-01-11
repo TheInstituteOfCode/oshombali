@@ -36,6 +36,11 @@ body {
   font-weight: 300;
 }
 
+.max-width{
+  max-width: var(--max-width);
+  margin: auto;
+}
+
 section{
   position: relative;
   z-index: 1;
