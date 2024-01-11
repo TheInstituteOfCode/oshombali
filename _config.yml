@@ -3,6 +3,7 @@ _inputs:
   block-content-html:
     type: html
     options:
+      format: p h2 h3 a img
       styles: /editor.css
       left: text-left
       center: text-center
