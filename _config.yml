@@ -31,7 +31,7 @@ _inputs:
         1: Square 
         2/4: Portraight 
         4/3: Landscape
-        default: Images Native
+        initial: Images Native
   img-position:
     type: select
     options:
@@ -71,8 +71,7 @@ _structures:
             <h2> Coloumn content </h2> <p>for all the details about the col</p>
           img_path: https://picsum.photos/id/1020/600/400
           img_alt: bear pic
-          button_text: text
-          button_link: #
+          img_apsect: 2/4
   imgs:
     values:
     - value:
@@ -118,6 +117,7 @@ _structures:
                    <h2> Coloumn content </h2> <p>for all the details about the col</p>
               img_path: https://picsum.photos/id/1020/600/400
               img_alt: bear pic
+              img_apsect: 2/4
           image_default_ratio: false
           text_alignment: center
           color-scheme: 1
