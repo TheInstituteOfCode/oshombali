@@ -8,6 +8,14 @@ _inputs:
       left: text-left
       center: text-center
       right: text-right
+  col-content-html:
+    type: html
+    options:
+      format: p h2 h3 a
+      styles: /editor.css
+      left: text-left
+      center: text-center
+      right: text-right
   center-content:
     type: html
   color-scheme:
@@ -57,9 +65,8 @@ _structures:
   cols:
     values:
       - value:
-          heading: col Heading
-          text_alinment: center
-          paragraph: Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto perferendis quas quibusdam, voluptatibus pariatur totam vitae soluta eum amet, deleniti error quidem voluptatum vel aliquam. Voluptatem reiciendis doloribus quis iste?
+          col-content-html: >-
+            <h2> Coloumn content </h2> <p>for all the details about the col</p>
           img_path: https://picsum.photos/id/1020/600/400
           img_alt: bear pic
           button_text: text

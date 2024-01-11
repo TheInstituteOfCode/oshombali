@@ -14,17 +14,7 @@
                 <img src="{{col.img_path}}" alt="{{col.img-alt}}">
             {% endif %}
        
-            {% if col.heading %}
-                <h3 class="{{col.heading_style}}">{{col.heading}}</h3>
-            {% endif %}
-            
-            {% if col.paragraph %}
-                <p>{{col.paragraph}}</p>
-            {% endif %}
-    
-            {% if col.button_link %}
-            <a href="{{col.button_link}}" class="{{col.button_style}}">{% if col.button_text %} {{col.button_text}} {% else %} read more {% endif %}</a>
-            {% endif %}
+            {{col.col-content-html}}
         </div>
           {% endfor %}
         </div>
