@@ -465,6 +465,9 @@ video {
 .mb-0 {
   margin-bottom: 0px;
 }
+.mb-4 {
+  margin-bottom: 1rem;
+}
 .ml-auto {
   margin-left: auto;
 }
@@ -473,9 +476,6 @@ video {
 }
 .mt-4 {
   margin-top: 1rem;
-}
-.mb-4 {
-  margin-bottom: 1rem;
 }
 .block {
   display: block;
