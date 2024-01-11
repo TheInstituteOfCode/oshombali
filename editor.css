@@ -21,3 +21,7 @@ h2.heading-1,h3.heading-1{
   .text-left  {text-align: left;}
   .text-center{text-align:center;}
   .text-right {text-align: right;}
+
+  img.logo{
+    max-width: 24rem;
+  }
