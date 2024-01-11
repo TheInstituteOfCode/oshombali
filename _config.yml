@@ -130,9 +130,8 @@ _structures:
       - label: Horizontal screen gallery
         value:
           _id: horizontal-screen-gallery
-          heading: Basic heading
-          pre-heading: Pre heading text
-          paragraph: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+           block-content-html: >-
+            <h3>Pre heading text</h3><h2>Basic heading</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           imgs:
             - img_path:  "https://picsum.photos/id/1020/600/400"
               img_alt: text describing the image
@@ -146,5 +145,4 @@ _structures:
               img_alt: text describing the image
               img_apsect: 2/4
           image_default_ratio: true
-          text_alignment: center
           color-scheme: 1

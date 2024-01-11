@@ -11,7 +11,7 @@
         {% for col in block.cols %}
           <div style="text-align: {{block.text_alignment}};">
             {% if col.img_path %}
-                <img src="{{col.img_path}}" alt="{{col.img-alt}}">
+                <img src="{{col.img_path}}" alt="{{col.img-alt}}" class="mb-4">
             {% endif %}
        
             {{col.col-content-html}}
