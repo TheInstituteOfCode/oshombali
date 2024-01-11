@@ -12,7 +12,7 @@
                 </div>
                 <div class="flex gap-4 basis-2/3 flex-none overflow-scroll">
                     {% for img in block.imgs %}
-                    <img src="{{img.img_path}}" alt="{{img.img_alt}}" {% if block.image_default_ratio %} style="aspect-ratio:{{img.img_apsect}};" {% endif %} class="object-cover object-center h-full max-w-[initial] max-h-[70vh]">
+                    <img src="{{img.img_path}}" alt="{{img.img_alt}}" {% unless block.image_default_ratio %} style="aspect-ratio:{{img.img_apsect}};" {% endunless %} class="object-cover object-center h-full max-w-[initial] max-h-[70vh]">
                     {% endfor %}
                 </div>
             </div>
