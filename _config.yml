@@ -1,5 +1,12 @@
 
 _inputs:
+  block-content-html:
+    type: html
+    options:
+      styles: /editor.css
+      left: text-left
+      center: text-center
+      right: text-right
   center-content:
     type: html
   color-scheme:
