@@ -1,4 +1,14 @@
-h2.heading-1,h3.heading-1{
+h2.heading-1{
+    font-size: 58.611px;
+    font-family: Cormorant Infant;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 94.1%; /* 45.168px */
+    text-transform: uppercase;
+  }
+
+  h3.subheading{
+    font-size: 25px;
     font-family: Cormorant Infant;
     font-style: normal;
     font-weight: 400;
