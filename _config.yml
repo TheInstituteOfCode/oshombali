@@ -75,15 +75,13 @@ _structures:
       - label: Video banner
         value:
           _id: video-banner
-          center-content: >
-                        <img src="/logo.png" class="mx-auto max-w-sm"> 
-                        <h2 class="uppercase  text-center text-xl">Opening in Summer 2024 </h2> 
-                        <a href="#apply" class="uppercase  border-white py-2 px-4"> get on the list </a>
+          block-content-html: >-
+                        <p><img class="mx-auto max-w-sm" src="/logo.png" /></p><h3 class="heading-1">Opening in Summer 2024</h3><p><a class="button-featured" href="#apply">get on the list </a></p>
           color-scheme: 1
           bg-video:
             - video_path: /uploads/sea-24216-540p.mp4
               type: mp4
-          bottom-text: Scrool down to discover
+          bottom-text: Scroll down to discover
       - label: Banner with side image
         value:
           _id: sidebanner
