@@ -8,6 +8,7 @@ _inputs:
       left: text-left
       center: text-center
       right: text-right
+      link: true
   col-content-html:
     type: html
     options:
@@ -16,6 +17,7 @@ _inputs:
       left: text-left
       center: text-center
       right: text-right
+      link: true
   center-content:
     type: html
   color-scheme:
