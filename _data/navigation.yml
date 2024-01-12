@@ -1,0 +1,15 @@
+header:
+  - text: Acomidations
+    link-url: /acomidations
+    sublinks: 
+      - text: Acomidations 1
+        link-url: /acomidatin-1
+      - text: Acomidations 2
+        link-url: /acomidatin-1
+      - text: Acomidations 3
+        link-url: /acomidatin-1
+      - text: Acomidations 4
+        link-url: /acomidatin-1
+  - text: Dinning
+    link-url: /acomidations
+    sublinks: 

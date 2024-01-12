@@ -48,7 +48,20 @@
         </div>
       
         <div class="burger-anchor">
-            <div class="burger-menu grid grid-cols-3 justify-around">
+            <div class="burger-menu flex justify-around">
+                {% for link in site.data.navigation.header %}
+                    {% if link.sublinks.size >= 1 %}
+                        <!-- has sublinks -->
+                        <span class="dropParent">
+
+                    {% endif %}
+                    <a href="{{link.link-url}}">{{link.text}}</a>
+
+                    {% if link.sublinks.size >= 1 %}
+                            
+                        </span>
+                    {% endif %}
+                {% endfor %}
                 <a href="">Home</a>
                 <a href="">Food</a>
                 <a href="">Drink</a>
@@ -57,9 +70,9 @@
     </header>
 
 {% for block in page.blocks %}
-
+<div class="scheme-{{block.color-scheme}}">
     {% include /block/{{block._id}}.html %}
-
+</div>
 {% endfor %}
     {{content}}
 

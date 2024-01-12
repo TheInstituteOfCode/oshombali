@@ -7,7 +7,7 @@ schemes:
     text-color: '#1D1D1B'
     colored-button-bg-color: '#1D1D1B'
     colored-button-text-color: '#ECE5DD'
-  - bg-color: '#ECE5DD'
+  - bg-color: '#D9D9D9'
     text-color: '#1D1D1B'
     colored-button-bg-color: '#1D1D1B'
     colored-button-text-color: '#ECE5DD'

@@ -743,7 +743,6 @@ header div {
     z-index: 8;
     align-content:space-around;
   justify-content:space-around;
-  flex-direction:column;
     transition: bottom 2s, color 1s, background-color 1s;
 }
 .burger-menu.active{
@@ -758,8 +757,5 @@ bottom: -100%;
   }
   .md\:block {
     display: block;
-  }
-  .md\:bg-transparent {
-    background-color: transparent;
   }
 }
