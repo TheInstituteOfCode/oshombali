@@ -1,14 +1,14 @@
 header:
   - text: Acomidations
-    link-url: /acomidations
+    link-url: /stay
     sublinks: 
-      - text: Acomidations 1
+      - text: place 1
         link-url: /acomidatin-1
-      - text: Acomidations 2
+      - text: place 2
         link-url: /acomidatin-1
-      - text: Acomidations 3
+      - text: place 3
         link-url: /acomidatin-1
-      - text: Acomidations 4
+      - text: place 4
         link-url: /acomidatin-1
   - text: Dinning
     link-url: /acomidations

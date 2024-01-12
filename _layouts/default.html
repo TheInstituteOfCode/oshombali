@@ -51,15 +51,20 @@
             <div class="burger-menu flex justify-around">
                 {% for link in site.data.navigation.header %}
                     {% if link.sublinks.size >= 1 %}
-                        <!-- has sublinks -->
-                        <span class="dropParent">
-
+                    <!-- has sublinks -->
+                    <span class="drop-parent">
                     {% endif %}
-                    <a href="{{link.link-url}}">{{link.text}}</a>
-
-                    {% if link.sublinks.size >= 1 %}
-                            
-                        </span>
+                        <a href="{{link.link-url}}">{{link.text}}</a>
+                        {% if link.sublinks.size >= 1 %}
+                        <div class="drop-anchor">
+                            <div class="overlay"></div>
+                            <div class="drop-child">
+                                {% for sublink in link.sublinks %}
+                                <a href="{{sublink.link-url}}">{{sublink.text}}</a>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </span>
                     {% endif %}
                 {% endfor %}
                 <a href="">Home</a>

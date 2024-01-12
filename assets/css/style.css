@@ -668,8 +668,12 @@ h5,h6,p,span {
 header div {
   background-color: var(--bg-color);
   transition:1s background, 1s color;
+  transition-timing-function: ease-in-out;
 }
 
+header a{
+  padding: .5rem 1rem;
+}
 
 .burger-button {
   position:relative;
@@ -734,7 +738,7 @@ header div {
 
 .burger-menu {
     position: relative;
-    bottom: 0;
+    top: 0;
     left: 0;
     width: 100vw;
     background-color: var(--bg-color);
@@ -743,10 +747,54 @@ header div {
     z-index: 8;
     align-content:space-around;
   justify-content:space-around;
-    transition: bottom 2s, color 1s, background-color 1s;
+    transition: top 2s, color 1s, background-color 1s;
+    transition-timing-function: ease-in-out;
 }
 .burger-menu.active{
-bottom: -100%;
+top: 100%;
+}
+
+
+.drop-parent{
+  position: relative;
+  margin-bottom: 0;
+}
+
+.drop-parent .overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.drop-parent .drop-anchor{
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+  min-width: 100%;
+}
+.drop-parent .drop-child{
+  position: relative;
+  z-index: -1;
+  transition: top 2s;
+  top:0%;
+}
+.drop-parent:hover .drop-child{
+  top:100%
+}
+.drop-child a{
+  display: block;
+}
+
+.drop-parent > a:after{
+  content: ">";
+  margin-left: 1rem;
+  transition: transform .5s;
+  display: inline-block;
+}
+.drop-parent:hover > a::after{
+transform: rotate(90deg);
 }
 @media (min-width: 768px) {
   .md\:mr-\[52\%\] {
