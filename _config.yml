@@ -8,7 +8,7 @@ _inputs:
   block-content-html:
     type: html
     options:
-      format: p h2 h3 a img
+      format: p h2 h3 a img svg
       styles: /editor.css
       left: text-left
       center: text-center
@@ -17,7 +17,7 @@ _inputs:
   col-content-html:
     type: html
     options:
-      format: p h2 h3 a
+      format: p h2 h3 a svg
       styles: /editor.css
       left: text-left
       center: text-center
