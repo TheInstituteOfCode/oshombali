@@ -11,3 +11,53 @@ function toggleBurger() {
 }
 
 burgerButton.addEventListener('click', toggleBurger)
+
+
+// accordian code
+
+const accordianTriggers = document.querySelectorAll(".accordian-trigger")
+
+function findParentWithClass(obj,targetClass) {
+
+  if (obj.classList.contains(targetClass)) {
+    return obj
+  } else {
+    let newobj = findParentWithClass(obj.parentNode,targetClass)
+    return newobj
+  }
+}
+
+function gsapToggle(obj){
+  obj.classList.toggle('closed')
+  console.log(obj)
+  if (obj.classList.contains('closed')) {
+    gsap.to(obj,{
+      height: '0',
+      ease: 'none'
+    })
+    console.log('close')
+  } else {
+    gsap.to(obj,{
+      height: 'auto',
+      ease: 'none'
+
+    })
+    console.log('open')
+  }
+}
+
+
+function toggleAcordian(e) {
+  let target = findParentWithClass(e.target, "accordian-trigger")
+  let draw = target.nextElementSibling
+  
+  target.classList.toggle('active')
+  // draw.classList.toggle('closed')
+  gsapToggle(draw)
+  
+}
+
+
+accordianTriggers.forEach(trigger => {
+  trigger.addEventListener('click',toggleAcordian)
+})

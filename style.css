@@ -220,3 +220,17 @@ top: 100%;
 .drop-parent:hover > a::after{
 transform: rotate(90deg);
 }
+
+
+
+/* accordian */
+
+.accordian-trigger .accordian-svg{
+  transform: rotate(-90deg);
+transition: transform .5s;
+
+}
+
+.accordian-trigger.active .accordian-svg{
+  transform: rotate(0deg);
+}
