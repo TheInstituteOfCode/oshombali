@@ -1,14 +1,11 @@
 collections:
   hotels:
     output: true
-
-
-
 _inputs:
   block-content-html:
     type: html
     options:
-      format: p h2 h3 a img svg
+      format: p h2 h3 a img
       styles: /editor.css
       left: text-left
       center: text-center
@@ -17,7 +14,7 @@ _inputs:
   col-content-html:
     type: html
     options:
-      format: p h2 h3 a svg
+      format: p h2 h3 a img
       styles: /editor.css
       left: text-left
       center: text-center
