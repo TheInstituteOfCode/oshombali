@@ -13,3 +13,21 @@ header:
   - text: Dinning
     link-url: /acomidations
     sublinks: 
+
+footer:
+  - menu:
+      - text: Dinning
+        link-url: /acomidations 
+      - text: Dinning
+        link-url: /acomidations 
+      - text: Dinning
+        link-url: /acomidations
+      - text: Dinning
+        link-url: /acomidations
+      - text: Dinning
+        link-url: /acomidations
+  - menu:
+      - text: Dinning
+        link-url: /acomidations    
+      - text: Dinning
+        link-url: /acomidations

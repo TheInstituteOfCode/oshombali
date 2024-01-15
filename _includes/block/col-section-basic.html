@@ -10,7 +10,7 @@
         <div class="grid grid-cols-1 gap-4" style="grid-template-columns: repeat({{block.cols.size}}, minmax(0, 1fr));">
         {% for col in block.cols %}
           <div style="text-align: {{block.text_alignment}};">
-            {% if col.img_path %}
+            {% if col.img_path != '' %}
 
                 {% unless block.image_default_ratio %}
                   <div class="relative" style="aspect-ratio:{{block.img_apsect}};">

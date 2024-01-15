@@ -1,7 +1,12 @@
 <!-- liquid banner  -->
 <section class="scheme-{{block.color-scheme}}">
+  {% if full-width == 'true' %}
   <div class="max-width">
+    {% endif %}
+    
     {{block.liquid_code_block}}
+    
+    {% if full-width == 'true' %}
   </div> 
-
+{% endif %}
 </section>
