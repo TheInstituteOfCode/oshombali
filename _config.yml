@@ -120,7 +120,6 @@ _structures:
                    <h2> Coloumn content </h2> <p>for all the details about the col</p>
               img_path: https://picsum.photos/id/1020/600/400
               img_alt: bear pic
-              img_apsect: 2/4
           img_apsect: 2/4
           image_default_ratio: false
           text_alignment: center

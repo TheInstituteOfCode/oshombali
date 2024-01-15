@@ -1,0 +1,18 @@
+<!-- liquid banner  -->
+<section class="scheme-{{block.color-scheme}}">
+  <div class="max-width">
+    {{block.liquid_code_block}}
+
+    <div class="slider">
+      {% for slide in block.slides %}
+        <div>
+          <a href="{{slide.url}}">
+            <img src="{{slide.img}}" alt="{{slide.img_alt}}">
+          </a>
+        </div>
+
+      {% endfor %}
+    </div>
+  </div> 
+
+</section>

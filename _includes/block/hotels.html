@@ -2,7 +2,7 @@
 <section class="p-0">
   <!-- <div class="max-width"> -->
     <div class="border-b-[var(--text-color)] border-b">
-      {% for hotel in site.hotels %}
+      {% for hotel in site.hotels reversed %}
       <div class="border-t border-t-[var(--text-color)] items-start md:grid grid-cols-2 py-4">
         <div>
           <img src="{{hotel.featured_img_url}}" alt="{{hotel.featured_img_alt}}" class="w-full max-h-[60vh] object-cover object-center">

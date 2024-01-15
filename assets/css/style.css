@@ -839,7 +839,9 @@ top: 100%;
 transform: rotate(90deg);
 }
 
-
+.svg-parent-inline svg{
+  display: inline-block;
+}
 
 /* accordian */
 

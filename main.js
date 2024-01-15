@@ -61,3 +61,5 @@ function toggleAcordian(e) {
 accordianTriggers.forEach(trigger => {
   trigger.addEventListener('click',toggleAcordian)
 })
+
+console.log('finished main.js')
