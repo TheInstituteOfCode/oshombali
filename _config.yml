@@ -96,8 +96,8 @@ _structures:
       - label: Banner with side image
         value:
           _id: sidebanner
-          heading: our community 
-          color-scheme: 1
+          block-content-html: >
+            <h2 class="heading-1">WHERE TO FIND US</h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, vero architecto delectus pariatur voluptatem sit minima sint mollitia! Vitae mollitia soluta amet quidem ullam. Aliquid iure exercitationem non nesciunt unde.</p><a href="#" class="button"> learn more</a>
           img:
             img_path: https://picsum.photos/id/1020/600/400
             img_alt: text describing the image
@@ -105,8 +105,7 @@ _structures:
           bottom-text: Scrool down to discover
           img-position: right
           img_width_percentage: 60%
-          block-content-html: >
-            <a href="#apply" class="uppercase border-white py-2 px-4"> get on the list </a>
+          color-scheme: 1
       - label: Basic col section
         value:
           _id: col-section-basic
