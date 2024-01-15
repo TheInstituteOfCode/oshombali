@@ -32,10 +32,10 @@ _inputs:
     type: select
     options:
       values:
-        1: Square 
-        2/4: Portraight 
-        4/3: Landscape
-        initial: Images Native
+        '1': Square 
+        '2/4': Portraight 
+        '4/3': Landscape
+        'initial': Images Native
   img-position:
     type: select
     options:
