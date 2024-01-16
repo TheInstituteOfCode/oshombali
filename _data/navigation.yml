@@ -1,9 +1,9 @@
 header:
-  - text: Acomidations
+  - text: Accomodations
     link-url: /stay
     sublinks: 
       - text: place 1
-        link-url: /hotels/hotel-1
+        link-url: /hotel-1
       - text: place 2
         link-url: /#
       - text: place 3
@@ -11,9 +11,29 @@ header:
       - text: place 4
         link-url: /#
   - text: Dinning
+    link-url: /experiences/dinning
+    sublinks: 
+  - text: Celebrations
+    link-url: /experiences
+    sublinks: 
+      - text: experience 1
+        link-url: /experiences
+      - text: experience 2
+        link-url: /#
+      - text: experience 3
+        link-url: /#
+      - text: experience 4
+        link-url: /#
+  - text: Retreat
     link-url: /#
     sublinks: 
-
+  - text: Celebrations
+    link-url: /experiences
+    sublinks:     
+  - text: Celebrations
+    link-url: /experiences
+    sublinks: 
+  
 footer:
   - menu:
       - text: Dinning

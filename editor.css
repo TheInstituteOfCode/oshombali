@@ -50,9 +50,9 @@ h2.larger-heading{
   }
 
   a.button-featured{
-    border: 1px solid var(--button-bg);
-    background-color: var(--button-bg);
-    color: var(--button-text);
+    border: 1px solid var(--colored-button-bg);
+    background-color: var(--colored-button-bg);
+    color: var(--colored-button-text);
     text-transform: uppercase;
   }
 
