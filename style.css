@@ -43,10 +43,11 @@ body {
   margin: auto;
 }
 
+
 section,footer{
   position: relative;
   z-index: 1;
-  padding: 3rem 5%;
+  padding: var(--vert-gap) 5%;
   background-color: var(--bg-color);
   color: var(--text-color);
 }
@@ -99,17 +100,26 @@ h3{
 
 
 /* footer */
+footer .menu{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 
 footer a{
+  font-family: Suisse Intl;
   font-size: 16.127px;
+  font-style: normal;
   font-weight: 400;
+  line-height: normal;
 }
 
 /* burger menu */
 
 header div {
   background-color: var(--bg-color);
-  transition:1s background, 1s color;
+  transition:.5s background, .5s color;
   transition-timing-function: ease-in-out;
 }
 
@@ -130,7 +140,7 @@ header a{
   background-color: var(--text-color);
   display: block;
   border-radius: 5px;
-  transition: 2s;
+  transition: .5s;
 }
 
 /* .burger-button.active span{
@@ -189,7 +199,7 @@ header a{
     z-index: 8;
     align-content:space-around;
   justify-content:space-around;
-    transition: top 2s, color 1s, background-color 1s;
+    transition: top .5s, color .5s, background-color .5s;
     transition-timing-function: ease-in-out;
 }
 .burger-menu.active{
@@ -219,7 +229,7 @@ top: 100%;
 .drop-parent .drop-child{
   position: relative;
   z-index: -1;
-  transition: top 2s;
+  transition: top .5s;
   top:0%;
 }
 .drop-parent:hover .drop-child{

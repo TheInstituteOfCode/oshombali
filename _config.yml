@@ -80,7 +80,7 @@ _structures:
     - value:
         img_path: https://picsum.photos/id/1020/600/400
         img_alt: text describing the image
-        img_apsect: square
+        img_apsect: "1"
   blocks:
     values:
       - label: Video banner

@@ -3,15 +3,15 @@ header:
     link-url: /stay
     sublinks: 
       - text: place 1
-        link-url: /acomidatin-1
+        link-url: /hotels/hotel-1
       - text: place 2
-        link-url: /acomidatin-1
+        link-url: /#
       - text: place 3
-        link-url: /acomidatin-1
+        link-url: /#
       - text: place 4
-        link-url: /acomidatin-1
+        link-url: /#
   - text: Dinning
-    link-url: /acomidations
+    link-url: /#
     sublinks: 
 
 footer:
@@ -20,8 +20,6 @@ footer:
         link-url: /acomidations 
       - text: Dinning
         link-url: /acomidations 
-      - text: Dinning
-        link-url: /acomidations
       - text: Dinning
         link-url: /acomidations
       - text: Dinning

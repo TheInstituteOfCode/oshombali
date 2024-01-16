@@ -12,7 +12,7 @@
 
 {% for block in page.blocks %}
     {% if block._id == 'slider' %}
-    <!-- {{block._id}} -->
+
         {% assign hasSlide = true %}
         <!-- {{hasSlide}} -->
     {% endif %}
@@ -30,7 +30,8 @@
 <style>
     :root{
         --max-width: {{site.data.style_guide.max-width}}px;
-        --side-gap: max(calc(50vw - {{site.data.style_guide.max-width | divided_by: 2}}px ), 1px)
+        --side-gap: max(calc(50vw - {{site.data.style_guide.max-width | divided_by: 2}}px ), 5vw);
+        --vert-gap: min(15rem, 5vw)
     }
     :root,{% for scheme in site.data.style_guide.schemes %}
         .scheme-{{forloop.index}} {
@@ -45,7 +46,7 @@
 
 </head>
 <body>
-    <header class="relative scheme-2 p-0 z-10">
+    <header class="absolute w-full z-50 p-0 bg-transparent">
         <div class="relative z-10">
             <div class="max-width p-8 grid grid-cols-3 items-center">
                 <div class="burger-button">
@@ -94,12 +95,11 @@
 
 {% for block in page.blocks %}
 <div class="scheme-{{block.color-scheme}}">
+        <!-- {{block._id}} -->
     {% include /block/{{block._id}}.html %}
 </div>
 {% endfor %}
-{% raw %}    
-<!-- {{content}} -->
-{%endraw%}
+{{content}}
 <div class="scheme-3">
 <footer>
     <div class="max-width p-8 grid grid-cols-3 md:grid-cols-5 gap-x-4 gap-y-8">
@@ -140,9 +140,9 @@
                 </a>
             </div>
         </div>
-        <div class="col-span-2 flex justify-end gap-4">
+        <div class="col-span-2 flex justify-center gap-12">
             {% for menu in site.data.navigation.footer %}
-                <div>
+                <div class="menu">
                     {% for link in menu.menu %}
                     <a href="{{link.url}}" class="block">{{link.text}}</a>
                     {% endfor %}
@@ -150,7 +150,7 @@
             {% endfor %}
         </div>
         <div class="col-span-3 md:col-span-2">
-            <h3>sign up for our newsletter</h3>
+            <h3>Sign up for our newsletter</h3>
             <form action="" class="flex"> 
                 <input type="email" class="bg-inherit border-0 border-b flex-1"><input type="button" value="subscribe" class="button">
             </form>
