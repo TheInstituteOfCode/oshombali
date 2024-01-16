@@ -107,7 +107,7 @@ _structures:
           img:
             img_path: https://picsum.photos/id/1020/600/400
             img_alt: text describing the image
-            img_apsect: square
+            img_apsect: '1'
           bottom-text: Scrool down to discover
           img-position: right
           img_width_percentage: 60%
@@ -125,7 +125,7 @@ _structures:
                    <h2> Coloumn content </h2> <p>for all the details about the col</p>
               img_path: https://picsum.photos/id/1020/600/400
               img_alt: bear pic
-          img_apsect: 1
+          img_apsect: '1'
           image_default_ratio: false
           text_alignment: center
           color-scheme: 1
