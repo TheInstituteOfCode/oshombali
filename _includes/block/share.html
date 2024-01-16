@@ -1,17 +1,30 @@
-<!-- text banner  -->
-<section class="flex items-center justify-center scheme-{{block.color-scheme}} bg-center bg-cover"
-style="
-{% if block.banner-img %}
-background-image: url({{block.banner-img}});
-{% endif %}
-{% if block.banner-height %}
-min-height: {{block.banner-height}};
-{% endif %}
-"
->
-    
+
+<section class="">
   <div class="max-width">
-    {{block.block-content-html}}
+    <div>
+      {{block.block-content-html}}
+    </div>
+    <div>
+      <div class="social-share text-center mt-5p">
+
+        <hr class="short text-center"> 
+    
+        <h4 class="mb-2"> share the love</h4>
+    
+        <nav>
+            <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.data.site-settings.social.twitter_username }}&related={{ site.data.site-settings.social.twitter_username }}" rel="nofollow" target="_blank" title="Share on Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="http://pinterest.com/pin/create/link/?url={{page.url}}&description={{page.title}}" rel="nofollow" target="_blank" title="Share on Pinterest">
+            <i class="fab fa-pinterest-p"></i>
+            </a>
+        </nav>
+    
+    </div>
+    </div>
   </div> 
 
 </section>
