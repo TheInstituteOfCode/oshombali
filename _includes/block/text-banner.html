@@ -1,5 +1,15 @@
 <!-- text banner  -->
-<section class="flex items-center justify-center scheme-{{block.color-scheme}}">
+<section class="flex items-center justify-center scheme-{{block.color-scheme}}"
+style="
+{% if block.banner-img %}
+background-image: url({{block.banner-img}});
+{% endif %}
+{% if block.min-height %}
+min-height: {{block.min-height}};
+{% endif %}
+"
+>
+    
   <div class="max-width">
     {{block.block-content-html}}
   </div> 
