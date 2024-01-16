@@ -33,14 +33,15 @@ function gsapToggle(obj){
   if (obj.classList.contains('closed')) {
     gsap.to(obj,{
       height: '0',
+      duration: '.5',
       ease: 'none'
     })
     console.log('close')
   } else {
     gsap.to(obj,{
       height: 'auto',
+      duration: '.5',
       ease: 'none'
-
     })
     console.log('open')
   }

@@ -36,16 +36,20 @@ header:
   
 footer:
   - menu:
-      - text: Dinning
-        link-url: /acomidations 
-      - text: Dinning
-        link-url: /acomidations 
-      - text: Dinning
-        link-url: /acomidations
-      - text: Dinning
-        link-url: /acomidations
+      - text: Stay at Oshom
+        link-url: /stay 
+      - text: Rooms
+        link-url: /# 
+      - text: Wellness
+        link-url: /#
+      - text: Book Now
+        link-url: /#
   - menu:
-      - text: Dinning
-        link-url: /acomidations    
-      - text: Dinning
-        link-url: /acomidations
+      - text: Explore Nuanu
+        link-url: /#    
+      - text: About Us
+        link-url: /#
+      - text: Contact Us
+        link-url: /#
+      - text: Booking Terms
+        link-url: /#

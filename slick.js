@@ -1,4 +1,4 @@
-console.log('should have a slider')
+window.addEventListener('load', function () {
 
 $('.slider').slick({
   slidesToShow: 3,
@@ -6,3 +6,7 @@ $('.slider').slick({
   autoplay: true,
   autoplaySpeed: 2000,
 });
+
+console.log('should have a slider')
+
+})

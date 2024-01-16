@@ -15,12 +15,53 @@
         {% assign hasSlide = true %}
         <!-- {{hasSlide}} -->
     {% endif %}
+    {% if block._id == 'video-banner' %}
+
+    {% assign hasVideo-banner = true %}
+    <!-- {{hasSlide}} -->
+{% endif %}
 {% endfor %}
 
 {% if hasSlide == true %}
-<!-- slick -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.css" integrity="sha512-WIWddQW7bHfs1gwICYIoXuifLb8gCPkE7Z/gq7QHk3pKuxjNs0E68Rn5c7Ig4cWguZW5CIvRroTj2GrSxsvUZQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- slick -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.css" integrity="sha512-WIWddQW7bHfs1gwICYIoXuifLb8gCPkE7Z/gq7QHk3pKuxjNs0E68Rn5c7Ig4cWguZW5CIvRroTj2GrSxsvUZQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <style>
+        .slick-prev {
+            left: .5rem;
+        }
+
+        .slick-next{
+            right: .5rem;
+        }
+
+        .slick-next,.slick-prev{
+            z-index: 999;
+            height: 40px; 
+            width:40px;
+            bottom:-30px;
+            top: initial;
+            transform: translate(0);
+        }
+        
+        .slick-prev::before, .slick-next::before{
+            font-family: 'Times New Roman', Times, serif;
+            color: var(--text-color);
+            font-size: 40px;
+            /* background-color: #fff;
+            color: #000; */
+            /* padding: 10px;   */
+        }
+
+
+        [class*=gal-] > .item:nth-child(n + 4){
+            display: none;
+        }
+        [class*=gal-] img{
+            width: 34vw;
+        }
+    </style>
 {% endif %}
 
 <link rel="stylesheet" href="/editor.css">
@@ -98,10 +139,10 @@
 {{content}}
 <div class="scheme-2">
 <footer>
-    <div class="max-width p-8 grid grid-cols-3 md:grid-cols-5 gap-x-4 gap-y-8">
-        <div class="flex flex-col justify-between items-stretch">
+    <div class="max-width p-8 grid sm:grid-cols-3 md:grid-cols-5 gap-x-4 gap-y-8">
+        <div class="flex flex-col justify-between items-stretch mx-auto max-w-[300px]">
             <img src="/logo.png" class="mx-auto"> 
-            <div class="flex justify-between">
+            <div class="flex  justify-center gap-4 sm:justify-between">
                 <a href="/instagram.com">
                     <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
 
@@ -136,7 +177,7 @@
                 </a>
             </div>
         </div>
-        <div class="col-span-2 flex justify-center gap-12">
+        <div class="sm:col-span-2 flex justify-center gap-12">
             {% for menu in site.data.navigation.footer %}
                 <div class="menu">
                     {% for link in menu.menu %}
@@ -145,10 +186,10 @@
                 </div>
             {% endfor %}
         </div>
-        <div class="col-span-3 md:col-span-2">
+        <div class="sm:col-span-3 md:col-span-2 self-end">
             <h3>Sign up for our newsletter</h3>
             <form action="" class="flex"> 
-                <input type="email" class="bg-inherit border-0 border-b flex-1"><input type="button" value="subscribe" class="button">
+                <input type="email" class="bg-inherit border-0 border-b flex-1 placeholder:text-[var(--text-color)]" placeholder="Email"><input type="button" value="subscribe" class="button">
             </form>
         </div>
     </div>
@@ -163,9 +204,197 @@
     <!-- slick -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js" integrity="sha512-An4a3FEMyR5BbO9CRQQqgsBscxjM7uNNmccUSESNVtWn53EWx5B9oO7RVnPvPG6EcYcYPp0Gv3i/QQ4KUzB5WA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js" integrity="sha512-An4a3FEMyR5BbO9CRQQqgsBscxjM7uNNmccUSESNVtWn53EWx5B9oO7RVnPvPG6EcYcYPp0Gv3i/QQ4KUzB5WA==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
 
-    <script src="slick.js" defer></script>
+    <script src="slick.js" ></script>
         {% endif %}
+        
+        {% if hasVideo-banner == true %}
+
+        <link rel="stylesheet" type="text/css" media="screen" href="https://static.alaric.id/widget/css/jquery-ui-1.8.6.custom.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="https://static.alaric.id/widget/css/style.css" />
+        <style>
+        .book-wrapper {
+        width:100%;
+        margin: auto;
+        background-color: var(--bg-color);
+        box-shadow: none;
+        }
+        
+        
+        .booking label{
+          display: inline;
+        }
+        
+        .booking input {
+          background-color: var(--bg-color) !important;
+          border: 1px solid var(--text-color) !important;
+          display: inline;
+          max-width: calc(100% - 115px);
+        }
+        
+        .booking input[type=submit] {
+        background: var(--bg-color);
+        border: 1px solid var(--text-color) !important;
+        text-shadow: none;
+        max-width: 100%;
+        }
+        
+        .booking label{
+          color: var(--text-color);
+          text-shadow: none;
+          font-family: Suisse Intl;
+          font-size: 17px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          letter-spacing: 2.338px;
+          text-transform: uppercase;
+        }
+        </style>
+        
+        <script type="text/javascript" src="https://static.alaric.id/widget/js/jquery-1.8.3.min.js"></script>
+        <script type="text/javascript" src="https://static.alaric.id/widget/js/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="https://static.alaric.id/widget/js/jquery.validate.min.js"></script>
+        
+        
+        
+        <script language="javascript">
+            jQuery(document).ready(function(){
+                
+                
+                jQuery("#book_h").validate({
+                    rules: {
+                        "BookingForm[checkin]": "required",
+                        "BookingForm[checkout]": "required"
+                    },
+                    messages: {
+                        "BookingForm[checkin]": "Select checkin date",
+                        "BookingForm[checkout]": "Select checkout date"
+                    },
+                    errorPlacement: function (error, element) {
+                        element.attr("placeholder", error.text());
+                    },
+                    submitHandler: function(form) {
+                        form.submit();
+                    }
+                });
+                
+                
+                var endpoint = 'https://booking.oshombali.com/webapi/';
+                var dtprices = [];
+                var allotment = [];
+                var holidays = [];
+                var loadPrices = false;
+                
+                
+                jQuery("#checkin_h").focus(function(){
+                    pricedates();
+                });
+                
+                
+                
+                jQuery("#checkout_h").focus(function(){
+                    pricedates();
+                });
+                
+                jQuery("#checkin_h").datepicker({
+                    dateFormat: 'dd-mm-yy',
+                    numberOfMonths: 2,
+                    minDate: +0,
+                    beforeShow: pricedates,
+                    beforeShowDay: function(a){
+                        var m = a.getMonth() + 1; 
+                        var d = a.getDate(); 
+                        var y = a.getFullYear();
+                        m = m < 10 ? '0'+m : m;
+                        d = d < 10 ? '0'+d: d;
+                        var fy = y+'-'+m+'-'+d;
+                        return [true, '', fy];
+                    },
+                    onClose: function(dateText, inst) {
+                        if(dateText != ''){
+                            var date = jQuery.datepicker.parseDate('dd-mm-yy', dateText);
+                            date.setDate(date.getDate() + 1);
+                            var checkout = jQuery("#checkout_h");
+                            checkout.datepicker("option", "minDate", date);
+                            checkout.datepicker("setDate", date);
+                            jQuery("#checkin_h").val(dateText);
+                        }
+                    }
+                });
+                
+                
+                jQuery("#checkout_h").datepicker({
+                    dateFormat: 'dd-mm-yy',
+                    numberOfMonths: 2,
+                    minDate: +1,
+                    beforeShow: pricedates,
+                    beforeShowDay: function(a){
+                        var m = a.getMonth() + 1; 
+                        var d = a.getDate(); 
+                        var y = a.getFullYear();
+                        m = m < 10 ? '0'+m : m;
+                        d = d < 10 ? '0'+d: d;
+                        var fy = y+'-'+m+'-'+d;
+                        return [true, '', fy];
+                    },
+                });
+                
+                
+                function pricedates() { 
+                    var des = jQuery("#hotel").val();
+                    if (typeof dtprices[des] == 'undefined') {
+                        if(!loadPrices){
+                            loadPrices = true;
+                            jQuery.ajax({
+                                url: endpoint + 'dailyprices/index?id=' + des,
+                                type: 'GET',
+                                success: function (data) {
+                                    var j = jQuery.parseJSON(data);
+                                    dtprices[des] = j.prices;
+                                    allotment[des] = j.allotment;
+                                    holidays[des] = j.holidays;
+                                    sdp(des);
+                                }
+                            });
+                        }
+                    } else {
+                        sdp(des);
+                    }
+                }
+                
+                
+                function sdp(des) {
+                    jQuery(".ui-datepicker-calendar td a").each(function () {
+                        var fy = jQuery(this).parent().attr('title');
+                        if (dtprices[des][fy] != undefined) {
+                            jQuery(this).attr('data-custom', dtprices[des][fy]);
+                            jQuery(this).parent('td').addClass('');
+                
+                            if(allotment[des][fy] == 1){
+                                jQuery(this).parent().attr('data-allotment', allotment[des][fy])
+                            }
+                        }else{
+                            jQuery(this).parent('td').addClass('');
+                            jQuery(this).parent('td').addClass('noavail ui-datepicker-unselectable ui-state-disabled');
+                        }
+                        if(holidays[des] != undefined && holidays[des].indexOf(fy) !== -1){
+                            jQuery(this).addClass("public-holiday");
+                        }
+                    });
+                
+                    if(jQuery('#latest-av-room').length < 1){
+                      jQuery('#ui-datepicker-div').append('<div id="latest-av-room"><span></span> Latest available rooms</div>');
+                    }
+                }
+                
+            
+            });
+
+            document.querySelector('.embed-booking-section').style.height = '80px'
+        </script>
+
+{% endif %}
 </body>
 </html>

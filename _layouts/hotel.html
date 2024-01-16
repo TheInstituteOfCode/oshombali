@@ -57,7 +57,8 @@ layout: default
     </style>
 
 
-{% for room in page.rooms %}
+{% for room in site.rooms %}
+{% if room.hotel-id == page.hotel-id %}
 <div class="scheme-2">
     <!-- text banner  -->
     <section class="p-0">
@@ -83,7 +84,7 @@ layout: default
                 
                 <div class="">
                     <h2 class="larger-heading text-center">
-                        {{room.heading}}
+                        {{room.title}}
                     </h2>
                     {% for set in room.features-sets %}
                     <div class="flex justify-between items-center accordian-trigger border-t">
@@ -103,7 +104,7 @@ layout: default
                         </ul>
                     </div>
                     {% endfor %}
-                    <a href="{{room.button-url}}" class="button">book now</a>
+                    <a href="{{room.url}}" class="button">read more</a>
                 </div>
                 <div class="text-center hidden md:block">
                     {{room.description}}
@@ -114,6 +115,7 @@ layout: default
         
     </section>
 </div>
+{% endif %}
 {% endfor %}
 
 
