@@ -1,11 +1,11 @@
 <!-- text banner  -->
-<section class="flex items-center justify-center scheme-{{block.color-scheme}}"
+<section class="flex items-center justify-center scheme-{{block.color-scheme}} bg-center bg-cover"
 style="
 {% if block.banner-img %}
 background-image: url({{block.banner-img}});
 {% endif %}
-{% if block.min-height %}
-min-height: {{block.min-height}};
+{% if block.banner-height %}
+min-height: {{block.banner-height}};
 {% endif %}
 "
 >
