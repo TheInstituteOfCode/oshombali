@@ -1,5 +1,5 @@
 <!-- text banner  -->
-<section class="p-0">
+<section class="p-0 min-h-[80px]">
   <div class="max-width">
 
   <link rel="stylesheet" type="text/css" media="screen" href="https://static.alaric.id/widget/css/jquery-ui-1.8.6.custom.css" />
@@ -12,16 +12,23 @@ background-color: var(--bg-color);
 box-shadow: none;
 }
 
+
+.booking label{
+  display: inline;
+}
+
 .booking input {
   background-color: var(--bg-color) !important;
-  border: 0px solid !important;
-  border-bottom: 1px solid var(--bg-color) !important;
+  border: 1px solid var(--text-color) !important;
+  display: inline;
+  max-width: calc(100% - 115px);
 }
 
 .booking input[type=submit] {
 background: var(--bg-color);
-border: 1px solid var(--text-color);
+border: 1px solid var(--text-color) !important;
 text-shadow: none;
+max-width: 100%;
 }
 
 .booking label{
@@ -182,21 +189,21 @@ text-shadow: none;
     
     <form action="https://booking.oshombali.com/api/rates/" id="book_h" class="booking m0" method="post">
         <input type="hidden" name="BookingForm[hotel]" id="hotel" value="OSHB"/>
-        <div class="section group p0 m0">
-            <div class="col span_2_of_8 mtb0">
+        <div class="section group p0 m0 flex flex-col sm:flex-row justify-between gap-2 md:gap-6">
+            <div class="flex gap-1 md:gap-4 items-center justify-between">
             	<label>Checkin</label>
                 <input type="text" name="BookingForm[checkin]" id="checkin_h" class="cal" placeholder="Checkin" readonly/>
             </div>
-            <div class="col span_2_of_8 mtb0">
+            <div class="flex gap-1 md:gap-4 items-center justify-between">
                 <label>Checkout</label>
                 <input type="text" name="BookingForm[checkout]" id="checkout_h" class="cal" placeholder="Checkout" readonly/>
             </div>
-            <div class="col span_2_of_8 mtb0">
+            <!-- <div class="col span_2_of_8 mtb0">
             	<label>Promo code</label>
                 <input type="text" name="BookingForm[offer_code]" id="promocode" placeholder="Promo Code"/>
-            </div>
-            <div class="col span_2_of_8 mtb0">
-                <label>&nbsp;</label>
+            </div> -->
+            <div class="flex gap-1 md:gap-4 items-center">
+                <label class="!hidden md:inline-block">&nbsp;</label>
                 <input type="submit" class="m0" value="Book Now"/>
             </div>
         </div>
