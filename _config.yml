@@ -173,3 +173,4 @@ _structures:
         value:
           _id: booking_embed
           heading: Booking embed 
+          color-scheme: 2
