@@ -9,7 +9,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap" rel="stylesheet"> 
 
-
 {% for block in page.blocks %}
     {% if block._id == 'slider' %}
 
@@ -67,7 +66,7 @@
         </div>
       
         <div class="burger-anchor">
-            <div class="burger-menu flex justify-around">
+            <div class="burger-menu flex justify-around flex-col sm:flex-row">
                 {% for link in site.data.navigation.header %}
                     {% if link.sublinks.size >= 1 %}
                     <!-- has sublinks -->

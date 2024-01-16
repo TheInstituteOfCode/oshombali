@@ -57,12 +57,11 @@ layout: default
     </style>
 
 
-{% for room in page.rooms %}
 <div class="scheme-2">
     <!-- text banner  -->
     <section class="p-0">
         <divs class="gal-{{forloop.index}} grid grid-cols-3 bob">
-            {% for image in room.imgs %}
+            {% for image in page.imgs %}
             <div class="inline-block item">
                 <img src="{{image.img_path}}" alt="{{img_alt}}" class="w-[34vw]">
             </div>
@@ -83,9 +82,9 @@ layout: default
                 
                 <div class="">
                     <h2 class="larger-heading text-center">
-                        {{room.heading}}
+                        {{page.below-grid-heading}}
                     </h2>
-                    {% for set in room.features-sets %}
+                    {% for set in page.features-sets %}
                     <div class="flex justify-between items-center accordian-trigger border-t">
                         <span class="mt-2">{{set.heading}}</span> <span class="m-0 accordian-svg">
                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
@@ -106,7 +105,7 @@ layout: default
                     <a href="{{room.button-url}}" class="button">book now</a>
                 </div>
                 <div class="text-center hidden md:block">
-                    {{room.description}}
+                    {{page.description}}
                 </div>
                 
             </div> 
@@ -114,8 +113,6 @@ layout: default
         
     </section>
 </div>
-{% endfor %}
-
 
 
     <!-- slick -->

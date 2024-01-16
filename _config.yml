@@ -1,6 +1,12 @@
 collections:
   hotels:
     output: true
+    permalink: /:title
+  rooms:
+    output: true
+    permalink: /:title
+  experiences:
+    output: true
 _inputs:
   block-content-html:
     type: html
