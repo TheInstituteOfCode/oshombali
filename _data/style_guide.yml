@@ -7,8 +7,8 @@ schemes:
     text-color: '#FFF'
     colored-button-bg-color: "#fff"
     colored-button-text-color: "#000"
-  - bg-color: '#C39C77'
-    text-color: '#ECE5DD'
-    colored-button-bg-color: '#1D1D1B'
-    colored-button-text-color: '#ECE5DD'
+  - bg-color: '#fff'
+    text-color: '#000'
+    colored-button-bg-color: '#000'
+    colored-button-text-color: '#fff'
 max-width: 1280

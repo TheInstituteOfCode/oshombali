@@ -24,6 +24,25 @@ h2.larger-heading{
     text-transform: uppercase;
   }
 
+  h3.secondary-heading{
+    
+    font-family: Cormorant Infant;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+
+  p.uppercase-p{
+    font-family: Cormorant Infant;
+    font-size: 16.127px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.338px;
+    text-transform: uppercase;
+  }
 
   a.button{
     border: 1px solid var(--text-color);
@@ -45,3 +64,4 @@ h2.larger-heading{
   img.logo{
     max-width: 24rem;
   }
+
