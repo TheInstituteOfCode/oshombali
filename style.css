@@ -271,3 +271,11 @@ transition: transform .5s;
 .accordian-trigger.active .accordian-svg{
   transform: rotate(0deg);
 }
+
+/* form */
+
+.contact-form input,
+.contact-form textarea {
+  background-color: var(--bg-color);
+  display: block;
+}

@@ -630,6 +630,9 @@ video {
 .gap-4 {
   gap: 1rem;
 }
+.gap-6 {
+  gap: 1.5rem;
+}
 .gap-8 {
   gap: 2rem;
 }
@@ -997,6 +1000,14 @@ transition: transform .5s;
 
 .accordian-trigger.active .accordian-svg{
   transform: rotate(0deg);
+}
+
+/* form */
+
+.contact-form input,
+.contact-form textarea {
+  background-color: var(--bg-color);
+  display: block;
 }
 
 .placeholder\:text-\[var\(--text-color\)\]::-moz-placeholder {
