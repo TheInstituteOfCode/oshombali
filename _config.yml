@@ -213,6 +213,12 @@ _structures:
             - img: https://picsum.photos/id/1020/600/400
               img_alt: bear pic
               url:
+            - img: https://picsum.photos/id/1020/600/400
+              img_alt: bear pic
+              url:
+            - img: https://picsum.photos/id/1020/600/400
+              img_alt: bear pic
+              url:
           color-scheme: 1
       - label: Testimonials section
         value:
