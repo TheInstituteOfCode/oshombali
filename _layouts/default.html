@@ -16,13 +16,16 @@
         <!-- hasSlide -->
         <!-- {{hasSlide}} -->
     {% endif %}
-    {% if block._id == 'video-banner' %}
+    {% if block._id == 'booking_embed' %}
 
-    {% assign hasVideo-banner = true %}
+    {% assign hasBooking = true %}
     <!-- hasvideo -->
 
 {% endif %}
 {% endfor %}
+{% if page.layout == 'hotel' %}
+{% assign hasBooking = true %}
+{% endif %}
 
 {% if hasSlide == true %}
     <!-- slick -->
@@ -98,12 +101,12 @@
                 </div>
                 <a href="/">
                     <h2 class="flex-center mb-0">
-                        <img src="/logo.png" class="mx-auto"> 
+                        <img src="/logo.png" class="mx-auto w-1/2"> 
                     </h2>
                 </a>
 
                 <div class="text-right">
-                    <a href="" class="button-featured">book now</a>
+                    <a href="" class="button">book now</a>
                 </div>
             </div>
         </div>
@@ -210,8 +213,8 @@
 
     <script src="/slick.js" ></script>
         {% endif %}
-        
-        {% if hasVideo-banner == true %}
+        <!-- has booking is{{hasBooking}} -->
+        {% if hasBooking == true %}
 
         <link rel="stylesheet" type="text/css" media="screen" href="https://static.alaric.id/widget/css/jquery-ui-1.8.6.custom.css" />
         <link rel="stylesheet" type="text/css" media="screen" href="https://static.alaric.id/widget/css/style.css" />
@@ -393,10 +396,9 @@
                 
             
             });
-
+        
             document.querySelector('.embed-booking-section').style.height = '80px'
         </script>
-
-{% endif %}
+        {% endif %}
 </body>
 </html>

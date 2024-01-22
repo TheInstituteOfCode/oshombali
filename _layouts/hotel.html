@@ -11,6 +11,9 @@ layout: default
         </div>
 </section>
 
+
+{% include block/booking_embed.html %}
+
 <div class="scheme-2">
     <!-- text banner  -->
     <section class="flex items-center justify-center scheme-{{block.color-scheme}}">
@@ -20,7 +23,9 @@ layout: default
         
     </section>
 </div>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.css" integrity="sha512-WIWddQW7bHfs1gwICYIoXuifLb8gCPkE7Z/gq7QHk3pKuxjNs0E68Rn5c7Ig4cWguZW5CIvRroTj2GrSxsvUZQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- slick setup -->
+<div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.css" integrity="sha512-WIWddQW7bHfs1gwICYIoXuifLb8gCPkE7Z/gq7QHk3pKuxjNs0E68Rn5c7Ig4cWguZW5CIvRroTj2GrSxsvUZQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
@@ -56,6 +61,8 @@ layout: default
 
     </style>
 
+</div>
+
 
 {% for room in site.rooms %}
 {% if room.hotel-id == page.hotel-id %}
@@ -74,7 +81,7 @@ layout: default
         </div>
     </section>
 </div>
-<img src="/uploads/placeholder-1.jpg" alt="">
+<!-- <img src="/uploads/placeholder-1.jpg" alt=""> -->
 
 
 <div class="scheme-2">
@@ -84,7 +91,7 @@ layout: default
             <div class="grid md:grid-cols-2 gap-32">
                 
                 <div class="">
-                    <h2 class="larger-heading text-center">
+                    <h2 class="base-heading">
                         {{room.title}}
                     </h2>
                     {% for set in room.features-sets %}
@@ -105,7 +112,7 @@ layout: default
                         </ul>
                     </div>
                     {% endfor %}
-                    <a href="{{room.url}}" class="button">read more</a>
+                    <a href="https://booking.oshombali.com/" class="button">Book now</a>
                 </div>
                 <div class="text-center hidden md:block">
                     {{room.description}}

@@ -98,6 +98,15 @@ h3{
   }
 }
 
+[type=submit].button{
+  border: 1px solid var(--text-color);
+  text-transform: uppercase;
+  padding: 15px 20px;
+  letter-spacing: .15em;
+}
+[type=submit].button:hover{
+  color: var(--text-color);
+}
 
 /* footer */
 footer .menu{
@@ -107,7 +116,7 @@ footer .menu{
 }
 
 
-footer a{
+footer a, footer input{
   font-family: Suisse Intl;
   font-size: 16.127px;
   font-style: normal;

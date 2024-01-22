@@ -2,11 +2,13 @@
 
 <section>
       <div class="max-width">
-        <div class="heading-div" style="text-align: {{block.text_alignment}};">
-       
-          {{block.block-content-html}}
- 
-        </div>
+        {% if block.block-content-html != null %} 
+          <div class="mx-auto mb-6" style="text-align: {{block.text_alignment}};{% if block.content-max-width %}max-width: {{block.content-max-width}} {% endif %}">
+          
+            {{block.block-content-html}}
+
+          </div>
+        {% endif %}
         <div class="flex flex-col md:grid grid-cols-1 gap-4" style="grid-template-columns: repeat({{block.cols.size}}, minmax(0, 1fr));">
         {% for col in block.cols %}
           <div style="text-align: {{col.text_alignment}};">
@@ -21,7 +23,7 @@
                 {% endunless %}
             {% endif %}
 
-            <div class="mt-4">
+            <div class="mt-4 text-{{block.text_alignment}}">
               {{col.col-content-html}}
 
             </div>

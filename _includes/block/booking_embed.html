@@ -1,7 +1,9 @@
-<!-- text banner  -->
+{% unless block.id == 'booking_embed' %}
 
+<div class="scheme-2">
+    <!-- {{block._id}} -->
 <!-- booking embed is hidden un till its loaded fully -->
-
+{% endunless %}
 <section class="p-0 embed-booking-section" style="height: 0; overflow: hidden; transition: all .5s;">
   <div class="max-width">
 
@@ -19,10 +21,10 @@
                 <label>Checkout</label>
                 <input type="text" name="BookingForm[checkout]" id="checkout_h" class="cal" placeholder="Checkout" readonly/>
             </div>
-            <!-- <div class="col span_2_of_8 mtb0">
+            <div class="col span_2_of_8 mtb0 absolute -left-full">
             	<label>Promo code</label>
                 <input type="text" name="BookingForm[offer_code]" id="promocode" placeholder="Promo Code"/>
-            </div> -->
+            </div>
             <div class="flex gap-1 md:gap-4 items-center">
                 <label class="!hidden md:inline-block">&nbsp;</label>
                 <input type="submit" class="m0" value="Book Now"/>
@@ -34,3 +36,10 @@
 </div> 
 
 </section>
+
+
+{% unless block.id == 'booking_embed' %}
+</div>
+{% endunless %}
+
+{% assign hasBooking = true %}

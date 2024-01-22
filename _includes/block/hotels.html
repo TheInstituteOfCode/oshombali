@@ -1,14 +1,14 @@
 <!-- hotel for loop block  -->
-<section class="p-0">
+<section class="px-0">
   <!-- <div class="max-width"> -->
-    <div class="border-b-[var(--text-color)] border-b">
+    <div class="grid gap-y-[var(--vert-gap)]">
       {% for hotel in site.hotels_regions %}
-      <div class="border-t border-t-[var(--text-color)] items-start md:grid grid-cols-2 py-4">
+      <div class="items-start md:grid grid-cols-2">
         <div>
           <img src="{{hotel.featured_img_url}}" alt="{{hotel.featured_img_alt}}" class="w-full max-h-[60vh] object-cover object-center">
         </div>
         <div class="py-8 pl-8 mr-[--side-gap]">
-          <h2 class="larger-heading">
+          <h2 class="base-heading">
             {{hotel.title}}
           </h2>
           <p>
@@ -16,7 +16,7 @@
           </p>
           <hr class="border-[var(--text-color)]">
           <div class="flex justify-between items-center accordian-trigger">
-            <span class="mt-2">features</span> <span class="m-0 accordian-svg">
+            <h3 class="sub-heading py-4 mb-0">features</h3> <span class="m-0 accordian-svg">
                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
               <path d="M7.29289 15.7071C7.68342 16.0976 8.31658 16.0976 8.70711 15.7071L15.0711 9.34315C15.4616 8.95262 15.4616 8.31946 15.0711 7.92893C14.6805 7.53841 14.0474 7.53841 13.6569 7.92893L8 13.5858L2.34315 7.92893C1.95262 7.53841 1.31946 7.53841 0.928933 7.92893C0.538408 8.31946 0.538408 8.95262 0.928933 9.34315L7.29289 15.7071ZM7 4.37114e-08L7 15L9 15L9 -4.37114e-08L7 4.37114e-08Z" fill="var(--text-color)"/>
             </svg>
