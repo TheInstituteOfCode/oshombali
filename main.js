@@ -3,11 +3,24 @@ const burgerMenu = document.querySelector('.burger-menu')
 const header = document.querySelector('header')
 
 function toggleBurger() {
-  burgerButton.classList.toggle('active')
-  burgerMenu.classList.toggle('active')
+  // swaps color
   header.classList.toggle('scheme-1')
   header.classList.toggle('scheme-2')
-
+  // toggles burger icon
+  burgerButton.classList.toggle('active')
+//  opens and closes the burger menu
+  burgerMenu.classList.toggle('active')
+  if(burgerMenu.classList.contains('active')){
+    gsap.to(burgerMenu,{
+      top: `${burgerMenu.clientHeight}px`,
+      ease: 'none'
+    })
+  } else {
+      gsap.to(burgerMenu,{
+        top: `0px`,
+        ease: 'none'
+      })
+  }
 }
 
 burgerButton.addEventListener('click', toggleBurger)
