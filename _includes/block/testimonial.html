@@ -7,7 +7,7 @@
           {{block.block-content-html}}
  
         </div>
-        <div class="grid grid-cols-1 gap-4" style="grid-template-columns: repeat({{block.cols.size}}, minmax(0, 1fr));">
+        <div class="md:grid gap-4" style="grid-template-columns: repeat({{block.cols.size}}, minmax(0, 1fr));">
         {% for col in block.cols %}
           <div style="text-align: {{block.text_alignment}};">
             {% if col.img_path %}
@@ -21,7 +21,7 @@
                 {% endunless %}
             {% endif %}
             <div class="mt-4 ">
-              <div class="svg-parent-inline flex justify-around mb-4">
+              <div class="svg-parent-inline flex justify-center gap-4 mb-4">
 
               <svg xmlns="http://www.w3.org/2000/svg" width="14" height="13" viewBox="0 0 14 13" fill="none">
                 <g clip-path="url(#clip0_51_49)">
