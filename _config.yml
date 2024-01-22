@@ -42,12 +42,19 @@ _inputs:
         '2/4': Portraight 
         '4/3': Landscape
         'initial': Images Native
-  img-position:
+  desk-img-position:
     type: select
     options:
       values:
         - left
         - right
+  mobile-img-position:
+    type: select
+    options:
+      values:
+        - top
+        - bottom
+        - hide
   heading_style:
     type: select
     option:
@@ -116,7 +123,8 @@ _structures:
             img_path: /uploads/placeholder-1.jpg
             img_alt: text describing the image
             img_apsect: '1'
-          img-position: right
+          desk-img-position: right
+          mobile-img-position: top
           img_width_percentage: 60%
           color-scheme: 1
       - label: Basic col section

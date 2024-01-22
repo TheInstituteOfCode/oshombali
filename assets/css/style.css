@@ -479,6 +479,15 @@ video {
 .z-50 {
   z-index: 50;
 }
+.order-1 {
+  order: 1;
+}
+.order-2 {
+  order: 2;
+}
+.order-3 {
+  order: 3;
+}
 .m-0 {
   margin: 0px;
 }
@@ -800,7 +809,6 @@ body {
   max-width: var(--max-width);
   margin-right: auto;
   margin-left: auto;
-
 }
 
 
@@ -1086,6 +1094,9 @@ transition: transform .5s;
 }
 
 @media (min-width: 768px) {
+  .md\:order-2 {
+    order: 2;
+  }
   .md\:col-span-2 {
     grid-column: span 2 / span 2;
   }
