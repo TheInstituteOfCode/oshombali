@@ -764,13 +764,6 @@ video {
   --tw-grayscale: grayscale(100%);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
-.transition {
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
 
 /* Custom CSS */
 
@@ -1044,6 +1037,23 @@ transition: transform .5s;
   display: block;
 }
 
+/* embed */
+
+.embed-booking-section{
+  height: 0; overflow: hidden; transition: all .5s;
+}
+
+.embed-booking-section.active{
+  height: 195px;
+}
+
+@media (min-width: 640px) {
+  .embed-booking-section.active{
+    height: 80px
+  }
+
+}
+
 .placeholder\:text-\[var\(--text-color\)\]::-moz-placeholder {
   color: var(--text-color);
 }
@@ -1138,3 +1148,4 @@ transition: transform .5s;
     margin-bottom: 0px;
   }
 }
+

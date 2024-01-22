@@ -289,3 +289,21 @@ transition: transform .5s;
   background-color: var(--bg-color);
   display: block;
 }
+
+/* embed */
+
+.embed-booking-section{
+  height: 0; overflow: hidden; transition: all .5s;
+}
+
+.embed-booking-section.active{
+  height: 195px;
+}
+
+@media (min-width: 640px) {
+  .embed-booking-section.active{
+    height: 80px
+  }
+
+}
+
