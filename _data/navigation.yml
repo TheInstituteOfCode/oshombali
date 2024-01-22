@@ -2,10 +2,10 @@ header:
   - text: Accomodations
     link-url: /stay
     sublinks: 
-      - text: place 1
-        link-url: /hotel-1
-      - text: place 2
-        link-url: /#
+      - text: Suites
+        link-url: /suites
+      - text: Treehouse
+        link-url: /treehouse
       - text: place 3
         link-url: /#
       - text: place 4
