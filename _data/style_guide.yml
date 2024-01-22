@@ -1,14 +1,14 @@
 schemes:
   - bg-color: '#ECE5DD'
     text-color: '#1D1D1B'
-    colored-button-bg-color: '#1D1D1B'
-    colored-button-text-color: '#ECE5DD'
+    colored-button-bg-color: '#9CA592'
+    colored-button-text-color: '#000'
   - bg-color: '#9CA592'
     text-color: '#FFF'
-    colored-button-bg-color: "#fff"
+    colored-button-bg-color: "#ECE5DD"
     colored-button-text-color: "#000"
-  - bg-color: '#f7f7f7'
-    text-color: '#000'
-    colored-button-bg-color: '#000'
-    colored-button-text-color: '#fff'
+  - bg-color: '#9CA592'
+    text-color: '#fff'
+    colored-button-bg-color: "#ECE5DD"
+    colored-button-text-color: "#000"
 max-width: 1280

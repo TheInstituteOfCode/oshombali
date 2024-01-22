@@ -91,7 +91,7 @@
 
 </head>
 <body>
-    <header class="absolute w-full z-50 p-0 bg-transparent">
+    <header class="absolute w-full z-50 p-0 bg-transparent scheme-1">
         <div class="relative z-10">
             <div class="max-width p-8 grid grid-cols-3 items-center">
                 <div class="burger-button">
@@ -106,7 +106,7 @@
                 </a>
 
                 <div class="text-right">
-                    <a href="" class="button">book now</a>
+                    <a href="" class="button-featured">book now</a>
                 </div>
             </div>
         </div>
@@ -226,16 +226,16 @@
         box-shadow: none;
         }
         
-        
-        .booking label{
-          display: inline;
-        }
+    
         
         .booking input {
-          background-color: var(--bg-color) !important;
-          border: 1px solid var(--text-color) !important;
-          display: inline;
-          max-width: calc(100% - 115px);
+            background-color: var(--bg-color) !important;
+            border: 1px solid var(--text-color) !important;
+            display: inline;
+            max-width: calc(100% - 115px);
+            border: 0px solid !important;
+            border-bottom: 1px solid var(--text-color) !important;
+            outline: none;
         }
         
         .booking input[type=submit] {
@@ -246,15 +246,15 @@
         }
         
         .booking label{
-          color: var(--text-color);
-          text-shadow: none;
-          font-family: Suisse Intl;
-          font-size: 17px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: normal;
-          letter-spacing: 2.338px;
-          text-transform: uppercase;
+            color: var(--text-color);
+            text-shadow: none;
+            font-size: 16px;
+            font-family: 'Cormorant Infant';
+            font-style: normal;
+            font-weight: 400;
+            line-height: 94.1%; /* 45.168px */
+            text-transform: uppercase;
+            margin-bottom: 0;
         }
         </style>
         

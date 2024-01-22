@@ -507,6 +507,9 @@ video {
 .mb-6 {
   margin-bottom: 1.5rem;
 }
+.mb-8 {
+  margin-bottom: 2rem;
+}
 .mb-\[14rem\] {
   margin-bottom: 14rem;
 }
@@ -688,6 +691,9 @@ video {
 .overflow-scroll {
   overflow: scroll;
 }
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
 .border {
   border-width: 1px;
 }
@@ -769,6 +775,9 @@ video {
 .uppercase {
   text-transform: uppercase;
 }
+.outline {
+  outline-style: solid;
+}
 .grayscale {
   --tw-grayscale: grayscale(100%);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
@@ -839,10 +848,13 @@ p{
 h1, h2, h3, h4 {
   font-family: 'Cormorant Infant', serif;
   margin-bottom: 0.5em;
+  word-break: break-word;
+  color: var(--text-color);
 }
 
 h5,h6,p,span {
   margin-bottom: .5em;
+  color: var(--text-color);
 }
 
 h3{
@@ -899,6 +911,7 @@ header a{
   z-index: 9;
   padding: 8px;
   border: 0px;
+  top: 6px;
 }
 /*this is where you can chand the color of the buttons*/
 .burger-button span{

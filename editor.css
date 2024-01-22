@@ -50,6 +50,10 @@ h2.larger-heading{
     background-color: var(--colored-button-bg);
     color: var(--colored-button-text);
     text-transform: uppercase;
+    padding: 15px 20px;
+    letter-spacing: .15em;
+    text-align: center;
+    transition: border .5s, background-color .5s, color .5s;
   }
 
 

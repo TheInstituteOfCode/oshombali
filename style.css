@@ -73,10 +73,12 @@ h1, h2, h3, h4 {
   font-family: 'Cormorant Infant', serif;
   margin-bottom: 0.5em;
   word-break: break-word;
+  color: var(--text-color);
 }
 
 h5,h6,p,span {
   margin-bottom: .5em;
+  color: var(--text-color);
 }
 
 h3{
@@ -144,6 +146,7 @@ header a{
   z-index: 9;
   padding: 8px;
   border: 0px;
+  top: 6px;
 }
 /*this is where you can chand the color of the buttons*/
 .burger-button span{
