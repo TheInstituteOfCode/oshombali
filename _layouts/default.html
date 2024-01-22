@@ -93,7 +93,7 @@
 <body>
     <header class="absolute w-full z-50 p-0 bg-transparent scheme-1">
         <div class="relative z-10">
-            <div class="max-width p-8 grid grid-cols-3 items-center">
+            <div class="max-width p-8 grid grid-cols-2 sm:grid-cols-3 items-center">
                 <div class="burger-button">
                     <span class="burger-top"></span>
                     <span class="burger-middle"></span>
@@ -101,11 +101,11 @@
                 </div>
                 <a href="/">
                     <h2 class="flex-center mb-0">
-                        <img src="/logo.png" class="mx-auto w-1/2"> 
+                        <img src="/logo.png" class="mx-auto md:w-1/2"> 
                     </h2>
                 </a>
 
-                <div class="text-right">
+                <div class="text-right hidden sm:block">
                     <a href="" class="button-featured">book now</a>
                 </div>
             </div>
@@ -131,6 +131,9 @@
                     </span>
                     {% endif %}
                 {% endfor %}
+                <div class="sm:hidden mb-4">
+                    <a href="" class="button-featured">book now</a>
+                </div>
              </div>
         </div>
     </header>

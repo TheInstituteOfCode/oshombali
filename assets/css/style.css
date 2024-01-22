@@ -576,9 +576,6 @@ video {
 .min-h-screen {
   min-height: 100vh;
 }
-.w-1\/2 {
-  width: 50%;
-}
 .w-\[34vw\] {
   width: 34vw;
 }
@@ -857,6 +854,10 @@ h5,h6,p,span {
   color: var(--text-color);
 }
 
+:is(h1,h2,h3,h4,h5,h6,p):last-child{
+margin-bottom: 0;
+}
+
 h3{
   font-size: 25px;
 }
@@ -1070,6 +1071,25 @@ transition: transform .5s;
   height: 195px;
 }
 
+@media (max-width: 1000px) {
+
+  #ui-datepicker-div{
+    left: 0 !important;
+    right: 0 !important;
+    width: 100vw !important ;
+  }
+  
+  #ui-datepicker-div[style*=block]{
+    display: grid !important;
+  }
+
+  #ui-datepicker-div > * {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+}
+
 @media (min-width: 640px) {
   .embed-booking-section.active{
     height: 80px
@@ -1091,6 +1111,12 @@ transition: transform .5s;
   }
   .sm\:col-span-3 {
     grid-column: span 3 / span 3;
+  }
+  .sm\:block {
+    display: block;
+  }
+  .sm\:hidden {
+    display: none;
   }
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1133,6 +1159,9 @@ transition: transform .5s;
   }
   .md\:grid {
     display: grid;
+  }
+  .md\:w-1\/2 {
+    width: 50%;
   }
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));

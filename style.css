@@ -81,6 +81,10 @@ h5,h6,p,span {
   color: var(--text-color);
 }
 
+:is(h1,h2,h3,h4,h5,h6,p):last-child{
+margin-bottom: 0;
+}
+
 h3{
   font-size: 25px;
 }
@@ -303,6 +307,25 @@ transition: transform .5s;
 
 .embed-booking-section.active{
   height: 195px;
+}
+
+@media (max-width: 1000px) {
+
+  #ui-datepicker-div{
+    left: 0 !important;
+    right: 0 !important;
+    width: 100vw !important ;
+  }
+  
+  #ui-datepicker-div[style*=block]{
+    display: grid !important;
+  }
+
+  #ui-datepicker-div > * {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
 }
 
 @media (min-width: 640px) {
