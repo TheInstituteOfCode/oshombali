@@ -1,7 +1,7 @@
 header:
   - text: Accomodations
     link-url: /stay
-    sublinks: 
+    sublinks:
       - text: Suites
         link-url: /suites
       - text: Treehouse
@@ -12,37 +12,36 @@ header:
         link-url: /#
   - text: Dinning
     link-url: /experiences/dinning
-    sublinks: 
+    sublinks:
   - text: Celebrations
     link-url: /experiences
-    sublinks: 
+    sublinks:
       - text: experience 1
         link-url: /experiences
       - text: experience 2
         link-url: /#
   - text: Retreat
-    link-url: /#
-    sublinks: 
+    link-url: /contact.html
+    sublinks:
   - text: Celebrations
     link-url: /experiences
-    sublinks:     
+    sublinks:
   - text: Celebrations
     link-url: /experiences
-    sublinks: 
-  
+    sublinks:
 footer:
   - menu:
       - text: Stay at Oshom
-        link-url: /stay 
+        link-url: /stay
       - text: Rooms
-        link-url: /# 
+        link-url: /#
       - text: Wellness
         link-url: /#
       - text: Book Now
         link-url: /#
   - menu:
       - text: Explore Nuanu
-        link-url: /#    
+        link-url: /#
       - text: About Us
         link-url: /#
       - text: Contact Us
