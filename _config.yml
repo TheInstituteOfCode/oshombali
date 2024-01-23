@@ -158,7 +158,7 @@ _structures:
           color-scheme: 1
       - label: linked col section
         value:
-            _id: col-section-with-button
+            _id: col-section-with-buttons
             block-content-html: >-
                 <h2 class="larger-heading">  Basic col section </h2> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
                   perferendis quas quibusdam, voluptatibus pariatur totam vitae soluta
