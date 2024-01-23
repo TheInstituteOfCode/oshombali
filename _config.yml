@@ -165,7 +165,7 @@ _structures:
                   perferendis quas quibusdam, voluptatibus pariatur totam vitae soluta
                   eum amet, deleniti error quidem voluptatum vel aliquam. Voluptatem
                   reiciendis doloribus quis iste?
-            cols:
+            linked_cols:
               - col-content-html: >-
                     <h2> Coloumn content </h2> <p>for all the details about the col</p>
                 img_path: /uploads/placeholder-1.jpg
