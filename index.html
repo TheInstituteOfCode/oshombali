@@ -13,33 +13,23 @@ blocks:
   - _id: booking_embed
     heading: Booking embed
     color-scheme: 2
-  - _id: col-section-basic
-    block-content-html: >-
-      <h3 class="sub-heading">Welcome to Oshom</h3><h2
-      class="larger-heading">embark on a trasformative odyssey</h2><p
-      class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing
-      elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-      aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-      voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-      sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-      mollit anim id est laborum.</p>
-    content-max-width: 44rem
-    cols:
-      - col-content-html: >-
-          <h2 class="larger-heading">Suite</h2><p>Lorem ipsum dolor</p><p><a
-          class="button" href="#">discover more</a></p>
+  - _id: col-section-with-button
+    block-content-html: "<h3 class=\"sub-heading\">WELCOME TO OSHOM</h3><h2 class=\"larger-heading\">EMBARK ON A TRASFORMATIVE ODYSSEY</h2><h2 class=\"larger-heading\">\_</h2>"
+    linked_cols:
+      - col-content-html: <h2>Coloumn content</h2><p>for all the details about the col</p>
         img_path: /uploads/placeholder-1.jpg
-        img_alt: bear pic
+        img_alt: barthroom pic
         text-alignment: left
-      - col-content-html: >-
-          <h2 class="larger-heading">Suite</h2><p>Lorem ipsum dolor</p><p><a
-          class="button" href="#">discover more</a></p>
+        button-url: '#'
+        button-text: discover more
+      - col-content-html: <h2>Coloumn content</h2><p>for all the details about the col</p>
         img_path: /uploads/placeholder-1.jpg
-        img_alt: bear pic
+        img_alt: barthroom pic
         text-alignment: left
+        button-url: '#'
+        button-text: discover more
     img_apsect: '1'
-    image_default_ratio: true
+    image_default_ratio: false
     text_alignment: center
     color-scheme: 1
   - _id: horizontal-screen-gallery
