@@ -105,7 +105,6 @@ _structures:
             <h2> Coloumn content </h2> <p>for all the details about the col</p>
           img_path: /uploads/placeholder-1.jpg
           img_alt: bear pic
-          text-alignment: left
           button-url: #
           button-text: Discover more
   imgs:
@@ -170,12 +169,10 @@ _structures:
                     <h2> Coloumn content </h2> <p>for all the details about the col</p>
                 img_path: /uploads/placeholder-1.jpg
                 img_alt: bear pic
-                text-alignment: left
                 button-url: '#'
                 button-text: discover
             img_apsect: '1'
             image_default_ratio: false
-            text_alignment: center
             color-scheme: 1
       - label: Horizontal screen gallery
         value:
