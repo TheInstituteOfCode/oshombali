@@ -1,6 +1,8 @@
 const burgerButton = document.querySelector('.burger-button');
 const burgerMenu = document.querySelector('.burger-menu')
 const header = document.querySelector('header')
+const headerImgs = header.querySelectorAll('.logo')
+
 
 function toggleBurger() {
   // swaps color
@@ -21,10 +23,26 @@ function toggleBurger() {
         ease: 'none'
       })
   }
+
+  headerImgs.forEach(img => {
+    img.classList.toggle('hidden')
+  })
+
 }
 
 burgerButton.addEventListener('click', toggleBurger)
 
+
+// menu drop down height sets
+
+const burgerMenuParentLinks = burgerMenu.querySelectorAll('.drop-parent')
+
+burgerMenuParentLinks.forEach( link => {
+  let childLink = link.querySelector('.drop-child')
+  console.log(childLink)
+  console.log(childLink.offsetHeight)
+  link.style.setProperty("--child-height", `${childLink.offsetHeight}px`);
+})
 
 // accordian code
 

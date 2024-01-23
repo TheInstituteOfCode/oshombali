@@ -20,10 +20,6 @@ header:
         link-url: /experiences
       - text: experience 2
         link-url: /#
-      - text: experience 3
-        link-url: /#
-      - text: experience 4
-        link-url: /#
   - text: Retreat
     link-url: /#
     sublinks: 
