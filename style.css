@@ -23,6 +23,7 @@ html {
   scroll-behavior: smooth; /* this enables smooth scrolling between internal links */
   overflow-x: hidden;
   width: 100vw;
+  
 }
 
 * {
@@ -127,7 +128,8 @@ footer .menu{
 
 
 footer a, footer input{
-  font-family: Suisse Intl;
+
+  font-family: 'Questrial', sans-serif;
   font-size: 16.127px;
   font-style: normal;
   font-weight: 400;

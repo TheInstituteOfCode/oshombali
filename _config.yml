@@ -98,6 +98,16 @@ _structures:
           img_path: /uploads/placeholder-1.jpg
           img_alt: bear pic
           text-alignment: left
+  linked-cols:
+    values:
+      - value:
+          col-content-html: >-
+            <h2> Coloumn content </h2> <p>for all the details about the col</p>
+          img_path: /uploads/placeholder-1.jpg
+          img_alt: bear pic
+          text-alignment: left
+          button-url: #
+          button-text: Discover more
   imgs:
     values:
     - value:
@@ -147,6 +157,26 @@ _structures:
           image_default_ratio: false
           text_alignment: center
           color-scheme: 1
+      - label: linked col section
+          value:
+            _id: col-section-basic
+            block-content-html: >-
+                <h2 class="larger-heading">  Basic col section </h2> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+                  perferendis quas quibusdam, voluptatibus pariatur totam vitae soluta
+                  eum amet, deleniti error quidem voluptatum vel aliquam. Voluptatem
+                  reiciendis doloribus quis iste?
+            cols:
+              - col-content-html: >-
+                    <h2> Coloumn content </h2> <p>for all the details about the col</p>
+                img_path: /uploads/placeholder-1.jpg
+                img_alt: bear pic
+                text-alignment: left
+                button-url: '#'
+                button-text: discover
+            img_apsect: '1'
+            image_default_ratio: false
+            text_alignment: center
+            color-scheme: 1
       - label: Horizontal screen gallery
         value:
           _id: horizontal-screen-gallery
