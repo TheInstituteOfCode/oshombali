@@ -1187,6 +1187,9 @@ transition: transform .5s;
   .md\:gap-6 {
     gap: 1.5rem;
   }
+  .md\:text-right {
+    text-align: right;
+  }
 }
 
 @media (min-width: 1024px) {
