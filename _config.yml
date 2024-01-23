@@ -39,8 +39,10 @@ _inputs:
     options:
       values:
         '1': Square 
-        '2/4': Portraight 
-        '4/3': Landscape
+        '9/16': tall Portraight 
+        '4/5': Portraight 
+        '5/4': Landscape
+        '16/9': wide Landscape
         'initial': Images Native
   desk-img-position:
     type: select
