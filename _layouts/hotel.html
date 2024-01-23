@@ -18,7 +18,9 @@ layout: default
     <!-- text banner  -->
     <section class="flex items-center justify-center scheme-{{block.color-scheme}}">
         <div class="max-width">
-            {{page.description}}
+            <p>
+                {{page.description}}
+            </p>
         </div> 
         
     </section>
@@ -69,7 +71,7 @@ layout: default
 <div class="scheme-2">
     <!-- text banner  -->
     <section class="p-0">
-        <divs class="gal-{{forloop.index}} grid grid-cols-3">
+        <divs class="gal-{{forloop.index}} grid grid-cols-3     ">
             {% for image in room.imgs %}
             <div class="inline-block item">
                 <img src="{{image.img_path}}" alt="{{img_alt}}" class="w-[34vw]">
