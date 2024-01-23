@@ -69,7 +69,7 @@ layout: default
 <div class="scheme-2">
     <!-- text banner  -->
     <section class="p-0">
-        <divs class="gal-{{forloop.index}} grid grid-cols-3 bob">
+        <divs class="gal-{{forloop.index}} grid grid-cols-3">
             {% for image in room.imgs %}
             <div class="inline-block item">
                 <img src="{{image.img_path}}" alt="{{img_alt}}" class="w-[34vw]">
@@ -138,7 +138,8 @@ window.addEventListener('load', function () {
 //   console.log("It's loaded!")
 
 console.log('should have a slider');
-{% for room in page.rooms %}
+{% for room in site.rooms %}
+{% if room.hotel-id == page.hotel-id %}
 // debugger
 $('.gal-{{forloop.index}}').slick({
   slidesToShow: 3,
@@ -146,7 +147,7 @@ $('.gal-{{forloop.index}}').slick({
   autoplay: false,
 //   autoplaySpeed: 2000,
 });
-
+{% endif %}
 {% endfor %}
 
 
