@@ -540,6 +540,9 @@ video {
 .mt-8 {
   margin-top: 2rem;
 }
+.mb-12 {
+  margin-bottom: 3rem;
+}
 .block {
   display: block;
 }
@@ -1187,6 +1190,9 @@ transition: transform .5s;
   }
   .lg\:block {
     display: block;
+  }
+  .lg\:hidden {
+    display: none;
   }
   .lg\:w-\[min\(50\%\2c _600px\)\] {
     width: min(50%, 600px);
