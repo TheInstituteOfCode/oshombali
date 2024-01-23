@@ -1196,6 +1196,9 @@ transition: transform .5s;
   .xl\:mb-16 {
     margin-bottom: 4rem;
   }
+  .xl\:hidden {
+    display: none;
+  }
 }
 
 @media (min-width: 1536px) {
