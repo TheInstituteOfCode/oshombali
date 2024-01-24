@@ -81,18 +81,18 @@ p{
 
 h1, h2, h3, h4 {
   font-family: 'Cormorant Infant', serif;
-  margin-bottom: 0.5em;
+  margin-bottom: 2rem;
   word-break: break-word;
   color: var(--text-color);
 }
 
 h5,h6,p,span {
-  margin-bottom: .5em;
+  margin-bottom: 30px;
   color: var(--text-color);
   line-height: 145%;
 }
 
-:is(h1,h2,h3,h4,h5,h6,p):last-child{
+p:last-child{
 margin-bottom: 0;
 }
 
@@ -118,12 +118,14 @@ h3{
 }
 
 [type=submit].button{
-  border: 1px solid var(--text-color);
+  font-family: 'Questrial', sans-serif;
   text-transform: uppercase;
-  padding: 15px 20px;
   letter-spacing: .15em;
   text-align: center;
+  border: 1px solid var(--text-color);
+  padding: 15px 20px;
 }
+
 [type=submit].button:hover{
   color: var(--text-color);
 }
@@ -318,7 +320,7 @@ transition: transform .5s;
 }
 
 .embed-booking-section.active{
-  height: 195px;
+  height: 224px;
 }
 
 @media (max-width: 1000px) {
@@ -347,3 +349,10 @@ transition: transform .5s;
 
 }
 
+/* floating whats app button */
+
+.whatsappParent{
+  box-shadow: -5px 3px 24px 1px rgba(0,0,0,0.29);
+-webkit-box-shadow: -5px 3px 24px 1px rgba(0,0,0,0.29);
+-moz-box-shadow: -5px 3px 24px 1px rgba(0,0,0,0.29);
+}

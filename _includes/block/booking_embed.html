@@ -12,14 +12,14 @@
 <div class="book-wrapper">
     <form action="https://booking.oshombali.com/api/rates/" id="book_h" class="booking m0" method="post">
         <input type="hidden" name="BookingForm[hotel]" id="hotel" value="OSHB"/>
-        <div class="section group p0 m0 flex flex-col sm:flex-row justify-between gap-2 md:gap-6">
-            <div class="flex gap-1 md:gap-4 items-center justify-between">
+        <div class="section group p0 m0 flex flex-col  md:grid md:grid-cols-3 justify-between gap-10 md:gap-8">
+            <div class="flex gap-1 md:gap-2 items-center justify-between">
             	<label>Checkin</label>
-                <input type="text" name="BookingForm[checkin]" id="checkin_h" class="cal placeholder:text-[var(--text-color)]" placeholder="Select Date" readonly/>
+                <input type="text" name="BookingForm[checkin]" id="checkin_h" class="cal placeholder:text-[var(--text-color)] placeholder:text-center !mx-full shrink grow basis-full" placeholder="Select Date" readonly/>
             </div>
-            <div class="flex gap-1 md:gap-4 items-center justify-between">
+            <div class="flex gap-1 md:gap-2 items-center justify-between">
                 <label>Checkout</label>
-                <input type="text" name="BookingForm[checkout]" id="checkout_h" class="cal placeholder:text-[var(--text-color)]" placeholder="Select Date" readonly/>
+                <input type="text" name="BookingForm[checkout]" id="checkout_h" class="cal placeholder:text-[var(--text-color)] placeholder:text-center !mx-full shrink grow basis-full" placeholder="Select Date" readonly/>
             </div>
             <div class="col span_2_of_8 mtb0 absolute -left-full">
             	<label>Promo code</label>
