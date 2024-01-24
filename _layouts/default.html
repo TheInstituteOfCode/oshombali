@@ -112,7 +112,7 @@
         </div>
       
         <div class="burger-anchor">
-            <div class="burger-menu flex justify-around flex-col sm:flex-row">
+            <div class="burger-menu flex justify-around flex-col sm:flex-row" style="top: 0;">
                 {% for link in site.data.navigation.header %}
                     {% if link.sublinks.size >= 1 %}
                     <!-- has sublinks -->
@@ -147,10 +147,10 @@
 {{content}}
 <div class="scheme-2">
 <footer>
-    <div class="max-width p-8 grid sm:grid-cols-3 md:grid-cols-5 gap-x-4 gap-y-8">
+    <div class="max-width p-8 grid sm:grid-cols-3 md:grid-cols-5 gap-x-4 gap-y-16">
         <div class="flex flex-col justify-between items-stretch mx-auto max-w-[300px]">
-            <img src="/logo.png" class="mx-auto"> 
-            <div class="flex  justify-center gap-4 sm:justify-between">
+            <img src="/logo.png" class="mx-auto footer-logo"> 
+            <div class="flex justify-center gap-[50px] sm:justify-between mt-12 md:mb-0 ">
                 <a href="/instagram.com">
                     <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
 
@@ -196,7 +196,7 @@
         </div>
         <div class="sm:col-span-3 md:col-span-2 self-end">
             <h3>Sign up for our newsletter</h3>
-            <form action="" class="flex"> 
+            <form action="" class="flex flex-col md:flex-row gap-y-4"> 
                 <input type="email" class="bg-inherit border-0 border-b flex-1 placeholder:text-[var(--text-color)] placeholder:uppercase" placeholder="Email"><input type="submit" value="subscribe" class="button">
             </form>
         </div>

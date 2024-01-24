@@ -3,9 +3,9 @@
   <!-- <div class="max-width"> -->
     <div class="grid gap-y-[var(--vert-gap)]">
       {% for hotel in site.hotels_regions %}
-      <div class="items-start md:grid grid-cols-2">
-        <div>
-          <img src="{{hotel.featured_img_url}}" alt="{{hotel.featured_img_alt}}" class="w-full max-h-[60vh] object-cover object-center">
+      <div class="items-start md:grid grid-cols-2 {% unless forloop.first %} border-t border-[var(--text-color)] pt-[var(--vert-gap)] {% endunless %}">
+        <div class="relative" style="aspect-ratio: 1 ;">
+          <img src="{{hotel.featured_img_url}}" alt="{{hotel.featured_img_alt}}" class="absolute inset-0 w-full h-full object-cover object-center">
         </div>
         <div class="py-8 pl-8 mr-[--side-gap]">
           <h2 class="base-heading">
