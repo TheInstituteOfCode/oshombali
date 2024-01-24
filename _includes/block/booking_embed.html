@@ -9,10 +9,10 @@
 
 
 
-<div class="book-wrapper">
+<div class="book-wrapper !py-[40px] md:!py-[20px]">
     <form action="https://booking.oshombali.com/api/rates/" id="book_h" class="booking m0" method="post">
         <input type="hidden" name="BookingForm[hotel]" id="hotel" value="OSHB"/>
-        <div class="section group p0 m0 flex flex-col  md:grid md:grid-cols-3 justify-between gap-10 md:gap-8">
+        <div class="section group p0 m0 flex flex-col md:grid md:grid-cols-3 justify-between gap-10 md:gap-8" style="grid-template-columns: 1fr 1fr 160px;">
             <div class="flex gap-1 md:gap-2 items-center justify-between">
             	<label>Checkin</label>
                 <input type="text" name="BookingForm[checkin]" id="checkin_h" class="cal placeholder:text-[var(--text-color)] placeholder:text-center !mx-full shrink grow basis-full" placeholder="Select Date" readonly/>
@@ -25,7 +25,7 @@
             	<label>Promo code</label>
                 <input type="text" name="BookingForm[offer_code]" id="promocode" placeholder="Promo Code"/>
             </div>
-            <div class="flex gap-1 md:gap-4 items-center">
+            <div class="gap-1 md:gap-4 items-center">
                 <label class="!hidden md:inline-block">&nbsp;</label>
                 <input type="submit" class="m0" value="Book Now"/>
             </div>

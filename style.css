@@ -81,13 +81,13 @@ p{
 
 h1, h2, h3, h4 {
   font-family: 'Cormorant Infant', serif;
-  margin-bottom: 2rem;
+  margin-bottom:20px;
   word-break: break-word;
   color: var(--text-color);
 }
 
 h5,h6,p,span {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   color: var(--text-color);
   line-height: 145%;
 }
@@ -176,8 +176,8 @@ header a{
 /*this is where you can chand the color of the buttons*/
 .burger-button span{
   width: 40px;
-  border: 1px solid var(--text-color);
-  background-color: var(--text-color);
+  border: 1px solid var(--colored-button-bg);
+  background-color: var(--colored-button-bg);
   display: block;
   border-radius: 5px;
   transition: .5s;
@@ -327,8 +327,9 @@ transition: transform .5s;
 }
 
 .embed-booking-section.active{
-  height: 240px;
+  height: var(--embed-height);
 }
+
 
 @media (max-width: 1000px) {
 
@@ -349,12 +350,7 @@ transition: transform .5s;
   
 }
 
-@media (min-width: 640px) {
-  .embed-booking-section.active{
-    height: 80px
-  }
 
-}
 
 /* floating whats app button */
 
