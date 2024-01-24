@@ -69,7 +69,7 @@ h2.larger-heading{
   .text-right {text-align: right;}
 
   img.logo{
-    max-width: 24rem;
+    max-width:min(24rem, 100%);
   }
 
 @media (max-width: 640px) {

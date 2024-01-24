@@ -880,7 +880,7 @@ section,footer{
 
 
 img {
-  max-width:100%;
+  max-width: 100%;
 }
 a {
   display: inline-block;
@@ -968,6 +968,7 @@ header a{
   padding: 8px;
   border: 0px;
   top: 6px;
+  background-color: transparent;
 }
 /*this is where you can chand the color of the buttons*/
 .burger-button span{
