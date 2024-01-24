@@ -8,7 +8,7 @@
             <div class="flex md:col-span-2 gap-4 basis-2/3 flex-none overflow-scroll hide-scrollbars">
                 {% for img in block.imgs %}
                 
-                    <img src="{{img.img_path}}" alt="{{img.img_alt}}"  class="object-cover block object-center h-full max-h-[70vh] max-w-[initial] {% if forloop.first %} ml-[var(--side-gap)] md:ml-0 {% endif %} {% if forloop.last %} mr-[var(--side-gap)] md:mr-0 {% endif %}" {% unless block.image_default_ratio %} style="aspect-ratio:{{block.img_apsect}};" {% endunless %}>
+                    <img src="{{img.img_path}}" alt="{{img.img_alt}}"  class="object-cover block object-center h-full max-h-[45vh] md:max-h-[70vh] max-w-[initial] {% if forloop.first %} ml-[var(--side-gap)] md:ml-0 {% endif %} {% if forloop.last %} mr-[var(--side-gap)] md:mr-0 {% endif %}" {% unless block.image_default_ratio %} style="aspect-ratio:{{block.img_apsect}};" {% endunless %}>
                 {% endfor %}
             </div>
         </div>
