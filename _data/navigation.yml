@@ -10,8 +10,8 @@ header:
         link-url: /#
       - text: place 4
         link-url: /#
-  - text: Dinning
-    link-url: /experiences/dinning
+  - text: Dining
+    link-url: /experiences/dining
     sublinks:
   - text: Celebrations
     link-url: /experiences
