@@ -1,5 +1,5 @@
 <!-- hotel for loop block  -->
-<section class="px-0">
+<section class=" pt-0 md:pt-[var(--vert-gap)] px-0">
   <!-- <div class="max-width"> -->
     <div class="grid gap-y-[var(--vert-gap)]">
       {% for hotel in site.hotels_regions %}
@@ -7,7 +7,7 @@
         <div class="relative" style="aspect-ratio: 1 ;">
           <img src="{{hotel.featured_img_url}}" alt="{{hotel.featured_img_alt}}" class="absolute inset-0 w-full h-full object-cover object-center">
         </div>
-        <div class="py-8 mr-[--side-gap]">
+        <div class="py-8 ml-[--side-gap] md:ml-0 mr-[--side-gap]">
           <h2 class="base-heading">
             {{hotel.title}}
           </h2>
@@ -31,7 +31,7 @@
               {% endfor %}
             </ul>
           </div>
-          <hr class="border-[var(--text-color)] mb-4">
+          <hr class="border-[var(--text-color)] mb-[30px]">
 
           <a href="{{hotel.url}}" class="button">
             EXPLORE MORE

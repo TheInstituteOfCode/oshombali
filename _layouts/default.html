@@ -225,13 +225,15 @@
     <script src="/main.js"></script>
 
 
-    {% if hasSlide == true %}
+    {{page.layout}}
+
+    {% if hasSlide == true or page.layout == 'hotel' %}
     <!-- slick -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js" integrity="sha512-An4a3FEMyR5BbO9CRQQqgsBscxjM7uNNmccUSESNVtWn53EWx5B9oO7RVnPvPG6EcYcYPp0Gv3i/QQ4KUzB5WA==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
 
-    <script src="/slick.js" ></script>
+    <script src="/slick.js" defer></script>
 
 
 

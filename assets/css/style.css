@@ -519,11 +519,14 @@ video {
 .mb-6 {
   margin-bottom: 1.5rem;
 }
-.mb-8 {
-  margin-bottom: 2rem;
-}
 .mb-\[14rem\] {
   margin-bottom: 14rem;
+}
+.mb-\[30px\] {
+  margin-bottom: 30px;
+}
+.ml-\[--side-gap\] {
+  margin-left: var(--side-gap);
 }
 .ml-\[var\(--side-gap\)\] {
   margin-left: var(--side-gap);
@@ -557,6 +560,9 @@ video {
 }
 .mt-\[30px\] {
   margin-top: 30px;
+}
+.mb-\[5px\] {
+  margin-bottom: 5px;
 }
 .block {
   display: block;
@@ -678,14 +684,14 @@ video {
 .justify-around {
   justify-content: space-around;
 }
-.gap-1 {
-  gap: 0.25rem;
-}
 .gap-10 {
   gap: 2.5rem;
 }
 .gap-12 {
   gap: 3rem;
+}
+.gap-2 {
+  gap: 0.5rem;
 }
 .gap-32 {
   gap: 8rem;
@@ -721,6 +727,12 @@ video {
 }
 .gap-y-4 {
   row-gap: 1rem;
+}
+.gap-y-\[10px\] {
+  row-gap: 10px;
+}
+.gap-y-\[30px\] {
+  row-gap: 30px;
 }
 .gap-y-\[var\(--vert-gap\)\] {
   row-gap: var(--vert-gap);
@@ -818,20 +830,17 @@ video {
 .pb-12 {
   padding-bottom: 3rem;
 }
+.pb-\[var\(--vert-gap\)\] {
+  padding-bottom: var(--vert-gap);
+}
 .pl-2 {
   padding-left: 0.5rem;
 }
-.pl-8 {
-  padding-left: 2rem;
+.pt-0 {
+  padding-top: 0px;
 }
 .pt-5 {
   padding-top: 1.25rem;
-}
-.pt-\[var\(--vert-gap\)\] {
-  padding-top: var(--vert-gap);
-}
-.pb-\[var\(--vert-gap\)\] {
-  padding-bottom: var(--vert-gap);
 }
 .text-left {
   text-align: left;
@@ -952,7 +961,7 @@ h3{
   background-color: #ECE5DD;
 }
 
-[type=submit].button{
+[type=submit].button, span.button{
   font-family: 'Questrial', sans-serif;
   text-transform: uppercase;
   letter-spacing: .15em;
@@ -961,7 +970,7 @@ h3{
   padding: 15px 20px;
 }
 
-[type=submit].button:hover{
+[type=submit].button:hover, span.button:hover{
   color: var(--text-color);
 }
 
@@ -1241,6 +1250,9 @@ transition: transform .5s;
   .sm\:hidden {
     display: none;
   }
+  .sm\:grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1301,18 +1313,15 @@ transition: transform .5s;
   .md\:flex-row {
     flex-direction: row;
   }
-  .md\:gap-2 {
-    gap: 0.5rem;
-  }
-  .md\:gap-4 {
-    gap: 1rem;
-  }
   .md\:gap-8 {
     gap: 2rem;
   }
   .md\:\!py-\[20px\] {
     padding-top: 20px !important;
     padding-bottom: 20px !important;
+  }
+  .md\:pt-\[var\(--vert-gap\)\] {
+    padding-top: var(--vert-gap);
   }
   .md\:text-left {
     text-align: left;

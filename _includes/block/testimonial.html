@@ -7,7 +7,7 @@
           {{block.block-content-html}}
  
         </div>
-        <div class="md:grid gap-8 gap-y-12" style="grid-template-columns: repeat({{block.cols.size}}, minmax(0, 1fr));">
+        <div class="flex flex-col md:grid gap-8 gap-y-[10px]" style="grid-template-columns: repeat({{block.cols.size}}, minmax(0, 1fr));">
         {% for col in block.cols %}
           <div style="text-align: {{block.text_alignment}};">
             {% if col.img_path %}

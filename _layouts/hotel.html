@@ -18,7 +18,7 @@ layout: default
     <!-- text banner  -->
     <section class="flex items-center justify-center scheme-{{block.color-scheme}}">
         <div class="max-width">
-            <p>
+            <p class="text-center">
                 {{page.description}}
             </p>
         </div> 
@@ -57,10 +57,23 @@ layout: default
         [class*=gal-] > .item:nth-child(n + 4){
             display: none;
         }
-        [class*=gal-] img{
-            width: 34vw;
-        }
 
+        [class*=gal-] img{
+            width: 100vw;
+            height: 100vw;
+            object-fit: cover;
+            object-position: center;
+        }
+@media (min-width: 767px) {
+    
+    [class*=gal-] img{
+        width: 34vw;
+        height: 34vw;
+        object-fit: cover;
+        object-position: center;
+    }
+
+}
     </style>
 
 </div>
@@ -71,7 +84,7 @@ layout: default
 <div class="scheme-2">
     <!-- text banner  -->
     <section class="p-0">
-        <divs class="gal-{{forloop.index}} grid grid-cols-3     ">
+        <divs class="gal gal-{{forloop.index}} grid md:grid-cols-3     ">
             {% for image in room.imgs %}
             <div class="inline-block item">
                 <img src="{{image.img_path}}" alt="{{img_alt}}" class="w-[34vw]">
@@ -86,7 +99,7 @@ layout: default
 <!-- <img src="/uploads/placeholder-1.jpg" alt=""> -->
 
 
-<div class="scheme-2">
+<div class="scheme-1">
     <!-- text banner  -->
     <section class="">
         <div class="max-width">
@@ -97,14 +110,14 @@ layout: default
                         {{room.title}}
                     </h2>
                     {% for set in room.features-sets %}
-                    <div class="flex justify-between items-center accordian-trigger border-t">
-                        <span class="mt-2">{{set.heading}}</span> <span class="m-0 accordian-svg">
+                    <div class="flex justify-between items-center accordian-trigger border-t border-[var(--text-color)]">
+                        <h3 class="subheading inline-block mb-0 ">{{set.heading}}</h3> <span class="m-0 accordian-svg">
                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                           <path d="M7.29289 15.7071C7.68342 16.0976 8.31658 16.0976 8.70711 15.7071L15.0711 9.34315C15.4616 8.95262 15.4616 8.31946 15.0711 7.92893C14.6805 7.53841 14.0474 7.53841 13.6569 7.92893L8 13.5858L2.34315 7.92893C1.95262 7.53841 1.31946 7.53841 0.928933 7.92893C0.538408 8.31946 0.538408 8.95262 0.928933 9.34315L7.29289 15.7071ZM7 4.37114e-08L7 15L9 15L9 -4.37114e-08L7 4.37114e-08Z" fill="var(--text-color)"/>
                         </svg>
                       </span>
                     </div>
-                    <div class="overflow-hidden closed" style="height:0px;">
+                    <div class="overflow-hidden closed {% if forloop.last %} border-b border-[var(--text-color)] {% endif %}" style="height:0px;">
                         <ul class="list-disc list-inside pl-2 mb-2">
                             {% for feature in set.features %}
                           <li>
@@ -116,7 +129,7 @@ layout: default
                     {% endfor %}
                     <a href="https://booking.oshombali.com/" class="button mt-[30px]">Book now</a>
                 </div>
-                <div class="text-center hidden md:block">
+                <div class="hidden md:block">
                     {{room.description}}
                 </div>
                 
@@ -128,30 +141,47 @@ layout: default
 {% endif %}
 {% endfor %}
 
+<div class="scheme-2">
 
+    
+<!-- liquid banner  -->
+<section>
+    <div class="max-width">
+      <div>
+        {{experience.block-content-html}}
+      </div>
+      <div class="grid sm:grid-cols-1 md:grid-cols-3 gap-8 gap-y-[30px]">
+        {% for expe in site.experiences limit: 3 %}
+        <div style="text-align: {{block.text_alignment}};">
+          <a href="{{expe.url}}" class="block">
+  
+            {% if expe.img_path != '' %}
+              {% unless block.image_default_ratio %}
+                <div class="relative" style="aspect-ratio:{{block.img_apsect}};">
+                  <img src="{{expe.featured_img_url}}" alt="{{expe.featured_img_alt}}" class="object-cover object-center absolute inset-0 h-full w-full">
+                </div>
+                
+              {% else %}
+          
+                <img src="{{expe.img_path}}" alt="{{expe.img-alt}}">
+              {% endunless %}
+            {% endif %}
+            <div class="mt-4">
+              <p class="uppercase-p">{{expe.collection}}</p>
+              <h3 class="base-heading">{{expe.title}}</h2>
+              <p>{{expe.description}}</p>
+              <span href="{{expe.url}}" class="button">veiw details</span>
+            </div>
+          </a>
+        </div>
+        {% endfor %}
+      </div> 
+    </div>
+  </section>
+    
+</div>
 
-    <!-- slick -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js" integrity="sha512-An4a3FEMyR5BbO9CRQQqgsBscxjM7uNNmccUSESNVtWn53EWx5B9oO7RVnPvPG6EcYcYPp0Gv3i/QQ4KUzB5WA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-<script>
-window.addEventListener('load', function () {
-//   console.log("It's loaded!")
-
-console.log('should have a slider');
-{% for room in site.rooms %}
-{% if room.hotel-id == page.hotel-id %}
-// debugger
-$('.gal-{{forloop.index}}').slick({
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  autoplay: false,
-//   autoplaySpeed: 2000,
-});
-{% endif %}
-{% endfor %}
-
-
-})
-</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js" integrity="sha512-An4a3FEMyR5BbO9CRQQqgsBscxjM7uNNmccUSESNVtWn53EWx5B9oO7RVnPvPG6EcYcYPp0Gv3i/QQ4KUzB5WA==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+<script src="/hotelsSlick.js" defer></script> -->
