@@ -55,8 +55,8 @@ _inputs:
     options:
       values:
         - top
-        - middle
-        - bottomW
+        - center
+        - bottom
   mobile-img-position:
     type: select
     options:
