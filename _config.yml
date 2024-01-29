@@ -1,5 +1,5 @@
 collections:
-  hotels_regions:
+  accomodations:
     output: true
     permalink: /:title
   rooms:
