@@ -19,7 +19,7 @@ header:
   - text: Retreat
     link-url: /contact.html
     sublinks:
-    
+
 footer:
   - menu:
       - text: Stay at Oshom
@@ -40,5 +40,5 @@ footer:
       - text: Booking Terms
         link-url: /#
 whatsapp:
-  number: '6281237150892'
+  number: 6281237150892
   mesage: i would like to book a room
