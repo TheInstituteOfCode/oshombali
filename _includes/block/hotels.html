@@ -5,7 +5,7 @@
       {% for hotel in site.hotels_regions %}
       <div class="items-start md:grid grid-cols-2 gap-[60px] border-b border-[var(--text-color)] pb-[var(--vert-gap)] ">
         <div class="relative" style="aspect-ratio: 1 ;">
-          <img src="{{hotel.featured_img_url}}" alt="{{hotel.featured_img_alt}}" class="absolute inset-0 w-full h-full object-cover object-center">
+          <img src="{{hotel.featured_img_path}}" alt="{{hotel.featured_img_alt}}" class="absolute inset-0 w-full h-full object-cover object-center">
         </div>
         <div class="py-8 ml-[--side-gap] md:ml-0 mr-[--side-gap]">
           <h2 class="base-heading">

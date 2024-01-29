@@ -12,7 +12,7 @@
           {% if expe.img_path != '' %}
             {% unless block.image_default_ratio %}
               <div class="relative" style="aspect-ratio:{{block.img_apsect}};">
-                <img src="{{expe.featured_img_url}}" alt="{{expe.featured_img_alt}}" class="object-cover object-center absolute inset-0 h-full w-full">
+                <img src="{{expe.featured_img_path}}" alt="{{expe.featured_img_alt}}" class="object-cover object-center absolute inset-0 h-full w-full">
               </div>
               
             {% else %}
