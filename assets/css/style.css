@@ -525,6 +525,9 @@ video {
 .mb-\[30px\] {
   margin-bottom: 30px;
 }
+.mb-\[5px\] {
+  margin-bottom: 5px;
+}
 .ml-\[--side-gap\] {
   margin-left: var(--side-gap);
 }
@@ -560,9 +563,6 @@ video {
 }
 .mt-\[30px\] {
   margin-top: 30px;
-}
-.mb-\[5px\] {
-  margin-bottom: 5px;
 }
 .block {
   display: block;
