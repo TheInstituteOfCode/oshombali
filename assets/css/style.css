@@ -768,6 +768,9 @@ video {
 .border-\[var\(--text-color\)\] {
   border-color: var(--text-color);
 }
+.border-b-\[var\(--text-color\)\] {
+  border-bottom-color: var(--text-color);
+}
 .bg-\[var\(--colored-button-bg\)\] {
   background-color: var(--colored-button-bg);
 }
