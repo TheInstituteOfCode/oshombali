@@ -16,10 +16,9 @@ header:
   - text: Celebrations
     link-url: /experiences
     sublinks:
-  - text: Retreat
+  - text: Contact
     link-url: /contact.html
     sublinks:
-
 footer:
   - menu:
       - text: Stay at Oshom
