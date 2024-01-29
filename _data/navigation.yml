@@ -14,8 +14,6 @@ header:
     sublinks:
       - text: experience 1
         link-url: /experiences
-      - text: experience 2
-        link-url: /#
   - text: Retreat
     link-url: /contact.html
     sublinks:
