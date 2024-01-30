@@ -439,7 +439,8 @@
                 let embedParent = document.querySelector('.embed-booking-section').parentElement
     let targetHeight = document.querySelector('.embed-booking-section .book-wrapper').offsetHeight
     console.log(targetHeight)
-                embedParent.style.setProperty('--embed-height', `${targetHeight}px`)
+    let body = document.querySelector('body')
+    body.style.setProperty('--embed-height', `${targetHeight}px`)
             }
 
             window.addEventListener("resize", formResize)

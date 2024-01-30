@@ -599,14 +599,14 @@ input.button-featured{
 .hidden {
   display: none;
 }
+.h-0 {
+  height: 0px;
+}
 .h-\[45vh\] {
   height: 45vh;
 }
 .h-full {
   height: 100%;
-}
-.h-0 {
-  height: 0px;
 }
 .min-h-50 {
   min-height: 50vh;
@@ -1205,7 +1205,11 @@ transition: transform .5s;
   height: var(--embed-height);
 }
 
-
+@media (min-width: 768px) {
+#section-0 section{
+  height: calc(100vw - var(--embed-height))
+}
+}
 @media (max-width: 1000px) {
 
   #ui-datepicker-div{
@@ -1224,6 +1228,8 @@ transition: transform .5s;
   }
   
 }
+
+
 
 
 

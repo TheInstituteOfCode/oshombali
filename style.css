@@ -342,7 +342,11 @@ transition: transform .5s;
   height: var(--embed-height);
 }
 
-
+@media (min-width: 768px) {
+#section-0 section{
+  height: calc(100vw - var(--embed-height))
+}
+}
 @media (max-width: 1000px) {
 
   #ui-datepicker-div{
@@ -361,6 +365,8 @@ transition: transform .5s;
   }
   
 }
+
+
 
 
 
