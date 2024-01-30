@@ -363,7 +363,8 @@ transition: transform .5s;
 
 @media (min-width: 768px) {
 #section-0 section{
-  min-height: calc(100vh - var(--embed-height))
+  min-height: calc(100vh - var(--embed-height));
+  transition: min-height .5s;
 }
 }
 @media (max-width: 1000px) {
