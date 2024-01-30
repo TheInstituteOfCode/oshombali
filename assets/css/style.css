@@ -635,9 +635,6 @@ input.button-featured{
 .max-w-\[initial\] {
   max-width: initial;
 }
-.max-w-sm {
-  max-width: 24rem;
-}
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -1226,7 +1223,8 @@ transition: transform .5s;
 
 @media (min-width: 768px) {
 #section-0 section{
-  min-height: calc(100vh - var(--embed-height))
+  min-height: calc(100vh - var(--embed-height));
+  transition: min-height .5s;
 }
 }
 @media (max-width: 1000px) {

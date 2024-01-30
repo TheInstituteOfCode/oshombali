@@ -1,9 +1,12 @@
 <!-- liquid banner  -->
 <section>
   <div class="max-width">
+    {% unless block.block-content-html == nul or block.block-content-html == "" %}
+
     <div class="mx-auto mb-[80px]" style="max-width: {{block.content-max-width}};">
       {{block.block-content-html}}
     </div>
+    {% endunless %}
     <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-x-8 gap-y-[40px]">
       {% for expe in site.events %}
       <div style="text-align: {{block.text_alignment}};">
