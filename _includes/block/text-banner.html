@@ -15,7 +15,10 @@ min-height: {{block.banner-height}};
 </div>
 {% endunless %}
   <div class="max-width text-{{block.text-alignment}} relative z-10">
-    {{block.block-content-html}}
+    <div class="mx-auto" style="max-width: {{block.content-max-width}};">
+      {{block.block-content-html}}
+
+    </div>
   </div> 
 
 </section>

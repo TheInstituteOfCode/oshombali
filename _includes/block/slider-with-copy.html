@@ -1,0 +1,17 @@
+
+<section class="scheme-{{block.color-scheme}}">
+  <div class="max-width mb-6">
+    {{block.block-content-html}}
+
+    <div class="slider-with-copy">
+      {% for slide in block.slides %}
+        <div>
+          <a href="{{slide.url}}" class="p-2">
+            <img src="{{slide.img}}" alt="{{slide.img_alt}}">
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+  </div> 
+
+</section>
