@@ -4,8 +4,8 @@ blocks:
   - _id: video-banner
     block-content-html: >-
       <p><img class="mx-auto max-w-sm" src="/logo.png" /></p><h3
-      class="larger-heading">Opening in Summer 2024</h3><p><a class="button-featured"
-      href="#apply">get on the list </a></p>
+      class="larger-heading">Opening in Summer 2024</h3><p><a
+      class="button-featured" href="#apply">get on the list </a></p>
     bg-video:
       - video_path: /uploads/sea-24216-540p.mp4
         type: mp4
@@ -13,43 +13,14 @@ blocks:
     bottom-text: Scrool down to discover
     color-scheme: 2
   - _id: booking_embed
+    heading: Booking embed
     color-scheme: 2
   - _id: hotels
     title: hotels
     color-scheme: 1
-  - _id: testimonial
-    block-content-html: >-
-      <h3 class="sub-heading">client reviews</h3><h2
-      class="larger-heading">testimonials</h2>
-    cols:
-      - col-content-html: >-
-          <h3 class="sub-heading">lorem ipsum</h3><p>Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-          labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-          nostrud.</p>
-        img_path: /uploads/placeholder-1.jpg
-        img_alt: image description
-      - col-content-html: >-
-          <h3 class="sub-heading">lorem ipsum</h3><p>Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-          labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-          nostrud.</p>
-        img_path: /uploads/placeholder-1.jpg
-        img_alt: image description
-      - col-content-html: >-
-          <h3 class="sub-heading">lorem ipsum</h3><p>Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-          labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-          nostrud.</p>
-        img_path: /uploads/placeholder-1.jpg
-        img_alt: image description
-    img_apsect: '1'
-    image_default_ratio: false
-    text_alignment: center
-    color-scheme: 1
   - _id: slider
-    block-content-html: >
-            <h2 class="base-heading">EXPERIENCES</h2>
+    block-content-html: |
+      <h2 class="base-heading">EXPERIENCES</h2>
     slides:
       - col-content-html:
         img_path: /uploads/placeholder-1.jpg
@@ -100,17 +71,20 @@ blocks:
           about the col</p>
         img_path: ''
         img_alt: image description
+        text-alignment: left
       - col-content-html: >-
           <h3 class="sub-heading">Coloumn content</h3><p>for all the details
           about the col</p>
         img_path: ''
         img_alt: image description
+        text-alignment: left
       - col-content-html: >-
           <h3 class="sub-heading">Coloumn content</h3><p>for all the details
           about the col</p>
         img_path: ''
         img_alt: image description
-    img_apsect: '2/4'
+        text-alignment: left
+    img_apsect: 2/4
     image_default_ratio: false
     text_alignment: left
     color-scheme: 2
