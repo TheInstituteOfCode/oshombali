@@ -1207,7 +1207,7 @@ transition: transform .5s;
 
 @media (min-width: 768px) {
 #section-0 section{
-  height: calc(100vw - var(--embed-height))
+  min-height: calc(100vh - var(--embed-height))
 }
 }
 @media (max-width: 1000px) {
