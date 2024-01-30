@@ -689,9 +689,6 @@ input.button-featured{
 .items-center {
   align-items: center;
 }
-.items-stretch {
-  align-items: stretch;
-}
 .justify-center {
   justify-content: center;
 }
@@ -753,9 +750,6 @@ input.button-featured{
 }
 .gap-y-\[var\(--vert-gap\)\] {
   row-gap: var(--vert-gap);
-}
-.self-end {
-  align-self: flex-end;
 }
 .overflow-hidden {
   overflow: hidden;
