@@ -922,6 +922,7 @@ body {
   color: #1D1D1B;
   font-family: 'Cormorant Infant', serif;
   font-weight: 300;
+  --embed-height: 0px;
 }
 
 /* hide scrollbar but allow scrolling */
