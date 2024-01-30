@@ -168,11 +168,21 @@ img.logo{
 
 /* burger menu */
 
-header div {
-  background-color: var(--bg-color);
-  transition:.5s background, .5s color;
-  transition-timing-function: ease-in-out;
+header div{
+  background-color: transparent;
+  /* transition: .5s background, .5s color; */
+  /* transition-timing-function: ease-in-out; */
 }
+
+header.scheme-1 > div{
+  /* transition-delay: .5s; */
+}
+
+
+header.scheme-2 div{
+  background-color: var(--bg-color);
+}
+
 
 header a{
   padding: .5rem 1rem;
@@ -239,7 +249,15 @@ header a{
   left: 0;
   width: 100vw;
   z-index: -1;
+  opacity: 0;
+  /* transition-delay: .5s; */
 }
+
+.scheme-2 .burger-anchor{
+  opacity: 1;
+  /* transition: opacity .5s; */
+}
+
 
 .burger-menu {
     position: relative;
@@ -252,8 +270,8 @@ header a{
     z-index: 8;
     align-content:space-around;
     justify-content:space-around;
-    transition: color .5s, background-color .5s;
-    transition-timing-function: ease-in-out;
+    /* transition: color .5s, background-color .5s;
+    transition-timing-function: ease-in-out; */
 }
 .burger-menu.active{
 top: 100%;
