@@ -7,7 +7,7 @@
     
   {% if block.desk-img-horizontal-position == 'left' %} 
   <div class="{% if block.mobile-img-positon == 'top' %} order-1 {% elsif block.mobile-img-positon == 'bottom' %} order-3 {% else %} hidden md:block {% endif %} md:order-2">
-    <img src="{{block.img.img_path}}" alt="{{block.img.img_path}}">
+    <img src="{{block.img.img_path}}" alt="{{block.img.img_path}}" class="w-full {% unless block.img.img_apsect == 'inital' %} object-cover object-center" style="aspect-ratio: {{block.img.img_apsect}}; {% endunless %} ">
   </div>
   {% endif %}
 
@@ -16,7 +16,7 @@
   </div> 
   {% if block.desk-img-horizontal-position == 'right' %} 
   <div class="{% if block.mobile-img-positon == 'top' %} order-1 {% elsif block.mobile-img-positon == 'bottom' %} order-3 {% else %} hidden md:block {% endif %} md:order-2">
-    <img src="{{block.img.img_path}}" alt="{{block.img.img_path}}" class="w-full">
+    <img src="{{block.img.img_path}}" alt="{{block.img.img_path}}" class="w-full {% unless block.img.img_apsect == 'inital' %} object-cover object-center" style="aspect-ratio: {{block.img.img_apsect}}; {% endunless %} ">
   </div>
   {% endif %}
   </div>
