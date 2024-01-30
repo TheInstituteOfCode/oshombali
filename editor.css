@@ -48,11 +48,11 @@ h2.larger-heading{
     text-align: center;
     border: 1px solid var(--text-color);
     padding: 15px 20px;
+    display: inline-block;
   }
 
   a.button-featured{
-    font-family: 'Questrial', sans-serif;
-    
+    font-family: 'Questrial', sans-serif;  
     border: 1px solid var(--colored-button-bg);
     background-color: var(--colored-button-bg);
     color: var(--colored-button-text);
@@ -61,6 +61,7 @@ h2.larger-heading{
     letter-spacing: .15em;
     text-align: center;
     transition: border .5s, background-color .5s, color .5s;
+    display: inline-block;
   }
 
 

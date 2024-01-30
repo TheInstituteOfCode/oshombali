@@ -1,5 +1,5 @@
 <!-- text banner  -->
-<section class="flex items-center justify-center scheme-{{block.color-scheme}} bg-center bg-cover"
+<section class="flex items-center justify-center bg-center bg-cover relative"
 style="
 {% if block.banner-image %}
 background-image: url({{block.banner-image}});
@@ -9,8 +9,12 @@ min-height: {{block.banner-height}};
 {% endif %}
 "
 >
-    
-  <div class="max-width text-{{block.text-alignment}}">
+{% unless block.overlay-opacity == 0 %}
+<div class='inset-0 absolute' style='background-color: {{block.overlay-color}}; opacity: {{block.overlay-opacity}};'>
+
+</div>
+{% endunless %}
+  <div class="max-width text-{{block.text-alignment}} relative z-10">
     {{block.block-content-html}}
   </div> 
 

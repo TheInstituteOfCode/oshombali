@@ -207,6 +207,8 @@ _structures:
           text-alignment: center
           banner-image: /uploads/placeholder-1.jpg
           banner-height: 90vh
+          overlay-color: "#fff"
+          overlay-opacity: ".5"
           color-scheme: 1  
       - label: Map banner
         value:

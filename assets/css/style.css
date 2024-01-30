@@ -437,6 +437,17 @@ video {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
 }
+input.button-featured{
+    font-family: 'Questrial', sans-serif;  
+    border: 1px solid var(--colored-button-bg);
+    background-color: var(--colored-button-bg);
+    color: var(--colored-button-text);
+    text-transform: uppercase;
+    padding: 15px 20px;
+    letter-spacing: .15em;
+    text-align: center;
+    transition: border .5s, background-color .5s, color .5s;
+  }
 .static {
   position: static;
 }
@@ -458,8 +469,8 @@ video {
 .bottom-4 {
   bottom: 1rem;
 }
-.bottom-\[35vh\] {
-  bottom: 35vh;
+.bottom-\[15vh\] {
+  bottom: 15vh;
 }
 .bottom-\[var\(--vert-gap\)\] {
   bottom: var(--vert-gap);
@@ -528,6 +539,9 @@ video {
 .mb-\[5px\] {
   margin-bottom: 5px;
 }
+.mb-\[80px\] {
+  margin-bottom: 80px;
+}
 .ml-\[--side-gap\] {
   margin-left: var(--side-gap);
 }
@@ -590,6 +604,9 @@ video {
 }
 .max-h-\[45vh\] {
   max-height: 45vh;
+}
+.min-h-50 {
+  min-height: 50vh;
 }
 .min-h-90 {
   min-height: 90vh;
@@ -731,8 +748,8 @@ video {
 .gap-y-\[10px\] {
   row-gap: 10px;
 }
-.gap-y-\[30px\] {
-  row-gap: 30px;
+.gap-y-\[40px\] {
+  row-gap: 40px;
 }
 .gap-y-\[var\(--vert-gap\)\] {
   row-gap: var(--vert-gap);
@@ -934,6 +951,7 @@ a {
 
 p{
   font-size: 20px;
+  color: var(--text-color);
 }
 
 
@@ -1252,9 +1270,6 @@ transition: transform .5s;
   }
   .sm\:hidden {
     display: none;
-  }
-  .sm\:grid-cols-1 {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
