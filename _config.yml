@@ -144,6 +144,8 @@ _structures:
           desk-content-vertical-position: bottom    
           mobile-img-position: top
           img_width_percentage: 60%
+          top-space-collapse: false
+          bottom-space-collapse: false
           color-scheme: 1
       - label: Basic col section
         value:

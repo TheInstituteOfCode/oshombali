@@ -847,6 +847,9 @@ input.button-featured{
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
+.pb-0 {
+  padding-bottom: 0px;
+}
 .pb-12 {
   padding-bottom: 3rem;
 }
