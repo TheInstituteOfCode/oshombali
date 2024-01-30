@@ -1,14 +1,24 @@
 
 <section class="scheme-{{block.color-scheme}}">
   <div class="max-width mb-6">
-    {{block.block-content-html}}
+    <div class="mx-auto" style="max-width: {{block.content-max-width}};">
+      {{block.block-content-html}}
+    </div>
 
     <div class="slider">
       {% for slide in block.slides %}
-        <div>
-          <a href="{{slide.url}}" class="p-2">
-            <img src="{{slide.img}}" alt="{{slide.img_alt}}">
+        <div  class="p-2">
+{% if slide.url %}
+          <a href="{{slide.url}}">
+{% endif %}
+            <img src="{{slide.img_path}}" alt="{{slide.img_alt}}">
+            {% if slide.col-content-html %}
+              {{slide.col-content-html}}
+            {% endif %}
+            
+{% if slide.url %}
           </a>
+          {% endif %}
         </div>
       {% endfor %}
     </div>

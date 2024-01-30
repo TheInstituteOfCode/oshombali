@@ -1,12 +1,12 @@
 window.addEventListener('load', function () {
 
-  const sliders = document.querySelectorAll('.gal')
-sliders.forEach(slider => {
+  const galSliders = document.querySelectorAll('.gal')
+  galSliders.forEach(slider => {
   console.log(slider)
   $(slider).slick({
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 2000,
     responsive: [{
       breakpoint: 767,
@@ -21,10 +21,14 @@ sliders.forEach(slider => {
 
 if ( this.document.querySelector('.slider') ){
 
-  $('.slider').slick({
+const sliderBlocks = document.querySelectorAll('.slider')
+
+sliderBlocks.forEach(slider => {
+
+  $(slider).slick({
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 2000,
     responsive: [{
       breakpoint: 767,
@@ -34,6 +38,10 @@ if ( this.document.querySelector('.slider') ){
         }
     }]
   })
+
+})
+
+
 
   }
   
