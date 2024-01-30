@@ -6,11 +6,11 @@ header:
         link-url: /suites
       - text: Treehouse
         link-url: /treehouse
-  - text: Offers
-    link-url: /offers.html
-    sublinks:
   - text: Experiences
     link-url: /experiences
+    sublinks:
+  - text: Offers
+    link-url: /offers.html
     sublinks:
   - text: Contact
     link-url: /contact.html
