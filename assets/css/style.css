@@ -605,6 +605,9 @@ input.button-featured{
 .h-full {
   height: 100%;
 }
+.h-0 {
+  height: 0px;
+}
 .min-h-50 {
   min-height: 50vh;
 }
@@ -838,6 +841,10 @@ input.button-featured{
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
+}
+.py-0 {
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 .py-4 {
   padding-top: 1rem;

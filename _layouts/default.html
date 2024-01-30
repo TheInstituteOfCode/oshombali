@@ -146,7 +146,7 @@
 {% endfor %}
 {{content}}
 <div class="scheme-2">
-<footer>
+<footer class="py-0">
     <div class="max-width p-8 grid sm:grid-cols-3 md:grid-cols-5 gap-x-4 gap-y-16 items-center">
         <div class="flex flex-col justify-between  mx-auto max-w-[300px]">
             <img src="/assets/logooshombali_white.svg" class="mx-auto footer-logo"> 
@@ -202,7 +202,7 @@
         </div>
     </div>
 </footer>
-<div class="scheme-1">
+<div class="scheme-1 h-0">
 
     <div class="fixed right-0 bottom-[15vh] p-[19px_24px_18px_25px;] rounded-l-full bg-[var(--colored-button-bg)] z-50 border-0 whatsappParent">
         <a href="https://wa.me/{{site.data.navigation.whatsapp.number}}?text={{site.data.navigation.whatsapp.mesage | replace: ' ','%20'}}">
@@ -225,7 +225,7 @@
     <script src="/main.js"></script>
 
 
-    {{page.layout}}
+    <!-- {{page.layout}} -->
 
     {% if hasSlide == true or page.layout == 'hotel' %}
     <!-- slick -->
