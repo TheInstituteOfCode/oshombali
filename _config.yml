@@ -7,6 +7,8 @@ collections:
     permalink: /:title
   experiences:
     output: true
+  events:
+    output: true
 _inputs:
   block-content-html:
     type: html
