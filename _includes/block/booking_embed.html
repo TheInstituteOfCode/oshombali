@@ -4,13 +4,41 @@
     <!-- {{block._id}} -->
 <!-- booking embed is hidden un till its loaded fully -->
 {% endunless %}
-<section class="p-0 embed-booking-section">
+<section class="py-0 embed-booking-section">
   <div class="max-width">
 
 
 
 <div class="book-wrapper !py-[40px] md:!py-[20px]">
-    <form action="https://booking.oshombali.com/api/rates/" id="book_h" class="booking m0" method="post">
+    <form action="https://booking.oshombali.com/rates/index" id="book_h" class="booking m0" method="post">
+        <input type="hidden" name="BookingForm[hotel]" id="hotel" value="OSHB"/>
+        <div class="section group p0 m0 flex flex-col sm:grid sm:grid-cols-2 md:grid-cols-3 justify-between gap-10 md:gap-8">
+            <div class="flex gap-2 md:gap-8 items-center justify-between">
+            	<label>Checkin</label>
+                <input type="text" name="BookingForm[checkin]" id="checkin_h" class="cal" placeholder="Checkin" readonly/>
+            </div>
+            <div class="flex gap-2 md:gap-8 items-center justify-between">
+                <label>Checkout</label>
+                <input type="text" name="BookingForm[checkout]" id="checkout_h" class="cal" placeholder="Checkout" readonly/>
+            </div>
+            <div class="flex gap-2 md:gap-8 items-center justify-between">
+            	<label>Adult</label>
+                <input type="text" name="BookingForm[adults]" id="adults" placeholder="Adults" value="2"/>
+            </div>
+            <div class="flex gap-2 md:gap-8 items-center justify-between">
+            	<label>Children</label>
+                <input type="text" name="BookingForm[children]" id="children" placeholder="Children" value="0" />
+            </div>
+            <div class="flex gap-2 md:gap-8 items-center justify-between">
+            	<label>Promo code</label>
+                <input type="text" name="BookingForm[offer_code]" id="promocode" placeholder="Promo Code"/>
+            </div>
+            <div class="flex gap-2 md:gap-8 items-center justify-between">
+                <input type="submit" class="m0" value="Book Now"/>
+            </div>
+        </div>
+    </form>
+    <!-- <form action="https://booking.oshombali.com/api/rates/" id="book_h" class="booking m0" method="post">
         <input type="hidden" name="BookingForm[hotel]" id="hotel" value="OSHB"/>
         <div class="section group p0 m0 flex flex-col md:grid md:grid-cols-3 justify-between gap-10 md:gap-8" style="grid-template-columns: 1fr 1fr 160px;">
             <div class="flex gap-2 md:gap-8 items-center justify-between">
@@ -30,7 +58,7 @@
                 <input type="submit" class="m0" value="Book Now"/>
             </div>
         </div>
-    </form>
+    </form> -->
 </div>
 
 </div> 

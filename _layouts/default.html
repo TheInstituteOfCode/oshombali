@@ -302,136 +302,136 @@
         
         <script language="javascript" defer>
             jQuery(document).ready(function(){
-                
-                
-                jQuery("#book_h").validate({
-                    rules: {
-                        "BookingForm[checkin]": "required",
-                        "BookingForm[checkout]": "required"
-                    },
-                    messages: {
-                        "BookingForm[checkin]": "Select checkin date",
-                        "BookingForm[checkout]": "Select checkout date"
-                    },
-                    errorPlacement: function (error, element) {
-                        element.attr("placeholder", error.text());
-                    },
-                    submitHandler: function(form) {
-                        form.submit();
-                    }
-                });
-                
-                
-                var endpoint = 'https://booking.oshombali.com/webapi/';
-                var dtprices = [];
-                var allotment = [];
-                var holidays = [];
-                var loadPrices = false;
-                
-                
-                jQuery("#checkin_h").focus(function(){
-                    pricedates();
-                });
-                
-                
-                
-                jQuery("#checkout_h").focus(function(){
-                    pricedates();
-                });
-                
-                jQuery("#checkin_h").datepicker({
-                    dateFormat: 'dd-mm-yy',
-                    numberOfMonths: 2,
-                    minDate: +0,
-                    beforeShow: pricedates,
-                    beforeShowDay: function(a){
-                        var m = a.getMonth() + 1; 
-                        var d = a.getDate(); 
-                        var y = a.getFullYear();
-                        m = m < 10 ? '0'+m : m;
-                        d = d < 10 ? '0'+d: d;
-                        var fy = y+'-'+m+'-'+d;
-                        return [true, '', fy];
-                    },
-                    onClose: function(dateText, inst) {
-                        if(dateText != ''){
-                            var date = jQuery.datepicker.parseDate('dd-mm-yy', dateText);
-                            date.setDate(date.getDate() + 1);
-                            var checkout = jQuery("#checkout_h");
-                            checkout.datepicker("option", "minDate", date);
-                            checkout.datepicker("setDate", date);
-                            jQuery("#checkin_h").val(dateText);
-                        }
-                    }
-                });
-                
-                
-                jQuery("#checkout_h").datepicker({
-                    dateFormat: 'dd-mm-yy',
-                    numberOfMonths: 2,
-                    minDate: +1,
-                    beforeShow: pricedates,
-                    beforeShowDay: function(a){
-                        var m = a.getMonth() + 1; 
-                        var d = a.getDate(); 
-                        var y = a.getFullYear();
-                        m = m < 10 ? '0'+m : m;
-                        d = d < 10 ? '0'+d: d;
-                        var fy = y+'-'+m+'-'+d;
-                        return [true, '', fy];
-                    },
-                });
-                
-                
-                function pricedates() { 
-                    var des = jQuery("#hotel").val();
-                    if (typeof dtprices[des] == 'undefined') {
-                        if(!loadPrices){
-                            loadPrices = true;
-                            jQuery.ajax({
-                                url: endpoint + 'dailyprices/index?id=' + des,
-                                type: 'GET',
-                                success: function (data) {
-                                    var j = jQuery.parseJSON(data);
-                                    dtprices[des] = j.prices;
-                                    allotment[des] = j.allotment;
-                                    holidays[des] = j.holidays;
-                                    sdp(des);
-                                }
-                            });
-                        }
-                    } else {
-                        sdp(des);
-                    }
-                }
-                
-                
-                function sdp(des) {
-                    jQuery(".ui-datepicker-calendar td a").each(function () {
-                        var fy = jQuery(this).parent().attr('title');
-                        if (dtprices[des][fy] != undefined) {
-                            jQuery(this).attr('data-custom', dtprices[des][fy]);
-                            jQuery(this).parent('td').addClass('');
-                
-                            if(allotment[des][fy] == 1){
-                                jQuery(this).parent().attr('data-allotment', allotment[des][fy])
-                            }
-                        }else{
-                            jQuery(this).parent('td').addClass('');
-                            jQuery(this).parent('td').addClass('noavail ui-datepicker-unselectable ui-state-disabled');
-                        }
-                        if(holidays[des] != undefined && holidays[des].indexOf(fy) !== -1){
-                            jQuery(this).addClass("public-holiday");
-                        }
-                    });
-                
-                    if(jQuery('#latest-av-room').length < 1){
-                      jQuery('#ui-datepicker-div').append('<div id="latest-av-room"><span></span> Latest available rooms</div>');
-                    }
-                }
-                
-            
-            });
+		
+		
+		jQuery("#book_h").validate({
+			rules: {
+				"BookingForm[checkin]": "required",
+				"BookingForm[checkout]": "required"
+			},
+			messages: {
+				"BookingForm[checkin]": "Select checkin date",
+				"BookingForm[checkout]": "Select checkout date"
+			},
+			errorPlacement: function (error, element) {
+				element.attr("placeholder", error.text());
+			},
+			submitHandler: function(form) {
+				form.submit();
+			}
+		});
+		
+		
+		var endpoint = 'https://booking.oshombali.com/webapi/';
+		var dtprices = [];
+		var allotment = [];
+		var holidays = [];
+		var loadPrices = false;
+		
+		
+		jQuery("#checkin_h").focus(function(){
+			pricedates();
+		});
+		
+		
+		
+		jQuery("#checkout_h").focus(function(){
+			pricedates();
+		});
+		
+		jQuery("#checkin_h").datepicker({
+			dateFormat: 'dd-mm-yy',
+			numberOfMonths: 2,
+			minDate: +0,
+			beforeShow: pricedates,
+			beforeShowDay: function(a){
+				var m = a.getMonth() + 1; 
+				var d = a.getDate(); 
+				var y = a.getFullYear();
+				m = m < 10 ? '0'+m : m;
+				d = d < 10 ? '0'+d: d;
+				var fy = y+'-'+m+'-'+d;
+				return [true, '', fy];
+			},
+			onClose: function(dateText, inst) {
+				if(dateText != ''){
+					var date = jQuery.datepicker.parseDate('dd-mm-yy', dateText);
+					date.setDate(date.getDate() + 1);
+					var checkout = jQuery("#checkout_h");
+					checkout.datepicker("option", "minDate", date);
+					checkout.datepicker("setDate", date);
+					jQuery("#checkin_h").val(dateText);
+				}
+			}
+		});
+		
+		
+		jQuery("#checkout_h").datepicker({
+			dateFormat: 'dd-mm-yy',
+			numberOfMonths: 2,
+			minDate: +1,
+			beforeShow: pricedates,
+			beforeShowDay: function(a){
+				var m = a.getMonth() + 1; 
+				var d = a.getDate(); 
+				var y = a.getFullYear();
+				m = m < 10 ? '0'+m : m;
+				d = d < 10 ? '0'+d: d;
+				var fy = y+'-'+m+'-'+d;
+				return [true, '', fy];
+			},
+		});
+		
+		
+		function pricedates() { 
+			var des = jQuery("#hotel").val();
+			if (typeof dtprices[des] == 'undefined') {
+				if(!loadPrices){
+					loadPrices = true;
+					jQuery.ajax({
+						url: endpoint + 'dailyprices/index?id=' + des,
+						type: 'GET',
+						success: function (data) {
+							var j = jQuery.parseJSON(data);
+							dtprices[des] = j.prices;
+							allotment[des] = j.allotment;
+							holidays[des] = j.holidays;
+							sdp(des);
+						}
+					});
+				}
+			} else {
+				sdp(des);
+			}
+		}
+		
+		
+		function sdp(des) {
+			jQuery(".ui-datepicker-calendar td a").each(function () {
+				var fy = jQuery(this).parent().attr('title');
+				if (dtprices[des][fy] != undefined) {
+					jQuery(this).attr('data-custom', dtprices[des][fy]);
+					jQuery(this).parent('td').addClass('');
+		
+					if(allotment[des][fy] == 1){
+						jQuery(this).parent().attr('data-allotment', allotment[des][fy])
+					}
+				}else{
+					jQuery(this).parent('td').addClass('');
+					jQuery(this).parent('td').addClass('noavail ui-datepicker-unselectable ui-state-disabled');
+				}
+				if(holidays[des] != undefined && holidays[des].indexOf(fy) !== -1){
+					jQuery(this).addClass("public-holiday");
+				}
+			});
+		
+			if(jQuery('#latest-av-room').length < 1){
+			  jQuery('#ui-datepicker-div').append('<div id="latest-av-room"><span></span> Latest available rooms</div>');
+			}
+		}
+		
+	
+	});
         
             document.querySelector('.embed-booking-section').classList.add('active')
 

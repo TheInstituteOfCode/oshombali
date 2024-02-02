@@ -893,10 +893,6 @@ input.button-featured{
 .outline {
   outline-style: solid;
 }
-.grayscale {
-  --tw-grayscale: grayscale(100%);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
 
 /* Custom CSS */
 
@@ -1310,6 +1306,9 @@ transition: transform .5s;
   }
   .sm\:block {
     display: block;
+  }
+  .sm\:grid {
+    display: grid;
   }
   .sm\:hidden {
     display: none;
