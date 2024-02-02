@@ -566,6 +566,9 @@ input.button-featured{
 .mr-\[var\(--side-gap\)\] {
   margin-right: var(--side-gap);
 }
+.mr-auto {
+  margin-right: auto;
+}
 .mt-12 {
   margin-top: 3rem;
 }
@@ -638,11 +641,11 @@ input.button-featured{
 .min-w-\[5\.7rem\] {
   min-width: 5.7rem;
 }
+.min-w-\[6\.8rem\] {
+  min-width: 6.8rem;
+}
 .min-w-\[7rem\] {
   min-width: 7rem;
-}
-.min-w-\[8\.8rem\] {
-  min-width: 8.8rem;
 }
 .max-w-\[300px\] {
   max-width: 300px;
