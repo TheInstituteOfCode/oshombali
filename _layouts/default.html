@@ -308,8 +308,9 @@
         /* Firefox */
         .booking input[type=number] {
           -moz-appearance: textfield;
-          max-width: 1.9rem;
+          max-width: 1.2rem;
           border-bottom: 0px solid !important;
+          transition: max-width .5s;
         }
 
         #form-grid{
@@ -487,6 +488,27 @@
 
 
             formResize()
+
+            function inputResize(e){
+                console.log(e.target.value)
+                if (e.target.value < 10){
+                    e.target.style.maxWidth = '1.2rem'
+                } else if (e.target.value < 100) {
+                    e.target.style.maxWidth = '1.9rem'
+                } else if (e.target.value < 1000) {
+                    e.target.style.maxWidth = '2.7rem'
+                } else if (e.target.value < 10000) {
+                    e.target.style.maxWidth = '3.2rem'
+                }else if (e.target.value < 100000) {
+                    e.target.style.maxWidth = '3.9rem'
+                }
+            }
+
+            const bookingNumberInputs = document.querySelectorAll('.booking input[type=number]')
+            console.log(bookingNumberInputs)
+            bookingNumberInputs.forEach(input => {
+                input.addEventListener('input', inputResize)
+            })
         </script>
         {% endif %}
 </body>
