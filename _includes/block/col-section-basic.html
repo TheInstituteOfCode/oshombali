@@ -23,7 +23,10 @@
             {% endif %}
 
             <div class="mt-4 text-{{block.text_alignment}}">
-              {{col.col-content-html}}
+              <div class="mx-auto" style='max-width: {{block.col-content-max-width}}'>
+                {{col.col-content-html}}
+
+              </div>
 
             </div>
         </div>
