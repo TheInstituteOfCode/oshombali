@@ -1,6 +1,6 @@
 header:
   - text: Accomodations
-    link-url: /stay
+    link-url: /accomodation
     sublinks:
       - text: Suites
         link-url: /suites

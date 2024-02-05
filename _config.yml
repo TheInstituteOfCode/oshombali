@@ -106,7 +106,7 @@ _structures:
             <h2> Coloumn content </h2> <p>for all the details about the col</p>
           img_path: /uploads/placeholder-1.jpg
           img_alt: image description
-          text-alignment: left
+          img-link-url:
   linked-cols:
     values:
       - value:
@@ -163,7 +163,8 @@ _structures:
                    <h2> Coloumn content </h2> <p>for all the details about the col</p>
               img_path: /uploads/placeholder-1.jpg
               img_alt: image description
-              text-alignment: left
+              img-link-url:
+          col-content-max-width: 500px
           img_apsect: '1'
           image_default_ratio: false
           text_alignment: center
@@ -211,7 +212,7 @@ _structures:
           content-max-width: 785px
           text-alignment: center
           banner-image: /uploads/placeholder-1.jpg
-          banner-height: 90vh
+          banner-height: 40vh
           overlay-color: "#fff"
           overlay-opacity: ".5"
           color-scheme: 1  

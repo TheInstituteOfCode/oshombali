@@ -1,8 +1,11 @@
 window.addEventListener('load', function () {
-
   const galSliders = document.querySelectorAll('.gal')
   galSliders.forEach(slider => {
+  slider.classList.remove('grid')
+  console.log(slider.classList)
   console.log(slider)
+  console.log('bob')
+
   $(slider).slick({
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -24,6 +27,10 @@ if ( this.document.querySelector('.slider') ){
 const sliderBlocks = document.querySelectorAll('.slider')
 
 sliderBlocks.forEach(slider => {
+  slider.classList.remove('grid')
+  console.log(slider.classList)
+  console.log(slider)
+  console.log('bob')
 
   $(slider).slick({
     slidesToShow: 3,

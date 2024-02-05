@@ -79,8 +79,9 @@ layout: default
 
 </div>
 
+{% assign ordered-rooms = site.rooms | sort: 'room-order' %}
 
-{% for room in site.rooms %}
+{% for room in ordered-rooms %}
 {% if room.hotel-id == page.hotel-id %}
 <div class="scheme-2">
     <!-- text banner  -->
