@@ -821,6 +821,12 @@ input.button-featured{
 .bg-transparent {
   background-color: transparent;
 }
+.bg-\[rgba\(0\2c 0\2c 0\2c 0\.2\)\] {
+  background-color: rgba(0,0,0,0.2);
+}
+.bg-\[rgba\(0\2c 0\2c 0\2c 0\.3\)\] {
+  background-color: rgba(0,0,0,0.3);
+}
 .bg-cover {
   background-size: cover;
 }
