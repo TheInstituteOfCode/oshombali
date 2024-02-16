@@ -39,4 +39,4 @@ whatsapp:
   mesage: i would like to book a room
 header-button:
   text: Book now
-  button_url: booking.oshombali.com/offers
+  button_url: https://booking.oshombali.com/offers
