@@ -1,3 +1,4 @@
+
 collections:
   accomodations:
     output: true
@@ -21,6 +22,26 @@ _inputs:
       right: text-right
       link: true
   col-content-html:
+    type: html
+    options:
+      format: p h2 h3 a
+      image: true
+      styles: /editor.css
+      left: text-left
+      center: text-center
+      right: text-right
+      link: true
+  description_acomidations:
+    type: html
+    options:
+      format: p h2 h3 a
+      image: true
+      styles: /editor.css
+      left: text-left
+      center: text-center
+      right: text-right
+      link: true 
+  description_page:
     type: html
     options:
       format: p h2 h3 a

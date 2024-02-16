@@ -37,3 +37,6 @@ footer:
 whatsapp:
   number: 6281139408004
   mesage: i would like to book a room
+header-button:
+  text: Book now
+  button_url: booking.oshombali.com/offers
