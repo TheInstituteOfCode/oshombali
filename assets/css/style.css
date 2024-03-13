@@ -1077,15 +1077,19 @@ img.logo{
 
 /* burger menu */
 
+header {
+  background-color: var(--bg-color);
+}
+
 header div{
   background-color: transparent;
-  /* transition: .5s background, .5s color; */
   /* transition-timing-function: ease-in-out; */
 }
 
-header.scheme-1 > div{
-  /* transition-delay: .5s; */
+header:not(.bg-transparent) div{
+  background-color: var(--bg-color);
 }
+
 
 
 header.scheme-2 div{

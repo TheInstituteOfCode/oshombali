@@ -37,6 +37,19 @@ function toggleBurger() {
 burgerButton.addEventListener('click', toggleBurger)
 window.addEventListener("resize",menuLocation)
 
+function headerBgToggle() {
+  console.log('scrolled')
+
+  if (window.scrollY > 5 ){
+    header.classList.remove('bg-transparent')
+  } else {
+    header.classList.add('bg-transparent')
+  }
+}
+
+window.addEventListener("scroll", headerBgToggle)
+
+
 // menu drop down height sets
 
 const burgerMenuParentLinks = burgerMenu.querySelectorAll('.drop-parent')
