@@ -1083,6 +1083,7 @@ header {
 
 header div{
   background-color: transparent;
+  transition: 0 background-color;
   /* transition-timing-function: ease-in-out; */
 }
 
