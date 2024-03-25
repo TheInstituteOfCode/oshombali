@@ -37,7 +37,7 @@ footer_social:
   X-link: twitterlink.com
 whatsapp:
   number: 6281139408004
-  mesage: i would like to book a room
+  mesage:
 header-button:
   text: Book now
   button_url: https://booking.oshombali.com/offers
