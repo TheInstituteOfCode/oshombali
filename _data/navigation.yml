@@ -28,7 +28,7 @@ footer:
       - text: About Us
         link-url: /#
       - text: Contact Us
-        link-url: /#
+        link-url: /contact
       - text: Booking Terms
         link-url: /#
 whatsapp:
