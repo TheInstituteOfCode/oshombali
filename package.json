@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "jekyll:dev": "bundle exec jekyll serve --watch",
+    "jekyll:dev": "bundle exec jekyll serve",
     "jekyll:build": "JEKYLL_ENV=production bundle exec jekyll build",
     "css:dev": "postcss style.css --output assets/css/style.css --watch",
     "css:build": "NODE_ENV=production postcss style.css --output assets/css/style.css",
@@ -32,6 +32,7 @@
     "tailwindcss": "^3.2.4"
   },
   "dependencies": {
+    "libvips": "^0.0.2",
     "playground-elements": "^0.17.1",
     "static-browser-server": "^1.0.5"
   }

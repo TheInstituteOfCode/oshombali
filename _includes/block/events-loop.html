@@ -1,0 +1,39 @@
+<!-- liquid banner  -->
+<section>
+  <div class="max-width">
+    {% unless block.block-content-html == nul or block.block-content-html == "" %}
+
+    <div class="mx-auto mb-[80px]" style="max-width: {{block.content-max-width}};">
+      {{block.block-content-html}}
+    </div>
+    {% endunless %}
+    <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-x-8 gap-y-[40px]">
+      {% for expe in site.events %}
+      <div style="text-align: {{block.text_alignment}};">
+        <a href="{{expe.url}}" class="block">
+
+          {% if expe.img_path != '' %}
+            {% unless block.image_default_ratio %}
+              <div class="relative" style="aspect-ratio:{{block.img_apsect}};">
+                <img src="{{expe.featured_img_path}}" alt="{{expe.featured_img_alt}}" class="object-cover object-center absolute inset-0 h-full w-full">
+              </div>
+              
+            {% else %}
+        
+              <img src="{{expe.img_path}}" alt="{{expe.img-alt}}">
+            {% endunless %}
+          {% endif %}
+          <div class="mt-4">
+            <h3 class="sub-heading mb-[5px]">{{expe.collection}}</h3>
+            <h2 class="base-heading">{{expe.title}}</h2>
+            <p>{{expe.description}}</p>
+            <span></span>
+          </div>
+        </a>
+        <a href="https://wa.me/{{site.data.navigation.whatsapp.number}}?text={{expe.whatsapp-mesage | replace: ' ','%20'}}" class="button inline-block">book now</a>
+      </div>
+      {% endfor %}
+    </div> 
+  </div>
+</section>
+        

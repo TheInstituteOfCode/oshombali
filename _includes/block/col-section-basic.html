@@ -1,0 +1,43 @@
+
+<section>
+      <div class="max-width">
+        {% if block.block-content-html != null %} 
+          <div class="mx-auto mb-12" style="text-align: {{block.text_alignment}};{% if block.content-max-width %}max-width: {{block.content-max-width}} {% endif %}">
+          
+            {{block.block-content-html}}
+
+          </div>
+        {% endif %}
+        <div class="flex flex-col md:grid grid-cols-1 gap-x-8 gap-y-12" style="grid-template-columns: repeat({{block.cols.size}}, minmax(0, 1fr));">
+        {% for col in block.cols %}
+          <div style="text-align: {{col.text_alignment}};">
+
+            {% if col.img_path != '' %}
+                {% unless block.image_default_ratio %}
+                  <div class="relative" style="aspect-ratio:{{block.img_apsect}};">
+                    {% if col.img-link-url != "" and col.img-link-url != null %}
+                    <a href="{{col.img-link-url}}">
+                      {% endif %}
+                      <img src="{{col.img_path}}" alt="{{col.img-alt}}" class="object-cover object-center absolute inset-0 h-full w-full">
+                    {% if col.img-link-url != "" and col.img-link-url != null %}
+                    </a>
+                    {% endif %}
+
+                  </div>
+                {% else %}
+                  <img src="{{col.img_path}}" alt="{{col.img-alt}}">
+                {% endunless %}
+            {% endif %}
+
+            <div class="mt-4 text-{{block.text_alignment}}">
+              <div class="mx-auto" style='max-width: {{block.col-content-max-width}}'>
+                {{col.col-content-html}}
+
+              </div>
+
+            </div>
+        </div>
+          {% endfor %}
+        </div>
+      </div>
+    </section>

@@ -1,0 +1,185 @@
+---
+layout: default
+---
+
+
+<div class="scheme-2">
+    <!-- text banner  -->
+    <section class="flex items-center justify-center scheme-{{block.color-scheme}} min-h-90 bg-cover bg-center" style="background-image: url('{{page.featured_img_path}}');">
+        <div class="max-width">
+            <h2 class="larger-heading">{{page.title}}</h2>
+        </div>
+         <!-- block {{forloop.index}} -->
+
+  <div class="absolute bottom-4 left-0 w-full flex justify-center">
+    <div class="flex-center flex-col">
+      <a href="#room-sec-2" class="flex-center flex-col">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="68" viewBox="0 0 16 68" fill="none">
+          <path d="M7.30369 67.7177C7.70008 68.1023 8.33318 68.0927 8.71774 67.6963L14.9846 61.2367C15.3691 60.8403 15.3595 60.2072 14.9631 59.8226C14.5667 59.4381 13.9336 59.4476 13.5491 59.844L7.97857 65.5859L2.23667 60.0154C1.84027 59.6309 1.20718 59.6405 0.822618 60.0369C0.438055 60.4333 0.447647 61.0664 0.844043 61.4509L7.30369 67.7177ZM6.00011 1.01515L7.00011 67.0152L8.99989 66.9849L7.99989 0.98485L6.00011 1.01515Z" style="fill:var(--text-color);stroke:var(--text-color);"/>
+        </svg>
+        <p>{{block.bottom-text}}</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+{% include block/booking_embed.html %}
+
+<div class="scheme-2" id="room-sec-2" style="scroll-margin-top: 5rem;">
+    <!-- text banner  -->
+    <section class="flex items-center justify-center scheme-{{block.color-scheme}}">
+        <div class="max-width">
+            <p class="text-center">
+                {{page.description_page}}
+            </p>
+        </div> 
+        
+    </section>
+</div>
+<!-- slick setup -->
+<div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.css" integrity="sha512-WIWddQW7bHfs1gwICYIoXuifLb8gCPkE7Z/gq7QHk3pKuxjNs0E68Rn5c7Ig4cWguZW5CIvRroTj2GrSxsvUZQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <style>
+        .slick-prev {
+            left: 0px;
+        }
+
+        .slick-next{
+            right: 0px;
+        }
+
+        .slick-next,.slick-prev{
+            z-index: 999;
+            height: 40px; 
+            width:40px;
+        }
+        
+        .slick-prev::before, .slick-next::before{
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #fff;
+            color: #000;
+            opacity: 1;
+            padding: 10px;  
+        }
+
+
+        [class*=gal-] > .item:nth-child(n + 4){
+            display: none;
+        }
+
+        [class*=gal-] img{
+            width: 100vw;
+            height: 100vw;
+            object-fit: cover;
+            object-position: center;
+        }
+@media (min-width: 767px) {
+    
+    [class*=gal-] img{
+        width: 34vw;
+        height: 34vw;
+        object-fit: cover;
+        object-position: center;
+    }
+
+}
+    </style>
+
+</div>
+
+{% assign ordered-rooms = site.rooms | sort: 'room-order' %}
+
+{% for room in ordered-rooms %}
+{% if room.hotel-id == page.hotel-id %}
+<div class="scheme-2">
+    <!-- text banner  -->
+    <section class="p-0">
+        <divs class="gal gal-{{forloop.index}} grid md:grid-cols-3     ">
+            {% for image in room.imgs %}
+            <div class="inline-block item">
+                <img src="{{image.img_path}}" alt="{{img_alt}}" class="w-[34vw]">
+            </div>
+            <!-- <div class="">
+            </div> -->
+            {% endfor %}
+
+        </div>
+    </section>
+</div>
+<!-- <img src="/uploads/placeholder-1.jpg" alt=""> -->
+
+
+<div class="scheme-1">
+    <!-- text banner  -->
+    <section class="">
+        <div class="max-width">
+            <div class="grid md:grid-cols-2 gap-32">
+                
+                <div class="">
+                    <h2 class="base-heading">
+                        {{room.title}}
+                    </h2>
+                    {% for set in room.features-sets %}
+                    <div class="flex justify-between items-center accordian-trigger border-t border-[var(--text-color)]">
+                        <h3 class="sub-heading py-4 mb-0 ">{{set.heading}}</h3> <span class="m-0 accordian-svg">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                          <path d="M7.29289 15.7071C7.68342 16.0976 8.31658 16.0976 8.70711 15.7071L15.0711 9.34315C15.4616 8.95262 15.4616 8.31946 15.0711 7.92893C14.6805 7.53841 14.0474 7.53841 13.6569 7.92893L8 13.5858L2.34315 7.92893C1.95262 7.53841 1.31946 7.53841 0.928933 7.92893C0.538408 8.31946 0.538408 8.95262 0.928933 9.34315L7.29289 15.7071ZM7 4.37114e-08L7 15L9 15L9 -4.37114e-08L7 4.37114e-08Z" fill="var(--text-color)"/>
+                        </svg>
+                      </span>
+                    </div>
+                    <div class="overflow-hidden closed {% if forloop.last %} border-b border-[var(--text-color)] {% endif %}" style="height:0px;">
+                        <ul class="list-disc list-inside pl-2 mb-4">
+                            {% for feature in set.features %}
+                          <li>
+                            {{feature}}
+                          </li>
+                          {% endfor %}
+                        </ul>
+                    </div>
+                    {% endfor %}
+                    <a href="https://booking.oshombali.com/" class="button button-featured mt-[30px]">Book now</a>
+                </div>
+                <div class="hidden md:block">
+                    {{room.description}}
+                </div>
+                
+            </div> 
+        </div>
+        
+    </section>
+</div>
+{% endif %}
+{% endfor %}
+
+<div class="scheme-{{page.experience-section.scheme}}">
+
+    
+    <section class="flex items-center justify-center bg-center bg-cover min-h-50"
+    style="
+    {% if page.experience-section.banner-image %}
+    background-image: url({{page.experience-section.banner-image}});
+    {% endif %}
+    "
+    >
+    {% unless page.experience-section.overlay-opacity == 0 %}
+    <div class='inset-0 absolute' style='background-color: {{page.experience-section.overlay-color}}; opacity: {{page.experience-section.overlay-opacity}};'>
+
+    </div>
+    {% endunless %}
+        
+      <div class="max-width text-center relative z-10">
+        {{page.experience-section.block-content-html}}
+      </div> 
+    
+    </section>
+    
+</div>
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js" integrity="sha512-An4a3FEMyR5BbO9CRQQqgsBscxjM7uNNmccUSESNVtWn53EWx5B9oO7RVnPvPG6EcYcYPp0Gv3i/QQ4KUzB5WA==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+<script src="/hotelsSlick.js" defer></script> -->

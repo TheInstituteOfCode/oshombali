@@ -1,0 +1,39 @@
+header:
+  - text: Accomodations
+    link-url: /accomodation
+    sublinks:
+      - text: Suite
+        link-url: /suites
+      - text: Treehouse
+        link-url: /treehouse
+  - text: Offers
+    link-url: /offers.html
+    sublinks:
+  - text: Contact
+    link-url: /contact.html
+    sublinks:
+footer:
+  - menu:
+      - text: Stay at Oshom
+        link-url: /stay
+      - text: Rooms
+        link-url: /#
+      - text: Wellness
+        link-url: /#
+      - text: Book Now
+        link-url: /#
+  - menu:
+      - text: Explore Nuanu
+        link-url: /#
+      - text: About Us
+        link-url: /#
+      - text: Contact Us
+        link-url: /#
+      - text: Booking Terms
+        link-url: /#
+whatsapp:
+  number: 6281139408004
+  mesage: i would like to book a room
+header-button:
+  text: Book now
+  button_url: https://booking.oshombali.com/offers
