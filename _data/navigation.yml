@@ -31,6 +31,10 @@ footer:
         link-url: /#
       - text: Booking Terms
         link-url: /#
+footer_social:
+  instagram-link: instalink.com
+  facebook-link: facebooklink.com
+  X-link: twitterlink.com
 whatsapp:
   number: 6281139408004
   mesage: i would like to book a room
