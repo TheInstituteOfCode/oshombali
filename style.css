@@ -111,6 +111,9 @@ h3{
 
 @layer components {
 
+  input{
+    outline: none !important
+  }
 
   .flex-center {
     @apply flex justify-center items-center;

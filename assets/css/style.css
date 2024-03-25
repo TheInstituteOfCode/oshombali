@@ -424,6 +424,9 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+input{
+    outline: none !important
+  }
 .flex-center {
   display: flex;
   align-items: center;
