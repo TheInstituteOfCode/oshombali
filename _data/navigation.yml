@@ -6,21 +6,14 @@ header:
         link-url: /suites
       - text: Treehouse
         link-url: /treehouse
-  - text: Offers
-    link-url: /offers.html
-    sublinks:
   - text: Contact
     link-url: /contact.html
     sublinks:
 footer:
   - menu:
-      - text: Stay at Oshom
-        link-url: /stay
+      - text: STAY AT OSHOM
+        link-url: /accomodation.html
       - text: Rooms
-        link-url: /#
-      - text: Wellness
-        link-url: /#
-      - text: Book Now
         link-url: /#
   - menu:
       - text: Explore Nuanu
@@ -32,12 +25,12 @@ footer:
       - text: Booking Terms
         link-url: /#
 footer_social:
-  instagram-link: instalink.com
-  facebook-link: facebooklink.com
-  X-link: twitterlink.com
+  instagram-link: https://www.instagram.com/oshom_bali/
+  facebook-link: https://www.facebook.com/oshombalinuanu
+  X-link: https://twitter.com/OshomBali
 whatsapp:
   number: 6281139408004
-  mesage: i would like to book a room
+  mesage:
 header-button:
   text: Book now
-  button_url: https://booking.oshombali.com/offers
+  button_url:
