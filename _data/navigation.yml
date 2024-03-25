@@ -17,16 +17,14 @@ footer:
       - text: Stay at Oshom
         link-url: /stay
       - text: Rooms
-        link-url: /#
-      - text: Wellness
-        link-url: /#
+        link-url: /stay
       - text: Book Now
         link-url: https://booking.oshombali.com/offers
   - menu:
       - text: Explore Nuanu
         link-url: /#
       - text: About Us
-        link-url: /#
+        link-url: /#section-2
       - text: Contact Us
         link-url: /contact
       - text: Booking Terms
