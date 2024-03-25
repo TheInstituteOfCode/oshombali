@@ -21,7 +21,7 @@ footer:
       - text: Wellness
         link-url: /#
       - text: Book Now
-        link-url: /#
+        link-url: https://booking.oshombali.com/offers
   - menu:
       - text: Explore Nuanu
         link-url: /#
