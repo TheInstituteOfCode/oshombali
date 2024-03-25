@@ -14,14 +14,14 @@ footer:
       - text: STAY AT OSHOM
         link-url: /accomodation.html
       - text: ROOMS
-        link-url: /#
+        link-url: https://oshombali.com/suites
   - menu:
       - text: EXPLORE NUANU
-        link-url:
+        link-url: https://www.nuanu.com
       - text: ABOUT US
-        link-url:
+        link-url: https://oshombali.com
       - text: CONTACT US
-        link-url: /#
+        link-url: https://linktr.ee/oshombali
       - text: BOOKING TERMS
         link-url:
 footer_social:
