@@ -32,8 +32,8 @@ footer:
       - text: Booking Terms
         link-url: /#
 footer_social:
-  instagram-link: instalink.com
-  facebook-link: facebooklink.com
+  instagram-link: https://www.instagram.com/oshom_bali/
+  facebook-link: https://www.facebook.com/oshombalinuanu
   X-link: twitterlink.com
 whatsapp:
   number: 6281139408004
