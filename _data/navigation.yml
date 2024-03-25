@@ -16,14 +16,14 @@ footer:
       - text: ROOMS
         link-url: /#
   - menu:
-      - text: EXPL
+      - text: EXPLORE NUANU
+        link-url:
+      - text: ABOUT US
+        link-url:
+      - text: CONTACT US
         link-url: /#
-      - text: About Us
-        link-url: /#
-      - text: Contact Us
-        link-url: /#
-      - text: Booking Terms
-        link-url: /#
+      - text: BOOKING TERMS
+        link-url:
 footer_social:
   instagram-link: https://www.instagram.com/oshom_bali/
   facebook-link: https://www.facebook.com/oshombalinuanu
