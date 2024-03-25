@@ -11,13 +11,9 @@ header:
     sublinks:
 footer:
   - menu:
-      - text: Stay at Oshom
-        link-url: /stay
+      - text: STAY AT OSHOM
+        link-url: /accomodation.html
       - text: Rooms
-        link-url: /#
-      - text: Wellness
-        link-url: /#
-      - text: Book Now
         link-url: /#
   - menu:
       - text: Explore Nuanu
@@ -34,7 +30,7 @@ footer_social:
   X-link: https://twitter.com/OshomBali
 whatsapp:
   number: 6281139408004
-  mesage: i would like to book a room
+  mesage:
 header-button:
   text: Book now
-  button_url: https://booking.oshombali.com/offers
+  button_url:
