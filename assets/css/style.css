@@ -1204,7 +1204,7 @@ top: 100%;
 }
 
 .drop-anchor{
-  margin-left: 1rem;
+  /* margin-left: 1rem; */
 }
 
 @media (min-width: 640px) {
@@ -1360,6 +1360,9 @@ transition: transform .5s;
   }
   .sm\:block {
     display: block;
+  }
+  .sm\:inline-block {
+    display: inline-block;
   }
   .sm\:hidden {
     display: none;
