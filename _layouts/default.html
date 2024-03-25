@@ -91,7 +91,7 @@
 <body>
     <header class="fixed w-full z-50 p-0 bg-transparent scheme-1">
         <div class="relative z-10">
-            <div class="max-width px-8 grid grid-cols-3 items-center">
+            <div class="max-width px-8 grid grid-cols-2 sm:grid-cols-3 items-center">
                 <div class="burger-button">
                     <span class="burger-top"></span>
                     <span class="burger-middle"></span>
@@ -111,7 +111,7 @@
         </div>
       
         <div class="burger-anchor">
-            <div class="burger-menu flex justify-around flex-col sm:flex-row text-center" style="top: 0;">
+            <div class="burger-menu flex justify-around flex-col sm:flex-row" style="top: 0;">
                 {% for link in site.data.navigation.header %}
                     {% if link.sublinks.size >= 1 %}
                     <!-- has sublinks -->
@@ -123,7 +123,7 @@
                             <div class="overlay"></div>
                             <div class="drop-child">
                                 {% for sublink in link.sublinks %}
-                                <a class="block sm:inline-block" href="{{sublink.link-url}}">{{sublink.text}}</a>
+                                <a href="{{sublink.link-url}}">{{sublink.text}}</a>
                                 {% endfor %}
                             </div>
                         </div>
@@ -277,7 +277,7 @@
                     z"/>
                 </svg>
                 </a>
-                <!-- <a href="{{site.data.navigation.footer_social.twitter-link}}">
+                <a href="{{site.data.navigation.footer_social.twitter-link}}">
                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                         width="100%" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
                     <path fill="var(--text-color)" opacity="1.000000" stroke="none" 
@@ -294,7 +294,7 @@
                         C505.540802,512.712585 502.506104,513.000000 499.004883,513.000000 
                     z"/>
                 </svg>
-                </a> -->
+                </a>
             </div>
         </div>
         <div class="sm:col-span-2 flex justify-center gap-12">
