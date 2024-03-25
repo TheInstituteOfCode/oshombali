@@ -602,6 +602,9 @@ input.button-featured{
 .flex {
   display: flex;
 }
+.table {
+  display: table;
+}
 .grid {
   display: grid;
 }
