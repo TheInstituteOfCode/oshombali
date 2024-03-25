@@ -2,7 +2,7 @@ header:
   - text: Accomodations
     link-url: /accomodation
     sublinks:
-      - text: Suites
+      - text: Suite
         link-url: /suites
       - text: Treehouse
         link-url: /treehouse
