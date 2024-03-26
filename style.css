@@ -84,7 +84,7 @@ p {
 
 h1, h2, h3, h4 {
   font-family: 'Cormorant Infant', serif;
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
   word-break: break-word;
   color: var(--text-color);
 }

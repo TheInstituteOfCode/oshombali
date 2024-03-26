@@ -34,6 +34,37 @@
 
         </div>
     </form>
+    
+    {% comment %}
+    
+    <!--Old form -->
+        <form action="https://booking.oshombali.com/rates/index" id="book_h" class="booking m0" method="post">
+        <input type="hidden" name="BookingForm[hotel]" id="hotel" value="OSHB"/>
+        <div class="section group p0 m0 items-center lg:flex grid gap-y-8" id="form-grid">
+            	<label class="min-w-[5.7rem]">Check-in</label>
+                <input type="text" name="BookingForm[checkin]" id="checkin_h" class="cal" placeholder="dd/mm/yyyy" readonly/>
+                <span class="hidden md:block lg:hidden grid-spacer"></span>
+                <label class="min-w-[6.8rem]">Check-out</label>
+                <input type="text" name="BookingForm[checkout]" id="checkout_h" class="cal" placeholder="dd/mm/yyyy" readonly/>
+                <div class="flex justify-center items-center md:col-span-3 col-span-2 lg:ml-8 mr-auto">
+                    <label class="shrink">Adults</label>
+                    <input type="number" name="BookingForm[adults]" id="adults" placeholder="Adults" max="20" min="0" value="2" class=""/>
+                    <label class="shrink !pl-0 min-w-[7rem]">/ Children</label>
+                    <input type="number" name="BookingForm[children]" id="children" placeholder="Children" max="20" min="0" value="0"/>
+                </div>
+                <div class="gap-2 md:gap-8 items-center justify-between hidden">
+                    <label>Promo code</label>
+                    <input type="text" name="BookingForm[offer_code]" id="promocode" placeholder="Promo Code"/>
+                </div>
+                <div class="col-span-2 text-center lg:ml-8">
+                    <input type="submit" class="m0" value="Check availability"/>
+                </div>
+
+        </div>
+    </form>
+    
+    {% endcomment %}
+    
     <!-- <form action="https://booking.oshombali.com/api/rates/" id="book_h" class="booking m0" method="post">
         <input type="hidden" name="BookingForm[hotel]" id="hotel" value="OSHB"/>
         <div class="section group p0 m0 flex flex-col md:grid md:grid-cols-3 justify-between gap-10 md:gap-8" style="grid-template-columns: 1fr 1fr 160px;">
