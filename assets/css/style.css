@@ -441,7 +441,7 @@ input{
   padding-bottom: 0.25rem;
 }
 input.button-featured{
-    font-family: 'Questrial', sans-serif;  
+    font-family: 'Inter', sans-serif;  
     border: 1px solid var(--colored-button-bg);
     background-color: var(--colored-button-bg);
     color: var(--colored-button-text);
@@ -1012,21 +1012,21 @@ a {
     color: inherit;
 }
 
-p{
-  font-size: 20px;
+p {
+  font-size: 1rem;
   color: var(--text-color);
 }
 
 
 h1, h2, h3, h4 {
   font-family: 'Cormorant Infant', serif;
-  margin-bottom:20px;
+  margin-bottom: 1em;
   word-break: break-word;
   color: var(--text-color);
 }
 
 h5,h6,p,span {
-  margin-bottom: 20px;
+  margin-bottom: 1em;
   color: var(--text-color);
   line-height: 145%;
 }
@@ -1035,8 +1035,8 @@ p:last-child{
 margin-bottom: 0;
 }
 
-h3{
-  font-size: 25px;
+h3 {
+  font-size: 1.4rem;
 }
 
 
@@ -1046,7 +1046,7 @@ h3{
 }
 
 [type=submit].button, span.button{
-  font-family: 'Questrial', sans-serif;
+  font-family: 'Inter', sans-serif;
   text-transform: uppercase;
   letter-spacing: .15em;
   text-align: center;
@@ -1068,7 +1068,7 @@ footer .menu{
 
 footer a, footer input{
 
-  font-family: 'Questrial', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 16.127px;
   font-style: normal;
   font-weight: 400;
