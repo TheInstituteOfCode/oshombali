@@ -53,6 +53,7 @@ h2.larger-heading{
 
   a.button-featured{
     font-family: 'Inter', sans-serif;  
+    font-size: 0.9rem;
     border: 1px solid var(--colored-button-bg);
     background-color: var(--colored-button-bg);
     color: var(--colored-button-text);
@@ -62,6 +63,8 @@ h2.larger-heading{
     text-align: center;
     transition: border .5s, background-color .5s, color .5s;
     display: inline-block;
+    line-height: 1;
+    padding: 0.8rem 1rem 0.7rem;
   }
 
 

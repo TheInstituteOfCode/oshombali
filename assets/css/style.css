@@ -1370,6 +1370,9 @@ transition: transform .5s;
   .sm\:block {
     display: block;
   }
+  .sm\:inline-block {
+    display: inline-block;
+  }
   .sm\:hidden {
     display: none;
   }
