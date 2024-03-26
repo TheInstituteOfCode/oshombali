@@ -12,13 +12,17 @@
 <div class="book-wrapper !py-[40px] md:!py-[20px]">
     <form action="https://booking.oshombali.com/rates/index" id="book_h" class="booking m0" method="post">
         <input type="hidden" name="BookingForm[hotel]" id="hotel" value="OSHB"/>
-        <div class="section group p0 m0 items-center lg:flex grid gap-y-8" id="form-grid">
-            	<label class="min-w-[5.7rem]">Check-in</label>
-                <input type="text" name="BookingForm[checkin]" id="checkin_h" class="cal" placeholder="dd/mm/yyyy" readonly/>
-                <span class="hidden md:block lg:hidden grid-spacer"></span>
-                <label class="min-w-[6.8rem]">Check-out</label>
-                <input type="text" name="BookingForm[checkout]" id="checkout_h" class="cal" placeholder="dd/mm/yyyy" readonly/>
-                <div class="flex justify-center items-center md:col-span-3 col-span-2 lg:ml-8 mr-auto">
+        <div class="section group p0 m0 items-center justify-between lg:flex grid gap-y-8" id="form-grid">
+                <fieldset class="min-w-[13.8rem]">
+                    <label class="">Check-in</label>
+                    <input type="text" name="BookingForm[checkin]" id="checkin_h" class="cal inline-block max-width[8.1rem]" size="9" placeholder="dd/mm/yyyy" readonly/>
+                </fieldset>
+                <fieldset class="min-w-[15.1rem]">
+                <label class="">Check-out</label>
+                <input type="text" name="BookingForm[checkout]" id="checkout_h" class="cal inline-block max-width[8.1rem]" placeholder="dd/mm/yyyy" size="9" readonly/>
+                </fieldset>
+
+                <div class="flex justify-center items-center mb-4 sm:mb-0">
                     <label class="shrink">Adults</label>
                     <input type="number" name="BookingForm[adults]" id="adults" placeholder="Adults" max="20" min="0" value="2" class=""/>
                     <label class="shrink !pl-0 min-w-[7rem]">/ Children</label>
@@ -28,10 +32,10 @@
                     <label>Promo code</label>
                     <input type="text" name="BookingForm[offer_code]" id="promocode" placeholder="Promo Code"/>
                 </div>
-                <div class="col-span-2 text-center lg:ml-8">
+
+                <div class="text-center">
                     <input type="submit" class="m0" value="Check availability"/>
                 </div>
-
         </div>
     </form>
     
