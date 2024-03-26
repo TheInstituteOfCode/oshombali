@@ -24,12 +24,12 @@ h2.larger-heading{
     font-weight: 400;
     line-height: 94.1%; /* 45.168px */
     text-transform: uppercase;
-    font-family: 'Questrial', sans-serif;
+    font-family: 'Inter', sans-serif;
     
   }
 
   h3.base-heading{
-    font-family: 'Questrial', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 32px;
     font-style: normal;
     font-weight: 400;
@@ -42,7 +42,7 @@ h2.larger-heading{
   }
 
   a.button{
-    font-family: 'Questrial', sans-serif;
+    font-family: 'Inter', sans-serif;
     text-transform: uppercase;
     letter-spacing: .15em;
     text-align: center;
@@ -52,7 +52,7 @@ h2.larger-heading{
   }
 
   a.button-featured{
-    font-family: 'Questrial', sans-serif;  
+    font-family: 'Inter', sans-serif;  
     border: 1px solid var(--colored-button-bg);
     background-color: var(--colored-button-bg);
     color: var(--colored-button-text);
