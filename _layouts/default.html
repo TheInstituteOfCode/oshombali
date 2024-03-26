@@ -372,13 +372,14 @@
             background-color: var(--bg-color) !important;
             border: 1px solid var(--text-color) !important;
             display: inline;
-            /* max-width: 5rem; */
+            max-width: 7.7rem;    
             height: 40px;
             border: 0px solid !important;
             /* border-bottom: 1px solid var(--text-color) !important; */
             outline: none;
             margin-right: auto !important;
             padding-left: 5px;
+            font-size: .9rem;
         }
 
         .booking input::placeholder{
@@ -395,6 +396,7 @@
         }
         
         .booking label{
+            display: inline-block;
             flex-basis: 1px;
             letter-spacing: 2px;
             color: var(--text-color);
@@ -436,19 +438,24 @@
 
 
         
-        @media (min-width: 768px) {
+        @media (max-width: 1150px) {
             #form-grid{
-                grid-template-columns: 6rem 1fr 2rem 7rem 1fr;;
-            }
-
-
-        }
-
-            @media (min-width: 1024px) {
-            .booking input {
-            max-width: max(5rem, 15%)
+                display: grid;
+                grid-template-columns: 1fr 1fr;
             }
         }
+
+        @media (max-width: 610px) {
+            #form-grid{
+                display: block;
+            }
+
+            #checkin_h{
+                padding-left: 3rem;
+                max-width: 15rem;
+            }
+        }
+
             
         </style>
         
