@@ -146,10 +146,10 @@
 {{content}}
 <div class="scheme-2">
 <footer class="py-0">
-    <div class="max-width p-8 grid sm:grid-cols-3 md:grid-cols-5 gap-x-4 gap-y-16 items-center">
+    <div class="max-width p-8 grid sm:grid-cols-3 gap-x-4 gap-y-16 items-center">
         <div class="flex flex-col justify-between  mx-auto max-w-[300px]">
             <img src="/assets/logooshombali_white.svg" class="mx-auto footer-logo"> 
-            <div class="flex justify-center gap-[50px] sm:justify-between mt-12 md:mb-0 ">
+            <div class="flex justify-between mt-12 md:mb-0 ">
                 {% if site.data.navigation.footer_social.instagram-link %}
                 <a href="{{site.data.navigation.footer_social.instagram-link }}">
                     <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
@@ -160,6 +160,7 @@
                 </svg>
                 </a>
                 {% endif %}
+                {% if site.data.navigation.footer_social.facebook-link %}
                 <a href="{{site.data.navigation.footer_social.facebook-link }}">
                     <svg xmlns="http://www.w3.org/2000/svg" width="11" height="21" viewBox="0 0 11 21" fill="none">
                         <g clip-path="url(#clip0_51_130)">
@@ -172,6 +173,8 @@
                         </defs>
                         </svg>
                 </a>
+                {% endif %}
+                {% if site.data.navigation.footer_social.linkedin-link %}
                 <a href="{{site.data.navigation.footer_social.linkedin-link}}">
                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
                     <path fill="var(--text-color)" opacity="1.000000" stroke="none" 
@@ -277,6 +280,8 @@
                     z"/>
                 </svg>
                 </a>
+                {% endif %}
+                {% if site.data.navigation.footer_social.twitter-link %}
                 <a href="{{site.data.navigation.footer_social.twitter-link}}">
                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                         width="100%" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
@@ -295,6 +300,8 @@
                     z"/>
                 </svg>
                 </a>
+                {% endif %}
+
             </div>
         </div>
         <div class="sm:col-span-2 flex justify-center gap-12">
