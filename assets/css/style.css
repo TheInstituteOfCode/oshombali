@@ -1121,6 +1121,10 @@ footer a, footer input, footer p{
   line-height: normal;
 }
 
+.signup-col {
+  margin-top: 0.8rem;
+}
+
 @media (max-width: 1200px) {
   footer{
     display: grid;
@@ -1131,10 +1135,10 @@ footer a, footer input, footer p{
 
 @media (max-width: 650px) {
   footer{
-    display: block;
+    grid-template-columns: 1fr;
   }
 
-  footer.gap-y-16 > * {
+  footer.gap-y-12 > * {
     grid-column: span 1 / span 1;
   }
   
