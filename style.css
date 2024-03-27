@@ -197,6 +197,10 @@ footer a, footer input, footer p{
   footer.gap-y-16 > * {
     grid-column: span 1 / span 1;
   }
+  
+  .signup-col{
+    margin-top:3rem;
+  }
 }
 
 
