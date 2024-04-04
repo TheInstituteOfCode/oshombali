@@ -1,1 +1,3 @@
-document.querySelector('.embed-booking-section').style.height = '80px'
+function togglenext(e) {
+    document.querySelector("header").nextElementSibling.toggleClass("slideToggle")
+}

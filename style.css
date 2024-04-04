@@ -23,7 +23,11 @@ html {
   scroll-behavior: smooth; /* this enables smooth scrolling between internal links */
   overflow-x: hidden;
   width: 100vw;
-  
+}
+
+html.screenLock{
+  height: 100vw;
+  overflow: hidden;
 }
 
 * {
@@ -453,6 +457,48 @@ transition: transform .5s;
 
 .embed-booking-section.active{
   height: var(--embed-height);
+}
+
+.embed-dropdown{
+  display: grid;
+  grid-template-columns: 1fr 2rem 1.3rem 2rem;
+  min-width: fit-content;
+  gap: 1rem;
+  color: var(--colored-button-text);
+}
+
+body .embed-dropdown label{
+  color: var(--colored-button-text) !important;
+}
+body .embed-dropdown input{
+background-color: var(--colored-button-bg) !important;
+color: var(--colored-button-text) !important;
+}
+.embed-dropdown span{
+  cursor: pointer;
+  display: block;
+  width: 2rem;
+  border: 1px solid var(--colored-button-text);
+  color: var(--colored-button-text);
+  font-size: 2rem;
+  margin: 0;
+  line-height: 1;
+  text-align: center;
+  font-family: Monospace;
+}
+.embed-dropdown .x{
+  display: inline;
+  font-size: 1rem;
+  color: var(--colored-button-text);
+}
+
+.offClickDiv{
+  /* position: fixed; */
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 @media (min-width: 768px) {

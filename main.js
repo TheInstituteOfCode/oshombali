@@ -111,4 +111,31 @@ accordianTriggers.forEach(trigger => {
   trigger.addEventListener('click',toggleAcordian)
 })
 
+function increaseInput(element){
+  element.nextElementSibling.value++
+}
+
+function decreaseInput(element){
+  if (element.previousElementSibling.value >= 1 ){
+    element.previousElementSibling.value--
+  }
+}
+
+function toggleClass(element,toggledClass){
+  element.classList.toggle(toggledClass)
+}
+
+function toggleVisiterPopout(){
+  console.log("toggled popout")
+  let popout = document.querySelector("#embed-user-count")
+  let site = document.querySelector('html')
+  let overflowDiv = document.querySelector('.offClickDiv')
+  toggleClass(popout,'h-0');
+  toggleClass(popout,'h-overflow-hidden');
+  toggleClass(popout,'p-0');
+  toggleClass(popout,'p-4');
+  // toggleClass(site,'screenLock');
+  toggleClass(overflowDiv,'fixed')
+}
+
 console.log('finished main.js')

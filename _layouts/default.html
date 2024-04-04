@@ -1353,7 +1353,7 @@
         /* Firefox */
         .booking input[type=number] {
           -moz-appearance: textfield;
-          max-width: 1.2rem;
+          max-width: fit-content;
           border-bottom: 0px solid !important;
           transition: max-width .5s;
         }
@@ -1530,12 +1530,20 @@
  */       
             document.querySelector('.embed-booking-section').classList.add('active')
 
+
+
+            function removeOverflow() {
+              document.querySelector('.embed-booking-section').style.overflow = 'initial'
+            }
+
+            const removingOverflow = setTimeout(removeOverflow, 500);
+
             function formResize(){
                 let embedParent = document.querySelector('.embed-booking-section').parentElement
-    let targetHeight = document.querySelector('.embed-booking-section .book-wrapper').offsetHeight
-    console.log(targetHeight)
-    let body = document.querySelector('body')
-    body.style.setProperty('--embed-height', `${targetHeight}px`)
+                let targetHeight = document.querySelector('.embed-booking-section .book-wrapper').offsetHeight
+                console.log(targetHeight)
+                let body = document.querySelector('body')
+                body.style.setProperty('--embed-height', `${targetHeight}px`)
             }
 
             window.addEventListener("resize", formResize)

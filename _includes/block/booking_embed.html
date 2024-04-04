@@ -4,7 +4,7 @@
     <!-- {{block._id}} -->
 <!-- booking embed is hidden un till its loaded fully -->
 {% endunless %}
-<section class="py-0 embed-booking-section">
+<section class="py-0 embed-booking-section z-10">
   <div class="max-width">
 
 
@@ -22,15 +22,25 @@
                 <input type="text" name="BookingForm[checkout]" id="checkout_h" class="cal inline-block max-width[8.1rem]" placeholder="dd/mm/yyyy" size="9" readonly/>
                 </fieldset>
 
-                <div class="relative">
-                    <p class="cursor-pointer"> Guest </p>
-                    <div class="flex justify-center items-center mb-4 sm:mb-0 absolute top-0 left-0 bg-inherit">
+                <fieldset class="relative z-10 min-h-[40px]">
+                    <label class="cursor-pointer"
+                    onclick="toggleVisiterPopout()"
+                    > Guest </label>
+                    <div class="flex justify-center items-center mb-4 sm:mb-0 absolute top-0 right-0 bg-[var(--colored-button-bg)] h-0 overflow-hidden p-0 text-[0px] border-0 embed-dropdown" id="embed-user-count">
+                        <div class="col-span-full text-right" > <div class="x" onclick="toggleVisiterPopout()"> X </div> </div>
                         <label class="shrink">Adults</label>
+                        <span onclick="increaseInput(this)"> + </span>
                         <input type="number" name="BookingForm[adults]" id="adults" placeholder="Adults" max="20" min="0" value="2" class=""/>
-                        <label class="shrink !pl-0 min-w-[7rem]">/ Children</label>
+                        <span onclick="decreaseInput(this)"> - </span>
+                        <label class="shrink !pl-0 min-w-[7rem]">Children</label>
+                        <span onclick="increaseInput(this)"> + </span>
                         <input type="number" name="BookingForm[children]" id="children" placeholder="Children" max="20" min="0" value="0"/>
+                        <span onclick="decreaseInput(this)"> - </span>
                     </div>
-                </div>
+                    <div class="offClickDiv" onclick="toggleVisiterPopout()">
+
+                    </div>
+                </fieldset>
                 <div class="gap-2 md:gap-8 items-center justify-between hidden">
                     <label>Promo code</label>
                     <input type="text" name="BookingForm[offer_code]" id="promocode" placeholder="Promo Code"/>

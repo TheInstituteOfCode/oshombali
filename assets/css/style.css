@@ -528,6 +528,9 @@ input.button-featured{
 .col-span-2 {
   grid-column: span 2 / span 2;
 }
+.col-span-full {
+  grid-column: 1 / -1;
+}
 .m-0 {
   margin: 0px;
 }
@@ -654,6 +657,9 @@ input.button-featured{
 }
 .min-h-90 {
   min-height: 90vh;
+}
+.min-h-\[40px\] {
+  min-height: 40px;
 }
 .min-h-\[469px\] {
   min-height: 469px;
@@ -958,6 +964,9 @@ input.button-featured{
 .text-right {
   text-align: right;
 }
+.text-\[0px\] {
+  font-size: 0px;
+}
 .uppercase {
   text-transform: uppercase;
 }
@@ -997,7 +1006,11 @@ html {
   scroll-behavior: smooth; /* this enables smooth scrolling between internal links */
   overflow-x: hidden;
   width: 100vw;
-  
+}
+
+html.screenLock{
+  height: 100vw;
+  overflow: hidden;
 }
 
 * {
@@ -1402,6 +1415,49 @@ transition: transform .5s;
 
 .embed-booking-section.active{
   height: var(--embed-height);
+}
+
+.embed-dropdown{
+  display: grid;
+  grid-template-columns: 1fr 2rem 1.3rem 2rem;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  gap: 1rem;
+  color: var(--colored-button-text);
+}
+
+body .embed-dropdown label{
+  color: var(--colored-button-text) !important;
+}
+body .embed-dropdown input{
+background-color: var(--colored-button-bg) !important;
+color: var(--colored-button-text) !important;
+}
+.embed-dropdown span{
+  cursor: pointer;
+  display: block;
+  width: 2rem;
+  border: 1px solid var(--colored-button-text);
+  color: var(--colored-button-text);
+  font-size: 2rem;
+  margin: 0;
+  line-height: 1;
+  text-align: center;
+  font-family: Monospace;
+}
+.embed-dropdown .x{
+  display: inline;
+  font-size: 1rem;
+  color: var(--colored-button-text);
+}
+
+.offClickDiv{
+  /* position: fixed; */
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 @media (min-width: 768px) {
