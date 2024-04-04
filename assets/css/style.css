@@ -610,6 +610,9 @@ input.button-featured{
 .mt-\[30px\] {
   margin-top: 30px;
 }
+.mt-6 {
+  margin-top: 1.5rem;
+}
 .block {
   display: block;
 }
@@ -684,6 +687,9 @@ input.button-featured{
 }
 .max-w-\[15\.4rem\] {
   max-width: 15.4rem;
+}
+.max-w-\[250px\] {
+  max-width: 250px;
 }
 .max-w-\[300px\] {
   max-width: 300px;
@@ -1129,7 +1135,16 @@ footer a, footer input, footer p{
 @media (max-width: 1200px) {
   footer{
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 800px) {
+  footer{
     grid-template-columns: 1fr 1fr 1fr;
+  }
+  .tab-col-full{
+    grid-column: span 3;
   }
 }
 
@@ -1137,6 +1152,9 @@ footer a, footer input, footer p{
 @media (max-width: 650px) {
   footer{
     grid-template-columns: 1fr;
+  }
+  .tab-col-full{
+    grid-column: span 1;
   }
 
   footer.gap-y-12 > * {
