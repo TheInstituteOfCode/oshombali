@@ -6,32 +6,35 @@ header:
         link-url: /suites
       - text: Treehouse
         link-url: /treehouse
-  - text: Offers
-    link-url: /offers.html
-    sublinks:
   - text: Contact
     link-url: /contact.html
     sublinks:
 footer:
-  - menu:
-      - text: Stay at Oshom
-        link-url: /stay
-      - text: Rooms
-        link-url: /stay
-      - text: Book Now
-        link-url: https://booking.oshombali.com/offers
-  - menu:
-      - text: Explore Nuanu
-        link-url: /#section-5
-      - text: About Us
-        link-url: /#section-2
-      - text: Contact Us
-        link-url: /contact
-      - text: Booking Terms
-        link-url: /#
+  text-block_html: <h3>Oshom Bali</h3> <p>PT WOODEN FISH VILLAGE NUANU CITY , JL. PANTAI NYANYI,BR. NYANYI, DESA BERABAN, KAB</p><p>TABANAN, BALI - 82121</p><p>+62 811 3940 8004</p>
+  menus:
+    - heading: explore
+      menu:
+        - text: STAY AT OSHOM
+          link-url: /accomodation.html
+        - text: ROOMS
+          link-url: https://oshombali.com/suites
+    - heading: about
+      menu:
+        - text: EXPLORE NUANU
+          link-url: https://www.nuanu.com
+        - text: ABOUT US
+          link-url: https://oshombali.com
+        - text: CONTACT US
+          link-url: https://linktr.ee/oshombali
+        - text: BOOKING TERMS
+          link-url:
+footer_social:
+  instagram-link: https://www.instagram.com/oshom_bali/
+  facebook-link: https://www.facebook.com/oshombalinuanu
+  X-link: https://twitter.com/OshomBali
 whatsapp:
   number: 6281139408004
   mesage:
 header-button:
   text: Book now
-  button_url: https://booking.oshombali.com/offers
+  button_url: https://booking.oshombali.com

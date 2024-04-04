@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="hide-scrollbars">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>oshombali</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant&family=Questrial&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Inter:wght@100..900&display=swap" rel="stylesheet">
 {% for block in page.blocks %}
     {% if block._id == 'slider' %}
 
@@ -89,10 +88,10 @@
 </style>
 
 </head>
-<body>
+<body class="hide-scrollbars">
     <header class="fixed w-full z-50 p-0 bg-transparent scheme-1">
         <div class="relative z-10">
-            <div class="max-width px-8 grid grid-cols-2 sm:grid-cols-3 items-center">
+            <div class="max-width px-8 grid grid-cols-3 items-center" style="grid-template-columns: 18% 66% 18%;">
                 <div class="burger-button">
                     <span class="burger-top"></span>
                     <span class="burger-middle"></span>
@@ -112,7 +111,7 @@
         </div>
       
         <div class="burger-anchor">
-            <div class="burger-menu flex justify-around flex-col sm:flex-row" style="top: 0;">
+            <div class="burger-menu flex justify-around flex-col sm:flex-row text-center" style="top: 0;">
                 {% for link in site.data.navigation.header %}
                     {% if link.sublinks.size >= 1 %}
                     <!-- has sublinks -->
@@ -124,7 +123,7 @@
                             <div class="overlay"></div>
                             <div class="drop-child">
                                 {% for sublink in link.sublinks %}
-                                <a href="{{sublink.link-url}}">{{sublink.text}}</a>
+                                <a href="{{sublink.link-url}}" class="block sm:inline-block">{{sublink.text}}</a>
                                 {% endfor %}
                             </div>
                         </div>
@@ -146,12 +145,928 @@
 {% endfor %}
 {{content}}
 <div class="scheme-2">
+
+
+    <footer class="gap-y-12 gap-x-8">
+
+        <div class="tab-col-full text-center"> 
+          <a href="/" class="max-w-[250px]">
+            <img src="/assets/logooshombali_white.svg" alt="oshom logo">
+          </a>
+        </div>
+
+        <div class="max-w-[15.4rem] footer-col-1">
+            {{site.data.navigation.footer.text-block_html}}
+        </div>
+
+        <div class="menu">
+        {% for menu in site.data.navigation.footer.menus limit: 1 %}
+        <h3>{{menu.heading}}</h3>
+            {% for link in menu.menu %}
+            <a href="{{link.url}}" class="block">{{link.text}}</a>
+            {% endfor %}
+        {% endfor %}
+        </div>
+        <div class="menu">
+            {% for menu in site.data.navigation.footer.menus limit: 1  offset: 1 %}
+            <h3>{{menu.heading}}</h3>
+                {% for link in menu.menu %}
+                <a href="{{link.url}}" class="block">{{link.text}}</a>
+                {% endfor %}
+            {% endfor %}
+
+        </div>
+        <div class="col-span-2 signup-col">
+
+            <h3 class="text-left mb-8 sub-heading">Sign up for our newsletter</h3>
+            <style type="text/css">@import url("https://assets.mlcdn.com/fonts.css?version=1711021");</style>
+            <style type="text/css">
+            /* LOADER */
+            .ml-form-embedSubmitLoad {
+              display: inline-block;
+              width: 20px;
+              height: 20px;
+            }
+        
+            .g-recaptcha {
+            transform: scale(1);
+            -webkit-transform: scale(1);
+            transform-origin: 0 0;
+            -webkit-transform-origin: 0 0;
+            height: ;
+            }
+        
+            .sr-only {
+              position: absolute;
+              width: 1px;
+              height: 1px;
+              padding: 0;
+              margin: -1px;
+              overflow: hidden;
+              clip: rect(0,0,0,0);
+              border: 0;
+            }
+        
+            .ml-form-embedSubmitLoad:after {
+              content: " ";
+              display: block;
+              width: 11px;
+              height: 11px;
+              margin: 1px;
+              border-radius: 50%;
+              border: 4px solid #fff;
+            border-color: #000000 #000000 #000000 transparent;
+            animation: ml-form-embedSubmitLoad 1.2s linear infinite;
+            }
+            @keyframes ml-form-embedSubmitLoad {
+              0% {
+              transform: rotate(0deg);
+              }
+              100% {
+              transform: rotate(360deg);
+              }
+            }
+              #mlb2-9291945.ml-form-embedContainer {
+                box-sizing: border-box;
+                display: table;
+                margin: 0 auto;
+                position: static;
+                width: 100% !important;
+              }
+              #mlb2-9291945.ml-form-embedContainer h4,
+              #mlb2-9291945.ml-form-embedContainer p,
+              #mlb2-9291945.ml-form-embedContainer span,
+              #mlb2-9291945.ml-form-embedContainer button {
+                text-transform: none !important;
+                letter-spacing: normal !important;
+              }
+              #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper {
+                background-color: ;
+                
+                border-width: 0px;
+                border-color: transparent;
+                border-radius: 0px;
+                border-style: solid;
+                box-sizing: border-box;
+                display: inline-block !important;
+                margin: 0;
+                padding: 0;
+                position: relative;
+                      }
+              #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper.embedPopup,
+              #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper.embedDefault { width: 400px; }
+              #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper.embedForm { max-width: 400px; width: 100%; }
+              #mlb2-9291945.ml-form-embedContainer .ml-form-align-left { text-align: left; }
+              #mlb2-9291945.ml-form-embedContainer .ml-form-align-center { text-align: center; }
+              #mlb2-9291945.ml-form-embedContainer .ml-form-align-default { display: table-cell !important; vertical-align: middle !important; text-align: center !important; }
+              #mlb2-9291945.ml-form-embedContainer .ml-form-align-right { text-align: right; }
+              #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedHeader img {
+                border-top-left-radius: 0px;
+                border-top-right-radius: 0px;
+                height: auto;
+                margin: 0 auto !important;
+                max-width: 100%;
+                width: undefinedpx;
+              }
+              #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody,
+              #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody {
+                padding: 20px 20px 0 20px;
+              }
+              #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody.ml-form-embedBodyHorizontal {
+                padding-bottom: 0;
+              }
+              #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent,
+              #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent {
+                text-align: left;
+                margin: 0 0 20px 0;
+              }
+              #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent h4,
+              #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent h4 {
+                color: #000000;
+                font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+                font-size: 30px;
+                font-weight: 400;
+                margin: 0 0 10px 0;
+                text-align: left;
+                word-break: break-word;
+              }
+              #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent p,
+              #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent p {
+                color: #000000;
+                font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 20px;
+                margin: 0 0 10px 0;
+                text-align: left;
+              }
+              #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent ul,
+              #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent ol,
+              #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent ul,
+              #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent ol {
+                color: #000000;
+                font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+                font-size: 14px;
+              }
+              #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent ol ol,
+              #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent ol ol {
+                list-style-type: lower-alpha;
+              }
+              #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent ol ol ol,
+              #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent ol ol ol {
+                list-style-type: lower-roman;
+              }
+              #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent p a,
+              #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent p a {
+                color: #000000;
+                text-decoration: underline;
+              }
+        
+              #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-block-form .ml-field-group {
+                text-align: left!important;
+              }
+        
+              #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-block-form .ml-field-group label {
+                margin-bottom: 5px;
+                color: #333333;
+                font-size: 14px;
+                font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+                font-weight: bold; font-style: normal; text-decoration: none;;
+                display: inline-block;
+                line-height: 20px;
+              }
+              #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent p:last-child,
+              #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent p:last-child {
+                margin: 0;
+              }
+              #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody form {
+                margin: 0;
+                width: 100%;
+              }
+              #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-formContent,
+              #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow {
+                margin: 0 0 20px 0;
+                width: 100%;
+              }
+              #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow {
+                float: left;
+              }
+              #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-formContent.horozintalForm {
+                margin: 0;
+                padding: 0 0 20px 0;
+                width: 100%;
+                height: auto;
+                float: left;
+              }
+              #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow {
+                margin: 0 0 10px 0;
+                width: 100%;
+              }
+              #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow.ml-last-item {
+                margin: 0;
+              }
+              #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow.ml-formfieldHorizintal {
+                margin: 0;
+              }
+              #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow input {
+                background-color:  !important;
+                color: #333333 !important;
+                border-color: #D7B18D;
+                border-radius: 0px !important;
+                border-style: solid !important;
+                border-width: 1px !important;
+                font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+                font-size: 14px !important;
+                height: auto;
+                line-height: 21px !important;
+                margin-bottom: 0;
+                margin-top: 0;
+                margin-left: 0;
+                margin-right: 0;
+                padding: 10px 10px !important;
+                width: 100% !important;
+                box-sizing: border-box !important;
+                max-width: 100% !important;
+              }
+              #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow input::-webkit-input-placeholder,
+              #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow input::-webkit-input-placeholder { color: #333333; }
+        
+              #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow input::-moz-placeholder,
+              #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow input::-moz-placeholder { color: #333333; }
+        
+              #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow input:-ms-input-placeholder,
+              #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow input:-ms-input-placeholder { color: #333333; }
+        
+              #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow input:-moz-placeholder,
+              #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow input:-moz-placeholder { color: #333333; }
+        
+              #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow textarea, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow textarea {
+                background-color:  !important;
+                color: #333333 !important;
+                border-color: #D7B18D;
+                border-radius: 0px !important;
+                border-style: solid !important;
+                border-width: 1px !important;
+                font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+                font-size: 14px !important;
+                height: auto;
+                line-height: 21px !important;
+                margin-bottom: 0;
+                margin-top: 0;
+                padding: 10px 10px !important;
+                width: 100% !important;
+                box-sizing: border-box !important;
+                max-width: 100% !important;
+              }
+        
+              #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-radio .custom-control-label::before, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-radio .custom-control-label::before, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-checkbox .custom-control-label::before, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-checkbox .custom-control-label::before, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsOptionsCheckbox .label-description::before, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-interestGroupsRow .ml-form-interestGroupsRowCheckbox .label-description::before, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow .label-description::before {
+                  border-color: #D7B18D!important;
+                  background-color: !important;
+              }
+        
+              #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow input.custom-control-input[type="checkbox"]{
+                box-sizing: border-box;
+                padding: 0;
+                position: absolute;
+                z-index: -1;
+                opacity: 0;
+                margin-top: 5px;
+                margin-left: -1.5rem;
+                overflow: visible;
+              }
+        
+              #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-checkbox .custom-control-label::before, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-checkbox .custom-control-label::before, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsOptionsCheckbox .label-description::before, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-interestGroupsRow .ml-form-interestGroupsRowCheckbox .label-description::before, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow .label-description::before {
+                border-radius: 4px!important;
+              }
+        
+        
+              #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow input[type=checkbox]:checked~.label-description::after, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsOptionsCheckbox input[type=checkbox]:checked~.label-description::after, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-checkbox .custom-control-input:checked~.custom-control-label::after, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-checkbox .custom-control-input:checked~.custom-control-label::after, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-interestGroupsRow .ml-form-interestGroupsRowCheckbox input[type=checkbox]:checked~.label-description::after {
+                background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+              }
+        
+              #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-radio .custom-control-input:checked~.custom-control-label::after, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-radio .custom-control-input:checked~.custom-control-label::after {
+                background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+              }
+        
+              #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-radio .custom-control-input:checked~.custom-control-label::before, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-radio .custom-control-input:checked~.custom-control-label::before, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-checkbox .custom-control-input:checked~.custom-control-label::before, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-checkbox .custom-control-input:checked~.custom-control-label::before, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsOptionsCheckbox input[type=checkbox]:checked~.label-description::before, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-interestGroupsRow .ml-form-interestGroupsRowCheckbox input[type=checkbox]:checked~.label-description::before, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow input[type=checkbox]:checked~.label-description::before  {
+                  border-color: #000000!important;
+                  background-color: #000000!important;
+              }
+        
+              #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-radio .custom-control-label::before, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-radio .custom-control-label::before, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-radio .custom-control-label::after, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-radio .custom-control-label::after, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-checkbox .custom-control-label::before, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-checkbox .custom-control-label::after, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-checkbox .custom-control-label::before, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-checkbox .custom-control-label::after {
+                   top: 2px;
+                   box-sizing: border-box;
+              }
+        
+              #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsOptionsCheckbox .label-description::before, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsOptionsCheckbox .label-description::after, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow .label-description::before, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow .label-description::after {
+                   top: 0px!important;
+                   box-sizing: border-box!important;
+              }
+        
+              #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow .label-description::before, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow .label-description::after {
+                top: 0px!important;
+                   box-sizing: border-box!important;
+              }
+        
+               #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-interestGroupsRow .ml-form-interestGroupsRowCheckbox .label-description::after {
+                    top: 0px!important;
+                    box-sizing: border-box!important;
+                    position: absolute;
+                    left: -1.5rem;
+                    display: block;
+                    width: 1rem;
+                    height: 1rem;
+                    content: "";
+               }
+        
+              #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-interestGroupsRow .ml-form-interestGroupsRowCheckbox .label-description::before {
+                top: 0px!important;
+                box-sizing: border-box!important;
+              }
+        
+              #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .custom-control-label::before {
+                  position: absolute;
+                  top: 4px;
+                  left: -1.5rem;
+                  display: block;
+                  width: 16px;
+                  height: 16px;
+                  pointer-events: none;
+                  content: "";
+                  background-color: #ffffff;
+                  border: #adb5bd solid 1px;
+                  border-radius: 50%;
+              }
+        
+              #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .custom-control-label::after {
+                  position: absolute;
+                  top: 2px!important;
+                  left: -1.5rem;
+                  display: block;
+                  width: 1rem;
+                  height: 1rem;
+                  content: "";
+              }
+        
+              #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsOptionsCheckbox .label-description::before, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-interestGroupsRow .ml-form-interestGroupsRowCheckbox .label-description::before, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow .label-description::before {
+                  position: absolute;
+                  top: 4px;
+                  left: -1.5rem;
+                  display: block;
+                  width: 16px;
+                  height: 16px;
+                  pointer-events: none;
+                  content: "";
+                  background-color: #ffffff;
+                  border: #adb5bd solid 1px;
+                  border-radius: 50%;
+              }
+        
+              #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsOptionsCheckbox .label-description::after {
+                  position: absolute;
+                  top: 0px!important;
+                  left: -1.5rem;
+                  display: block;
+                  width: 1rem;
+                  height: 1rem;
+                  content: "";
+              }
+        
+              #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow .label-description::after {
+                  position: absolute;
+                  top: 0px!important;
+                  left: -1.5rem;
+                  display: block;
+                  width: 1rem;
+                  height: 1rem;
+                  content: "";
+              }
+        
+              #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .custom-radio .custom-control-label::after {
+                  background: no-repeat 50%/50% 50%;
+              }
+              #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .custom-checkbox .custom-control-label::after, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsOptionsCheckbox .label-description::after, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-interestGroupsRow .ml-form-interestGroupsRowCheckbox .label-description::after, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow .label-description::after {
+                  background: no-repeat 50%/50% 50%;
+              }
+        
+              #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-control, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-control {
+                position: relative;
+                display: block;
+                min-height: 1.5rem;
+                padding-left: 1.5rem;
+              }
+        
+              #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-radio .custom-control-input, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-radio .custom-control-input, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-checkbox .custom-control-input, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-checkbox .custom-control-input {
+                  position: absolute;
+                  z-index: -1;
+                  opacity: 0;
+                  box-sizing: border-box;
+                  padding: 0;
+              }
+        
+              #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-radio .custom-control-label, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-radio .custom-control-label, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-checkbox .custom-control-label, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-checkbox .custom-control-label {
+                  color: #000000;
+                  font-size: 12px!important;
+                  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+                  line-height: 22px;
+                  margin-bottom: 0;
+                  position: relative;
+                  vertical-align: top;
+                  font-style: normal;
+                  font-weight: 700;
+              }
+        
+              #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-select, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-select {
+                background-color:  !important;
+                color: #333333 !important;
+                border-color: #D7B18D;
+                border-radius: 0px !important;
+                border-style: solid !important;
+                border-width: 1px !important;
+                font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+                font-size: 14px !important;
+                line-height: 20px !important;
+                margin-bottom: 0;
+                margin-top: 0;
+                padding: 10px 28px 10px 12px !important;
+                width: 100% !important;
+                box-sizing: border-box !important;
+                max-width: 100% !important;
+                height: auto;
+                display: inline-block;
+                vertical-align: middle;
+                background: url('https://assets.mlcdn.com/ml/images/default/dropdown.svg') no-repeat right .75rem center/8px 10px;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+              }
+        
+        
+              #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow {
+                height: auto;
+                width: 100%;
+                float: left;
+              }
+              .ml-form-formContent.horozintalForm .ml-form-horizontalRow .ml-input-horizontal { width: 70%; float: left; }
+              .ml-form-formContent.horozintalForm .ml-form-horizontalRow .ml-button-horizontal { width: 30%; float: left; }
+              .ml-form-formContent.horozintalForm .ml-form-horizontalRow .ml-button-horizontal.labelsOn { padding-top: 25px;  }
+              .ml-form-formContent.horozintalForm .ml-form-horizontalRow .horizontal-fields { box-sizing: border-box; float: left; padding-right: 10px;  }
+              #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow input {
+                background-color: ;
+                color: #333333;
+                border-color: #D7B18D;
+                border-radius: 0px;
+                border-style: solid;
+                border-width: 1px;
+                font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+                font-size: 14px;
+                line-height: 20px;
+                margin-bottom: 0;
+                margin-top: 0;
+                padding: 10px 10px;
+                width: 100%;
+                box-sizing: border-box;
+                overflow-y: initial;
+              }
+              #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow button {
+                background-color: #D7B18D !important;
+                border-color: #D7B18D;
+                border-style: solid;
+                border-width: 1px;
+                border-radius: 0px;
+                box-shadow: none;
+                color: #000000 !important;
+                cursor: pointer;
+                font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+                font-size: 14px !important;
+                font-weight: 400;
+                line-height: 20px;
+                margin: 0 !important;
+                padding: 10px !important;
+                width: 100%;
+                height: auto;
+              }
+              #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow button:hover {
+                background-color: #ffffff !important;
+                border-color: #ffffff !important;
+              }
+              #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow input[type="checkbox"] {
+                box-sizing: border-box;
+                padding: 0;
+                position: absolute;
+                z-index: -1;
+                opacity: 0;
+                margin-top: 5px;
+                margin-left: -1.5rem;
+                overflow: visible;
+              }
+              #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow .label-description {
+                color: #000000;
+                display: block;
+                font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+                font-size: 12px;
+                text-align: left;
+                margin-bottom: 0;
+                position: relative;
+                vertical-align: top;
+              }
+              #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow label {
+                font-weight: normal;
+                margin: 0;
+                padding: 0;
+                position: relative;
+                display: block;
+                min-height: 24px;
+                padding-left: 24px;
+        
+              }
+              #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow label a {
+                color: #000000;
+                text-decoration: underline;
+              }
+              #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow label p {
+                color: #000000 !important;
+                font-family: 'Open Sans', Arial, Helvetica, sans-serif !important;
+                font-size: 12px !important;
+                font-weight: normal !important;
+                line-height: 18px !important;
+                padding: 0 !important;
+                margin: 0 5px 0 0 !important;
+              }
+              #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow label p:last-child {
+                margin: 0;
+              }
+              #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit {
+                margin: 0 0 20px 0;
+                float: left;
+                width: 100%;
+              }
+              #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit button {
+                background-color: #D7B18D !important;
+                border: none !important;
+                border-radius: 0px !important;
+                box-shadow: none !important;
+                color: #000000 !important;
+                cursor: pointer;
+                font-family: 'Open Sans', Arial, Helvetica, sans-serif !important;
+                font-size: 14px !important;
+                font-weight: 400 !important;
+                line-height: 21px !important;
+                height: auto;
+                padding: 10px !important;
+                width: 100% !important;
+                box-sizing: border-box !important;
+              }
+              #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit button.loading {
+                display: none;
+              }
+              #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit button:hover {
+                background-color: #ffffff !important;
+              }
+              .ml-subscribe-close {
+                width: 30px;
+                height: 30px;
+                background: url('https://assets.mlcdn.com/ml/images/default/modal_close.png') no-repeat;
+                background-size: 30px;
+                cursor: pointer;
+                margin-top: -10px;
+                margin-right: -10px;
+                position: absolute;
+                top: 0;
+                right: 0;
+              }
+              .ml-error input, .ml-error textarea, .ml-error select {
+                border-color: red!important;
+              }
+        
+              .ml-error .custom-checkbox-radio-list {
+                border: 1px solid red !important;
+                border-radius: 0px;
+                padding: 10px;
+              }
+        
+              .ml-error .label-description,
+              .ml-error .label-description p,
+              .ml-error .label-description p a,
+              .ml-error label:first-child {
+                color: #ff0000 !important;
+              }
+        
+              #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow.ml-error .label-description p,
+              #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow.ml-error .label-description p:first-letter {
+                color: #ff0000 !important;
+              }
+                    @media only screen and (max-width: 400px){
+        
+                .ml-form-embedWrapper.embedDefault, .ml-form-embedWrapper.embedPopup { width: 100%!important; }
+                .ml-form-formContent.horozintalForm { float: left!important; }
+                .ml-form-formContent.horozintalForm .ml-form-horizontalRow { height: auto!important; width: 100%!important; float: left!important; }
+                .ml-form-formContent.horozintalForm .ml-form-horizontalRow .ml-input-horizontal { width: 100%!important; }
+                .ml-form-formContent.horozintalForm .ml-form-horizontalRow .ml-input-horizontal > div { padding-right: 0px!important; padding-bottom: 10px; }
+                .ml-form-formContent.horozintalForm .ml-button-horizontal { width: 100%!important; }
+                .ml-form-formContent.horozintalForm .ml-button-horizontal.labelsOn { padding-top: 0px!important; }
+        
+              }
+            </style>
+        
+
+            <div id="mlb2-9291945" class="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-9291945">
+              <div class="ml-form-align-center ">
+                <div class="ml-form-embedWrapper embedForm">
+                  <div class="ml-form-embedBody ml-form-embedBodyDefault row-form">
+                    <div class="ml-form-embedContent" style="margin-bottom: 0px; ">
+                    </div>
+                    <form class="ml-block-form" action="https://assets.mailerlite.com/jsonp/663673/forms/104696908200543763/subscribe" data-code="" method="post" target="_blank">
+                      <div class="ml-form-formContent">
+                          <div class="ml-form-fieldRow ml-last-item">
+                            <div class="ml-field-group ml-field-email ml-validate-email ml-validate-required">
+                             <!-- input -->
+                              <input aria-label="email" aria-required="true" type="email" class="form-control" data-inputmask="" name="fields[email]" placeholder="Email" autocomplete="email">
+                              <!-- /input -->
+        
+                              <!-- textarea -->
+                              
+                              <!-- /textarea -->
+        
+                              <!-- select -->
+                              
+                              <!-- /select -->
+        
+                              <!-- checkboxes -->
+                    
+                    <!-- /checkboxes -->
+        
+                              <!-- radio -->
+                              
+                              <!-- /radio -->
+        
+                              <!-- countries -->
+                              
+                              <!-- /countries -->
+        
+        
+        
+        
+        
+                            </div>
+                          </div>
+                        
+                      </div>
+        
+                      
+        
+                      <!-- Privacy policy -->
+                      
+                      <!-- /Privacy policy -->
+        
+                      
+        
+                      
+        
+                      
+        
+        
+        
+        
+        
+        
+                      
+                      <input type="hidden" name="ml-submit" value="1">
+        
+                      <div class="ml-form-embedSubmit">
+                        
+                          <button type="submit" class="primary">Subscribe</button>
+                        
+                        <button disabled="disabled" style="display: none;" type="button" class="loading">
+                          <div class="ml-form-embedSubmitLoad"></div>
+                          <span class="sr-only">Loading...</span>
+                        </button>
+                      </div>
+        
+                      
+                      <input type="hidden" name="anticsrf" value="true">
+                    </form>
+                  </div>
+        
+                  <div class="ml-form-successBody row-success" style="display: none">
+        
+                    <div class="ml-form-successContent">
+                      
+                        <h4>Thank you!</h4>
+                        
+                          <p>You have successfully joined our subscriber list.</p>
+                        
+                      
+                    </div>
+        
+                  </div>
+                </div>
+              </div>
+
+            </div>
+        
+          
+        
+          
+          
+          <script>
+            function ml_webform_success_9291945() {
+              var $ = ml_jQuery || jQuery;
+              $('.ml-subscribe-form-9291945 .row-success').show();
+              $('.ml-subscribe-form-9291945 .row-form').hide();
+            }
+              </script>
+          
+          
+              <script src="https://groot.mailerlite.com/js/w/webforms.min.js?v2d8fb22bb5b3677f161552cd9e774127" type="text/javascript"></script>
+                <script>
+                    fetch("https://assets.mailerlite.com/jsonp/663673/forms/104696908200543763/takel")
+                </script>
+
+<h3 class="mt-6">Follow us </h3>
+<!-- social buttons -->
+<div class="flex gap-x-8">
+    {% if site.data.navigation.footer_social.instagram-link %}
+    <a href="{{site.data.navigation.footer_social.instagram-link }}">
+        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+
+        <path d="M15.609 3.77441C14.9969 3.77441 14.3848 4.28451 14.3848 4.99865C14.3848 5.71279 14.8949 6.22289 15.609 6.22289C16.3231 6.22289 16.8332 5.71279 16.8332 4.99865C16.7312 4.28451 16.2211 3.77441 15.609 3.77441Z" fill="var(--text-color)"/>
+        <path d="M10.2021 5.30518C7.44756 5.30518 5.20312 7.54961 5.20312 10.3041C5.20312 13.0587 7.44756 15.3031 10.2021 15.3031C12.9566 15.3031 15.2011 13.0587 15.2011 10.3041C15.3031 7.54961 13.0587 5.30518 10.2021 5.30518ZM10.2021 13.5688C8.46776 13.5688 6.93746 12.1405 6.93746 10.3041C6.93746 8.56981 8.36574 7.03951 10.2021 7.03951C11.9364 7.03951 13.4667 8.46779 13.4667 10.3041C13.4667 12.1405 12.0385 13.5688 10.2021 13.5688Z" fill="var(--text-color)"/>
+        <path d="M14.2828 0H6.12119C2.75454 0 0 2.75454 0 6.12119V14.2828C0 17.6494 2.75454 20.404 6.12119 20.404H14.2828C17.6494 20.404 20.404 17.6494 20.404 14.2828V6.12119C20.404 2.75454 17.6494 0 14.2828 0ZM18.4656 14.2828C18.4656 16.6292 16.5272 18.4656 14.2828 18.4656H6.12119C3.77473 18.4656 1.93838 16.5272 1.93838 14.2828V6.12119C1.93838 3.77473 3.87675 1.93838 6.12119 1.93838H14.2828C16.6292 1.93838 18.4656 3.87675 18.4656 6.12119V14.2828Z" fill="var(--text-color)"/>
+    </svg>
+    </a>
+    {% endif %}
+    {% if site.data.navigation.footer_social.facebook-link %}
+    <a href="{{site.data.navigation.footer_social.facebook-link }}">
+        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="21" viewBox="0 0 11 21" fill="none">
+            <g clip-path="url(#clip0_51_130)">
+            <path d="M10.4043 0.00381818L7.62615 0C4.93203 0 3.19186 2.02745 3.19186 5.16905V7.55045H0.404297V11.8604H3.19186L3.1885 21H7.08867L7.09203 11.86H10.2903L10.2877 7.55122H7.09203V5.53025C7.09203 4.55853 7.29438 4.06713 8.408 4.06713L10.3962 4.06598L10.4046 0.00343636L10.4043 0.00381818Z" fill="var(--text-color)"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_51_130">
+            <rect width="10" height="21" fill="var(--text-color)" transform="translate(0.404297)"/>
+            </clipPath>
+            </defs>
+            </svg>
+    </a>
+    {% endif %}
+    {% if site.data.navigation.footer_social.linkedin-link %}
+    <a href="{{site.data.navigation.footer_social.linkedin-link}}">
+     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+        <path fill="var(--text-color)" opacity="1.000000" stroke="none" 
+        d="
+             M1.000006,474.000000 
+        C1.000000,329.309998 1.000000,184.620026 1.361872,39.368855 
+        C2.120875,38.296181 2.713597,37.843018 2.886153,37.264526 
+        C6.090697,26.521404 11.826979,17.374830 21.339418,11.372476 
+        C27.825462,7.279778 35.085842,4.414234 42.000000,1.000000 
+            C185.023331,1.000000 328.046661,1.000000 471.659668,1.375964 
+            C484.509125,4.083354 494.778534,10.107486 501.831726,20.242828 
+            C506.446625,26.874384 509.337128,34.705936 513.000000,42.000000 
+            C513.000000,185.023331 513.000000,328.046661 512.624023,471.659668 
+            C509.916565,484.509125 503.892609,494.778595 493.757141,501.831696 
+            C487.125549,506.446533 479.294037,509.337097 472.000000,513.000000 
+            C328.976685,513.000000 185.953354,513.000000 42.340332,512.624023 
+            C27.576956,509.352448 16.564589,501.783569 9.008614,489.492065 
+            C5.972601,484.553314 3.648262,479.177094 1.000006,474.000000 
+        M435.999756,433.319519 
+            C435.999847,386.327332 436.260101,339.332489 435.783966,292.345123 
+            C435.686890,282.765350 433.736694,272.945984 431.034027,263.707092 
+            C426.047607,246.661682 415.998077,232.764389 402.098114,221.475037 
+            C386.474854,208.786072 368.666473,202.045349 348.792023,201.155151 
+            C339.578400,200.742447 330.546356,203.023270 321.861694,206.523895 
+            C310.358643,211.160538 300.045715,217.415558 291.739227,226.751190 
+            C288.740845,230.121094 285.666840,233.423706 281.976746,237.470505 
+            C281.976746,226.466537 281.976746,216.416855 281.976746,206.207703 
+            C256.515442,206.207703 231.446686,206.207703 206.198334,206.207703 
+            C206.198334,282.811340 206.198334,359.207275 206.198334,435.801575 
+            C231.465408,435.801575 256.534149,435.801575 282.000000,435.801575 
+            C282.000000,433.988708 282.000000,432.366882 282.000000,430.745087 
+            C282.000000,388.752197 282.033325,346.759308 281.981079,304.766479 
+            C281.963928,290.957642 286.074188,279.142090 297.219055,270.224640 
+            C306.488831,262.807556 317.344940,259.749054 328.389130,262.441223 
+            C348.504944,267.344788 359.902466,282.022461 359.963623,303.225677 
+            C360.086121,345.718140 360.000000,388.211151 360.000000,430.703949 
+            C360.000000,432.448822 360.000000,434.193695 360.000000,435.999908 
+            C384.715393,435.999908 408.709412,436.022552 432.703003,435.927246 
+            C433.802826,435.922882 434.898468,434.857574 435.999756,433.319519 
+        M154.000000,299.500000 
+            C154.000000,268.405823 154.000000,237.311646 154.000000,206.288483 
+            C128.355545,206.288483 103.284676,206.288483 78.286255,206.288483 
+            C78.286255,282.978180 78.286255,359.379028 78.286255,435.711548 
+            C103.644424,435.711548 128.715302,435.711548 154.000000,435.711548 
+            C154.000000,390.448944 154.000000,345.474457 154.000000,299.500000 
+        M144.931351,151.588882 
+            C146.575836,149.935104 148.319748,148.367996 149.848907,146.613693 
+            C160.867691,133.972504 164.135971,119.468628 159.685699,103.371338 
+            C156.878464,93.217155 151.098312,84.609337 142.237976,79.124756 
+            C136.118958,75.337059 128.896103,72.217499 121.838531,71.286980 
+            C105.795097,69.171654 91.983276,74.633507 81.286469,87.191460 
+            C71.978882,98.118492 69.106461,111.061653 71.495270,124.646362 
+            C73.483261,135.951706 79.513763,145.568832 89.079903,152.663803 
+            C97.450310,158.871933 107.049698,161.897720 117.076500,161.749329 
+            C126.926529,161.603561 136.358429,158.371170 144.931351,151.588882 
+        z"/>
+        
+        <path fill="var(--bg-color)" opacity="1.000000" stroke="none" 
+            d="
+        M435.997925,433.802948 
+            C434.898468,434.857574 433.802826,435.922882 432.703003,435.927246 
+            C408.709412,436.022552 384.715393,435.999908 360.000000,435.999908 
+            C360.000000,434.193695 360.000000,432.448822 360.000000,430.703949 
+            C360.000000,388.211151 360.086121,345.718140 359.963623,303.225677 
+            C359.902466,282.022461 348.504944,267.344788 328.389130,262.441223 
+            C317.344940,259.749054 306.488831,262.807556 297.219055,270.224640 
+            C286.074188,279.142090 281.963928,290.957642 281.981079,304.766479 
+            C282.033325,346.759308 282.000000,388.752197 282.000000,430.745087 
+            C282.000000,432.366882 282.000000,433.988708 282.000000,435.801575 
+            C256.534149,435.801575 231.465408,435.801575 206.198334,435.801575 
+            C206.198334,359.207275 206.198334,282.811340 206.198334,206.207703 
+            C231.446686,206.207703 256.515442,206.207703 281.976746,206.207703 
+            C281.976746,216.416855 281.976746,226.466537 281.976746,237.470505 
+            C285.666840,233.423706 288.740845,230.121094 291.739227,226.751190 
+            C300.045715,217.415558 310.358643,211.160538 321.861694,206.523895 
+            C330.546356,203.023270 339.578400,200.742447 348.792023,201.155151 
+            C368.666473,202.045349 386.474854,208.786072 402.098114,221.475037 
+            C415.998077,232.764389 426.047607,246.661682 431.034027,263.707092 
+            C433.736694,272.945984 435.686890,282.765350 435.783966,292.345123 
+            C436.260101,339.332489 435.999847,386.327332 435.997925,433.802948 
+        z"/>
+        <path fill=" var(--bg-color)" opacity="1.000000" stroke="none" 
+            d="
+        M154.000000,300.000000 
+            C154.000000,345.474457 154.000000,390.448944 154.000000,435.711548 
+            C128.715302,435.711548 103.644424,435.711548 78.286255,435.711548 
+            C78.286255,359.379028 78.286255,282.978180 78.286255,206.288483 
+            C103.284676,206.288483 128.355545,206.288483 154.000000,206.288483 
+            C154.000000,237.311646 154.000000,268.405823 154.000000,300.000000 
+        z"/>
+        <path fill=" var(--bg-color)" opacity="1.000000" stroke="none" 
+            d="
+        M144.620575,151.781097 
+            C136.358429,158.371170 126.926529,161.603561 117.076500,161.749329 
+            C107.049698,161.897720 97.450310,158.871933 89.079903,152.663803 
+            C79.513763,145.568832 73.483261,135.951706 71.495270,124.646362 
+            C69.106461,111.061653 71.978882,98.118492 81.286469,87.191460 
+            C91.983276,74.633507 105.795097,69.171654 121.838531,71.286980 
+            C128.896103,72.217499 136.118958,75.337059 142.237976,79.124756 
+            C151.098312,84.609337 156.878464,93.217155 159.685699,103.371338 
+            C164.135971,119.468628 160.867691,133.972504 149.848907,146.613693 
+            C148.319748,148.367996 146.575836,149.935104 144.620575,151.781097 
+        z"/>
+    </svg>
+    </a>
+    {% endif %}
+    {% if site.data.navigation.footer_social.twitter-link %}
+    <a href="{{site.data.navigation.footer_social.twitter-link}}">
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            width="100%" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+        <path fill="var(--text-color)" opacity="1.000000" stroke="none" 
+            d="
+        M499.004883,513.000000 
+            C334.170258,513.000000 169.837082,512.985291 5.504008,513.093140 
+            C1.764343,513.095581 0.902984,512.263123 0.905435,508.503906 
+            C1.014739,340.837463 1.014422,173.170975 0.906997,5.504556 
+            C0.904602,1.766234 1.735011,0.902879 5.495556,0.905334 
+            C173.161972,1.014767 340.828461,1.014404 508.494904,0.907097 
+            C512.231934,0.904705 513.097168,1.733116 513.094727,5.495007 
+            C512.985168,173.161423 512.985657,340.827911 513.092834,508.494354 
+            C513.095215,512.229980 512.295532,513.533508 508.496887,513.071838 
+            C505.540802,512.712585 502.506104,513.000000 499.004883,513.000000 
+        z"/>
+    </svg>
+    </a>
+    {% endif %}
+</div>
+        </div>
+            
+
+    </footer>
+
+  
+  
+  <script>
+    function ml_webform_success_9291945() {
+      var $ = ml_jQuery || jQuery;
+      $('.ml-subscribe-form-9291945 .row-success').show();
+      $('.ml-subscribe-form-9291945 .row-form').hide();
+    }
+      </script>
+  
+  
+      <script src="https://groot.mailerlite.com/js/w/webforms.min.js?v1f25ee4b05f240a833e02c19975434a4" type="text/javascript"></script>
+        <script>
+            fetch("https://assets.mailerlite.com/jsonp/663673/forms/104696908200543763/takel")
+        </script>
+
+    {% comment %}
 <footer class="py-0">
-    <div class="max-width p-8 grid sm:grid-cols-3 md:grid-cols-5 gap-x-4 gap-y-16 items-center">
+    <div class="max-width p-8 grid sm:grid-cols-3 gap-x-4 gap-y-16 items-center">
         <div class="flex flex-col justify-between  mx-auto max-w-[300px]">
             <img src="/assets/logooshombali_white.svg" class="mx-auto footer-logo"> 
-            <div class="flex justify-center gap-[50px] sm:justify-between mt-12 md:mb-0 ">
-                <a href="/instagram.com">
+            <div class="flex justify-between mt-12 md:mb-0 ">
+                {% if site.data.navigation.footer_social.instagram-link %}
+                <a href="{{site.data.navigation.footer_social.instagram-link }}">
                     <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
 
                     <path d="M15.609 3.77441C14.9969 3.77441 14.3848 4.28451 14.3848 4.99865C14.3848 5.71279 14.8949 6.22289 15.609 6.22289C16.3231 6.22289 16.8332 5.71279 16.8332 4.99865C16.7312 4.28451 16.2211 3.77441 15.609 3.77441Z" fill="var(--text-color)"/>
@@ -159,7 +1074,9 @@
                     <path d="M14.2828 0H6.12119C2.75454 0 0 2.75454 0 6.12119V14.2828C0 17.6494 2.75454 20.404 6.12119 20.404H14.2828C17.6494 20.404 20.404 17.6494 20.404 14.2828V6.12119C20.404 2.75454 17.6494 0 14.2828 0ZM18.4656 14.2828C18.4656 16.6292 16.5272 18.4656 14.2828 18.4656H6.12119C3.77473 18.4656 1.93838 16.5272 1.93838 14.2828V6.12119C1.93838 3.77473 3.87675 1.93838 6.12119 1.93838H14.2828C16.6292 1.93838 18.4656 3.87675 18.4656 6.12119V14.2828Z" fill="var(--text-color)"/>
                 </svg>
                 </a>
-                <a href="/faccebook.com">
+                {% endif %}
+                {% if site.data.navigation.footer_social.facebook-link %}
+                <a href="{{site.data.navigation.footer_social.facebook-link }}">
                     <svg xmlns="http://www.w3.org/2000/svg" width="11" height="21" viewBox="0 0 11 21" fill="none">
                         <g clip-path="url(#clip0_51_130)">
                         <path d="M10.4043 0.00381818L7.62615 0C4.93203 0 3.19186 2.02745 3.19186 5.16905V7.55045H0.404297V11.8604H3.19186L3.1885 21H7.08867L7.09203 11.86H10.2903L10.2877 7.55122H7.09203V5.53025C7.09203 4.55853 7.29438 4.06713 8.408 4.06713L10.3962 4.06598L10.4046 0.00343636L10.4043 0.00381818Z" fill="var(--text-color)"/>
@@ -171,18 +1088,135 @@
                         </defs>
                         </svg>
                 </a>
-                <a href="/x">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
-                    <g clip-path="url(#clip0_51_136)">
-                    <path d="M11.7118 8.892L18.7851 0H17.1089L10.9673 7.72091L6.06202 0H0.404297L7.82205 11.6753L0.404297 21H2.08057L8.56638 12.8465L13.7467 21H19.4045L11.7117 8.892H11.7121H11.7118ZM9.416 11.778L8.66439 10.6155L2.68446 1.36459H5.25896L10.085 8.83035L10.8366 9.99288L17.1097 19.6972H14.5352L9.41615 11.7784V11.7779L9.416 11.778Z" fill="var(--text-color)"/>
-                    </g>
-                    <defs>
-                    <clipPath id="clip0_51_136">
-                    <rect width="19" height="21" fill="white" transform="translate(0.404297)"/>
-                    </clipPath>
-                    </defs>
-                    </svg>
+                {% endif %}
+                {% if site.data.navigation.footer_social.linkedin-link %}
+                <a href="{{site.data.navigation.footer_social.linkedin-link}}">
+                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+                    <path fill="var(--text-color)" opacity="1.000000" stroke="none" 
+                    d="
+                         M1.000006,474.000000 
+                    C1.000000,329.309998 1.000000,184.620026 1.361872,39.368855 
+                    C2.120875,38.296181 2.713597,37.843018 2.886153,37.264526 
+                    C6.090697,26.521404 11.826979,17.374830 21.339418,11.372476 
+                    C27.825462,7.279778 35.085842,4.414234 42.000000,1.000000 
+                        C185.023331,1.000000 328.046661,1.000000 471.659668,1.375964 
+                        C484.509125,4.083354 494.778534,10.107486 501.831726,20.242828 
+                        C506.446625,26.874384 509.337128,34.705936 513.000000,42.000000 
+                        C513.000000,185.023331 513.000000,328.046661 512.624023,471.659668 
+                        C509.916565,484.509125 503.892609,494.778595 493.757141,501.831696 
+                        C487.125549,506.446533 479.294037,509.337097 472.000000,513.000000 
+                        C328.976685,513.000000 185.953354,513.000000 42.340332,512.624023 
+                        C27.576956,509.352448 16.564589,501.783569 9.008614,489.492065 
+                        C5.972601,484.553314 3.648262,479.177094 1.000006,474.000000 
+                    M435.999756,433.319519 
+                        C435.999847,386.327332 436.260101,339.332489 435.783966,292.345123 
+                        C435.686890,282.765350 433.736694,272.945984 431.034027,263.707092 
+                        C426.047607,246.661682 415.998077,232.764389 402.098114,221.475037 
+                        C386.474854,208.786072 368.666473,202.045349 348.792023,201.155151 
+                        C339.578400,200.742447 330.546356,203.023270 321.861694,206.523895 
+                        C310.358643,211.160538 300.045715,217.415558 291.739227,226.751190 
+                        C288.740845,230.121094 285.666840,233.423706 281.976746,237.470505 
+                        C281.976746,226.466537 281.976746,216.416855 281.976746,206.207703 
+                        C256.515442,206.207703 231.446686,206.207703 206.198334,206.207703 
+                        C206.198334,282.811340 206.198334,359.207275 206.198334,435.801575 
+                        C231.465408,435.801575 256.534149,435.801575 282.000000,435.801575 
+                        C282.000000,433.988708 282.000000,432.366882 282.000000,430.745087 
+                        C282.000000,388.752197 282.033325,346.759308 281.981079,304.766479 
+                        C281.963928,290.957642 286.074188,279.142090 297.219055,270.224640 
+                        C306.488831,262.807556 317.344940,259.749054 328.389130,262.441223 
+                        C348.504944,267.344788 359.902466,282.022461 359.963623,303.225677 
+                        C360.086121,345.718140 360.000000,388.211151 360.000000,430.703949 
+                        C360.000000,432.448822 360.000000,434.193695 360.000000,435.999908 
+                        C384.715393,435.999908 408.709412,436.022552 432.703003,435.927246 
+                        C433.802826,435.922882 434.898468,434.857574 435.999756,433.319519 
+                    M154.000000,299.500000 
+                        C154.000000,268.405823 154.000000,237.311646 154.000000,206.288483 
+                        C128.355545,206.288483 103.284676,206.288483 78.286255,206.288483 
+                        C78.286255,282.978180 78.286255,359.379028 78.286255,435.711548 
+                        C103.644424,435.711548 128.715302,435.711548 154.000000,435.711548 
+                        C154.000000,390.448944 154.000000,345.474457 154.000000,299.500000 
+                    M144.931351,151.588882 
+                        C146.575836,149.935104 148.319748,148.367996 149.848907,146.613693 
+                        C160.867691,133.972504 164.135971,119.468628 159.685699,103.371338 
+                        C156.878464,93.217155 151.098312,84.609337 142.237976,79.124756 
+                        C136.118958,75.337059 128.896103,72.217499 121.838531,71.286980 
+                        C105.795097,69.171654 91.983276,74.633507 81.286469,87.191460 
+                        C71.978882,98.118492 69.106461,111.061653 71.495270,124.646362 
+                        C73.483261,135.951706 79.513763,145.568832 89.079903,152.663803 
+                        C97.450310,158.871933 107.049698,161.897720 117.076500,161.749329 
+                        C126.926529,161.603561 136.358429,158.371170 144.931351,151.588882 
+                    z"/>
+                    
+                    <path fill="var(--bg-color)" opacity="1.000000" stroke="none" 
+                        d="
+                    M435.997925,433.802948 
+                        C434.898468,434.857574 433.802826,435.922882 432.703003,435.927246 
+                        C408.709412,436.022552 384.715393,435.999908 360.000000,435.999908 
+                        C360.000000,434.193695 360.000000,432.448822 360.000000,430.703949 
+                        C360.000000,388.211151 360.086121,345.718140 359.963623,303.225677 
+                        C359.902466,282.022461 348.504944,267.344788 328.389130,262.441223 
+                        C317.344940,259.749054 306.488831,262.807556 297.219055,270.224640 
+                        C286.074188,279.142090 281.963928,290.957642 281.981079,304.766479 
+                        C282.033325,346.759308 282.000000,388.752197 282.000000,430.745087 
+                        C282.000000,432.366882 282.000000,433.988708 282.000000,435.801575 
+                        C256.534149,435.801575 231.465408,435.801575 206.198334,435.801575 
+                        C206.198334,359.207275 206.198334,282.811340 206.198334,206.207703 
+                        C231.446686,206.207703 256.515442,206.207703 281.976746,206.207703 
+                        C281.976746,216.416855 281.976746,226.466537 281.976746,237.470505 
+                        C285.666840,233.423706 288.740845,230.121094 291.739227,226.751190 
+                        C300.045715,217.415558 310.358643,211.160538 321.861694,206.523895 
+                        C330.546356,203.023270 339.578400,200.742447 348.792023,201.155151 
+                        C368.666473,202.045349 386.474854,208.786072 402.098114,221.475037 
+                        C415.998077,232.764389 426.047607,246.661682 431.034027,263.707092 
+                        C433.736694,272.945984 435.686890,282.765350 435.783966,292.345123 
+                        C436.260101,339.332489 435.999847,386.327332 435.997925,433.802948 
+                    z"/>
+                    <path fill=" var(--bg-color)" opacity="1.000000" stroke="none" 
+                        d="
+                    M154.000000,300.000000 
+                        C154.000000,345.474457 154.000000,390.448944 154.000000,435.711548 
+                        C128.715302,435.711548 103.644424,435.711548 78.286255,435.711548 
+                        C78.286255,359.379028 78.286255,282.978180 78.286255,206.288483 
+                        C103.284676,206.288483 128.355545,206.288483 154.000000,206.288483 
+                        C154.000000,237.311646 154.000000,268.405823 154.000000,300.000000 
+                    z"/>
+                    <path fill=" var(--bg-color)" opacity="1.000000" stroke="none" 
+                        d="
+                    M144.620575,151.781097 
+                        C136.358429,158.371170 126.926529,161.603561 117.076500,161.749329 
+                        C107.049698,161.897720 97.450310,158.871933 89.079903,152.663803 
+                        C79.513763,145.568832 73.483261,135.951706 71.495270,124.646362 
+                        C69.106461,111.061653 71.978882,98.118492 81.286469,87.191460 
+                        C91.983276,74.633507 105.795097,69.171654 121.838531,71.286980 
+                        C128.896103,72.217499 136.118958,75.337059 142.237976,79.124756 
+                        C151.098312,84.609337 156.878464,93.217155 159.685699,103.371338 
+                        C164.135971,119.468628 160.867691,133.972504 149.848907,146.613693 
+                        C148.319748,148.367996 146.575836,149.935104 144.620575,151.781097 
+                    z"/>
+                </svg>
                 </a>
+                {% endif %}
+                {% if site.data.navigation.footer_social.twitter-link %}
+                <a href="{{site.data.navigation.footer_social.twitter-link}}">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        width="100%" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+                    <path fill="var(--text-color)" opacity="1.000000" stroke="none" 
+                        d="
+                    M499.004883,513.000000 
+                        C334.170258,513.000000 169.837082,512.985291 5.504008,513.093140 
+                        C1.764343,513.095581 0.902984,512.263123 0.905435,508.503906 
+                        C1.014739,340.837463 1.014422,173.170975 0.906997,5.504556 
+                        C0.904602,1.766234 1.735011,0.902879 5.495556,0.905334 
+                        C173.161972,1.014767 340.828461,1.014404 508.494904,0.907097 
+                        C512.231934,0.904705 513.097168,1.733116 513.094727,5.495007 
+                        C512.985168,173.161423 512.985657,340.827911 513.092834,508.494354 
+                        C513.095215,512.229980 512.295532,513.533508 508.496887,513.071838 
+                        C505.540802,512.712585 502.506104,513.000000 499.004883,513.000000 
+                    z"/>
+                </svg>
+                </a>
+                {% endif %}
+
             </div>
         </div>
         <div class="sm:col-span-2 flex justify-center gap-12">
@@ -202,11 +1236,15 @@
         </div>
     </div>
 </footer>
+{% endcomment %}
+
+</div>
+
 <div class="scheme-1 h-0">
 
-    <div class="fixed right-0 bottom-[15vh] p-[19px_24px_18px_25px;] rounded-l-full bg-[var(--colored-button-bg)] z-50 border-0 whatsappParent">
+    <div class="fixed hidden md:block right-0 bottom-[15vh] p-[19px_24px_18px_25px;] rounded-l-full bg-[var(--colored-button-bg)] z-50 border-0 whatsappParent">
         <a href="https://wa.me/{{site.data.navigation.whatsapp.number}}?text={{site.data.navigation.whatsapp.mesage | replace: ' ','%20'}}">
-            <svg xmlns="http://www.w3.org/2000/svg" width="47" height="47" viewBox="0 0 47 47" fill="none">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 47 47" fill="none">
                 <g clip-path="url(#clip0_474_2546)">
                 <path d="M34.1521 26.5213C34.0621 26.478 30.6975 24.8211 30.0998 24.6059C29.8558 24.5182 29.5944 24.4329 29.3163 24.4329C28.8617 24.4329 28.4804 24.659 28.1833 25.1038C27.8469 25.6034 26.8298 26.793 26.5154 27.1479C26.4744 27.1946 26.4184 27.2505 26.385 27.2505C26.355 27.2505 25.834 27.0359 25.6765 26.9679C22.0673 25.3998 19.3275 21.6296 18.9519 20.9938C18.8983 20.9027 18.8959 20.8611 18.8954 20.8611C18.9086 20.8127 19.0298 20.6909 19.0927 20.628C19.2761 20.4469 19.4746 20.2075 19.6667 19.9767C19.7579 19.8671 19.849 19.7575 19.9384 19.6542C20.2171 19.33 20.3411 19.0784 20.4854 18.7865L20.5609 18.6348C20.9123 17.9367 20.6123 17.3482 20.5154 17.1579C20.4358 16.9986 19.0148 13.57 18.8642 13.2094C18.5008 12.34 18.0208 11.9355 17.3538 11.9355C17.2921 11.9355 17.3538 11.9355 17.0942 11.9465C16.7781 11.9598 15.0571 12.1865 14.2961 12.6659C13.489 13.1748 12.124 14.7965 12.124 17.6482C12.124 20.215 13.7527 22.6386 14.4525 23.5605C14.4698 23.5836 14.5015 23.6309 14.5483 23.6984C17.2263 27.61 20.5656 30.5084 23.9498 31.8607C27.2083 33.1623 28.7515 33.3129 29.6284 33.3129C29.9971 33.3129 30.2919 33.284 30.5527 33.258L30.7177 33.2425C31.8433 33.1427 34.3171 31.8607 34.8796 30.2973C35.3227 29.0655 35.4398 27.7202 35.145 27.2315C34.9431 26.8992 34.5946 26.7325 34.1544 26.5207L34.1521 26.5213Z" fill="var(--colored-button-text)"/>
                 <path d="M23.4866 0C10.987 0 0.817558 10.0933 0.817558 22.4988C0.817558 26.5113 1.89121 30.439 3.92544 33.8769L0.0317889 45.3623C-0.0409034 45.5763 0.0133274 45.8135 0.171404 45.9744C0.285635 46.091 0.440827 46.1538 0.599481 46.1538C0.660058 46.1538 0.721212 46.1446 0.781212 46.1256L12.757 42.3202C16.0345 44.0712 19.7383 44.9954 23.4866 44.9954C35.9851 44.9954 46.1539 34.9038 46.1539 22.4988C46.1539 10.0938 35.9856 0 23.4866 0ZM23.4866 40.309C19.9593 40.309 16.5427 39.2908 13.6062 37.3633C13.5076 37.2987 13.3927 37.2652 13.2774 37.2652C13.2162 37.2652 13.1551 37.2744 13.0956 37.2935L7.09621 39.2002L9.03294 33.4863C9.09583 33.3012 9.0641 33.0975 8.94871 32.94C6.71256 29.884 5.53044 26.2737 5.53044 22.4988C5.53044 12.6773 13.5854 4.68635 23.4866 4.68635C33.3877 4.68635 41.4404 12.6767 41.4404 22.4988C41.4404 32.3192 33.3866 40.3085 23.4866 40.3085V40.309Z" fill="var(--colored-button-text)"/>
@@ -255,18 +1293,19 @@
         
         .booking input {
             letter-spacing: .1em;
-            font-family: 'Questrial', sans-serif;
+            font-family: 'Inter', sans-serif;
             color: var(--colored-button-text);
             background-color: var(--bg-color) !important;
             border: 1px solid var(--text-color) !important;
             display: inline;
-            /* max-width: 5rem; */
+            max-width: 7.7rem;    
             height: 40px;
             border: 0px solid !important;
             /* border-bottom: 1px solid var(--text-color) !important; */
             outline: none;
             margin-right: auto !important;
             padding-left: 5px;
+            font-size: .9rem;
         }
 
         .booking input::placeholder{
@@ -283,12 +1322,13 @@
         }
         
         .booking label{
+            display: inline-block;
             flex-basis: 1px;
             letter-spacing: 2px;
             color: var(--text-color);
             text-shadow: none;
             font-size: 16px;
-            font-family: 'Questrial', sans-serif;
+            font-family: 'Inter', sans-serif;
             font-style: normal;
             font-weight: 400;
             line-height: 94.1%; /* 45.168px */
@@ -324,19 +1364,24 @@
 
 
         
-        @media (min-width: 768px) {
+        @media (max-width: 1150px) {
             #form-grid{
-                grid-template-columns: 6rem 1fr 2rem 7rem 1fr;;
-            }
-
-
-        }
-
-            @media (min-width: 1024px) {
-            .booking input {
-            max-width: max(5rem, 15%)
+                display: grid;
+                grid-template-columns: 1fr 1fr;
             }
         }
+
+        @media (max-width: 610px) {
+            #form-grid{
+                display: block;
+            }
+
+            #checkin_h{
+                padding-left: 2rem;
+                max-width: 10rem;
+            }
+        }
+
             
         </style>
         
@@ -388,7 +1433,7 @@
 		
 		jQuery("#checkin_h").datepicker({
 			dateFormat: 'dd-mm-yy',
-			numberOfMonths: 2,
+			numberOfMonths: 1,
 			minDate: +0,
 			beforeShow: pricedates,
 			beforeShowDay: function(a){
@@ -415,7 +1460,7 @@
 		
 		jQuery("#checkout_h").datepicker({
 			dateFormat: 'dd-mm-yy',
-			numberOfMonths: 2,
+			numberOfMonths: 1,
 			minDate: +1,
 			beforeShow: pricedates,
 			beforeShowDay: function(a){
