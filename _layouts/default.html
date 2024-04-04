@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="hide-scrollbars">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -88,7 +88,7 @@
 </style>
 
 </head>
-<body>
+<body class="hide-scrollbars">
     <header class="fixed w-full z-50 p-0 bg-transparent scheme-1">
         <div class="relative z-10">
             <div class="max-width px-8 grid grid-cols-3 items-center" style="grid-template-columns: 18% 66% 18%;">
@@ -1599,7 +1599,7 @@
 		
 		jQuery("#checkin_h").datepicker({
 			dateFormat: 'dd-mm-yy',
-			numberOfMonths: 2,
+			numberOfMonths: 1,
 			minDate: +0,
 			beforeShow: pricedates,
 			beforeShowDay: function(a){
@@ -1626,7 +1626,7 @@
 		
 		jQuery("#checkout_h").datepicker({
 			dateFormat: 'dd-mm-yy',
-			numberOfMonths: 2,
+			numberOfMonths: 1,
 			minDate: +1,
 			beforeShow: pricedates,
 			beforeShowDay: function(a){
