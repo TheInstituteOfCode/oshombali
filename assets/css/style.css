@@ -604,14 +604,14 @@ input.button-featured{
 .mt-5p {
   margin-top: 5%;
 }
+.mt-6 {
+  margin-top: 1.5rem;
+}
 .mt-8 {
   margin-top: 2rem;
 }
 .mt-\[30px\] {
   margin-top: 30px;
-}
-.mt-6 {
-  margin-top: 1.5rem;
 }
 .block {
   display: block;
@@ -720,6 +720,9 @@ input.button-featured{
 }
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.cursor-pointer {
+  cursor: pointer;
 }
 .resize {
   resize: both;
@@ -1136,11 +1139,6 @@ footer a, footer input, footer p{
   footer{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-}
-
-@media (max-width: 800px) {
-  footer{
     grid-template-columns: 1fr 1fr 1fr;
   }
   .tab-col-full{
