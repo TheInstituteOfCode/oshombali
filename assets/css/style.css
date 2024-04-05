@@ -501,8 +501,14 @@ input.button-featured{
 .right-0 {
   right: 0px;
 }
+.right-4 {
+  right: 1rem;
+}
 .top-0 {
   top: 0px;
+}
+.top-4 {
+  top: 1rem;
 }
 .top-\[var\(--vert-gap\)\] {
   top: var(--vert-gap);
@@ -864,6 +870,9 @@ input.button-featured{
 }
 .border-b-\[var\(--text-color\)\] {
   border-bottom-color: var(--text-color);
+}
+.\!bg-transparent {
+  background-color: transparent !important;
 }
 .bg-\[rgba\(0\2c 0\2c 0\2c 0\.3\)\] {
   background-color: rgba(0,0,0,0.3);
@@ -1244,6 +1253,53 @@ header a{
   padding: .5rem 1rem;
 }
 
+header #drop-contact{
+  display: none;
+}
+header #drop-contact.active{
+position: absolute;
+display: block;
+top: 0;
+right: 0;
+background-color: var(--bg-color);
+box-shadow: 10px 10px 15px rgba(0,0,0,.2), -10px 10px 15px rgba(0,0,0,.2);
+width: 20rem;
+padding: 1rem;
+}
+
+#drop-contact hr{
+  border: none;
+  border-bottom: 1px solid var(--text-color);
+  opacity: .2;
+}
+
+#drop-contact .close-x{
+  font-size: 1.5rem;
+  opacity: .3;
+  font-weight: normal;
+  font-family: sans-serif;
+}
+
+.contact-link{
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+  color: var(--colored-button-bg);
+  text-transform: uppercase;
+  padding: 15px 20px;
+  letter-spacing: .15em;
+  text-align: center;
+  transition: border .5s, background-color .5s, color .5s;
+  margin-bottom: 0;
+  line-height: 1;
+  padding: 0.8rem 1rem 0.7rem;
+  font-weight: 500;
+}
+
+#drop-contact h3, #drop-contact a{
+  padding: .5rem 0;
+}
+
+
 .burger-button {
   position:relative;
   z-index: 9;
@@ -1422,8 +1478,9 @@ transition: transform .5s;
   grid-template-columns: 1fr 2rem 1.3rem 2rem;
   min-width: -moz-fit-content;
   min-width: fit-content;
-  gap: 1rem;
+  gap: .4rem;
   color: var(--colored-button-text);
+  box-shadow: 10px 10px 15px var(--bg-color), -10px 10px 15px var(--bg-color);
 }
 
 body .embed-dropdown label{
@@ -1444,6 +1501,9 @@ color: var(--colored-button-text) !important;
   line-height: 1;
   text-align: center;
   font-family: Monospace;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+       user-select: none;
 }
 .embed-dropdown .x{
   display: inline;
@@ -1472,6 +1532,7 @@ body #ui-datepicker-div{
   width: -moz-fit-content;
   width: fit-content;
   min-width: 100px !important;
+  z-index: 20 !important;
 }
 
 @media (max-width: 1000px) {
@@ -1546,9 +1607,6 @@ body #ui-datepicker-div{
   }
   .sm\:mb-0 {
     margin-bottom: 0px;
-  }
-  .sm\:block {
-    display: block;
   }
   .sm\:inline-block {
     display: inline-block;
@@ -1637,6 +1695,9 @@ body #ui-datepicker-div{
   }
   .lg\:block {
     display: block;
+  }
+  .lg\:inline-block {
+    display: inline-block;
   }
   .lg\:flex {
     display: flex;

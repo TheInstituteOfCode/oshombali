@@ -91,7 +91,7 @@
 <body class="hide-scrollbars">
     <header class="fixed w-full z-50 p-0 bg-transparent scheme-1">
         <div class="relative z-10">
-            <div class="max-width px-8 grid grid-cols-3 items-center" style="grid-template-columns: 18% 66% 18%;">
+            <div class="max-width px-8 grid grid-cols-3 items-center" style="grid-template-columns: 1fr 17rem 1fr;">
                 <div class="burger-button">
                     <span class="burger-top"></span>
                     <span class="burger-middle"></span>
@@ -104,8 +104,98 @@
                     </h2>
                 </a>
 
-                <div class="text-right hidden sm:block">
-                    <a href="{{site.data.navigation.header-button.button_url}}" class="button-featured">{{site.data.navigation.header-button.text}}</a>
+                <div class="text-right hidden md:block">
+                  <span class="relative contact-link hidden lg:inline-block">
+                    <span class="cursor-pointer" onclick="toggleClass(document.querySelector('#drop-contact'),'active')">contact</span>
+                   <div id="drop-contact" class="text-left" >
+                      <div class="top-4 right-4 absolute cursor-pointer !bg-transparent close-x" onclick="toggleClass(document.querySelector('#drop-contact'),'active')">X</div>
+                      <h3 class="sub-heading">Concierge</h3>
+                      <a href="#" class="flex gap-4 items-center">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+                                  <path fill="#000000" opacity="1.000000" stroke="none" 
+                                  d="
+                                M499.004883,513.000000 
+                                  C334.170258,513.000000 169.837082,512.985291 5.504008,513.093140 
+                                  C1.764343,513.095581 0.902984,512.263123 0.905435,508.503906 
+                                  C1.014739,340.837463 1.014422,173.170975 0.906997,5.504556 
+                                  C0.904602,1.766234 1.735011,0.902879 5.495556,0.905334 
+                                  C173.161972,1.014767 340.828461,1.014404 508.494904,0.907097 
+                                  C512.231934,0.904705 513.097168,1.733116 513.094727,5.495007 
+                                  C512.985168,173.161423 512.985657,340.827911 513.092834,508.494354 
+                                  C513.095215,512.229980 512.295532,513.533508 508.496887,513.071838 
+                                  C505.540802,512.712585 502.506104,513.000000 499.004883,513.000000 
+                                z"/>
+                        </svg>
+                        <span>
+                          Find Your Local Number
+                        </span> 
+                      </a>
+                      <h3 class="sub-heading">Reservation</h3>
+                      <a href="#" class="flex gap-4 items-center">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+                                  <path fill="#000000" opacity="1.000000" stroke="none" 
+                                  d="
+                                M499.004883,513.000000 
+                                  C334.170258,513.000000 169.837082,512.985291 5.504008,513.093140 
+                                  C1.764343,513.095581 0.902984,512.263123 0.905435,508.503906 
+                                  C1.014739,340.837463 1.014422,173.170975 0.906997,5.504556 
+                                  C0.904602,1.766234 1.735011,0.902879 5.495556,0.905334 
+                                  C173.161972,1.014767 340.828461,1.014404 508.494904,0.907097 
+                                  C512.231934,0.904705 513.097168,1.733116 513.094727,5.495007 
+                                  C512.985168,173.161423 512.985657,340.827911 513.092834,508.494354 
+                                  C513.095215,512.229980 512.295532,513.533508 508.496887,513.071838 
+                                  C505.540802,512.712585 502.506104,513.000000 499.004883,513.000000 
+                                z"/>
+                        </svg>
+                        <span>
+                          Find Your Local Number
+                        </span> 
+                      </a>
+                      <hr>
+                      <a href="#" class="flex gap-4 items-center">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+                                  <path fill="#000000" opacity="1.000000" stroke="none" 
+                                  d="
+                                M499.004883,513.000000 
+                                  C334.170258,513.000000 169.837082,512.985291 5.504008,513.093140 
+                                  C1.764343,513.095581 0.902984,512.263123 0.905435,508.503906 
+                                  C1.014739,340.837463 1.014422,173.170975 0.906997,5.504556 
+                                  C0.904602,1.766234 1.735011,0.902879 5.495556,0.905334 
+                                  C173.161972,1.014767 340.828461,1.014404 508.494904,0.907097 
+                                  C512.231934,0.904705 513.097168,1.733116 513.094727,5.495007 
+                                  C512.985168,173.161423 512.985657,340.827911 513.092834,508.494354 
+                                  C513.095215,512.229980 512.295532,513.533508 508.496887,513.071838 
+                                  C505.540802,512.712585 502.506104,513.000000 499.004883,513.000000 
+                                z"/>
+                        </svg>
+                        <span>
+                          Find Your Local Number
+                        </span> 
+                      </a>
+                      <hr>
+                      <a href="#" class="flex gap-4 items-center">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+                                  <path fill="#000000" opacity="1.000000" stroke="none" 
+                                  d="
+                                M499.004883,513.000000 
+                                  C334.170258,513.000000 169.837082,512.985291 5.504008,513.093140 
+                                  C1.764343,513.095581 0.902984,512.263123 0.905435,508.503906 
+                                  C1.014739,340.837463 1.014422,173.170975 0.906997,5.504556 
+                                  C0.904602,1.766234 1.735011,0.902879 5.495556,0.905334 
+                                  C173.161972,1.014767 340.828461,1.014404 508.494904,0.907097 
+                                  C512.231934,0.904705 513.097168,1.733116 513.094727,5.495007 
+                                  C512.985168,173.161423 512.985657,340.827911 513.092834,508.494354 
+                                  C513.095215,512.229980 512.295532,513.533508 508.496887,513.071838 
+                                  C505.540802,512.712585 502.506104,513.000000 499.004883,513.000000 
+                                z"/>
+                        </svg>
+                        <span>
+                          Find Your Local Number
+                        </span> 
+                      </a>
+                    </div>
+                  </span>
+                  <a href="{{site.data.navigation.header-button.button_url}}" class="button-featured">{{site.data.navigation.header-button.text}}</a>
                 </div>
             </div>
         </div>
@@ -1353,9 +1443,11 @@
         /* Firefox */
         .booking input[type=number] {
           -moz-appearance: textfield;
-          max-width: fit-content;
+          max-width: 100%;
           border-bottom: 0px solid !important;
           transition: max-width .5s;
+          padding: 0;
+          text-align: center;
         }
 
         #form-grid{
@@ -1551,26 +1643,26 @@
 
             formResize()
 
-            function inputResize(e){
-                console.log(e.target.value)
-                if (e.target.value < 10){
-                    e.target.style.maxWidth = '1.2rem'
-                } else if (e.target.value < 100) {
-                    e.target.style.maxWidth = '1.9rem'
-                } else if (e.target.value < 1000) {
-                    e.target.style.maxWidth = '2.7rem'
-                } else if (e.target.value < 10000) {
-                    e.target.style.maxWidth = '3.2rem'
-                }else if (e.target.value < 100000) {
-                    e.target.style.maxWidth = '3.9rem'
-                }
-            }
+            // function inputResize(e){
+            //     console.log(e.target.value)
+            //     if (e.target.value < 10){
+            //         e.target.style.maxWidth = '1.2rem'
+            //     } else if (e.target.value < 100) {
+            //         e.target.style.maxWidth = '1.9rem'
+            //     } else if (e.target.value < 1000) {
+            //         e.target.style.maxWidth = '2.7rem'
+            //     } else if (e.target.value < 10000) {
+            //         e.target.style.maxWidth = '3.2rem'
+            //     }else if (e.target.value < 100000) {
+            //         e.target.style.maxWidth = '3.9rem'
+            //     }
+            // }
 
-            const bookingNumberInputs = document.querySelectorAll('.booking input[type=number]')
-            console.log(bookingNumberInputs)
-            bookingNumberInputs.forEach(input => {
-                input.addEventListener('input', inputResize)
-            })
+            // const bookingNumberInputs = document.querySelectorAll('.booking input[type=number]')
+            // console.log(bookingNumberInputs)
+            // bookingNumberInputs.forEach(input => {
+            //     input.addEventListener('input', inputResize)
+            // })
         </script>
         {% endif %}
 </body>

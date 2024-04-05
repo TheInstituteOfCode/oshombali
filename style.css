@@ -286,6 +286,53 @@ header a{
   padding: .5rem 1rem;
 }
 
+header #drop-contact{
+  display: none;
+}
+header #drop-contact.active{
+position: absolute;
+display: block;
+top: 0;
+right: 0;
+background-color: var(--bg-color);
+box-shadow: 10px 10px 15px rgba(0,0,0,.2), -10px 10px 15px rgba(0,0,0,.2);
+width: 20rem;
+padding: 1rem;
+}
+
+#drop-contact hr{
+  border: none;
+  border-bottom: 1px solid var(--text-color);
+  opacity: .2;
+}
+
+#drop-contact .close-x{
+  font-size: 1.5rem;
+  opacity: .3;
+  font-weight: normal;
+  font-family: sans-serif;
+}
+
+.contact-link{
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+  color: var(--colored-button-bg);
+  text-transform: uppercase;
+  padding: 15px 20px;
+  letter-spacing: .15em;
+  text-align: center;
+  transition: border .5s, background-color .5s, color .5s;
+  margin-bottom: 0;
+  line-height: 1;
+  padding: 0.8rem 1rem 0.7rem;
+  font-weight: 500;
+}
+
+#drop-contact h3, #drop-contact a{
+  padding: .5rem 0;
+}
+
+
 .burger-button {
   position:relative;
   z-index: 9;
@@ -463,8 +510,9 @@ transition: transform .5s;
   display: grid;
   grid-template-columns: 1fr 2rem 1.3rem 2rem;
   min-width: fit-content;
-  gap: 1rem;
+  gap: .4rem;
   color: var(--colored-button-text);
+  box-shadow: 10px 10px 15px var(--bg-color), -10px 10px 15px var(--bg-color);
 }
 
 body .embed-dropdown label{
@@ -485,6 +533,9 @@ color: var(--colored-button-text) !important;
   line-height: 1;
   text-align: center;
   font-family: Monospace;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 .embed-dropdown .x{
   display: inline;
@@ -512,6 +563,7 @@ body #ui-datepicker-div{
   max-width: 100vw;
   width: fit-content;
   min-width: 100px !important;
+  z-index: 20 !important;
 }
 
 @media (max-width: 1000px) {

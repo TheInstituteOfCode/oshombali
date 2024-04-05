@@ -112,7 +112,9 @@ accordianTriggers.forEach(trigger => {
 })
 
 function increaseInput(element){
+  if (element.nextElementSibling.value < 20 ){
   element.nextElementSibling.value++
+  }
 }
 
 function decreaseInput(element){
