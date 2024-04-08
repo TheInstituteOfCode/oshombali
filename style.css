@@ -512,7 +512,7 @@ transition: transform .5s;
   min-width: fit-content;
   gap: .4rem;
   color: var(--colored-button-text);
-  box-shadow: 10px 10px 15px var(--bg-color), -10px 10px 15px var(--bg-color);
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1), -10px 10px 15px rgba(0, 0, 0, 0.1), 10px -10px 15px rgba(0, 0, 0, 0.1), -10px -10px 15px rgba(0, 0, 0, 0.1);
 }
 
 body .embed-dropdown label{

@@ -483,6 +483,9 @@ input.button-featured{
 .-left-full {
   left: -100%;
 }
+.bottom-0 {
+  bottom: 0px;
+}
 .bottom-4 {
   bottom: 1rem;
 }
@@ -512,9 +515,6 @@ input.button-featured{
 }
 .top-\[var\(--vert-gap\)\] {
   top: var(--vert-gap);
-}
-.bottom-0 {
-  bottom: 0px;
 }
 .-z-10 {
   z-index: -10;
@@ -1483,7 +1483,7 @@ transition: transform .5s;
   min-width: fit-content;
   gap: .4rem;
   color: var(--colored-button-text);
-  box-shadow: 10px 10px 15px var(--bg-color), -10px 10px 15px var(--bg-color);
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1), -10px 10px 15px rgba(0, 0, 0, 0.1), 10px -10px 15px rgba(0, 0, 0, 0.1), -10px -10px 15px rgba(0, 0, 0, 0.1);
 }
 
 body .embed-dropdown label{
