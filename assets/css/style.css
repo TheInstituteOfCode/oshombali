@@ -846,9 +846,6 @@ input.button-featured{
 .overflow-scroll {
   overflow: scroll;
 }
-.overflow-x-hidden {
-  overflow-x: hidden;
-}
 .rounded-l-full {
   border-top-left-radius: 9999px;
   border-bottom-left-radius: 9999px;
