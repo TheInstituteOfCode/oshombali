@@ -652,6 +652,9 @@ input.button-featured{
 .hidden {
   display: none;
 }
+.aspect-\[1\.77\] {
+  aspect-ratio: 1.77;
+}
 .h-0 {
   height: 0px;
 }
@@ -672,9 +675,6 @@ input.button-featured{
 }
 .min-h-\[469px\] {
   min-height: 469px;
-}
-.min-h-screen {
-  min-height: 100vh;
 }
 .w-\[34vw\] {
   width: 34vw;
@@ -1662,8 +1662,14 @@ body #ui-datepicker-div{
   .md\:grid {
     display: grid;
   }
+  .md\:aspect-auto {
+    aspect-ratio: auto;
+  }
   .md\:h-\[70vh\] {
     height: 70vh;
+  }
+  .md\:min-h-screen {
+    min-height: 100vh;
   }
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1676,6 +1682,10 @@ body #ui-datepicker-div{
   }
   .md\:gap-8 {
     gap: 2rem;
+  }
+  .md\:object-cover {
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .md\:\!py-\[20px\] {
     padding-top: 20px !important;
