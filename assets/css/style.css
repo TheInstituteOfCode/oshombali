@@ -856,6 +856,9 @@ input.button-featured{
 .border-0 {
   border-width: 0px;
 }
+.\!border-0 {
+  border-width: 0px !important;
+}
 .border-b {
   border-bottom-width: 1px;
 }
@@ -978,6 +981,9 @@ input.button-featured{
 }
 .capitalize {
   text-transform: capitalize;
+}
+.leading-none {
+  line-height: 1;
 }
 .underline {
   text-decoration-line: underline;
