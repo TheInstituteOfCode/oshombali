@@ -922,6 +922,9 @@ input.button-featured{
 .p-\[19px_24px_18px_25px\;\] {
   padding: 19px 24px 18px 25px;;
 }
+.p-1 {
+  padding: 0.25rem;
+}
 .\!py-\[40px\] {
   padding-top: 40px !important;
   padding-bottom: 40px !important;
