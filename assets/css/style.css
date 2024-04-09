@@ -1146,7 +1146,7 @@ footer .menu{
 }
 
 footer h3{
-  font-size: 2rem;
+  font-size: 1.4rem;
   margin-bottom: 0rem;
   text-transform: uppercase;
   word-break: keep-all;
@@ -1162,7 +1162,7 @@ footer a, footer input, footer p{
   font-family: 'Inter', sans-serif;
   font-size: 16.127px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   line-height: normal;
 }
 
