@@ -850,6 +850,10 @@ input.button-featured{
 .gap-y-\[var\(--vert-gap\)\] {
   row-gap: var(--vert-gap);
 }
+.gap-x-2 {
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
+}
 .overflow-hidden {
   overflow: hidden;
 }
@@ -1159,8 +1163,8 @@ footer .footer-col-1 > p:nth-child(2){
 
 footer a, footer input, footer p{
 
-  font-family: 'Inter', sans-serif;
-  font-size: 16.127px;
+  /* font-family: 'Inter', sans-serif; */
+  font-size: 14px;
   font-style: normal;
   font-weight: 300;
   line-height: normal;

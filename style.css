@@ -179,8 +179,8 @@ footer .footer-col-1 > p:nth-child(2){
 
 footer a, footer input, footer p{
 
-  font-family: 'Inter', sans-serif;
-  font-size: 16.127px;
+  /* font-family: 'Inter', sans-serif; */
+  font-size: 14px;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
