@@ -12,8 +12,13 @@ header:
 footer:
   text-block_html: >-
     <h3>OSHOM BALI</h3><h5>NUANU CITY</h5><h5>JL. PANTAI NYANYI, DESA BERABAN,
-    KEC. KEDIRI, KAB. TABANAN, BALI - 82121<br />Telp : +62 811 3940 8004<br
-    />hello@oshombali.com<br />booking@oshombali.com</h5>
+    KEC. KEDIRI, KAB. TABANAN, BALI - 82121<br /><a
+    href="https://api.whatsapp.com/send/?phone=6281139408004&amp;text&amp;type=phone_number&amp;app_absent=0"
+    target="_blank" rel="noopener">Telp : +62 811 3940 8004</a><br /><a
+    href="mailto:hello@oshombali.com" target="_blank"
+    rel="noopener">hello@oshombali.com</a><br /><a
+    href="https://booking.oshombali.com" target="_blank"
+    rel="noopener">booking@oshombali.com</a></h5>
   menus:
     - heading: EXPLORE
       menu:
