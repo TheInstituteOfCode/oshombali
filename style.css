@@ -186,9 +186,7 @@ footer a, footer input, footer p{
   line-height: normal;
 }
 
-.signup-col {
-  margin-top: 0.8rem;
-}
+
 
 @media (max-width: 1200px) {
   footer{
@@ -217,9 +215,7 @@ footer a, footer input, footer p{
     grid-column: span 1 / span 1;
   }
   
-  .signup-col{
-    margin-top:3rem;
-  }
+
 }
 
 
