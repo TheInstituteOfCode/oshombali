@@ -10,30 +10,41 @@ header:
     link-url: /contact.html
     sublinks:
 footer:
-  text-block_html: <h3>Oshom Bali</h3> <p>PT WOODEN FISH VILLAGE NUANU CITY , JL. PANTAI NYANYI,BR. NYANYI, DESA BERABAN, KAB</p><p>TABANAN, BALI - 82121</p><p>+62 811 3940 8004</p>
+  text-block_html: >-
+    <h3>Oshom Bali</h3><p>NUANU CITY<br />JL. PANTAI NYANYI, DESA BERABAN, KAB.
+    TABANAN, BALI - 82121<br />telp : +62 811 3940 8004<br
+    />hello@oshombali.com<br />booking@oshombali.com</p>
   menus:
-    - heading: explore
+    - heading: EXPLORE
       menu:
         - text: STAY AT OSHOM
-          link-url: /accomodation.html
-        - text: ROOMS
-          link-url: https://oshombali.com/suites
-    - heading: about
+          link-url:
+        - text: EAT AT OSHOM
+          link-url:
+        - text: EXPERIENCES
+          link-url:
+        - text: CELEBRATIONS
+          link-url:
+        - text: WELLNESS
+          link-url:
+        - text: ABOUT NUANU
+          link-url:
+    - heading: ABOUT
       menu:
-        - text: EXPLORE NUANU
-          link-url: https://www.nuanu.com
-        - text: ABOUT US
-          link-url: https://oshombali.com
-        - text: CONTACT US
+        - text: TERMS & CONDITIONS
+          link-url:
+        - text: PRIVACY & POLICY
+          link-url:
+        - text: SITE MAP
           link-url: https://linktr.ee/oshombali
-        - text: BOOKING TERMS
+        - text: CAREERS
           link-url:
 footer_social:
   instagram-link: https://www.instagram.com/oshom_bali/
   facebook-link: https://www.facebook.com/oshombalinuanu
-  linkedin-link: https://www.linkedin.com/oshombalinuanu
+  linkedin-link: https://www.linkedin.com/company/oshom-bali/
   twitter-link: https://www.twitter.com/oshombalinuanu
-  youtube-link: https://youtube.com/OshomBali
+  youtube-link: https://www.youtube.com/@oshombali
 whatsapp:
   number: 6281139408004
   mesage:
