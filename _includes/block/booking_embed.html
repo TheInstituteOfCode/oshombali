@@ -12,7 +12,7 @@
 <div class="book-wrapper !py-[40px] md:!py-[20px]">
     <form action="https://booking.oshombali.com/rates/index" id="book_h" class="booking m0" method="post">
         <input type="hidden" name="BookingForm[hotel]" id="hotel" value="OSHB"/>
-        <div class="section group p0 m0 items-center justify-between lg:flex grid gap-y-8" id="form-grid">
+        <div class="section group p0 m0 items-center justify-between lg:flex grid gap-y-2 md:gap-y-8" id="form-grid">
                 <fieldset class="min-w-[13.8rem]">
                     <label class="">Check-in</label>
                     <input type="text" name="BookingForm[checkin]" id="checkin_h" class="cal inline-block max-width[8.1rem]" size="9" placeholder="dd/mm/yyyy" readonly/>
@@ -22,12 +22,12 @@
                 <input type="text" name="BookingForm[checkout]" id="checkout_h" class="cal inline-block max-width[8.1rem]" placeholder="dd/mm/yyyy" size="9" readonly/>
                 </fieldset>
                 
-                <fieldset class="relative z-10 h-full flex items-center min-h-[40px] sm:min-h-0">
+                <fieldset class="relative z-10 h-full mb-2 sm:mb-0 flex items-center min-h-[40px] sm:min-h-0">
                     <label class="cursor-pointer"
                     onclick="toggleVisiterPopout()"
                     > Guests </label>
-                    <div class="flex justify-center items-center mb-4 sm:mb-0 absolute bottom-0 left-0 bg-[var(--colored-button-bg)] h-0 overflow-hidden p-0 text-[0px] border-0 embed-dropdown" id="embed-user-count">
-                        <div class="col-span-full text-right flex justify-between mb-2" ><label>Guests</label><div class="x leading-none cursor-pointer" onclick="toggleVisiterPopout()"> X </div> </div>
+                    <div class="flex justify-center items-center absolute bottom-0 left-0 bg-[var(--colored-button-bg)] h-0 overflow-hidden p-0 text-[0px] border-0 embed-dropdown" id="embed-user-count">
+                        <div class="col-span-full text-right flex justify-between" ><label>Guests</label><div class="x leading-none cursor-pointer" onclick="toggleVisiterPopout()"> X </div> </div>
                         <label class="shrink">Adults</label>
                         <span onclick="increaseInput(this)"> + </span>
                         <input type="number" name="BookingForm[adults]" id="adults" placeholder="Adults" max="20" min="0" value="2" class=""/>

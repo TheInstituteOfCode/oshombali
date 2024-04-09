@@ -828,6 +828,9 @@ input.button-featured{
 .gap-y-16 {
   row-gap: 4rem;
 }
+.gap-y-2 {
+  row-gap: 0.5rem;
+}
 .gap-y-4 {
   row-gap: 1rem;
 }
@@ -1682,6 +1685,9 @@ body #ui-datepicker-div{
   }
   .md\:gap-8 {
     gap: 2rem;
+  }
+  .md\:gap-y-8 {
+    row-gap: 2rem;
   }
   .md\:object-cover {
     -o-object-fit: cover;
