@@ -11,14 +11,17 @@ header:
     sublinks:
 footer:
   text-block_html: >-
-    <h3>OSHOM BALI</h3><h5>NUANU CITY</h5><h5>JL. PANTAI NYANYI, DESA BERABAN,
-    KEC. KEDIRI, KAB. TABANAN, BALI - 82121<br /><a
+    <h4><strong>OSHOM BALI</strong></h4><h5><strong>NUANU
+    CITY</strong></h5><h6><a
+    href="https://www.google.com/maps/dir//939W%2BP6J,+Oshom+Bali+Road,+Beraban,+Kec.+Kediri,+Kabupaten+Tabanan,+Bali+82121/@-8.6306787,115.0131606,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x2dd239da8a568055:0x42d5ae5e76816171!2m2!1d115.0955625!2d-8.6306875?entry=ttu"
+    target="_blank" rel="noopener">JL. Pantai Nyanyi, Desa Beraban, Kec. Kediri,
+    Kab. Tabanan, Bali - 82121</a><br /><a
     href="https://api.whatsapp.com/send/?phone=6281139408004&amp;text&amp;type=phone_number&amp;app_absent=0"
     target="_blank" rel="noopener">Telp : +62 811 3940 8004</a><br /><a
     href="mailto:hello@oshombali.com" target="_blank"
     rel="noopener">hello@oshombali.com</a><br /><a
     href="https://booking.oshombali.com" target="_blank"
-    rel="noopener">booking@oshombali.com</a></h5>
+    rel="noopener">booking@oshombali.com</a></h6>
   menus:
     - heading: EXPLORE
       menu:
