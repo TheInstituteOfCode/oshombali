@@ -1,13 +1,28 @@
 header:
-  - text: Accomodations
+  - text: Our Hotel
+    link-url: ''
+    sublinks:
+  - text: Suite & Treehouse
     link-url: /accomodation.html
     sublinks:
       - text: Suite
         link-url: /suites
       - text: Treehouse
         link-url: /treehouse
-  - text: Contact
-    link-url: /contact.html
+  - text: Dining
+    link-url: ''
+    sublinks:
+  - text: Wellness
+    link-url: ''
+    sublinks:
+  - text: Celebrations
+    link-url: ''
+    sublinks:
+  - text: Experiences
+    link-url: ''
+    sublinks:
+  - text: Offers
+    link-url: ''
     sublinks:
 footer:
   text-block_html: >-
