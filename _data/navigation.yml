@@ -1,7 +1,4 @@
 header:
-  - text: Our Hotel
-    link-url: ''
-    sublinks:
   - text: Suite & Treehouse
     link-url: /accomodation.html
     sublinks:
@@ -9,18 +6,6 @@ header:
         link-url: /accomodation.html
       - text: Treehouse
         link-url: /accomodation.html
-  - text: Dining
-    link-url: ''
-    sublinks:
-  - text: Wellness
-    link-url: ''
-    sublinks:
-  - text: Celebrations
-    link-url: ''
-    sublinks:
-  - text: Experiences
-    link-url: ''
-    sublinks:
   - text: Offers
     link-url: /offers.html
     sublinks:
