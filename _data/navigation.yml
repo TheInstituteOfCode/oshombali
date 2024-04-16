@@ -24,6 +24,8 @@ header:
   - text: Offers
     link-url: /offers.html
     sublinks:
+contact_links:
+  
 footer:
   text-block_html: >-
     <h3><strong>Nuanu City</strong></h3><h4><a

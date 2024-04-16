@@ -1,0 +1,24 @@
+
+<section>
+      <div class="max-width">
+          <div class="mx-auto mb-12" style="text-align: {{block.text_alignment}};{% if block.content-max-width %}max-width: {{block.content-max-width}} {% endif %}">
+            {{block.block-content-html}}
+          </div>
+
+          <div class="grid grid-cols-5">
+            {% for img in block.images %}
+              <div class="aspect-square grid-item">
+                <img src="{{img.image_url}}" alt="{{img.img_alt}}">
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+    </section>
+
+    <div class="popout">
+      {% for img in block.images %}
+        <div class="aspect-square grid-item">
+          {{forloop.index}}
+        </div>
+      {% endfor %}
+    </div>

@@ -655,6 +655,9 @@ input.button-featured{
 .aspect-\[1\.77\] {
   aspect-ratio: 1.77;
 }
+.aspect-square {
+  aspect-ratio: 1 / 1;
+}
 .h-0 {
   height: 0px;
 }
@@ -762,6 +765,9 @@ input.button-featured{
 }
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.grid-cols-5 {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 .flex-col {
   flex-direction: column;
