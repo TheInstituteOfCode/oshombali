@@ -25,7 +25,9 @@ header:
     link-url: /offers.html
     sublinks:
 contact_links:
-  
+  local_number_link: /
+  reservation_number: (62) 361 201 5800
+  whatsapp_message: Hi i would like to book a reservation please
 footer:
   text-block_html: >-
     <h3><strong>Nuanu City</strong></h3><h4><a
