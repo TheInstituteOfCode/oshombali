@@ -149,8 +149,8 @@ _structures:
         img_path: /uploads/placeholder-1.jpg
         img_alt: 
   blocks:
-    values:
     style: modal
+    values:
       - label: Video banner
         value:
           _id: video-banner
