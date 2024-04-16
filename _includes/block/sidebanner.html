@@ -1,11 +1,11 @@
 
 <section class="{% if block.top-space-collapse  == true %} pt-0 {% endif %} {% if block.bottom-space-collapse  == true %} pb-0 {% endif %}">
-  <!-- {{block.desk-img-horizontal-position }} -->
+  <!-- {{block.desktop-img-horizontal-position }} -->
   <div class="max-width">
-    <div class="flex flex-col md:grid gap-[60px] {% if block.desk-content-vertical-position == 'top' %}items-start {% elsif block.desk-content-vertical-position == 'center' %} items-center {% else %} items-end {% endif %}" style="grid-template-columns: {% if block.desk-img-horizontal-position == 'left' %} {{ block.img_width_percentage }} {% endif %} 1fr {% if block.desk-img-horizontal-position == 'right' %} {{ block.img_width_percentage }} {% endif %};">
+    <div class="flex flex-col md:grid gap-[60px] {% if block.desktop-content-vertical-position == 'top' %}items-start {% elsif block.desktop-content-vertical-position == 'center' %} items-center {% else %} items-end {% endif %}" style="grid-template-columns: {% if block.desktop-img-horizontal-position == 'left' %} {{ block.img_width_percentage }} {% endif %} 1fr {% if block.desktop-img-horizontal-position == 'right' %} {{ block.img_width_percentage }} {% endif %};">
 
     
-  {% if block.desk-img-horizontal-position == 'left' %} 
+  {% if block.desktop-img-horizontal-position == 'left' %} 
   <div class="{% if block.mobile-img-positon == 'top' %} order-1 {% elsif block.mobile-img-positon == 'bottom' %} order-3 {% else %} hidden md:block {% endif %} md:order-2">
     <img src="{{block.img.img_path}}" alt="{{block.img.img_path}}" class="w-full {% unless block.img.img_apsect == 'inital' %} object-cover object-center" style="aspect-ratio: {{block.img.img_apsect}}; {% endunless %} ">
   </div>
@@ -14,7 +14,7 @@
   <div class="order-2">
     {{block.block-content-html}}
   </div> 
-  {% if block.desk-img-horizontal-position == 'right' %} 
+  {% if block.desktop-img-horizontal-position == 'right' %} 
   <div class="{% if block.mobile-img-positon == 'top' %} order-1 {% elsif block.mobile-img-positon == 'bottom' %} order-3 {% else %} hidden md:block {% endif %} md:order-2">
     <img src="{{block.img.img_path}}" alt="{{block.img.img_path}}" class="w-full {% unless block.img.img_apsect == 'inital' %} object-cover object-center" style="aspect-ratio: {{block.img.img_apsect}}; {% endunless %} ">
   </div>
