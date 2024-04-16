@@ -19,35 +19,27 @@
   </section>
 
   <style>
-    .banner-slide{
-      transition: all {{block.fade_speed_in_millisecond}}ms;
-    }
+    .banner-slide{ transition: all {{block.fade_speed_in_millisecond}}ms}
   </style>
-
 <script>
 const sliderBanner = document.querySelector('.slider-banner-parent')
 const bannerSlides = sliderBanner.querySelectorAll('.banner-slide')
 
 function slideOut(slide) {
-  console.log('fade out')
 slide.style.opacity = 0;
 if (slide.nextElementSibling) {
   setTimeout( () => {slideIn(slide.nextElementSibling)}, {{block.fade_speed_in_millisecond}})
-  console.log('im not last :D')
 } else {
-  console.log('im last :D')
   setTimeout( () => {slideIn(bannerSlides[0])}, {{block.fade_speed_in_millisecond}})
 }
 }
 
 function slideIn(slide) {
-  console.log('"its me"');
   slide.style.opacity = 1;
   setTimeout( () => {slideOut(slide)}, {{block.slide_screen_time_before_transition}});
 }
 
 window.addEventListener("load", (event) => {
-  console.log("start the show");
   setTimeout( () => {slideOut(bannerSlides[0])}, {{block.slide_screen_time_before_transition}});
 });
 

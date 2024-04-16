@@ -913,6 +913,9 @@ input.button-featured{
 .bg-transparent {
   background-color: transparent;
 }
+.bg-opacity-50 {
+  --tw-bg-opacity: 0.5;
+}
 .bg-cover {
   background-size: cover;
 }
