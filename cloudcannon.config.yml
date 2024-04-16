@@ -130,7 +130,7 @@ _structures:
     values:
       - value:
           col-content-html: >-
-            <h2> Coloumn content </h2> <p>for all the details about the col</p>
+            <h2> Column content </h2> <p>for all the details about the col</p>
           img_path: /uploads/placeholder-1.jpg
           img_alt: image description
           img-link-url:
@@ -138,7 +138,7 @@ _structures:
     values:
       - value:
           col-content-html: >-
-            <h2> Coloumn content </h2> <p>for all the details about the col</p>
+            <h2> Column content </h2> <p>for all the details about the col</p>
           img_path: /uploads/placeholder-1.jpg
           img_alt: image description
           button-url: #
@@ -147,7 +147,7 @@ _structures:
     values:
     - value:
         img_path: /uploads/placeholder-1.jpg
-        img_alt: text describing the image
+        img_alt: 
   blocks:
     values:
       - label: Video banner
@@ -167,7 +167,7 @@ _structures:
             <h2 class="larger-heading">WHERE TO FIND US</h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, vero architecto delectus pariatur voluptatem sit minima sint mollitia! Vitae mollitia soluta amet quidem ullam. Aliquid iure exercitationem non nesciunt unde.</p><a href="#" class="button"> learn more</a>
           img:
             img_path: /uploads/placeholder-1.jpg
-            img_alt: text describing the image
+            img_alt: 
             img_apsect: '1'
           desktop-img-horizontal-position: right
           desktop-content-vertical-position: bottom    
@@ -222,13 +222,13 @@ _structures:
                <h3>Pre heading text</h3><h2>Basic heading</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           imgs:
             - img_path:  "/uploads/placeholder-1.jpg"
-              img_alt: text describing the image
+              img_alt: 
             - img_path: |
                   /uploads/placeholder-1.jpg
-              img_alt: text describing the image
+              img_alt: 
             - img_path: |
                   /uploads/placeholder-1.jpg
-              img_alt: text describing the image
+              img_alt: 
           img_apsect: '2/4'
           color-scheme: 1
       - label: traditional banner
