@@ -3,6 +3,21 @@ const burgerMenu = document.querySelector('.burger-menu')
 const header = document.querySelector('header')
 const headerImgs = header.querySelectorAll('.logo')
 
+function headerBgToggle() {
+  console.log('scrolled')
+
+  if (window.scrollY > 5 ){
+    header.classList.remove('bg-transparent')
+  } else {
+    header.classList.add('bg-transparent')
+  }
+}
+
+window.addEventListener("scroll", headerBgToggle)
+
+headerBgToggle()
+
+
 function menuLocation() {
   if(burgerMenu.classList.contains('active')){
     gsap.to(burgerMenu,{
@@ -37,17 +52,6 @@ function toggleBurger() {
 burgerButton.addEventListener('click', toggleBurger)
 window.addEventListener("resize",menuLocation)
 
-function headerBgToggle() {
-  console.log('scrolled')
-
-  if (window.scrollY > 5 ){
-    header.classList.remove('bg-transparent')
-  } else {
-    header.classList.add('bg-transparent')
-  }
-}
-
-window.addEventListener("scroll", headerBgToggle)
 
 
 // menu drop down height sets

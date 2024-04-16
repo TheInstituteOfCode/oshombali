@@ -5,9 +5,9 @@
             {{block.block-content-html}}
           </div>
 
-          <div class="grid grid-cols-5">
+          <div class="grid grid-cols-5 lightbox-grid">
             {% for img in block.images %}
-              <div class="aspect-square grid-item">
+              <div class="aspect-square grid-item" data-grid-link="lightbox-{{forloop.index}}">
                 <img src="{{img.image_url}}" alt="{{img.img_alt}}">
               </div>
             {% endfor %}
@@ -17,8 +17,12 @@
 
     <div class="popout">
       {% for img in block.images %}
-        <div class="aspect-square grid-item">
-          {{forloop.index}}
+        <div class="box-item" data-lightbox-link="lightbox-{{forloop.index}}">"
+          <img src="{{img.image_url}}" alt="{{img.img_alt}}">"
         </div>
       {% endfor %}
     </div>
+
+    <script>
+
+    </script>

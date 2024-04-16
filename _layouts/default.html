@@ -89,7 +89,7 @@
 
 </head>
 <body class="hide-scrollbars">
-    <header class="fixed w-full z-50 p-0 bg-transparent scheme-1">
+    <header class="sm:fixed w-full z-50 p-0 bg-transparent scheme-1">
         <div class="relative z-10">
             <div class="max-width px-8 grid grid-cols-3 items-center" style="grid-template-columns: 1fr 17rem 1fr;">
                 <div class="burger-button">
@@ -111,30 +111,30 @@
                       <div class="top-4 right-4 absolute cursor-pointer !bg-transparent close-x" onclick="toggleClass(document.querySelector('#drop-contact'),'active')">X</div>
                       <h3 class="sub-heading">Concierge</h3>
                       <a href="{{site.data.navigation.contact_links.local_nimber_link}}" class="flex gap-4 items-center">
-                        <svg width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M18.1182 14.702L14 15.5C11.2183 14.1038 9.5 12.5 8.5 10L9.26995 5.8699L7.81452 2L4.0636 2C2.93605 2 2.04814 2.93178 2.21654 4.04668C2.63695 6.83 3.87653 11.8765 7.5 15.5C11.3052 19.3052 16.7857 20.9564 19.802 21.6127C20.9668 21.8662 22 20.9575 22 19.7655L22 16.1812L18.1182 14.702Z" stroke="var(--text-color)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-                        <span>
+                        <svg class="shrink-0" width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M18.1182 14.702L14 15.5C11.2183 14.1038 9.5 12.5 8.5 10L9.26995 5.8699L7.81452 2L4.0636 2C2.93605 2 2.04814 2.93178 2.21654 4.04668C2.63695 6.83 3.87653 11.8765 7.5 15.5C11.3052 19.3052 16.7857 20.9564 19.802 21.6127C20.9668 21.8662 22 20.9575 22 19.7655L22 16.1812L18.1182 14.702Z" stroke="var(--text-color)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                        <span class="mb-0">
                           Find Your Local Number
                         </span> 
                       </a>
                       <h3 class="sub-heading">Reservation</h3>
                       <a href="https://api.whatsapp.com/send/?phone={{site.data.navigation.whatsapp.number}}&text={{site.data.navigation.contact_links.whatsapp_message | replace: ' ', '%20'}}" class="flex gap-4 items-center">
-                        <svg width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M18.1182 14.702L14 15.5C11.2183 14.1038 9.5 12.5 8.5 10L9.26995 5.8699L7.81452 2L4.0636 2C2.93605 2 2.04814 2.93178 2.21654 4.04668C2.63695 6.83 3.87653 11.8765 7.5 15.5C11.3052 19.3052 16.7857 20.9564 19.802 21.6127C20.9668 21.8662 22 20.9575 22 19.7655L22 16.1812L18.1182 14.702Z" stroke="var(--text-color)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-                        <span>
+                        <svg class="shrink-0" width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M18.1182 14.702L14 15.5C11.2183 14.1038 9.5 12.5 8.5 10L9.26995 5.8699L7.81452 2L4.0636 2C2.93605 2 2.04814 2.93178 2.21654 4.04668C2.63695 6.83 3.87653 11.8765 7.5 15.5C11.3052 19.3052 16.7857 20.9564 19.802 21.6127C20.9668 21.8662 22 20.9575 22 19.7655L22 16.1812L18.1182 14.702Z" stroke="var(--text-color)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                        <span class="mb-0">
                           {{site.data.navigation.contact_links.reservation_number}}
                         </span> 
                       </a>
                       <hr>
-                      <a href="#" class="flex gap-4 items-center">
-                        <svg width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M7 9L12 12.5L17 9" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M2 17V7C2 5.89543 2.89543 5 4 5H20C21.1046 5 22 5.89543 22 7V17C22 18.1046 21.1046 19 20 19H4C2.89543 19 2 18.1046 2 17Z" stroke="var(--text-color)" stroke-width="1.5"></path></svg>
-                        <span>
-                          Find Your Local Number
+                      <a href="https://www.google.com/maps/dir//939W%2BP6J,+Oshom+Bali+Road,+Beraban,+Kec.+Kediri,+Kabupaten+Tabanan,+Bali+82121/@-8.6306787,115.0131606,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x2dd239da8a568055:0x42d5ae5e76816171!2m2!1d115.0955625!2d-8.6306875?entry=ttu" class="flex gap-4 items-center">
+                        <svg class="shrink-0" width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M7 9L12 12.5L17 9" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M2 17V7C2 5.89543 2.89543 5 4 5H20C21.1046 5 22 5.89543 22 7V17C22 18.1046 21.1046 19 20 19H4C2.89543 19 2 18.1046 2 17Z" stroke="var(--text-color)" stroke-width="1.5"></path></svg>
+                        <span  class="mb-0">
+                          {{site.data.navigation.contact_links.email}}
                         </span> 
                       </a>
                       <hr>
                       <a href="#" class="flex gap-4 items-center">
-                        <?xml version="1.0" encoding="UTF-8"?><svg width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M20 10C20 14.4183 12 22 12 22C12 22 4 14.4183 4 10C4 5.58172 7.58172 2 12 2C16.4183 2 20 5.58172 20 10Z" stroke="#000000" stroke-width="1.5"></path><path d="M12 11C12.5523 11 13 10.5523 13 10C13 9.44772 12.5523 9 12 9C11.4477 9 11 9.44772 11 10C11 10.5523 11.4477 11 12 11Z" fill="#000000" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-                        <span>
-                          Find Your Local Number
+                        <svg width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000" class="shrink-0"><path d="M20 10C20 14.4183 12 22 12 22C12 22 4 14.4183 4 10C4 5.58172 7.58172 2 12 2C16.4183 2 20 5.58172 20 10Z" stroke="#000000" stroke-width="1.5"></path><path d="M12 11C12.5523 11 13 10.5523 13 10C13 9.44772 12.5523 9 12 9C11.4477 9 11 9.44772 11 10C11 10.5523 11.4477 11 12 11Z" fill="#000000" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                        <span  class="mb-0">
+                          {{site.data.navigation.contact_links.location}}
                         </span> 
                       </a>
                     </div>

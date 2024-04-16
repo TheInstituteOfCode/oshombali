@@ -272,6 +272,21 @@ header:not(.bg-transparent) div{
 }
 
 
+@media (max-width:640px) {
+  header{
+    position: sticky;
+    top: 0;
+  }
+  header.bg-transparent{
+    background-color: var(--bg-color);
+
+  }
+
+  header.bg-transparent div{
+    background-color: var(--bg-color);
+  }
+}
+
 
 header.scheme-2 div{
   background-color: var(--bg-color);
