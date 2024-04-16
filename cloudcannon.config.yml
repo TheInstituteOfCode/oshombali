@@ -150,6 +150,7 @@ _structures:
         img_alt: 
   blocks:
     values:
+    style: modal
       - label: Video banner
         value:
           _id: video-banner
