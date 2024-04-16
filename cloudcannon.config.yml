@@ -177,6 +177,17 @@ _structures:
           top-space-collapse: false
           bottom-space-collapse: false
           color-scheme: 1
+      - label: Basic text section
+        value:
+          _id: basic-text
+          block-content-html: >-
+              <h2 class="larger-heading">  Basic col section </h2> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+                perferendis quas quibusdam, voluptatibus pariatur totam vitae soluta
+                eum amet, deleniti error quidem voluptatum vel aliquam. Voluptatem
+                reiciendis doloribus quis iste?
+          content-max-width: 985px
+          text_alignment: center
+          color-scheme: 1
       - label: Basic col section
         value:
           _id: col-section-basic
