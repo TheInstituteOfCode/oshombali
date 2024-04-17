@@ -311,6 +311,10 @@ width: 20rem;
 padding: 1rem;
 }
 
+hr{
+  border-color: var(--text-color);
+}
+
 #drop-contact hr{
   border: none;
   border-bottom: 1px solid var(--text-color);

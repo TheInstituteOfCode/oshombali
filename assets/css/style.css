@@ -910,6 +910,10 @@ input.button-featured{
 .bg-transparent {
   background-color: transparent;
 }
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
 .bg-opacity-50 {
   --tw-bg-opacity: 0.5;
 }
@@ -1312,6 +1316,10 @@ background-color: var(--bg-color);
 box-shadow: 10px 10px 15px rgba(0,0,0,.2), -10px 10px 15px rgba(0,0,0,.2);
 width: 20rem;
 padding: 1rem;
+}
+
+hr{
+  border-color: var(--text-color);
 }
 
 #drop-contact hr{
