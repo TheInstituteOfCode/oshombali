@@ -21,18 +21,25 @@
       {% for img in block.lightbox_images limit: 10 %}
       
       <div class="box-item" data-lightbox-link="lightbox-{{forloop.index}}">
-        <div class="bg-white text-center">
-          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 21 21" fill="none">
-    
-            <path d="M15.609 3.77441C14.9969 3.77441 14.3848 4.28451 14.3848 4.99865C14.3848 5.71279 14.8949 6.22289 15.609 6.22289C16.3231 6.22289 16.8332 5.71279 16.8332 4.99865C16.7312 4.28451 16.2211 3.77441 15.609 3.77441Z" fill="var(--text-color)"/>
-            <path d="M10.2021 5.30518C7.44756 5.30518 5.20312 7.54961 5.20312 10.3041C5.20312 13.0587 7.44756 15.3031 10.2021 15.3031C12.9566 15.3031 15.2011 13.0587 15.2011 10.3041C15.3031 7.54961 13.0587 5.30518 10.2021 5.30518ZM10.2021 13.5688C8.46776 13.5688 6.93746 12.1405 6.93746 10.3041C6.93746 8.56981 8.36574 7.03951 10.2021 7.03951C11.9364 7.03951 13.4667 8.46779 13.4667 10.3041C13.4667 12.1405 12.0385 13.5688 10.2021 13.5688Z" fill="var(--text-color)"/>
-            <path d="M14.2828 0H6.12119C2.75454 0 0 2.75454 0 6.12119V14.2828C0 17.6494 2.75454 20.404 6.12119 20.404H14.2828C17.6494 20.404 20.404 17.6494 20.404 14.2828V6.12119C20.404 2.75454 17.6494 0 14.2828 0ZM18.4656 14.2828C18.4656 16.6292 16.5272 18.4656 14.2828 18.4656H6.12119C3.77473 18.4656 1.93838 16.5272 1.93838 14.2828V6.12119C1.93838 3.77473 3.87675 1.93838 6.12119 1.93838H14.2828C16.6292 1.93838 18.4656 3.87675 18.4656 6.12119V14.2828Z" fill="var(--text-color)"/>
-          </svg>
+        {% if img.pre_image_text %}
+        <div class="bg-white text-center p-4">
+          <span>
+            <svg class="inline-block" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 21 21" fill="none">
+      
+              <path d="M15.609 3.77441C14.9969 3.77441 14.3848 4.28451 14.3848 4.99865C14.3848 5.71279 14.8949 6.22289 15.609 6.22289C16.3231 6.22289 16.8332 5.71279 16.8332 4.99865C16.7312 4.28451 16.2211 3.77441 15.609 3.77441Z" fill="var(--text-color)"/>
+              <path d="M10.2021 5.30518C7.44756 5.30518 5.20312 7.54961 5.20312 10.3041C5.20312 13.0587 7.44756 15.3031 10.2021 15.3031C12.9566 15.3031 15.2011 13.0587 15.2011 10.3041C15.3031 7.54961 13.0587 5.30518 10.2021 5.30518ZM10.2021 13.5688C8.46776 13.5688 6.93746 12.1405 6.93746 10.3041C6.93746 8.56981 8.36574 7.03951 10.2021 7.03951C11.9364 7.03951 13.4667 8.46779 13.4667 10.3041C13.4667 12.1405 12.0385 13.5688 10.2021 13.5688Z" fill="var(--text-color)"/>
+              <path d="M14.2828 0H6.12119C2.75454 0 0 2.75454 0 6.12119V14.2828C0 17.6494 2.75454 20.404 6.12119 20.404H14.2828C17.6494 20.404 20.404 17.6494 20.404 14.2828V6.12119C20.404 2.75454 17.6494 0 14.2828 0ZM18.4656 14.2828C18.4656 16.6292 16.5272 18.4656 14.2828 18.4656H6.12119C3.77473 18.4656 1.93838 16.5272 1.93838 14.2828V6.12119C1.93838 3.77473 3.87675 1.93838 6.12119 1.93838H14.2828C16.6292 1.93838 18.4656 3.87675 18.4656 6.12119V14.2828Z" fill="var(--text-color)"/>
+            </svg>
+            {{img.pre_image_text}}
+          </span>
           </div>
+          {% endif %}
           <img src="{{img.img_path}}" alt="{{img.img_alt}}">
-          <div class="bg-white">
+          {% if img.col-content %}
+          <div class="bg-white p-4">
           {{img.col-content}}    
           </div>
+          {% endif %}
         </div>
       {% endfor %}
       <div class="lightboxArrow next" onclick="nextImage()"><svg width="24px" height="24px" viewBox="0 0 24 24" stroke-width="1.5" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M3 12L21 12M21 12L12.5 3.5M21 12L12.5 20.5" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
@@ -49,13 +56,16 @@
         bottom: 0;
         transition: right .5s, left .5s;
         height: fit-content;
+        max-height: 100vh;
         width: fit-content;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        /* align-items: center; */
         margin: auto;
+        overflow-y: scroll;
       }
+      .box-item::-webkit-scrollbar {
+display: none;
+}
       .box-item > * {
         max-width: 90vw;
       }
@@ -98,11 +108,11 @@
             if (passed == false ) {
               console.log(slide, passed)
               preCount++
-              slide.style.left = '100vw'
-              slide.style.right = '-100vw'  
-            } else {
               slide.style.left = '-100vw'
-              slide.style.right = '100vw'
+              slide.style.right = '100vw'  
+            } else {
+              slide.style.left = '100vw'
+              slide.style.right = '-100vw'
             }
           }
         })
@@ -140,8 +150,8 @@
         var current = lightContainer.querySelector('.box-item.current')
         console.log(current)
         if (current.previousElementSibling.classList.contains('lightboxArrow')) {} else {
-          current.style.left = '-100vw'
-          current.style.right = '100vw'
+          current.style.left = '100vw'
+          current.style.right = '-100vw'
           current.classList.remove('current')
           current.previousElementSibling.style.left = '0vw'
           current.previousElementSibling.style.right = '0vw'
@@ -151,7 +161,7 @@
           }, "500");
           document.querySelector('.lightboxArrow.next').style.right = '0%'
           if (current.previousElementSibling.previousElementSibling.classList.contains('lightboxArrow')) {
-            current.previousElementSibling.previousElementSibling.style.left = '-100%'
+            current.previousElementSibling.previousElementSibling.style.left = '100%'
           }
         }
       }
@@ -160,8 +170,8 @@
         var current = lightContainer.querySelector('.box-item.current')
         console.log(current)
         if (current.nextElementSibling.classList.contains('lightboxArrow')) {} else {
-          current.style.left = '100vw'
-          current.style.right = '-100vw'
+          current.style.left = '-100vw'
+          current.style.right = '100vw'
           current.classList.remove('current')
           current.nextElementSibling.style.left = '0vw'
           current.nextElementSibling.style.right = '0vw'
