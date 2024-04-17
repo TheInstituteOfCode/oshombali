@@ -20,7 +20,14 @@
       <div class="lightboxArrow prev" onclick="lastImage()"><svg width="24px" height="24px" viewBox="0 0 24 24" stroke-width="1.5" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M21 12L3 12M3 12L11.5 3.5M3 12L11.5 20.5" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
       {% for img in block.lightbox_images limit: 10 %}
       
-      <div class="box-item" data-lightbox-link="lightbox-{{forloop.index}}"><img src="{{img.img_path}}" alt="{{img.img_alt}}"></div>
+      <div class="box-item" data-lightbox-link="lightbox-{{forloop.index}}">
+        <div class="bg-white ">
+
+        </div>
+        <img src="{{img.img_path}}" alt="{{img.img_alt}}"></div>
+        <div>
+
+        </div>
       {% endfor %}
       <div class="lightboxArrow next" onclick="nextImage()"><svg width="24px" height="24px" viewBox="0 0 24 24" stroke-width="1.5" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M3 12L21 12M21 12L12.5 3.5M21 12L12.5 20.5" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
     </div>

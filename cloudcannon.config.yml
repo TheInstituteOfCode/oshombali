@@ -21,6 +21,7 @@ _inputs:
     type: html
     options:
       format: p h2 h3 a img
+      horizontalrule: true
       image: true
       styles: /editor.css
       left: text-left
@@ -368,4 +369,12 @@ _structures:
                 img_alt: 
               - img_path: https://picsum.photos/id/1023/600/400
                 img_alt: 
-
+      - label: custom lightbox gallery
+        value:
+            _id: custom-light-box
+            block-content-html: <h2 class="heading-style-1">section heading</h2>
+            lightbox_images:
+              - img_path: /uploads/placeholder-1.jpg
+                img_alt: 
+              - img_path: /uploads/1eeddd47-c7e1-41ec-b669-59cdcaeb0735-1.jpg
+                img_alt: 
