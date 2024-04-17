@@ -356,10 +356,10 @@ _structures:
       - label: Banner slide show
         value:
           _id: slider-banner
-            bottom-text: 
-            fade_speed_in_millisecond: 750
-            slide_screen_time_before_transition: 3000
-            imgs:
+          bottom-text: 
+          fade_speed_in_millisecond: 750
+          slide_screen_time_before_transition: 3000
+          imgs:
               - img_path: https://picsum.photos/id/1021/600/400
                 img_alt: 
               - img_path: https://picsum.photos/id/1020/600/400
