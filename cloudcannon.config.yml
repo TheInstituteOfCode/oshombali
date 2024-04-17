@@ -372,7 +372,7 @@ _structures:
       - label: custom lightbox gallery
         value:
             _id: custom-light-box
-            block-content-html: <h2 class="heading-style-1">section heading</h2>
+            block-content-html: <h2>section heading</h2>
             lightbox_images:
               - pre_image_text: done by dan
                 img_path: /uploads/placeholder-1.jpg
