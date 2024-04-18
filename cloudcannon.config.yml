@@ -326,6 +326,7 @@ _structures:
             officia deserunt mollit anim id est laborum.</p>
           img_apsect: '1'
           img_width: 300
+          desktop-content-vertical-position: center
           slides:
             - col-content-html:
               img_path: /uploads/placeholder-1.jpg
