@@ -1,5 +1,5 @@
 
-<section class="pt-0">
+<section class="{% if block.top-space-collapse  == true %} pt-0 {% endif %} {% if block.bottom-space-collapse  == true %} pb-0 {% endif %}">
   <div class="max-width">
     <div>
       {{block.block-content-html}}

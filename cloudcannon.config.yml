@@ -90,7 +90,7 @@ _inputs:
       right: text-right
       styles: /editor.css
     cascade: true
-  description_for_this_page:
+  description_page:
     type: html
     options:
       allow_resize: true
@@ -399,6 +399,8 @@ _structures:
           inline-heading: share the love
           x-share-text: article relevent text
           color-scheme: featured
+          top-space-collapse: false
+          bottom-space-collapse: false
       - label: Experience block
         value:
           _id: experience-loop
