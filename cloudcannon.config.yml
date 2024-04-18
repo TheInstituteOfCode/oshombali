@@ -74,7 +74,7 @@ _inputs:
       right: text-right
       styles: /editor.css
     cascade: true
-  description_acomidations:
+  description__for_accommodation_page_hotel_block:
     type: html
     options:
       allow_resize: true
@@ -90,7 +90,7 @@ _inputs:
       right: text-right
       styles: /editor.css
     cascade: true
-  description_page:
+  description_for_this_page:
     type: html
     options:
       allow_resize: true
