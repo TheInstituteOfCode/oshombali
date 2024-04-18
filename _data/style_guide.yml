@@ -1,21 +1,26 @@
 schemes:
-  - bg-color: '#ece5dd'
+  - scheme_name: base
+    bg-color: '#ece5dd'
     text-color: '#1d1d1b'
     colored-button-bg-color: '#9ca592'
     colored-button-text-color: '#ffffff'
-  - bg-color: '#9ca592'
+  - scheme_name: featured
+    bg-color: '#9ca592'
     text-color: '#ffffff'
     colored-button-bg-color: '#ece5dd'
     colored-button-text-color: '#000000'
-  - bg-color: '#9ca592'
+  - scheme_name: spare
+    bg-color: '#9ca592'
     text-color: '#ffffff'
     colored-button-bg-color: '#ece5dd'
     colored-button-text-color: '#000000'
-  - bg-color: '#f7f7f7'
+  - scheme_name: white_bg
+    bg-color: '#f7f7f7'
     text-color: '#000000'
     colored-button-bg-color: '#ece5dd'
     colored-button-text-color: '#000000'
-  - bg-color: '#000'
+  - scheme_name: 5
+    bg-color: '#000'
     text-color: '#fff'
     colored-button-bg-color: '#ece5dd'
     colored-button-text-color: '#000000'

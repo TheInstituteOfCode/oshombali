@@ -107,7 +107,7 @@ _inputs:
     type: html
     cascade: true
   color-scheme:
-    type: number
+    type: text
     cascade: true
   bottom-text:
     type: text
@@ -115,7 +115,7 @@ _inputs:
   img_apsect:
     type: select
     options:
-      allow_empty: true
+      allow_empty: false
       values:
         '1': Square
         9/16: tall Portraight
@@ -229,7 +229,7 @@ _structures:
             <p><img class="mx-auto max-w-sm" src="/logo.png" /></p><h3
             class="larger-heading">Opening in Summer 2024</h3><p><a
             class="button-featured" href="#apply">get on the list </a></p>
-          color-scheme: 1
+          color-scheme: base
           bg-video:
             - video_path: /uploads/sea-24216-540p.mp4
               type: mp4
@@ -253,7 +253,7 @@ _structures:
           img_width_percentage: 45%
           top-space-collapse: false
           bottom-space-collapse: false
-          color-scheme: 1
+          color-scheme: base
       - label: Basic text section
         value:
           _id: basic-text
@@ -265,7 +265,7 @@ _structures:
               reiciendis doloribus quis iste?
           content-max-width: 985px
           text_alignment: center
-          color-scheme: 1
+          color-scheme: base
       - label: Basic column section
         value:
           _id: col-section-basic
@@ -287,7 +287,7 @@ _structures:
           img_apsect: '1'
           image_default_ratio: false
           text_alignment: center
-          color-scheme: 1
+          color-scheme: base
       - label: linked column section
         value:
           _id: col-section-with-buttons
@@ -308,7 +308,7 @@ _structures:
               button-text: discover
           img_apsect: '1'
           image_default_ratio: false
-          color-scheme: 1
+          color-scheme: base
       - label: Horizontal screen gallery
         value:
           _id: horizontal-screen-gallery
@@ -336,7 +336,7 @@ _structures:
               img_path: /uploads/placeholder-1.jpg
               img_alt: image description
               url:
-          color-scheme: 1
+          color-scheme: base
       - label: Simple banner with text
         value:
           _id: text-banner
@@ -356,7 +356,7 @@ _structures:
           banner-height: 40vh
           overlay-color: '#fff'
           overlay-opacity: '.5'
-          color-scheme: 1
+          color-scheme: base
       - label: Map banner
         value:
           _id: bali_map
@@ -369,7 +369,7 @@ _structures:
             voluptate velit esse cillum dolore eu fugiat nulla pariatur.
             Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
             officia deserunt mollit anim id est laborum.</p>
-          color-scheme: 1
+          color-scheme: base
       - label: custom coded section
         value:
           _id: liquid
@@ -383,19 +383,19 @@ _structures:
             Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
             officia deserunt mollit anim id est laborum.</p>
           full-width: false
-          color-scheme: 1
+          color-scheme: base
       - label: booking embed
         value:
           _id: booking_embed
           heading: Booking embed
-          color-scheme: 2
+          color-scheme: featured
       - label: share links
         value:
           _id: share
           block-content-html:
           inline-heading: share the love
           x-share-text: article relevent text
-          color-scheme: 2
+          color-scheme: featured
       - label: Experience block
         value:
           _id: experience-loop
@@ -417,14 +417,14 @@ _structures:
             - Sustainable
             - Culture
           img_apsect: '1'
-          color-scheme: 2
+          color-scheme: featured
       - label: All hotels section
         value:
           _id: hotels
           title: hotels
           desktop-content-vertical-position: center
           img_apsect: '1'
-          color-scheme: 1
+          color-scheme: base
       - label: slider section
         value:
           _id: slider
@@ -446,7 +446,7 @@ _structures:
             - img_path: /uploads/placeholder-1.jpg
               img_alt: image description
               url:
-          color-scheme: 1
+          color-scheme: base
       - label: Testimonials section
         value:
           _id: testimonial
@@ -478,7 +478,7 @@ _structures:
           img_apsect: 4/2
           image_default_ratio: false
           text_alignment: center
-          color-scheme: 1
+          color-scheme: base
       - label: Banner slide show
         value:
           _id: slider-banner
@@ -494,7 +494,7 @@ _structures:
               img_alt:
             - img_path: https://picsum.photos/id/1023/600/400
               img_alt:
-          color-scheme: 1
+          color-scheme: base
       - label: lightbox gallery
         value:
             _id: custom-light-box
@@ -520,5 +520,5 @@ _structures:
                 img_path: /uploads/placeholder-5.jpg
                 img_alt:
                 col-content-html: <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quidem ut placeat architecto, velit officiis veritatis est iusto deserunt temporibus fugiat pariatur earum quae blanditiis perspiciatis atque. Ratione, rerum doloribus! Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            color-scheme: 1
+            color-scheme: base
               

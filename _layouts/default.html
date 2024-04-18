@@ -77,7 +77,7 @@
         --vert-gap: max(min(15rem, 5vw), 3rem)
     }
     :root,{% for scheme in site.data.style_guide.schemes %}
-        .scheme-{{forloop.index}} {
+        .scheme-{{scheme.scheme_name}} {
             --bg-color: {{scheme.bg-color}};
             --text-color: {{scheme.text-color}};
             --colored-button-bg: {{scheme.colored-button-bg-color}};
