@@ -863,6 +863,12 @@ input.button-featured{
 .gap-y-\[var\(--vert-gap\)\] {
   row-gap: var(--vert-gap);
 }
+.self-start {
+  align-self: flex-start;
+}
+.self-center {
+  align-self: center;
+}
 .overflow-hidden {
   overflow: hidden;
 }
