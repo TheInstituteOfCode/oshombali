@@ -661,9 +661,6 @@ input.button-featured{
 .h-0 {
   height: 0px;
 }
-.h-\[45vh\] {
-  height: 45vh;
-}
 .h-full {
   height: 100%;
 }
@@ -1745,9 +1742,6 @@ body #ui-datepicker-div{
   }
   .md\:aspect-auto {
     aspect-ratio: auto;
-  }
-  .md\:h-\[70vh\] {
-    height: 70vh;
   }
   .md\:min-h-screen {
     min-height: 100vh;

@@ -76,11 +76,10 @@ _inputs:
         'initial': Images Native
   img_width:
     type: number
-        type: range
-        options:
-          step: 100
-          max: 600
-          min: 100
+    options:
+      step: 100
+      max: 600
+      min: 100
   desktop-img-horizontal-position:
     type: select
     options:
