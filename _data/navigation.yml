@@ -10,16 +10,16 @@ header:
       - text: Treehouse
         link-url: /accomodation.html
   - text: Dining
-    link-url: ''
+    link-url: /dining.html
     sublinks:
   - text: Wellness
-    link-url: ''
+    link-url: /wellness.html
     sublinks:
   - text: Celebrations
-    link-url: ''
+    link-url: /celebration.html
     sublinks:
   - text: Experiences
-    link-url: ''
+    link-url: /experiences.html
     sublinks:
   - text: Offers
     link-url: /offers.html
@@ -48,15 +48,15 @@ footer:
     - heading: EXPLORE
       menu:
         - text: STAY AT OSHOM
-          link-url: /contact.html
+          link-url: /accomodation.html
         - text: EAT AT OSHOM
-          link-url:
+          link-url: /dining.html
         - text: EXPERIENCES
-          link-url:
+          link-url: /experiences.html
         - text: CELEBRATIONS
-          link-url:
+          link-url: /celebration.html
         - text: WELLNESS
-          link-url:
+          link-url: /wellness.html
         - text: ABOUT NUANU
           link-url: https://new.nuanu.com
     - heading: ABOUT
