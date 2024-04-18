@@ -7,8 +7,8 @@
 
           <div class="grid grid-cols-5 lightbox-grid">
             {% for img in block.lightbox_images limit: 10 %}
-              <div class="aspect-square grid-item" data-grid-link="lightbox-{{forloop.index}}">
-                <img src="{{img.img_path}}" alt="{{img.img_alt}}">
+              <div class="aspect-square grid-item relative" data-grid-link="lightbox-{{forloop.index}}">
+                <img class="absolute inset-0 h-full w-full object-cover object-center" src="{{img.img_path}}" alt="{{img.img_alt}}">
               </div>
             {% endfor %}
           </div>
