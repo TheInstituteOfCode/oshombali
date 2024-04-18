@@ -3,7 +3,7 @@ layout: default
 ---
 
 
-<div class="scheme-2">
+<div class="scheme-featured">
     <!-- text banner  -->
     <section class="flex items-center justify-center scheme-{{block.color-scheme}} min-h-90 bg-cover bg-center" style="background-image: url('{{page.featured_img_path}}');">
         <div class="max-width">
@@ -26,7 +26,7 @@ layout: default
 
 {% include block/booking_embed.html %}
 
-<div class="scheme-2" id="room-sec-2" style="scroll-margin-top: 5rem;">
+<div class="scheme-featured" id="room-sec-2" style="scroll-margin-top: 5rem;">
     <!-- text banner  -->
     <section class="flex items-center justify-center scheme-{{block.color-scheme}}">
         <div class="max-width">
@@ -97,7 +97,7 @@ layout: default
 
 {% for room in ordered-rooms %}
 {% if room.hotel-id == page.hotel-id %}
-<div class="scheme-1">
+<div class="scheme-base">
     <!-- text banner  -->
     <section class="p-0">
         <div class="gal gal-{{forloop.index}} grid md:grid-cols-3 ">
@@ -115,7 +115,7 @@ layout: default
 <!-- <img src="/uploads/placeholder-1.jpg" alt=""> -->
 
 
-<div class="scheme-1">
+<div class="scheme-base">
     <!-- text banner  -->
     <section class="">
         <div class="max-width">

@@ -34,8 +34,8 @@ function menuLocation() {
 
 function toggleBurger() {
   // swaps color
-  header.classList.toggle('scheme-1')
-  header.classList.toggle('scheme-2')
+  header.classList.toggle('scheme-base')
+  header.classList.toggle('scheme-featured')
   // toggles burger icon
   burgerButton.classList.toggle('active')
 //  opens and closes the burger menu

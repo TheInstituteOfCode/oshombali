@@ -1311,7 +1311,7 @@ header:not(.bg-transparent) div{
 }
 
 
-header.scheme-2 div{
+header.scheme-featured div{
   background-color: var(--bg-color);
 }
 
@@ -1436,7 +1436,7 @@ hr{
   /* transition-delay: .5s; */
 }
 
-.scheme-2 .burger-anchor{
+.scheme-featured .burger-anchor{
   opacity: 1;
   /* transition: opacity .5s; */
 }
