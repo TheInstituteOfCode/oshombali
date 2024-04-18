@@ -80,6 +80,7 @@ _inputs:
       step: 50
       max: 1100
       min: 100
+    value:
   desktop-img-horizontal-position:
     type: select
     options:
@@ -240,7 +241,7 @@ _structures:
           block-content-html: >-
                <h3>Pre heading text</h3><h2>Basic heading</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           img_apsect: '1'
-          img_width: '300'
+          img_width: 300
           slides:
             - col-content-html:
               img_path: /uploads/placeholder-1.jpg
@@ -388,23 +389,23 @@ _structures:
             _id: custom-light-box
             block-content-html: <h2>section heading</h2>
             lightbox_images:
-              - pre_image_text: done by dan
+              - pre_image_text:
                 img_path: /uploads/placeholder-1.jpg
                 img_alt:
                 col-content-html: <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quidem ut placeat architecto, velit officiis veritatis est iusto deserunt temporibus fugiat pariatur earum quae blanditiis perspiciatis atque. Ratione, rerum doloribus! Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              - pre_image_text: done by dan
+              - pre_image_text:
                 img_path: /uploads/placeholder-2.jpg
                 img_alt:
                 col-content-html: <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quidem ut placeat architecto, velit officiis veritatis est iusto deserunt temporibus fugiat pariatur earum quae blanditiis perspiciatis atque. Ratione, rerum doloribus! Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              - pre_image_text: done by dan
+              - pre_image_text: 
                 img_path: /uploads/placeholder-3.jpg
                 img_alt:
                 col-content-html: <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quidem ut placeat architecto, velit officiis veritatis est iusto deserunt temporibus fugiat pariatur earum quae blanditiis perspiciatis atque. Ratione, rerum doloribus! Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              - pre_image_text: done by dan
+              - pre_image_text: 
                 img_path: /uploads/placeholder-4.jpg
                 img_alt:
                 col-content-html: <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quidem ut placeat architecto, velit officiis veritatis est iusto deserunt temporibus fugiat pariatur earum quae blanditiis perspiciatis atque. Ratione, rerum doloribus! Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              - pre_image_text: done by dan
+              - pre_image_text: 
                 img_path: /uploads/placeholder-5.jpg
                 img_alt:
                 col-content-html: <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quidem ut placeat architecto, velit officiis veritatis est iusto deserunt temporibus fugiat pariatur earum quae blanditiis perspiciatis atque. Ratione, rerum doloribus! Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
