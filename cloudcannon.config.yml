@@ -494,6 +494,7 @@ _structures:
               img_alt:
             - img_path: https://picsum.photos/id/1023/600/400
               img_alt:
+          color-scheme: 1
       - label: lightbox gallery
         value:
             _id: custom-light-box
@@ -519,4 +520,5 @@ _structures:
                 img_path: /uploads/placeholder-5.jpg
                 img_alt:
                 col-content-html: <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quidem ut placeat architecto, velit officiis veritatis est iusto deserunt temporibus fugiat pariatur earum quae blanditiis perspiciatis atque. Ratione, rerum doloribus! Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            color-scheme: 1
               
