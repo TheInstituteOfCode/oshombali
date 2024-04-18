@@ -311,7 +311,7 @@ _structures:
         value:
           _id: hotels
           title: hotels
-          desktop-content-vertical-position:
+          desktop-content-vertical-position: center
           img_apsect: '1'
           color-scheme: 1
       - label: slider section
