@@ -99,7 +99,12 @@ h5,h6,p,span {
   color: var(--text-color);
   line-height: 145%;
 }
-
+h1:last-child,
+h2:last-child,
+h3:last-child,
+h4:last-child,
+h5:last-child,
+h6:last-child,
 p:last-child{
 margin-bottom: 0;
 }
@@ -231,9 +236,6 @@ img.logo{
 }
 
 /* footer form overides */
-#mlb2-9291945.ml-form-embedContainer .ml-form-align-center{
-  text-align: left !important;
-}
 
 #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody{
   padding:0 !important;

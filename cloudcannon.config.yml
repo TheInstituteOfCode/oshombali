@@ -267,8 +267,10 @@ _structures:
               eum amet, deleniti error quidem voluptatum vel aliquam. Voluptatem
               reiciendis doloribus quis iste?
           content-max-width: 985px
-          text_alignment: center
+          text-alignment: center
           color-scheme: base
+          top-space-collapse: false
+          bottom-space-collapse: false
       - label: Basic column section
         value:
           _id: col-section-basic
@@ -289,7 +291,7 @@ _structures:
           col-content-max-width: 500px
           img_apsect: '1'
           image_default_ratio: false
-          text_alignment: center
+          text-alignment: center
           color-scheme: base
       - label: linked column section
         value:
@@ -482,7 +484,7 @@ _structures:
               img_alt: image description
           img_apsect: 4/2
           image_default_ratio: false
-          text_alignment: center
+          text-alignment: center
           color-scheme: base
       - label: Banner slide show
         value:

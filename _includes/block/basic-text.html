@@ -1,7 +1,15 @@
 
-<section>
+<section class="{% if block.top-space-collapse  == true %} pt-0 {% endif %} {% if block.bottom-space-collapse  == true %} pb-0 {% endif %}">
       <div class="max-width">
-          <div class="mx-auto mb-12" style="text-align: {{block.text_alignment}};{% if block.content-max-width %}max-width: {{block.content-max-width}} {% endif %}">
+          <div class="
+          {% case block.text-alignment %}
+          {% when left %}
+          mr-auto
+          {% when center %}
+          mx-auto
+          {% when right %}
+          ml-auto
+          {% endcase %}" style="text-align: {{block.text-alignment}};{% if block.content-max-width %}max-width: {{block.content-max-width}} {% endif %}">
           
             {{block.block-content-html}}
 
