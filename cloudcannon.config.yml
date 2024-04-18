@@ -38,6 +38,9 @@ collections_config:
         create:
         new_preview_url:
 _inputs:
+  layout:
+    type: text
+    hidden: true
   block-content-html:
     type: html
     options:
