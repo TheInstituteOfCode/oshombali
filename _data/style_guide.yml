@@ -19,9 +19,9 @@ schemes:
     text-color: '#000000'
     colored-button-bg-color: '#ece5dd'
     colored-button-text-color: '#000000'
-  - scheme_name: 5
-    bg-color: '#000000'
-    text-color: '#ffffff'
+  - scheme_name: dark
+    bg-color: '#000'
+    text-color: '#fff'
     colored-button-bg-color: '#ece5dd'
     colored-button-text-color: '#000000'
 max-width: 1280
