@@ -397,7 +397,6 @@ _structures:
         value:
           _id: share
           block-content-html:
-          inline-heading: share the love
           x-share-text: article relevent text
           color-scheme: featured
           top-space-collapse: false

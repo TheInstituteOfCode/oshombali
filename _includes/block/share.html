@@ -1,13 +1,9 @@
 
 <section class="{% if block.top-space-collapse  == true %} pt-0 {% endif %} {% if block.bottom-space-collapse  == true %} pb-0 {% endif %}">
-  <div class="max-width">
-    <div>
-      {{block.block-content-html}}
-    </div>
-    <div>
-      <div class="social-share text-center flex justify-between">
-    
-        <h3 class="mb-2 base-heading">{{block.inline-heading}}</h4>
+  <div class="social-share text-center flex justify-between">
+        <div class="max-width flex-grow-0">
+            {{block.block-content-html}}
+          <div>
     
         <nav class="flex justify-around gap-4">
           <div class="flex gap-x-2">

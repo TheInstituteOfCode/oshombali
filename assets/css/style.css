@@ -726,6 +726,9 @@ input.button-featured{
 .shrink-0 {
   flex-shrink: 0;
 }
+.flex-grow-0 {
+  flex-grow: 0;
+}
 .grow {
   flex-grow: 1;
 }
