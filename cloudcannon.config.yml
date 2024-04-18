@@ -189,7 +189,7 @@ _structures:
           content-max-width: 985px
           text_alignment: center
           color-scheme: 1
-      - label: Basic col section
+      - label: Basic column section
         value:
           _id: col-section-basic
           block-content-html: >-
@@ -209,7 +209,7 @@ _structures:
           image_default_ratio: false
           text_alignment: center
           color-scheme: 1
-      - label: linked col section
+      - label: linked column section
         value:
             _id: col-section-with-buttons
             block-content-html: >-
@@ -244,7 +244,7 @@ _structures:
               img_alt: 
           img_apsect: '2/4'
           color-scheme: 1
-      - label: traditional banner
+      - label: Simple banner with text
         value:
           _id: text-banner
           block-content-html: >-
@@ -358,8 +358,8 @@ _structures:
         value:
           _id: slider-banner
           bottom-text: 
-          fade_speed_in_millisecond: 750
-          slide_screen_time_before_transition: 3000
+          fade_speed_transition_in_millisecond: 750
+          slide_screen_time_in_milil_seconds: 3000
           imgs:
               - img_path: https://picsum.photos/id/1021/600/400
                 img_alt: 
@@ -369,7 +369,7 @@ _structures:
                 img_alt: 
               - img_path: https://picsum.photos/id/1023/600/400
                 img_alt: 
-      - label: custom lightbox gallery
+      - label: lightbox gallery
         value:
             _id: custom-light-box
             block-content-html: <h2>section heading</h2>
@@ -377,21 +377,21 @@ _structures:
               - pre_image_text: done by dan
                 img_path: /uploads/placeholder-1.jpg
                 img_alt:
-                col-content: Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quidem ut placeat architecto, velit officiis veritatis est iusto deserunt temporibus fugiat pariatur earum quae blanditiis perspiciatis atque. Ratione, rerum doloribus! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                col-content-html: <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quidem ut placeat architecto, velit officiis veritatis est iusto deserunt temporibus fugiat pariatur earum quae blanditiis perspiciatis atque. Ratione, rerum doloribus! Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
               - pre_image_text: done by dan
                 img_path: /uploads/placeholder-2.jpg
                 img_alt:
-                col-content: Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quidem ut placeat architecto, velit officiis veritatis est iusto deserunt temporibus fugiat pariatur earum quae blanditiis perspiciatis atque. Ratione, rerum doloribus! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                col-content-html: <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quidem ut placeat architecto, velit officiis veritatis est iusto deserunt temporibus fugiat pariatur earum quae blanditiis perspiciatis atque. Ratione, rerum doloribus! Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
               - pre_image_text: done by dan
                 img_path: /uploads/placeholder-3.jpg
                 img_alt:
-                col-content: Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quidem ut placeat architecto, velit officiis veritatis est iusto deserunt temporibus fugiat pariatur earum quae blanditiis perspiciatis atque. Ratione, rerum doloribus! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                col-content-html: <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quidem ut placeat architecto, velit officiis veritatis est iusto deserunt temporibus fugiat pariatur earum quae blanditiis perspiciatis atque. Ratione, rerum doloribus! Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
               - pre_image_text: done by dan
                 img_path: /uploads/placeholder-4.jpg
                 img_alt:
-                col-content: Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quidem ut placeat architecto, velit officiis veritatis est iusto deserunt temporibus fugiat pariatur earum quae blanditiis perspiciatis atque. Ratione, rerum doloribus! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                col-content-html: <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quidem ut placeat architecto, velit officiis veritatis est iusto deserunt temporibus fugiat pariatur earum quae blanditiis perspiciatis atque. Ratione, rerum doloribus! Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
               - pre_image_text: done by dan
                 img_path: /uploads/placeholder-5.jpg
                 img_alt:
-                col-content: Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quidem ut placeat architecto, velit officiis veritatis est iusto deserunt temporibus fugiat pariatur earum quae blanditiis perspiciatis atque. Ratione, rerum doloribus! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                col-content-html: <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quidem ut placeat architecto, velit officiis veritatis est iusto deserunt temporibus fugiat pariatur earum quae blanditiis perspiciatis atque. Ratione, rerum doloribus! Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
               
