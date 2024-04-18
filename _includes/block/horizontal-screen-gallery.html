@@ -8,22 +8,29 @@
             <div class="flex md:col-span-2 gap-4 basis-2/3 flex-none overflow-scroll hide-scrollbars snap-x snap-mandatory horizontal-slider relative">
                 
     {% assign blockid = forloop.index0 %}
-                {% for slide in block.slides %}
+            {% for slide in block.slides %}
+            {% if block.text-overlay == true %}
                     <div id="section-{{blockid}}-slide-{{forloop.index0}}" class="scroll-item flex flex-col justify-end relative max-w-[initial] {% if forloop.first %} ml-[var(--side-gap)] md:ml-0 {% endif %} {% if forloop.last %} mr-[var(--side-gap)] md:mr-0 {% endif %}" style="aspect-ratio:{{block.img_apsect}}; min-width: {{block.img_width}}px; flex: shrink 0;">
                         <a href="{{slide.url}}">
-
-                            <img src="{{slide.img_path}}" alt="{{slide.img_alt}}"  class="object-cover block object-center h-full w-full 
-                            {% if block.text-overlay == true %}
-                            absolute inset-0
-                            {% else %}
                             
-                            {% endif %}
-                            ">
-                            
-                            
+                            <div>
+                                <img src="{{slide.img_path}}" alt="{{slide.img_alt}}"  class="object-cover block object-center h-full w-full absolute inset-0">
+                            </div>
                             <div class="relative z-10 p-4 flex flex-col justify-end bg-[rgba(0,0,0,0.3)] h-full">
                                 {{slide.col-content-html}}
                             </div>
+                        </a>
+                    </div>
+                    {% else %}
+                    <div>
+                                <img src="{{slide.img_path}}" alt="{{slide.img_alt}}"  class="object-cover block object-center h-full w-full absolute inset-0">
+                            </div>
+                            <div class="relative z-10 p-4 flex flex-col justify-end bg-[rgba(0,0,0,0.3)] h-full">
+                                {{slide.col-content-html}}
+                            </div>
+                            {% endif %}
+                            
+                            
                         </a>
                     </div>
                 {% endfor %}
