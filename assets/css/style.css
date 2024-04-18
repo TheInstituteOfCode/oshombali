@@ -676,9 +676,6 @@ input.button-featured{
 .min-h-\[469px\] {
   min-height: 469px;
 }
-.min-h-screen {
-  min-height: 100vh;
-}
 .w-\[34vw\] {
   width: 34vw;
 }
@@ -879,11 +876,20 @@ input.button-featured{
 .border-0 {
   border-width: 0px;
 }
+.border-\[1px\] {
+  border-width: 1px;
+}
 .border-b {
   border-bottom-width: 1px;
 }
 .border-t {
   border-top-width: 1px;
+}
+.border-solid {
+  border-style: solid;
+}
+.border-\[var\(--bg-color\)\] {
+  border-color: var(--bg-color);
 }
 .border-\[var\(--text-color\)\] {
   border-color: var(--text-color);
@@ -896,6 +902,9 @@ input.button-featured{
 }
 .bg-\[rgba\(0\2c 0\2c 0\2c 0\.3\)\] {
   background-color: rgba(0,0,0,0.3);
+}
+.bg-\[var\(--bg-color\)\] {
+  background-color: var(--bg-color);
 }
 .bg-\[var\(--colored-button-bg\)\] {
   background-color: var(--colored-button-bg);
@@ -937,9 +946,6 @@ input.button-featured{
 }
 .p-0 {
   padding: 0px;
-}
-.p-1 {
-  padding: 0.25rem;
 }
 .p-2 {
   padding: 0.5rem;
@@ -1024,6 +1030,9 @@ input.button-featured{
 }
 .opacity-0 {
   opacity: 0;
+}
+.opacity-90 {
+  opacity: 0.9;
 }
 .outline {
   outline-style: solid;
@@ -1164,6 +1173,7 @@ h3 {
 footer{
   display: flex;
   justify-content: space-between;
+  text-align: left;
 }
 
 footer .menu{
@@ -1197,6 +1207,7 @@ footer a, footer input, footer p{
 
 @media (max-width: 1200px) {
   footer{
+    text-align: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;

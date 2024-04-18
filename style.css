@@ -157,6 +157,7 @@ h3 {
 footer{
   display: flex;
   justify-content: space-between;
+  text-align: left;
 }
 
 footer .menu{
@@ -190,6 +191,7 @@ footer a, footer input, footer p{
 
 @media (max-width: 1200px) {
   footer{
+    text-align: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }

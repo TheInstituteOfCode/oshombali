@@ -54,19 +54,21 @@ layout: default
             width: 34vw;
         }
 
+        .slick-slide{
+            border: 1px solid var(--bg-color);
+        }
+
     </style>
 
 
 <div class="scheme-2">
-    <!-- text banner  -->
     <section class="p-0">
-        <divs class="gal-{{forloop.index}} grid grid-cols-3 bob">
+        <div class="gal-{{forloop.index}} grid grid-cols-3 bob">
             {% for image in page.imgs %}
-            <div class="inline-block item">
+            <div class="inline-block border-[1px] border-solid border-[var(--bg-color)]">
                 <img src="{{image.img_path}}" alt="{{img_alt}}" class="w-[34vw]">
             </div>
-            <!-- <div class="">
-            </div> -->
+
             {% endfor %}
 
         </div>
