@@ -77,8 +77,8 @@ _inputs:
   img_width:
     type: number
     options:
-      step: 100
-      max: 600
+      step: 50
+      max: 1100
       min: 100
   desktop-img-horizontal-position:
     type: select
