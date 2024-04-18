@@ -201,7 +201,7 @@ blocks:
     text-overlay: true
     img_apsect: '1'
     img_width: 400
-    color-scheme: 1
+    color-scheme: 2
   - _id: custom-light-box
     block-content-html: >-
       <h2 class="base-heading">THIS BLOCK IS FOR YOU TO ADD IMAGES GALLERY WITH
@@ -286,6 +286,28 @@ blocks:
         img_path: /uploads/28370-3.jpg
         img_alt: image description
         url:
+    color-scheme: 2
+  - _id: col-section-with-buttons
+    block-content-html: >-
+      <h2 class="larger-heading">colUMN section WITH TEXT, IMAGE AND
+      LINK/BUTTON</h2><p>Lorem ipsum dolor sit amet consectetur adipisicing
+      elit. Iusto   perferendis quas quibusdam, voluptatibus pariatur totam
+      vitae soluta   eum amet, deleniti error quidem voluptatum vel aliquam.
+      Voluptatem   reiciendis doloribus quis iste?</p>
+    content-max-width: 985px
+    linked_cols:
+      - col-content-html: <h2> Coloumn content </h2> <p>for all the details about the col</p>
+        img_path: /uploads/placeholder-1.jpg
+        img_alt: image description
+        button-url: '#'
+        button-text: discover
+      - col-content-html: <p>THIS IS FOR YOUR CONTENT TO DESCRIBE ANYTHING </p>
+        img_path: /uploads/1eeddd47-c7e1-41ec-b669-59cdcaeb0735-1.jpg
+        img_alt: ''
+        button-url: ''
+        button-text: BOOK NOW
+    img_apsect: '1'
+    image_default_ratio: false
     color-scheme: 1
 ---
 {% comment %}
