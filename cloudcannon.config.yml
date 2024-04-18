@@ -1,7 +1,7 @@
 paths:
   uploads: uploads
-  dam_uploads: ''
   static: ''
+  dam_uploads: ''
   dam_static: ''
   collections: ''
   data: _data
@@ -12,102 +12,161 @@ collections_config:
     path: ''
     output: true
     filter: strict
+    description: ''
     icon: notes
+    _editables:
+    _inputs:
+    _select_data:
+    _structures:
     disable_add: false
     disable_add_folder: false
     disable_file_actions: false
+    schemas:
+      default page:
+        path:
+        reorder_inputs: true
+        hide_extra_inputs: false
+        remove_empty_inputs: false
+        remove_extra_inputs: true
+        name:
+        icon: notes
+        preview:
+        _editables:
+        _inputs:
+        _select_data:
+        _structures:
+        create:
+        new_preview_url:
 _inputs:
   block-content-html:
     type: html
     options:
+      allow_resize: true
+      allow_custom_markup: false
+      remove_custom_markup: false
+      initial_height: 320
+      center: text-center
       format: p h2 h3 a img
       horizontalrule: true
       image: true
-      styles: /editor.css
+      image_size_attributes: true
       left: text-left
-      center: text-center
-      right: text-right
       link: true
+      right: text-right
+      styles: /editor.css
+    cascade: true
   col-content-html:
     type: html
     options:
+      allow_resize: true
+      allow_custom_markup: false
+      remove_custom_markup: false
+      initial_height: 320
+      center: text-center
       format: p h2 h3 a
       image: true
-      styles: /editor.css
+      image_size_attributes: true
       left: text-left
-      center: text-center
-      right: text-right
       link: true
+      right: text-right
+      styles: /editor.css
+    cascade: true
   description_acomidations:
     type: html
     options:
+      allow_resize: true
+      allow_custom_markup: false
+      remove_custom_markup: false
+      initial_height: 320
+      center: text-center
       format: p h2 h3 a
       image: true
-      styles: /editor.css
+      image_size_attributes: true
       left: text-left
-      center: text-center
+      link: true
       right: text-right
-      link: true 
+      styles: /editor.css
+    cascade: true
   description_page:
     type: html
     options:
+      allow_resize: true
+      allow_custom_markup: false
+      remove_custom_markup: false
+      initial_height: 320
+      center: text-center
       format: p h2 h3 a
       image: true
-      styles: /editor.css
+      image_size_attributes: true
       left: text-left
-      center: text-center
-      right: text-right
       link: true
+      right: text-right
+      styles: /editor.css
+    cascade: true
   center-content:
-    type: html  
+    type: html
+    cascade: true
   color-scheme:
     type: number
+    cascade: true
   bottom-text:
     type: text
-  img_apsect: 
+    cascade: true
+  img_apsect:
     type: select
     options:
+      allow_empty: true
       values:
-        '1': Square 
-        '9/16': tall Portraight 
-        '4/5': Portraight 
-        '5/4': Landscape
-        '16/9': wide Landscape
-        'initial': Images Native
+        '1': Square
+        9/16: tall Portraight
+        4/5: Portraight
+        5/4: Landscape
+        16/9: wide Landscape
+        initial: Images Native
+    cascade: true
   img_width:
     type: number
     options:
-      step: 50
-      max: 1100
       min: 100
+      max: 1100
+      step: 50
+    cascade: true
   desktop-img-horizontal-position:
     type: select
     options:
+      allow_empty: true
       values:
         - left
         - right
+    cascade: true
   desktop-content-vertical-position:
     type: select
     options:
+      allow_empty: true
       values:
         - top
         - center
         - bottom
+    cascade: true
   mobile-img-position:
     type: select
     options:
+      allow_empty: true
       values:
         - top
         - bottom
         - hide
+    cascade: true
   heading_style:
     type: select
+    cascade: true
     option:
       values:
-        larger-heading: large 
+        larger-heading: large
         heading-2: subtle
   min-height:
     type: select
+    cascade: true
     option:
       values:
         50vh: half screen min-min
@@ -117,44 +176,50 @@ _inputs:
   button_style:
     type: select
     options:
+      allow_empty: true
       values:
         button: normal
         button-featured: featured
+    cascade: true
   text-alignment:
     type: select
     options:
-      values: 
+      allow_empty: true
+      values:
         - left
         - center
-        - right 
+        - right
+    cascade: true
 _structures:
   bg-video:
+    style: select
     values:
       - value:
           ideo_path: /uploads/sea-24216-540p.mp4
           type: video/mp4
   cols:
+    style: select
     values:
       - value:
-          col-content-html: >-
-            <h2> Column content </h2> <p>for all the details about the col</p>
+          col-content-html: <h2> Column content </h2> <p>for all the details about the col</p>
           img_path: /uploads/placeholder-1.jpg
           img_alt: image description
           img-link-url:
   linked-cols:
+    style: select
     values:
       - value:
-          col-content-html: >-
-            <h2> Column content </h2> <p>for all the details about the col</p>
+          col-content-html: <h2> Column content </h2> <p>for all the details about the col</p>
           img_path: /uploads/placeholder-1.jpg
           img_alt: image description
-          button-url: #
+          button-url:
           button-text: Discover more
   imgs:
+    style: select
     values:
-    - value:
-        img_path: /uploads/placeholder-1.jpg
-        img_alt: 
+      - value:
+          img_path: /uploads/placeholder-1.jpg
+          img_alt:
   blocks:
     style: modal
     values:
@@ -162,7 +227,9 @@ _structures:
         value:
           _id: video-banner
           block-content-html: >-
-                        <p><img class="mx-auto max-w-sm" src="/logo.png" /></p><h3 class="larger-heading">Opening in Summer 2024</h3><p><a class="button-featured" href="#apply">get on the list </a></p>
+            <p><img class="mx-auto max-w-sm" src="/logo.png" /></p><h3
+            class="larger-heading">Opening in Summer 2024</h3><p><a
+            class="button-featured" href="#apply">get on the list </a></p>
           color-scheme: 1
           bg-video:
             - video_path: /uploads/sea-24216-540p.mp4
@@ -172,13 +239,17 @@ _structures:
         value:
           _id: sidebanner
           block-content-html: >
-            <h2 class="larger-heading">WHERE TO FIND US</h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, vero architecto delectus pariatur voluptatem sit minima sint mollitia! Vitae mollitia soluta amet quidem ullam. Aliquid iure exercitationem non nesciunt unde.</p><a href="#" class="button"> learn more</a>
+            <h2 class="larger-heading">WHERE TO FIND US</h2><p>Lorem ipsum dolor
+            sit amet consectetur adipisicing elit. Ducimus, vero architecto
+            delectus pariatur voluptatem sit minima sint mollitia! Vitae
+            mollitia soluta amet quidem ullam. Aliquid iure exercitationem non
+            nesciunt unde.</p><a href="#" class="button"> learn more</a>
           img:
             img_path: /uploads/placeholder-1.jpg
-            img_alt: 
+            img_alt:
             img_apsect: '1'
           desktop-img-horizontal-position: right
-          desktop-content-vertical-position: bottom    
+          desktop-content-vertical-position: bottom
           mobile-img-position: top
           img_width_percentage: 45%
           top-space-collapse: false
@@ -188,10 +259,11 @@ _structures:
         value:
           _id: basic-text
           block-content-html: >-
-              <h2 class="larger-heading">  Basic col section </h2> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-                perferendis quas quibusdam, voluptatibus pariatur totam vitae soluta
-                eum amet, deleniti error quidem voluptatum vel aliquam. Voluptatem
-                reiciendis doloribus quis iste?
+            <h2 class="larger-heading">  Basic col section </h2> <p>Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Iusto
+              perferendis quas quibusdam, voluptatibus pariatur totam vitae soluta
+              eum amet, deleniti error quidem voluptatum vel aliquam. Voluptatem
+              reiciendis doloribus quis iste?
           content-max-width: 985px
           text_alignment: center
           color-scheme: 1
@@ -199,14 +271,16 @@ _structures:
         value:
           _id: col-section-basic
           block-content-html: >-
-              <h2 class="larger-heading">  Basic col section </h2> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-                perferendis quas quibusdam, voluptatibus pariatur totam vitae soluta
-                eum amet, deleniti error quidem voluptatum vel aliquam. Voluptatem
-                reiciendis doloribus quis iste?
+            <h2 class="larger-heading">  Basic col section </h2> <p>Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Iusto
+              perferendis quas quibusdam, voluptatibus pariatur totam vitae soluta
+              eum amet, deleniti error quidem voluptatum vel aliquam. Voluptatem
+              reiciendis doloribus quis iste?
           content-max-width: 985px
           cols:
             - col-content-html: >-
-                   <h2> Coloumn content </h2> <p>for all the details about the col</p>
+                <h2> Coloumn content </h2> <p>for all the details about the
+                col</p>
               img_path: /uploads/placeholder-1.jpg
               img_alt: image description
               img-link-url:
@@ -217,28 +291,37 @@ _structures:
           color-scheme: 1
       - label: linked column section
         value:
-            _id: col-section-with-buttons
-            block-content-html: >-
-                <h2 class="larger-heading">  Basic col section </h2> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-                  perferendis quas quibusdam, voluptatibus pariatur totam vitae soluta
-                  eum amet, deleniti error quidem voluptatum vel aliquam. Voluptatem
-                  reiciendis doloribus quis iste?
-            content-max-width: 985px      
-            linked_cols:
-              - col-content-html: >-
-                    <h2> Coloumn content </h2> <p>for all the details about the col</p>
-                img_path: /uploads/placeholder-1.jpg
-                img_alt: image description
-                button-url: '#'
-                button-text: discover
-            img_apsect: '1'
-            image_default_ratio: false
-            color-scheme: 1
+          _id: col-section-with-buttons
+          block-content-html: >-
+            <h2 class="larger-heading">  Basic col section </h2> <p>Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Iusto
+              perferendis quas quibusdam, voluptatibus pariatur totam vitae soluta
+              eum amet, deleniti error quidem voluptatum vel aliquam. Voluptatem
+              reiciendis doloribus quis iste?
+          content-max-width: 985px
+          linked_cols:
+            - col-content-html: >-
+                <h2> Coloumn content </h2> <p>for all the details about the
+                col</p>
+              img_path: /uploads/placeholder-1.jpg
+              img_alt: image description
+              button-url: '#'
+              button-text: discover
+          img_apsect: '1'
+          image_default_ratio: false
+          color-scheme: 1
       - label: Horizontal screen gallery
         value:
           _id: horizontal-screen-gallery
           block-content-html: >-
-               <h3>Pre heading text</h3><h2>Basic heading</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <h3>Pre heading text</h3><h2>Basic heading</h2><p>Lorem ipsum dolor
+            sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in
+            voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum.</p>
           img_apsect: '1'
           img_width: '300'
           slides:
@@ -259,52 +342,81 @@ _structures:
         value:
           _id: text-banner
           block-content-html: >-
-               <h3>Pre heading text</h3><h2>Basic heading</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <h3>Pre heading text</h3><h2>Basic heading</h2><p>Lorem ipsum dolor
+            sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in
+            voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum.</p>
           content-max-width: 785px
           text-alignment: center
           desktop-content-vertical-position: top
           banner-image: /uploads/placeholder-1.jpg
           banner-height: 40vh
-          overlay-color: "#fff"
-          overlay-opacity: ".5"
-          color-scheme: 1  
+          overlay-color: '#fff'
+          overlay-opacity: '.5'
+          color-scheme: 1
       - label: Map banner
         value:
           _id: bali_map
           block-content-html: >-
-               <h3>Pre heading text</h3><h2>Basic heading</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <h3>Pre heading text</h3><h2>Basic heading</h2><p>Lorem ipsum dolor
+            sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in
+            voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum.</p>
           color-scheme: 1
       - label: custom coded section
         value:
           _id: liquid
           liquid_code_block: >-
-               <h3>Pre heading text</h3><h2>Basic heading</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <h3>Pre heading text</h3><h2>Basic heading</h2><p>Lorem ipsum dolor
+            sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in
+            voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum.</p>
           full-width: false
           color-scheme: 1
       - label: booking embed
         value:
           _id: booking_embed
-          heading: Booking embed 
+          heading: Booking embed
           color-scheme: 2
       - label: share links
         value:
           _id: share
           block-content-html:
           inline-heading: share the love
-          x-share-text: article relevent text  
+          x-share-text: article relevent text
           color-scheme: 2
       - label: Experience block
         value:
           _id: experience-loop
           block-content-html: >-
-            <h2 class="larger-heading text-center">Experience</h2><p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <h2 class="larger-heading text-center">Experience</h2><p
+            class="text-center">Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.</p>
           content-max-width: 985px
           filter-collections:
-              - Art
-              - Apiritual
-              - Nature
-              - Sustainable
-              - Culture
+            - Art
+            - Apiritual
+            - Nature
+            - Sustainable
+            - Culture
           img_apsect: '1'
           color-scheme: 2
       - label: All hotels section
@@ -317,8 +429,8 @@ _structures:
       - label: slider section
         value:
           _id: slider
-          block-content-html: >
-                  <h2 class="larger-heading">EXPERIENCES</h2>
+          block-content-html: |
+            <h2 class="larger-heading">EXPERIENCES</h2>
           slides:
             - col-content-html:
               img_path: /uploads/placeholder-1.jpg
@@ -344,68 +456,94 @@ _structures:
             class="larger-heading">testimonials</h2>
           cols:
             - col-content-html: >-
-                <h3 class="sub-heading">lorem ipsum</h3><p>Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                nostrud.</p>
+                <h3 class="sub-heading">lorem ipsum</h3><p>Lorem ipsum dolor sit
+                amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam, quis nostrud.</p>
               img_path: /uploads/placeholder-1.jpg
               img_alt: image description
             - col-content-html: >-
-                <h3 class="sub-heading">lorem ipsum</h3><p>Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                nostrud.</p>
+                <h3 class="sub-heading">lorem ipsum</h3><p>Lorem ipsum dolor sit
+                amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam, quis nostrud.</p>
               img_path: /uploads/placeholder-1.jpg
               img_alt: image description
             - col-content-html: >-
-                <h3 class="sub-heading">lorem ipsum</h3><p>Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                nostrud.</p>
+                <h3 class="sub-heading">lorem ipsum</h3><p>Lorem ipsum dolor sit
+                amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam, quis nostrud.</p>
               img_path: /uploads/placeholder-1.jpg
               img_alt: image description
-          img_apsect: '4/2'
+          img_apsect: 4/2
           image_default_ratio: false
           text_alignment: center
           color-scheme: 1
       - label: Banner slide show
         value:
           _id: slider-banner
-          bottom-text: 
+          bottom-text:
           fade_speed_transition_in_mili_second: 750
           slide_screen_time_in_mili_seconds: 3000
           imgs:
-              - img_path: https://picsum.photos/id/1021/600/400
-                img_alt: 
-              - img_path: https://picsum.photos/id/1020/600/400
-                img_alt: 
-              - img_path: https://picsum.photos/id/1022/600/400
-                img_alt: 
-              - img_path: https://picsum.photos/id/1023/600/400
-                img_alt: 
+            - img_path: https://picsum.photos/id/1021/600/400
+              img_alt:
+            - img_path: https://picsum.photos/id/1020/600/400
+              img_alt:
+            - img_path: https://picsum.photos/id/1022/600/400
+              img_alt:
+            - img_path: https://picsum.photos/id/1023/600/400
+              img_alt:
       - label: lightbox gallery
         value:
-            _id: custom-light-box
-            block-content-html: <h2>section heading</h2>
-            lightbox_images:
-              - pre_image_text: done by dan
-                img_path: /uploads/placeholder-1.jpg
-                img_alt:
-                col-content-html: <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quidem ut placeat architecto, velit officiis veritatis est iusto deserunt temporibus fugiat pariatur earum quae blanditiis perspiciatis atque. Ratione, rerum doloribus! Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              - pre_image_text: done by dan
-                img_path: /uploads/placeholder-2.jpg
-                img_alt:
-                col-content-html: <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quidem ut placeat architecto, velit officiis veritatis est iusto deserunt temporibus fugiat pariatur earum quae blanditiis perspiciatis atque. Ratione, rerum doloribus! Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              - pre_image_text: done by dan
-                img_path: /uploads/placeholder-3.jpg
-                img_alt:
-                col-content-html: <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quidem ut placeat architecto, velit officiis veritatis est iusto deserunt temporibus fugiat pariatur earum quae blanditiis perspiciatis atque. Ratione, rerum doloribus! Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              - pre_image_text: done by dan
-                img_path: /uploads/placeholder-4.jpg
-                img_alt:
-                col-content-html: <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quidem ut placeat architecto, velit officiis veritatis est iusto deserunt temporibus fugiat pariatur earum quae blanditiis perspiciatis atque. Ratione, rerum doloribus! Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              - pre_image_text: done by dan
-                img_path: /uploads/placeholder-5.jpg
-                img_alt:
-                col-content-html: <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quidem ut placeat architecto, velit officiis veritatis est iusto deserunt temporibus fugiat pariatur earum quae blanditiis perspiciatis atque. Ratione, rerum doloribus! Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              
+          _id: custom-light-box
+          block-content-html: <h2>section heading</h2>
+          lightbox_images:
+            - pre_image_text: done by dan
+              img_path: /uploads/placeholder-1.jpg
+              img_alt:
+              col-content-html: >-
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corporis quidem ut placeat architecto, velit officiis veritatis
+                est iusto deserunt temporibus fugiat pariatur earum quae
+                blanditiis perspiciatis atque. Ratione, rerum doloribus! Lorem
+                ipsum dolor sit amet consectetur adipisicing elit.</p>
+            - pre_image_text: done by dan
+              img_path: /uploads/placeholder-2.jpg
+              img_alt:
+              col-content-html: >-
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corporis quidem ut placeat architecto, velit officiis veritatis
+                est iusto deserunt temporibus fugiat pariatur earum quae
+                blanditiis perspiciatis atque. Ratione, rerum doloribus! Lorem
+                ipsum dolor sit amet consectetur adipisicing elit.</p>
+            - pre_image_text: done by dan
+              img_path: /uploads/placeholder-3.jpg
+              img_alt:
+              col-content-html: >-
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corporis quidem ut placeat architecto, velit officiis veritatis
+                est iusto deserunt temporibus fugiat pariatur earum quae
+                blanditiis perspiciatis atque. Ratione, rerum doloribus! Lorem
+                ipsum dolor sit amet consectetur adipisicing elit.</p>
+            - pre_image_text: done by dan
+              img_path: /uploads/placeholder-4.jpg
+              img_alt:
+              col-content-html: >-
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corporis quidem ut placeat architecto, velit officiis veritatis
+                est iusto deserunt temporibus fugiat pariatur earum quae
+                blanditiis perspiciatis atque. Ratione, rerum doloribus! Lorem
+                ipsum dolor sit amet consectetur adipisicing elit.</p>
+            - pre_image_text: done by dan
+              img_path: /uploads/placeholder-5.jpg
+              img_alt:
+              col-content-html: >-
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corporis quidem ut placeat architecto, velit officiis veritatis
+                est iusto deserunt temporibus fugiat pariatur earum quae
+                blanditiis perspiciatis atque. Ratione, rerum doloribus! Lorem
+                ipsum dolor sit amet consectetur adipisicing elit.</p>
+data_config: {}
+timezone: Etc/UTC
