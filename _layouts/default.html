@@ -210,7 +210,7 @@
         {% for menu in site.data.navigation.footer.menus limit: 1 %}
         <h3>{{menu.heading}}</h3>
             {% for link in menu.menu %}
-            <a href="{{link.url}}" class="block">{{link.text}}</a>
+            <a href="{{link.link-url}}" class="block">{{link.text}}</a>
             {% endfor %}
         {% endfor %}
         </div>
@@ -218,7 +218,7 @@
             {% for menu in site.data.navigation.footer.menus limit: 1  offset: 1 %}
             <h3>{{menu.heading}}</h3>
                 {% for link in menu.menu %}
-                <a href="{{link.url}}" class="block">{{link.text}}</a>
+                <a href="{{link.link-url}}" class="block">{{link.text}}</a>
                 {% endfor %}
             {% endfor %}
 
