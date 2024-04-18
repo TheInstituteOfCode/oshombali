@@ -198,6 +198,12 @@ footer a, footer input, footer p{
   .tab-col-full{
     grid-column: span 3;
   }
+  .news-letter{
+    grid-column: 2;
+  }
+  .news-letter .flex{
+    justify-content: center;
+  }
 }
 
 
@@ -205,8 +211,8 @@ footer a, footer input, footer p{
   footer{
     grid-template-columns: 1fr;
   }
-  .tab-col-full{
-    grid-column: span 1;
+  .news-letter{
+    grid-column: 1;
   }
 
   footer.gap-y-12 > * {
