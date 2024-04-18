@@ -6,9 +6,9 @@ header:
     link-url: /accomodation.html
     sublinks:
       - text: Suite
-        link-url: /accomodation.html
+        link-url: /suites
       - text: Treehouse
-        link-url: /accomodation.html
+        link-url: /treehouse
   - text: Dining
     link-url: /dining.html
     sublinks:
