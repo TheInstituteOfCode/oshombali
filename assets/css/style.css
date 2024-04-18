@@ -580,6 +580,9 @@ input.button-featured{
 .mb-\[80px\] {
   margin-bottom: 80px;
 }
+.ml-0 {
+  margin-left: 0px;
+}
 .ml-\[--side-gap\] {
   margin-left: var(--side-gap);
 }
@@ -1715,6 +1718,9 @@ body #ui-datepicker-div{
   }
   .md\:ml-0 {
     margin-left: 0px;
+  }
+  .md\:ml-\[--side-gap\] {
+    margin-left: var(--side-gap);
   }
   .md\:mr-0 {
     margin-right: 0px;

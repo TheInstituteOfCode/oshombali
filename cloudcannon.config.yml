@@ -251,6 +251,7 @@ _structures:
                <h3>Pre heading text</h3><h2>Basic heading</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           content-max-width: 785px
           text-alignment: center
+          desktop-content-vertical-position: top
           banner-image: /uploads/placeholder-1.jpg
           banner-height: 40vh
           overlay-color: "#fff"
@@ -358,7 +359,7 @@ _structures:
         value:
           _id: slider-banner
           bottom-text: 
-          fade_speed_transition_in_milli_second: 750
+          fade_speed_transition_in_mili_second: 750
           slide_screen_time_in_mili_seconds: 3000
           imgs:
               - img_path: https://picsum.photos/id/1021/600/400

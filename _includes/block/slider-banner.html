@@ -19,7 +19,7 @@
   </section>
 
   <style>
-    .banner-slide{ transition: all {{block.fade_speed_transition_in_milli_second}}ms}
+    .banner-slide{ transition: all {{block.fade_speed_transition_in_mili_second}}ms}
   </style>
 <script>
 const sliderBanner = document.querySelector('.slider-banner-parent')
@@ -28,9 +28,9 @@ const bannerSlides = sliderBanner.querySelectorAll('.banner-slide')
 function slideOut(slide) {
 slide.style.opacity = 0;
 if (slide.nextElementSibling) {
-  setTimeout( () => {slideIn(slide.nextElementSibling)}, {{block.fade_speed_transition_in_milli_second}})
+  setTimeout( () => {slideIn(slide.nextElementSibling)}, {{block.fade_speed_transition_in_mili_second}})
 } else {
-  setTimeout( () => {slideIn(bannerSlides[0])}, {{block.fade_speed_transition_in_milli_second}})
+  setTimeout( () => {slideIn(bannerSlides[0])}, {{block.fade_speed_transition_in_mili_second}})
 }
 }
 
