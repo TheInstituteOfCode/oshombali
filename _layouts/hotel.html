@@ -157,6 +157,13 @@ layout: default
 {% endif %}
 {% endfor %}
 
+{% for block in page.blocks %}
+<div class="scheme-{{block.color-scheme}}" id="section-{{forloop.index0}}">
+        <!-- {{block._id}} -->
+    {% include /block/{{block._id}}.html %}
+</div>
+{% endfor %}
+
 <!-- 
 <div class="scheme-{{page.experience-section.scheme}}">
 
