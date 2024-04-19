@@ -780,6 +780,9 @@ input.button-featured{
 .flex-col {
   flex-direction: column;
 }
+.flex-wrap {
+  flex-wrap: wrap;
+}
 .items-start {
   align-items: flex-start;
 }
@@ -867,6 +870,9 @@ input.button-featured{
 }
 .gap-y-\[var\(--vert-gap\)\] {
   row-gap: var(--vert-gap);
+}
+.gap-y-1 {
+  row-gap: 0.25rem;
 }
 .self-start {
   align-self: flex-start;
@@ -1754,6 +1760,9 @@ body #ui-datepicker-div{
   }
   .md\:inline-block {
     display: inline-block;
+  }
+  .md\:flex {
+    display: flex;
   }
   .md\:grid {
     display: grid;
