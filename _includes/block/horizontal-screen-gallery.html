@@ -60,7 +60,6 @@
 
 
     .scroll-item{
-
         scroll-snap-type: y mandatory;
       scroll-snap-align: start;
       scroll-snap-stop: normal;
@@ -75,7 +74,7 @@ const slides = slider.querySelectorAll('.scroll-item')
 
   let next 
 
-  function updateButtons() {
+  function nextSlide() {
       let sliderBlock = slides[0].offsetWidth + 16
       let gridLenght = slides.length * sliderBlock - 16
       
@@ -104,7 +103,7 @@ const slides = slider.querySelectorAll('.scroll-item')
     // console.log(slider.scrollLeft / slider.offsetWidth )
   }
 
-  nextButton.addEventListener('click', updateButtons)
+  nextButton.addEventListener('click', nextSlide)
 
   
   // debugger
