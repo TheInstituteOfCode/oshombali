@@ -11,7 +11,7 @@
     <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-x-8 gap-y-[40px] filter-grid">
       {% assign ordered-expe = site.experiences | sort: 'experiences-order' %}
       {% for expe in ordered-expe %}
-      <div style="text-align: {{block.text_alignment}};" class="{{expe.experience-group}} grid-item">
+      <div style="text-align: {{block.text-alignment}};" class="{{expe.experience-group}} grid-item">
         <a href="{{expe.url}}" class="block">
 
           {% if expe.img_path != '' %}
