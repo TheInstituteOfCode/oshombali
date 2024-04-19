@@ -42,7 +42,7 @@ footer:
     8004</strong></a><strong><br /></strong><a href="mailto:hello@oshombali.com"
     target="_blank"
     rel="noopener"><strong>hello@oshombali.com</strong></a><strong><br
-    /></strong><a href="https://booking.oshombali.com" target="_blank"
+    /></strong><a href="mailto:booking@oshombali.com" target="_blank"
     rel="noopener"><strong>booking@oshombali.com</strong></a></h4>
   menus:
     - heading: EXPLORE
@@ -68,7 +68,9 @@ footer:
         - text: SITE MAP
           link-url: https://linktr.ee/oshombali
         - text: CAREERS
-          link-url: /contact.html
+          link-url: https://www.linkedin.com/company/oshom-bali/
+        - text: FEEDBACK
+          link-url: ''
 social_links:
   instagram-link: https://www.instagram.com/oshom_bali/
   facebook-link: https://www.facebook.com/oshombalinuanu
