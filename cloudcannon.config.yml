@@ -48,14 +48,14 @@ _inputs:
       allow_custom_markup: false
       remove_custom_markup: false
       initial_height: 320
-      center: text-center
       format: p h2 h3 a img
       horizontalrule: true
       image: true
       image_size_attributes: true
       left: text-left
-      link: true
+      center: text-center
       right: text-right
+      link: true
       styles: /editor.css
     cascade: true
   col-content-html:
