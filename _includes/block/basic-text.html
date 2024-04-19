@@ -3,11 +3,11 @@
       <div class="max-width">
           <div class="
           {% case block.text-alignment %}
-          {% when left %}
+          {% when 'left' %}
           mr-auto
-          {% when center %}
+          {% when 'center' %}
           mx-auto
-          {% when right %}
+          {% when 'right' %}
           ml-auto
           {% endcase %}" style="text-align: {{block.text-alignment}};{% if block.content-max-width %}max-width: {{block.content-max-width}} {% endif %}">
           

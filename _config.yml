@@ -10,3 +10,8 @@ collections:
     output: true
   events:
     output: true
+
+
+url: "https://example.com" # the base hostname & protocol for your site
+gem:
+  - jekyll-sitemap
