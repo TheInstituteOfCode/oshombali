@@ -780,9 +780,6 @@ input.button-featured{
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
-.grid-cols-5 {
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-}
 .flex-col {
   flex-direction: column;
 }
@@ -1782,11 +1779,17 @@ body #ui-datepicker-div{
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
+  .md\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
   .md\:flex-row {
     flex-direction: row;
   }
   .md\:gap-8 {
     gap: 2rem;
+  }
+  .md\:gap-y-0 {
+    row-gap: 0px;
   }
   .md\:gap-y-8 {
     row-gap: 2rem;
