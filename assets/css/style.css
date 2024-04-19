@@ -723,11 +723,17 @@ input.button-featured{
 .flex-none {
   flex: none;
 }
+.flex-shrink-0 {
+  flex-shrink: 0;
+}
 .shrink {
   flex-shrink: 1;
 }
 .shrink-0 {
   flex-shrink: 0;
+}
+.flex-grow {
+  flex-grow: 1;
 }
 .flex-grow-0 {
   flex-grow: 0;
@@ -847,6 +853,9 @@ input.button-featured{
   -moz-column-gap: 2rem;
        column-gap: 2rem;
 }
+.gap-y-1 {
+  row-gap: 0.25rem;
+}
 .gap-y-12 {
   row-gap: 3rem;
 }
@@ -870,9 +879,6 @@ input.button-featured{
 }
 .gap-y-\[var\(--vert-gap\)\] {
   row-gap: var(--vert-gap);
-}
-.gap-y-1 {
-  row-gap: 0.25rem;
 }
 .self-start {
   align-self: flex-start;
@@ -1760,9 +1766,6 @@ body #ui-datepicker-div{
   }
   .md\:inline-block {
     display: inline-block;
-  }
-  .md\:flex {
-    display: flex;
   }
   .md\:grid {
     display: grid;
