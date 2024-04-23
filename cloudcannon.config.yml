@@ -576,9 +576,9 @@ _structures:
                 img_path: /uploads/placeholder-5.jpg
                 img_alt:
                 col-content-html: <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quidem ut placeat architecto, velit officiis veritatis est iusto deserunt temporibus fugiat pariatur earum quae blanditiis perspiciatis atque. Ratione, rerum doloribus! Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            color-scheme: base
-          border-top-width:
-          border-top-color:
-          border-bottom-width:
-          border-bottom-color:
+              color-scheme: base
+              border-top-width:
+              border-top-color:
+              border-bottom-width:
+              border-bottom-color:
               
