@@ -843,6 +843,9 @@ input.button-featured{
 .gap-\[60px\] {
   gap: 60px;
 }
+.gap-\[var\(--side-gap\)\] {
+  gap: var(--side-gap);
+}
 .gap-x-1 {
   -moz-column-gap: 0.25rem;
        column-gap: 0.25rem;
@@ -1006,6 +1009,10 @@ input.button-featured{
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
+}
+.px-\[var\(--side-gap\)\] {
+  padding-left: var(--side-gap);
+  padding-right: var(--side-gap);
 }
 .py-0 {
   padding-top: 0px;
@@ -1880,6 +1887,9 @@ body #ui-datepicker-div{
   }
   .md\:flex-row {
     flex-direction: row;
+  }
+  .md\:gap-4 {
+    gap: 1rem;
   }
   .md\:gap-8 {
     gap: 2rem;
