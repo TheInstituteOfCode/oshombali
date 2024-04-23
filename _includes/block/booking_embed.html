@@ -23,16 +23,16 @@
                 </fieldset>
                 
                 <fieldset class="relative z-10 h-full mb-2 sm:mb-0 flex items-center min-h-[40px] sm:min-h-0">
-                    <label class="cursor-pointer"
+                    <label class="cursor-pointer guest-trigger flex-1"
                     onclick="toggleVisiterPopout()"
-                    > Guests </label>
+                    ><span>Guests</span></label>
                     <div class="flex justify-center items-center absolute bottom-0 left-0 bg-[var(--colored-button-bg)] h-0 overflow-hidden p-0 text-[0px] border-0 embed-dropdown" id="embed-user-count">
                         <div class="col-span-full text-right flex justify-between" ><label>Guests</label><div class="x leading-none cursor-pointer" onclick="toggleVisiterPopout()"> X </div> </div>
-                        <label class="shrink">Adults</label>
+                        <label class="shrink !text-[.8rem]">Adults</label>
                         <span onclick="increaseInput(this)"> + </span>
                         <input type="number" name="BookingForm[adults]" id="adults" placeholder="Adults" max="20" min="0" value="2" class=""/>
                         <span onclick="decreaseInput(this)"> - </span>
-                        <label class="shrink !pl-0 min-w-[7rem]">Children</label>
+                        <label class="shrink !text-[.8rem] !pl-0 min-w-[7rem]">Children</label>
                         <span onclick="increaseInput(this)"> + </span>
                         <input type="number" name="BookingForm[children]" id="children" placeholder="Children" max="20" min="0" value="0"/>
                         <span onclick="decreaseInput(this)"> - </span>

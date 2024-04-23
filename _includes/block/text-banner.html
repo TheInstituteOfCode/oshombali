@@ -1,14 +1,10 @@
-<!-- text banner  -->
-<section class="flex items-center justify-center bg-center bg-cover relative"
-style="
+<section style="{% if block.border-bottom-width %} border-bottom: {{block.border-bottom-width}} solid {{block.border-bottom-color}}; {% endif %}{% if block.border-top-width %} border-bottom: {{block.border-top-width}} solid {{block.border-top-color}}; {% endif %} 
 {% if block.banner-image %}
 background-image: url({{block.banner-image}});
 {% endif %}
 {% if block.banner-height %}
 min-height: {{block.banner-height}};
-{% endif %}
-"
->
+{% endif %}" class="flex items-center justify-center bg-center bg-cover relative">
 {% unless block.overlay-opacity == 0 %}
 <div class='inset-0 absolute' style='background-color: {{block.overlay-color}}; opacity: {{block.overlay-opacity}};'>
 

@@ -104,7 +104,7 @@
                     </h2>
                 </a>
 
-                <div class="text-right hidden md:block">
+                <div class="text-right">
                   <span class="relative contact-link hidden lg:inline-block">
                     <span class="cursor-pointer" onclick="toggleClass(document.querySelector('#drop-contact'),'active')">contact</span>
                    <div id="drop-contact" class="text-left" >
@@ -202,7 +202,7 @@
           </a>
         </div>
 
-        <div class="max-w-[15.4rem] footer-col-1">
+        <div class="max-w-[15.4rem] footer-col-1 footer-text-box">
             {{site.data.navigation.footer.text-block_html}}
         </div>
 
@@ -1141,7 +1141,7 @@
 
 <div class="scheme-base h-0">
 
-    <div class="fixed hidden md:block right-0 bottom-[15vh] p-[19px_24px_18px_25px;] rounded-l-full bg-[var(--colored-button-bg)] z-50 border-0 whatsappParent">
+    <div class="fixed right-0 bottom-[15vh] p-[19px_24px_18px_25px;] rounded-l-full bg-[var(--colored-button-bg)] z-50 border-0 whatsappParent">
         <a href="https://wa.me/{{site.data.navigation.whatsapp.number}}?text={{site.data.navigation.whatsapp.mesage | replace: ' ','%20'}}">
             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 47 47" fill="none">
                 <g clip-path="url(#clip0_474_2546)">

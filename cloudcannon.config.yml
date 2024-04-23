@@ -271,6 +271,10 @@ _structures:
           color-scheme: base
           top-space-collapse: false
           bottom-space-collapse: false
+          border-top-width:
+          border-top-color:
+          border-bottom-width:
+          border-bottom-color:
       - label: Basic column section
         value:
           _id: col-section-basic
@@ -293,6 +297,10 @@ _structures:
           image_default_ratio: false
           text-alignment: center
           color-scheme: base
+          border-top-width:
+          border-top-color:
+          border-bottom-width:
+          border-bottom-color:
       - label: linked column section
         value:
           _id: col-section-with-buttons
@@ -314,6 +322,10 @@ _structures:
           img_apsect: '1'
           image_default_ratio: false
           color-scheme: base
+          border-top-width:
+          border-top-color:
+          border-bottom-width:
+          border-bottom-color:
       - label: Horizontal screen gallery
         value:
           _id: horizontal-screen-gallery
@@ -343,6 +355,10 @@ _structures:
               img_alt: image description
               url:
           color-scheme: base
+          border-top-width:
+          border-top-color:
+          border-bottom-width:
+          border-bottom-color:
       - label: Simple banner with text
         value:
           _id: text-banner
@@ -363,6 +379,10 @@ _structures:
           overlay-color: '#fff'
           overlay-opacity: '.5'
           color-scheme: base
+          border-top-width:
+          border-top-color:
+          border-bottom-width:
+          border-bottom-color:
       - label: Map banner
         value:
           _id: bali_map
@@ -390,6 +410,10 @@ _structures:
             officia deserunt mollit anim id est laborum.</p>
           full-width: false
           color-scheme: base
+          border-top-width:
+          border-top-color:
+          border-bottom-width:
+          border-bottom-color:
       - label: booking embed
         value:
           _id: booking_embed
@@ -425,6 +449,10 @@ _structures:
             - Culture
           img_apsect: '1'
           color-scheme: featured
+          border-top-width:
+          border-top-color:
+          border-bottom-width:
+          border-bottom-color:
       - label: All hotels section
         value:
           _id: hotels
@@ -432,6 +460,10 @@ _structures:
           desktop-content-vertical-position: center
           img_apsect: '1'
           color-scheme: base
+          border-top-width:
+          border-top-color:
+          border-bottom-width:
+          border-bottom-color:
       - label: slider section
         value:
           _id: slider
@@ -454,6 +486,10 @@ _structures:
               img_alt: image description
               url:
           color-scheme: base
+          border-top-width:
+          border-top-color:
+          border-bottom-width:
+          border-bottom-color:
       - label: Testimonials section
         value:
           _id: testimonial
@@ -486,6 +522,10 @@ _structures:
           image_default_ratio: false
           text-alignment: center
           color-scheme: base
+          border-top-width:
+          border-top-color:
+          border-bottom-width:
+          border-bottom-color:
       - label: Banner slide show
         value:
           _id: slider-banner
@@ -502,30 +542,43 @@ _structures:
             - img_path: https://picsum.photos/id/1023/600/400
               img_alt:
           color-scheme: base
+          border-top-width:
+          border-top-color:
+          border-bottom-width:
+          border-bottom-color:
       - label: lightbox gallery
         value:
             _id: custom-light-box
             block-content-html: <h2>section heading</h2>
             lightbox_images:
-              - pre_image_text:
+              - username:
+                instagram_handle:
                 img_path: /uploads/placeholder-1.jpg
                 img_alt:
                 col-content-html: <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quidem ut placeat architecto, velit officiis veritatis est iusto deserunt temporibus fugiat pariatur earum quae blanditiis perspiciatis atque. Ratione, rerum doloribus! Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              - pre_image_text:
+              - username:
+                instagram_handle:
                 img_path: /uploads/placeholder-2.jpg
                 img_alt:
                 col-content-html: <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quidem ut placeat architecto, velit officiis veritatis est iusto deserunt temporibus fugiat pariatur earum quae blanditiis perspiciatis atque. Ratione, rerum doloribus! Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              - pre_image_text: 
+              - username:
+                instagram_handle: 
                 img_path: /uploads/placeholder-3.jpg
                 img_alt:
                 col-content-html: <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quidem ut placeat architecto, velit officiis veritatis est iusto deserunt temporibus fugiat pariatur earum quae blanditiis perspiciatis atque. Ratione, rerum doloribus! Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              - pre_image_text: 
+              - username:
+                instagram_handle: 
                 img_path: /uploads/placeholder-4.jpg
                 img_alt:
                 col-content-html: <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quidem ut placeat architecto, velit officiis veritatis est iusto deserunt temporibus fugiat pariatur earum quae blanditiis perspiciatis atque. Ratione, rerum doloribus! Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              - pre_image_text: 
+              - username:
+                instagram_handle: 
                 img_path: /uploads/placeholder-5.jpg
                 img_alt:
                 col-content-html: <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quidem ut placeat architecto, velit officiis veritatis est iusto deserunt temporibus fugiat pariatur earum quae blanditiis perspiciatis atque. Ratione, rerum doloribus! Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             color-scheme: base
+          border-top-width:
+          border-top-color:
+          border-bottom-width:
+          border-bottom-color:
               

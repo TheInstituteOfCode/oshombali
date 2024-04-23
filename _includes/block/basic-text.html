@@ -1,5 +1,7 @@
 
-<section class="{% if block.top-space-collapse  == true %} pt-0 {% endif %} {% if block.bottom-space-collapse  == true %} pb-0 {% endif %}">
+<section class="{% if block.top-space-collapse  == true %} pt-0 {% endif %} {% if block.bottom-space-collapse  == true %} pb-0 {% endif %}"
+style="{% if block.border-bottom-width %} border-bottom: {{block.border-bottom-width}} solid {{block.border-bottom-color}}; {% endif %}{% if block.border-top-width %} border-bottom: {{block.border-top-width}} solid {{block.border-top-color}}; {% endif %}"
+>
       <div class="max-width">
           <div class="
           {% case block.text-alignment %}

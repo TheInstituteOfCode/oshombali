@@ -1,5 +1,4 @@
-
-<section >
+<section style="{% if block.border-bottom-width %} border-bottom: {{block.border-bottom-width}} solid {{block.border-bottom-color}}; {% endif %}{% if block.border-top-width %} border-bottom: {{block.border-top-width}} solid {{block.border-top-color}}; {% endif %}">
   <div class="max-width">
     <div>
       {{block.block-content-html}}
