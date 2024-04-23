@@ -560,13 +560,13 @@ top: 100%;
 
 /* accordian */
 
-.accordian-trigger .accordian-svg{
+.accordian-trigger .accordian-svg, .hidden-accordian .accordian-svg{
   transform: rotate(-90deg);
 transition: transform .5s;
 
 }
 
-.accordian-trigger.active .accordian-svg{
+.accordian-trigger.active .accordian-svg, .hidden-accordian.active .accordian-svg{
   transform: rotate(0deg);
 }
 
