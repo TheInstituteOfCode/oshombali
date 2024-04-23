@@ -330,6 +330,10 @@ header:not(.bg-transparent) div{
 }
 
 
+.header-grid{
+  grid-template-columns: 1fr 17rem 1fr;
+}
+
 @media (max-width:640px) {
   header{
     position: sticky;
@@ -337,13 +341,16 @@ header:not(.bg-transparent) div{
   }
   header.bg-transparent{
     background-color: var(--bg-color);
-
+    
   }
-
+  
   header.bg-transparent div{
     background-color: var(--bg-color);
   }
+  .header-grid{
+    grid-template-columns: 131px 1fr 131px;
 
+  }
 
 }
 

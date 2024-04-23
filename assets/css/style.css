@@ -1018,6 +1018,10 @@ input.button-featured{
   padding-top: 0px;
   padding-bottom: 0px;
 }
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -1395,6 +1399,10 @@ header:not(.bg-transparent) div{
 }
 
 
+.header-grid{
+  grid-template-columns: 1fr 17rem 1fr;
+}
+
 @media (max-width:640px) {
   header{
     position: sticky;
@@ -1402,13 +1410,16 @@ header:not(.bg-transparent) div{
   }
   header.bg-transparent{
     background-color: var(--bg-color);
-
+    
   }
-
+  
   header.bg-transparent div{
     background-color: var(--bg-color);
   }
+  .header-grid{
+    grid-template-columns: 131px 1fr 131px;
 
+  }
 
 }
 
@@ -1910,6 +1921,10 @@ body #ui-datepicker-div{
   .md\:\!py-\[20px\] {
     padding-top: 20px !important;
     padding-bottom: 20px !important;
+  }
+  .md\:py-0 {
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
   .md\:pt-\[var\(--vert-gap\)\] {
     padding-top: var(--vert-gap);
