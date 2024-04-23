@@ -29,7 +29,14 @@
             {% endif %}
 
             <div class="mt-4 text-{{block.text_alignment}}">
-              <div class="mx-auto" style='max-width: {{block.col-content-max-width}}'>
+              <div class="{% case col.text-alignment %}
+              {% when 'left' %}
+              mr-auto
+              {% when 'right' %}
+              ml-auto
+              {% else %}
+              mx-auto
+              {% endcase %}" style='max-width: {{block.col-content-max-width}}'>
                 {{col.col-content-html}}
 
               </div>

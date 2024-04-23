@@ -207,6 +207,7 @@ _structures:
           img_path: /uploads/placeholder-1.jpg
           img_alt: image description
           img-link-url:
+          text-alignment:
   linked-cols:
     style: select
     values:
@@ -292,6 +293,7 @@ _structures:
               img_path: /uploads/placeholder-1.jpg
               img_alt: image description
               img-link-url:
+              text-alignment: 
           col-content-max-width: 500px
           img_apsect: '1'
           image_default_ratio: false

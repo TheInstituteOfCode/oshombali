@@ -12,7 +12,7 @@
                     {{block.block-content-html}}
                     </div>
             </div>
-            <div class="flex md:col-span-2 gap-4 basis-2/3 flex-none overflow-scroll hide-scrollbars snap-x snap-mandatory horizontal-slider relative">
+            <div class="flex md:col-span-2 gap-[var(--side-gap)] md:gap-4 basis-2/3 flex-none overflow-scroll hide-scrollbars snap-x snap-mandatory horizontal-slider relative px-[var(--side-gap)]">
                 
     {% assign blockid = forloop.index0 %}
             {% for slide in block.slides %}
@@ -64,18 +64,28 @@
       scroll-snap-align: start;
       scroll-snap-stop: normal;
       scroll-margin-top: 10rem;
-      scroll-margin-left: var(--vert-gap);
+      /* scroll-margin-left: var(--vert-gap); */
+    }
+
+    @media (max-width:768px ) {
+    .scroll-item{
+        scroll-snap-align: center;
+        min-width: calc(100vw - calc( var(--vert-gap) * 2)) !important;
+    }   
+        
     }
 </style>
 
 <script>
 const slider = document.querySelector('#section-{{forloop.index0}} .horizontal-slider')
 const slides = slider.querySelectorAll('.scroll-item')
-  const nextButton = slider.parentElement.parentElement.querySelector('.arrow-link')
+const nextButton = slider.parentElement.parentElement.querySelector('.arrow-link')
 
-  let next 
+let next 
 
-  function nextSlide() {
+function nextSlide() {
+    // debugger
+      console.log(slides)
       let sliderBlock = slides[0].offsetWidth + 16
       let gridLenght = slides.length * sliderBlock - 16
       
@@ -88,6 +98,7 @@ const slides = slider.querySelectorAll('.scroll-item')
           console.log(target)
           if (target + 1 <= slides.length){
               next = target + 1
+              console.log('next',next)
             }
             console.log(target)
             
@@ -98,7 +109,7 @@ const slides = slider.querySelectorAll('.scroll-item')
         
         // nextButton.href = `#section-{{forloop.index0}}-slide-${next}`
         
-    slider.scrollLeft = sliderBlock * next - (sliderBlock / 3 )
+    slider.scrollLeft = sliderBlock * next - (sliderBlock / 1.5 )
 
     console.log('next',next,sliderBlock * next,slider.scrollLeft)
     // console.log(slider.scrollLeft / slider.offsetWidth )
