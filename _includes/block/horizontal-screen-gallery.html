@@ -83,9 +83,9 @@ const nextButton = slider.parentElement.parentElement.querySelector('.arrow-link
 
 let next 
 
-function nextSlide() {
+function nextSlide(e) {
     // debugger
-      console.log(slides)
+      console.log(slides, e.type)
       let sliderBlock = slides[0].offsetWidth + 16
       let gridLenght = slides.length * sliderBlock - 16
       
@@ -109,13 +109,16 @@ function nextSlide() {
         
         // nextButton.href = `#section-{{forloop.index0}}-slide-${next}`
         
-    slider.scrollLeft = sliderBlock * next - (sliderBlock / 1.5 )
+    slider.scrollLeft = sliderBlock * next - (sliderBlock / 2 )
 
     console.log('next',next,sliderBlock * next,slider.scrollLeft)
     // console.log(slider.scrollLeft / slider.offsetWidth )
   }
 
-  nextButton.addEventListener('click', nextSlide)
+  
+//   nextButton.addEventListener('touchstart',  function (e) {nextSlide(e)})
+
+  nextButton.addEventListener('click',  function (e) {nextSlide(e)})
 
   
   // debugger
