@@ -52,7 +52,7 @@ footer:
     - heading: EXPLORE
       menu:
         - text: STAY AT OSHOM
-          link-url: /accomodation.html
+          link-url: https://booking.oshombali.com/
         - text: EAT AT OSHOM
           link-url: /dining.html
         - text: EXPERIENCES
