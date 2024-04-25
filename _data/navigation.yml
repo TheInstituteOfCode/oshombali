@@ -25,7 +25,7 @@ header:
     link-url: /offers.html
     sublinks:
   - text: Contact Us
-    link-url: /contact
+    link-url: /contact.html
     sublinks:
 contact_links:
   local_number_link:
@@ -74,6 +74,8 @@ footer:
           link-url: https://www.linkedin.com/company/oshom-bali/
         - text: FEEDBACK
           link-url: /contact
+        - text: CONTACT US
+          link-url: /contact.html
 social_links:
   instagram-link: https://www.instagram.com/oshom_bali/
   facebook-link: https://www.facebook.com/oshombalinuanu
