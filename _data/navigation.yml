@@ -24,9 +24,6 @@ header:
   - text: Offers
     link-url: /offers.html
     sublinks:
-  - text: Contact Us
-    link-url: /contact.html
-    sublinks:
 contact_links:
   local_number_link:
   reservation_number: 6281139408004
