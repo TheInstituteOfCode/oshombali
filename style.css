@@ -514,6 +514,15 @@ top: 100%;
   /* margin-left: 1rem; */
 }
 
+.guest-trigger:after {
+  content: ">";
+  margin-left: 1rem;
+  transition: transform .5s;
+  display: inline-block;
+  margin-left: 10px;
+  color: var(--colored-button-text);
+}
+
 @media (min-width: 640px) {
 
     .drop-parent .overlay{
@@ -544,16 +553,11 @@ top: 100%;
     }
 
 
-    .drop-parent > a:after, .guest-trigger:after {
+    .drop-parent > a:after{
       content: ">";
       margin-left: 1rem;
       transition: transform .5s;
       display: inline-block;
-    }
-
-    .guest-trigger:after{
-      margin-left: 10px;
-      color: var(--colored-button-text);
     }
 
     .drop-parent:hover > a::after{
