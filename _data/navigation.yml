@@ -28,7 +28,7 @@ contact_links:
   local_number_link:
   reservation_number: 6281139408004
   reservation_number_text: +62 811-3940-8004
-  whatsapp_message: Hello, i would like to book a reservation please.
+  whatsapp_message: Hello Oshom Bali, i would like to book a reservation please.
   email: hello@oshombali.com
   location: >-
     Nuanu City - JL. Pantai Nyanyi, Desa Beraban, Kec. Kediri, Kab. Tabanan,
@@ -48,7 +48,7 @@ footer:
     - heading: EXPLORE
       menu:
         - text: STAY AT OSHOM
-          link-url: https://booking.oshombali.com/
+          link-url: /accomodation.html
         - text: EAT AT OSHOM
           link-url: /dining.html
         - text: EXPERIENCES
@@ -81,7 +81,9 @@ social_links:
   youtube-link: https://www.youtube.com/@oshombali
 whatsapp:
   number: 6281139408004
-  mesage: Hello, i would like to book a reservation please.
+  mesage: >-
+    Hello Oshom Bali, I'm interested in learning more about your offerings.
+    Could you please provide more information?  Thank you.
 header-button:
   text: Book now
   button_url: https://booking.oshombali.com
