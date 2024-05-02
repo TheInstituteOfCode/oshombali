@@ -1,6 +1,6 @@
 header:
   - text: Our Hotel
-    link-url: ''
+    link-url: '/our-hotel'
     sublinks:
   - text: Suite & Treehouse
     link-url: /accomodation.html
