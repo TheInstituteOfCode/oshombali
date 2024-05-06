@@ -1,17 +1,16 @@
-<!-- liquid banner  -->
-<section id="filter-grid-{{forloop.index}}">
+<!-- liquid banner  --><section style="{% if block.border-bottom-width %} border-bottom: {{block.border-bottom-width}} solid {{block.border-bottom-color}}; {% endif %}{% if block.border-top-width %} border-top: {{block.border-top-width}} solid {{block.border-top-color}}; {% endif %}" id="filter-grid-{{forloop.index}}">
   <div class="max-width">
     <div class="mx-auto mb-[80px]" style="max-width: {{block.content-max-width}};">
       {{block.block-content-html}}
     </div>
-    <div class="mb-[30px] flex justify-center items-center gap-1">
-      <span class="filter-menu-link active" data-filter="all">all</span><span>/</span>{% for collection in block.filter-collections %}<span class="filter-menu-link" data-filter="{{collection}}">{{collection}}</span>{% unless forloop.last %}<span>/</span>{% endunless %} {% endfor %}
+    <div class="mb-[30px] flex justify-center items-center gap-y-1 gap-x-4 flex-wrap ">
+      <span class="filter-menu-link active mb-0" data-filter="all">all</span><span  class="hidden md:block mb-0">/</span>{% for collection in block.filter-collections %}<span class="filter-menu-link mb-0" data-filter="{{collection}}">{{collection}}</span>{% unless forloop.last %}<span class="hidden md:block mb-0">/</span>{% endunless %} {% endfor %}
 
     </div>
     <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-x-8 gap-y-[40px] filter-grid">
       {% assign ordered-expe = site.experiences | sort: 'experiences-order' %}
       {% for expe in ordered-expe %}
-      <div style="text-align: {{block.text_alignment}};" class="{{expe.experience-group}} grid-item">
+      <div style="text-align: {{block.text-alignment}};" class="{{expe.experience-group}} grid-item">
         <a href="{{expe.url}}" class="block">
 
           {% if expe.img_path != '' %}

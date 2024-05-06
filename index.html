@@ -1,40 +1,53 @@
 ---
 layout: default
 blocks:
-  - _id: video-banner
-    block-content-html: ''
-    color-scheme: 3
-    bg-video:
-      - video_path: /uploads/website-video-fixed-1.mov
-        type: mp4
+  - _id: slider-banner
     bottom-text: Scroll down to discover
+    fade_speed_transition_in_mili_second: 1000
+    slide_screen_time_in_mili_seconds: 4500
+    imgs:
+      - img_path: /uploads/nuanu-site-render-5.jpeg
+        img_alt:
+      - img_path: /uploads/popper-3.jpeg
+        img_alt:
+      - img_path: /uploads/render-nuanu-3-2.jpeg
+        img_alt:
+      - img_path: /uploads/elysium-venue.png
+        img_alt:
+      - img_path: /uploads/lighthouse-2-2.jpeg
+        img_alt:
+    color-scheme: featured
+    border-top-color:
+    border-bottom-color:
   - _id: booking_embed
     heading: Booking embed
-    color-scheme: 2
+    color-scheme: featured
   - _id: col-section-basic
     block-content-html: >-
-      <p class="uppercase-p">WELCOME TO OSHOM BALI</p><h2
-      class="base-heading">Be The First To Revel in Paradise</h2><p>Nestled
-      inside the heart of Nuanu City, Oshom Bali is a luxury boutique hotel
-      located at the stunning beachfront overlooking the Indian Ocean, granting
-      our guests direct access to the serene shores where the ocean meets black
-      sands. For a truly unique experience, we offer exclusive suites and
-      treehouse tucked away within a lush and vibrant mangrove forest. A serene
-      escape where you can immerse yourself in the natural wonders of the rich
-      mangrove ecosystem.</p>
+      <p class="text-center">WELCOME TO OSHOM BALI</p><h2
+      class="larger-heading-center">BE THE FIRST TO REVEL IN PARADISE</h2><p
+      class="text-center">Nestled inside the heart of Nuanu City, Oshom Bali is
+      a luxury boutique hotel located at the stunning beach-front overlooking
+      the Indian Ocean, granting our guests direct access to the serene shores
+      where the ocean meets black sands. For a truly unique experience, we offer
+      exclusive suites and treehouse tucked away within a lush and vibrant
+      mangrove forest. A serene escape where you can immerse yourself in the
+      natural wonders of the rich mangrove ecosystem.</p>
     content-max-width: 855px
     cols:
       - col-content-html: >-
-          <h2 class="base-heading">SUITE</h2><p>Our Suite is a haven of peace,
-          blending modern comfort with a touch of nature for a truly relaxing
-          stay.</p><p><a class="button" href="/suites">discover more</a></p>
+          <h2 class="base-heading-center">SUITE</h2><p class="text-center">Our
+          Suite is a haven of peace, blending modern comfort with a touch of
+          nature for a truly relaxing stay.</p><p class="text-center"><a
+          class="button" href="/suites">discover more</a></p>
         img_path: /uploads/1-1.jpeg
         img_alt: Suite
         img-link-url:
       - col-content-html: >-
-          <h2 class="base-heading">TREEHOUSE</h2><p>Our Treehouse is a sanctuary
-          of tranquility, combining comfort with the essence of nature for a
-          truly serene escape.</p><p><a class="button"
+          <h2 class="base-heading-center">TREEHOUSE</h2><p
+          class="text-center">Our Treehouse is a sanctuary of tranquility,
+          combining comfort with the essence of nature for a truly serene
+          escape.</p><p class="text-center"><a class="button"
           href="/treehouse">discover more</a></p>
         img_path: /uploads/balconie-treehouse-plot-3.jpeg
         img_alt: Treehouse
@@ -42,112 +55,124 @@ blocks:
     col-content-max-width: 455px
     img_apsect: initial
     image_default_ratio: true
-    text_alignment: center
-    color-scheme: 1
+    text-alignment: center
+    color-scheme: base
+    border-top-width:
+    border-top-color:
+    border-bottom-color:
+  - _id: horizontal-screen-gallery
+    desktop-content-vertical-position: center
+    block-content-html: <h2 class="larger-heading">UPCOMING EVENTS</h2>
+    slides:
+      - col-content-html:
+        img_path: /uploads/megatix-square.jpeg
+        img_alt: Nuanu Run
+        url: https://www.megatix.co.id/events/nuanu-run
+      - col-content-html:
+        img_path: /uploads/instasave.jpeg
+        img_alt: image description
+        url: https://www.ticketfairy.com/event/locus-bali-2024/
+      - col-content-html:
+        img_path: /uploads/mar-11-1.png
+        img_alt: image description
+        url: >-
+          https://suarafestival.com/?fbclid=PAZXh0bgNhZW0BMQABprjI_5MIFHi0ghlL8Om2nc9AdWV8oWJCvIU5_koVZ3jgE5STMoOG8EE_Tg_aem_AeEYH4kuRTSfuCix3uVq4sN24uJ4zfdbqoCgDE_7n4BgeYwB82tgT6By899diLn0Ukc
+    text-overlay: true
+    img_apsect: '1'
+    img_width: 400
+    color-scheme: featured
   - _id: col-section-basic
     block-content-html: >-
-      <h2 class="base-heading text-center">Discover our experiences&nbsp;</h2><p
-      class="text-center">Embrace the essence of Oshom, where nature's beauty,
-      wellness rituals, and artful expressions converge to craft unforgettable
-      experiences. Delight in the delicate dance of butterflies, find balance
-      with seaside yoga, and be inspired by timeless tribal art—each moment with
-      us is a step towards rediscovery and harmony.</p>
+      <h2 class="base-heading-center">Discover Our Experiences&nbsp;</h2><p
+      class="text-center">Embrace the essence of Oshom Bali, where nature's
+      beauty, wellness rituals, and artful expressions converge to craft
+      unforgettable experiences. Delight in the delicate dance of butterflies,
+      find balance with seaside yoga, and be inspired by timeless tribal
+      art—each moment with us is a step towards rediscovery and harmony.</p>
     content-max-width: 850px
     cols:
       - col-content-html: >-
-          <h2 class="base-heading">nature</h2><p>Step into Oshom's natural
-          haven, where every corner offers a fresh embrace with the outdoors,
-          inviting you to unwind and recharge.</p>
+          <h2 class="base-heading-center">NATURE</h2><p class="text-center">Step
+          into Oshom's natural haven, where every corner offers a fresh embrace
+          with the outdoors, inviting you to unwind and recharge.</p>
         img_path: /uploads/nature-2-1.jpeg
         img_alt: image description
         img-link-url:
-        text-alignment: left
+        text-alignment: center
       - col-content-html: >-
-          <h2 class="base-heading">wellness</h2><p>Elevate your routine at
-          Oshom, where wellness activities rejuvenate your body and peace of
-          mind is as natural as the sunrise</p>
+          <h2 class="base-heading-center">WELLNESS</h2><p
+          class="text-center">Elevate your routine at Oshom, where wellness
+          activities rejuvenate your body and peace of mind is as natural as the
+          sunrise</p>
         img_path: /uploads/yoga.jpeg
         img_alt: image description
         img-link-url:
-        text-alignment: left
+        text-alignment: center
       - col-content-html: >-
-          <h2 class="base-heading">art</h2><p>Immerse yourself in Oshom's artful
-          surroundings, where every piece tells a story and every glance offers
-          inspiration</p>
+          <h2 class="base-heading-center">ART</h2><p class="text-center">Immerse
+          yourself in Oshom's artful surroundings, where every piece tells a
+          story and every glance offers inspiration</p>
         img_path: /uploads/eco-path-3.jpeg
         img_alt: image description
         img-link-url:
-        text-alignment: left
-    col-content-max-width: 450px
+        text-alignment: center
+    col-content-max-width: 455px
     img_apsect: 4/5
     image_default_ratio: false
-    text_alignment: center
-    color-scheme: 2
+    text-alignment: center
+    color-scheme: base
+    border-top-color:
+    border-bottom-color:
   - _id: sidebanner
-    block-content-html: >-
-      <h2 class="larger-heading">ABOUT NUANU</h2><p>Nuanu is a creative city
-      spanning 44 hectares in Bali, Indonesia, that embodies a commitment to
-      harmonious living. A vibrant community of creators, leaders, and
-      changemakers are empowered here to foster a culture of positive change.
-      Designed as an integrated ecosystem, the city features dedicated spaces
-      for education, art &amp; culture, wellness, entertainment, and
-      nature-inspired living, envisioning a future where these elements
-      seamlessly intertwine.&nbsp;</p><p><a class="button-featured"
-      href="https://www.nuanu.com" target="_blank" rel="noopener">DISCOVER
-      NUANU</a></p><p>&nbsp;</p>
+    block-content-html: "<h2 class=\"larger-heading\">ABOUT NUANU</h2><p>Nuanu is a creative city spanning 44 hectares in Bali, Indonesia, that embodies a commitment to harmonious living. A vibrant community of creators, leaders, and changemakers are empowered here to foster a culture of positive change. Designed as an integrated ecosystem, the city features dedicated spaces for education, art &amp; culture, wellness, entertainment, and nature-inspired living, envisioning a future where these elements seamlessly intertwine.</p><p>\_</p><h3><a class=\"button\" target=\"_blank\" rel=\"noopener\" href=\"https://www.nuanu.com\">DISCOVER NUANU</a></h3><p>\_</p>"
     img:
       img_path: /uploads/the-head-1.jpeg
       img_alt:
       img_apsect: '1'
-    desk-img-horizontal-position: left
-    desk-content-vertical-position: center
+    desktop-img-horizontal-position: left
+    desktop-content-vertical-position: center
     mobile-img-position: top
     img_width_percentage: 45%
     top-space-collapse: false
     bottom-space-collapse: false
-    color-scheme: 1
+    color-scheme: featured
   - _id: slider
-    block-content-html: <h2 class="larger-heading text-center">FEATURES IN NUANU</h2>
-    content-max-width: 950px
+    block-content-html: <h2 class="larger-heading-center">FEATURES IN NUANU</h2>
     slides:
       - col-content-html: >-
-          <h3>THE EARTH SENTINELS</h3><p>‘The Earth Sentinels,’ a sculpture by
+          <h3>THE EARTH SENTINELS</h3><p>"The Earth Sentinels", a sculpture by
           South African artist Daniel Popper, represents long-forgotten ancient
           ancestors, resembling fossilised trees. It serves as a reminder of our
-          connection to nature and its purity.</p>
+          cennection to nature and its purity.</p>
         img_path: /uploads/earth-sentinel.jpeg
-        img_alt: pic 1
-        text-alignment: left
+        img_alt: image description
         url:
       - col-content-html: >-
           <h3>THE LIGHTHOUSE</h3><p>In collaboration with French architect
-          Arthur Mamou-Mani, 'The Tower of Bhuma,' meaning 'Earth' in Sanskrit,
+          Arthur Mamou-Mani, "The Tower of Bhuma", meaning 'Earth' in Sanskrit
           is designed with three petals protecting its core, symbolising the
           fragility of our Earth. The design is based on the golden ratio and to
           be realised with reclaimed timber from an abandoned colonial bridge
           and a twisting rattan skin.</p>
-        img_path: /uploads/y1owuviq.jpeg
-        img_alt: pic 1
-        text-alignment: left
+        img_path: /uploads/y1owuviq-1.jpeg
+        img_alt: image description
         url:
       - col-content-html: >-
-          <h3>ECOPATH</h3><p>The Ecopath is Nuanu River Walk offers a journey
-          where art and nature merge beautifully in the jungle, creating an
-          immersive experience that highlights the delicate balance between
+          <h3>THE ECOPATH</h3><p>The Ecopath is Nuanu River Walk offers a
+          journey where art and nature merge beautifully in the jungle, creating
+          an immersive experience that highlights the delicate balance between
           human creativity and the natural world. This path not only invites
           visitors to explore the symbiotic relationship between these two
           realms but also serves as a gentle reminder of our interconnectedness
           with the earth.</p>
         img_path: /uploads/eco-path-2.jpeg
-        img_alt: pic 1
-        text-alignment: left
+        img_alt: image description
         url:
-    img_apsect: '1'
-    image_default_ratio: false
-    text_alignment: center
-    color-scheme: 2
+    color-scheme: featured
+    border-top-color:
+    border-bottom-color:
   - _id: slider
-    block-content-html: <h2 class="larger-heading text-center">OUR COMMUNITY</h2>
+    block-content-html: <h2 class="larger-heading-center">OUR COMMUNITY</h2>
     slides:
       - col-content-html: >-
           <h3>LUNA BEACH CLUB</h3><p>LUNA is a place of ritual, escapism and
@@ -156,7 +181,7 @@ blocks:
           pleasures and vivid artistry.</p>
         img_path: /uploads/luna-beach-club-restaurant.jpeg
         img_alt: image description
-        url:
+        url: https://lunabeachclubbali.com
       - col-content-html: >-
           <h3>ASH</h3><p>ASH is a multi-functional venue, serving as a hub for
           live and electronic music events, regular wellness and yoga classes,
@@ -164,7 +189,7 @@ blocks:
           fusion cuisine.</p>
         img_path: /uploads/78884744-3068523736494418-2028881763958259712-n.jpeg
         img_alt: image description
-        url:
+        url: https://ashnuanu.com
       - col-content-html: >-
           <h3>PACHA ALPACA</h3><p>"Pacha Alpaca" is an alpaca farm and an
           ecotourism spot in the heart of Nuanu. It offers interaction with
@@ -172,7 +197,9 @@ blocks:
         img_path: /uploads/image-25-03-24-at-10-49.jpeg
         img_alt: image description
         url:
-    color-scheme: 2
+    color-scheme: featured
+    border-top-color:
+    border-bottom-color:
   - _id: bali_map
     block-content-html: >-
       <h2 class="base-heading"></h2><h2 class="base-heading">the HIDDEN GEMS of
@@ -180,61 +207,116 @@ blocks:
       property is a treasure chest of experiences. From our doorstep, the
       vibrant tapestry of Bali unfolds in all directions—inviting you to explore
       hidden trails, indulge in local wisdom, and uncover the artistic soul of
-      the island. At Oshom, you're not just visiting Bali; you're living its
-      most authentic story.</p><p><a class="button"
+      the island. At Oshom Bali, you're not just visiting Bali; you're living
+      its most authentic story.</p><p><a class="button"
       href="https://maps.app.goo.gl/d3Ldy7sYgLDAWafi9" target="_blank"
       rel="noopener">Directions</a>&nbsp;</p>
-    color-scheme: 4
+    color-scheme: white
+  - _id: sidebanner
+    block-content-html: >-
+      <h3 class="sub-heading">LIMITED OFFERS</h3><h2
+      class="larger-heading">SPECIAL OPENING DEAL</h2><p>Be the first to
+      experience luxury for less with our pre-opening deal at Oshom. Enjoy
+      discounted rates, complimentary upgrades, and special perks. Whether it's
+      a romantic getaway or a family vacation, seize this limited-time offer to
+      indulge in our serene surroundings, delicious cuisine, and rejuvenating
+      spa. Don't miss out on this opportunity to create unforgettable memories
+      at Oshom. Book now and join our pre-opening celebration!</p><p></p><p><a
+      class="button-featured"
+      href="https://booking.oshombali.com/offers_promo?hotel=OSHB&amp;room_id=OSD"
+      target="_blank" rel="noopener">BOOK NOW</a></p>
+    img:
+      img_path: /uploads/gardenia.jpeg
+      img_alt:
+      img_apsect: '1'
+    desktop-img-horizontal-position: right
+    desktop-content-vertical-position: center
+    mobile-img-position: hide
+    img_width_percentage: 50%
+    top-space-collapse: false
+    bottom-space-collapse: true
+    color-scheme: base
+  - _id: custom-light-box
+    block-content-html: <hr /><h2 class="base-heading"><br />STAY INSPIRED</h2>
+    lightbox_images:
+      - username: Oshom Bali
+        instagram_handle: '@oshom_bali'
+        img_path: /uploads/royal-suite-1.jpeg
+        img_alt:
+        col-content-html: >-
+          <p class="text-center">Oshom Bali offers a peaceful escape in Bali's
+          serene landscapes. The rooms and villas blend modern comfort with
+          Balinese charm, while the friendly staff ensures a pleasant stay. With
+          a lovely pool and spa, it's a perfect spot to unwind. Whether you're
+          exploring Bali or just seeking tranquility, Oshom Bali provides a
+          memorable retreat.<br />#OshomBali<br />#JourneyToOshom</p>
+      - username: Oshom Bali
+        instagram_handle: '@oshom_bali'
+        img_path: /uploads/1-8.jpeg
+        img_alt: image description
+        col-content-html: >-
+          <p class="text-center">Oshom Bali offers a peaceful escape in Bali's
+          serene landscapes. The rooms and villas blend modern comfort with
+          Balinese charm, while the friendly staff ensures a pleasant stay. With
+          a lovely pool and spa, it's a perfect spot to unwind. Whether you're
+          exploring Bali or just seeking tranquility, Oshom Bali provides a
+          memorable retreat.<br />#OshomBali<br />#JourneyToOshom</p>
+      - username: Oshom Bali
+        instagram_handle: '@oshom_bali'
+        img_path: /uploads/oshom-site-render-1.jpeg
+        img_alt:
+        col-content-html: >-
+          <p class="text-center">Oshom Bali offers a peaceful escape in Bali's
+          serene landscapes. The rooms and villas blend modern comfort with
+          Balinese charm, while the friendly staff ensures a pleasant stay. With
+          a lovely pool and spa, it's a perfect spot to unwind. Whether you're
+          exploring Bali or just seeking tranquility, Oshom Bali provides a
+          memorable retreat.<br />#OshomBali<br />#JourneyToOshom</p>
+      - username: Oshom Bali
+        instagram_handle: '@oshom_bali'
+        img_path: /uploads/royal-suite-3.jpeg
+        img_alt:
+        col-content-html: >-
+          <p class="text-center">Oshom Bali offers a peaceful escape in Bali's
+          serene landscapes. The rooms and villas blend modern comfort with
+          Balinese charm, while the friendly staff ensures a pleasant stay. With
+          a lovely pool and spa, it's a perfect spot to unwind. Whether you're
+          exploring Bali or just seeking tranquility, Oshom Bali provides a
+          memorable retreat.<br />#OshomBali<br />#JourneyToOshom</p>
+      - username: Oshom Bali
+        instagram_handle: '@oshom_bali'
+        img_path: /uploads/panorama-ocean-view-2.jpeg
+        img_alt:
+        col-content-html: >-
+          <p class="text-center">Oshom Bali offers a peaceful escape in Bali's
+          serene landscapes. The rooms and villas blend modern comfort with
+          Balinese charm, while the friendly staff ensures a pleasant stay. With
+          a lovely pool and spa, it's a perfect spot to unwind. Whether you're
+          exploring Bali or just seeking tranquility, Oshom Bali provides a
+          memorable retreat.<br />#OshomBali<br />#JourneyToOshom</p>
+    color-scheme: base
+    border-top-color:
+    border-bottom-color:
+  - _id: share
+    block-content-html: >-
+      <p>Share your thoughts and inspirational stays at Oshom Bali on social
+      media using #OshomBali #JourneyToOshom</p>
+    x-share-text: article relevent text
+    color-scheme: base
+    top-space-collapse: true
+    bottom-space-collapse: false
   - _id: text-banner
     block-content-html: >-
-      <p class="text-center"></p><h2 class="larger-heading text-center">stay at
-      Oshom</h2><p class="text-center"><a class="button"
-      href="https://booking.oshombali.com/offers">BOOK NOW</a></p>
+      <h2 class="larger-heading">STAY AT OSHOM</h2><p><a class="button-featured"
+      href="/offers.html">BOOK NOW</a></p>
     content-max-width: 785px
     text-alignment: center
-    banner-image: /uploads/pattern-lobby-to-tree-house.jpeg
+    desktop-content-vertical-position: top
+    banner-image: /uploads/pattern-lobby-to-tree-house-2.jpeg
     banner-height: 60vh
-    overlay-color: '#000000'
+    overlay-color: '#1d1d1b'
     overlay-opacity: '0.5'
-    color-scheme: 2
+    color-scheme: featured
+    top-space-collapse: false
+    bottom-space-collapse: false
 ---
-{% comment %}
-- _id: horizontal-screen-gallery
-block-content-html: <h2 class="larger-heading">UpCOMING EVENTS</h2>
-slides:
-  - img_path: /uploads/dsc03285-7008-x-4672-sg-1.jpeg
-    img_alt: text describing the image
-    col-content-html: >-
-      <p class="uppercase-p">EVENT</p><h3 class="sub-heading">Voice of the
-      Voiceless</h3>
-    slide_link_url: /experiences.html
-  - img_path: |
-      /uploads/placeholder-1.jpg
-    img_alt: text describing the image
-    col-content-html: <p class="subheading">EVENT</p><h3 class="sub-heading">No Name</h3>
-    slide_link_url:
-  - img_path: |
-      /uploads/placeholder-1.jpg
-    img_alt: text describing the image
-    col-content-html: <p class="subheading">EVENT</p><h3 class="sub-heading">NO NAME</h3>
-    slide_link_url:
-  - img_path: /uploads/placeholder-1.jpg
-    img_alt: text describing the image
-    col-content-html: <p class="subheading">EVENT</p><h3 class="sub-heading">NO NAME</h3>
-    slide_link_url:
-  - img_path: |
-      /uploads/placeholder-1.jpg
-    img_alt: text describing the image
-    col-content-html: <p class="subheading">EVENT</p><h3 class="sub-heading">NO NAME</h3>
-    slide_link_url:
-  - img_path: |
-      /uploads/placeholder-1.jpg
-    img_alt: text describing the image
-    col-content-html: <p class="subheading">EVENT</p><h3 class="sub-heading">NO NAME</h3>
-    slide_link_url:
-img_apsect: '1'
-image_default_ratio: false
-text_alignment: center
-color-scheme: 2
-
-{% endcomment %}

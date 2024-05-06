@@ -35,13 +35,12 @@ sliderBlocks.forEach(slider => {
   $(slider).slick({
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 2000,
     responsive: [{
       breakpoint: 767,
         settings: {
           slidesToShow: 1,
-
         }
     }]
   })

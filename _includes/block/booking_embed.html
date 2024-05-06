@@ -1,6 +1,6 @@
 {% unless block.id == 'booking_embed' %}
 
-<div class="scheme-2">
+<div class="scheme-featured">
     <!-- {{block._id}} -->
 <!-- booking embed is hidden un till its loaded fully -->
 {% endunless %}
@@ -13,26 +13,26 @@
     <form action="https://booking.oshombali.com/rates/index" id="book_h" class="booking m0" method="post">
         <input type="hidden" name="BookingForm[hotel]" id="hotel" value="OSHB"/>
         <div class="section group p0 m0 items-center justify-between lg:flex grid gap-y-2 md:gap-y-8" id="form-grid">
-                <fieldset class="min-w-[13.8rem]">
-                    <label class="">Check-in</label>
+                <fieldset class="min-w-[16.4rem]">
+                    <label class="">Arrival Date</label>
                     <input type="text" name="BookingForm[checkin]" id="checkin_h" class="cal inline-block max-width[8.1rem]" size="9" placeholder="dd/mm/yyyy" readonly/>
                 </fieldset>
-                <fieldset class="min-w-[15.1rem]">
-                <label class="">Check-out</label>
+                <fieldset class="min-w-[19.1rem]">
+                <label class="">Departure Date</label>
                 <input type="text" name="BookingForm[checkout]" id="checkout_h" class="cal inline-block max-width[8.1rem]" placeholder="dd/mm/yyyy" size="9" readonly/>
                 </fieldset>
                 
                 <fieldset class="relative z-10 h-full mb-2 sm:mb-0 flex items-center min-h-[40px] sm:min-h-0">
-                    <label class="cursor-pointer"
+                    <label class="cursor-pointer guest-trigger flex-1"
                     onclick="toggleVisiterPopout()"
-                    > Guests </label>
+                    ><span>Guests</span></label>
                     <div class="flex justify-center items-center absolute bottom-0 left-0 bg-[var(--colored-button-bg)] h-0 overflow-hidden p-0 text-[0px] border-0 embed-dropdown" id="embed-user-count">
                         <div class="col-span-full text-right flex justify-between" ><label>Guests</label><div class="x leading-none cursor-pointer" onclick="toggleVisiterPopout()"> X </div> </div>
-                        <label class="shrink">Adults</label>
+                        <label class="shrink !text-[.8rem]">Adults</label>
                         <span onclick="increaseInput(this)"> + </span>
                         <input type="number" name="BookingForm[adults]" id="adults" placeholder="Adults" max="20" min="0" value="2" class=""/>
                         <span onclick="decreaseInput(this)"> - </span>
-                        <label class="shrink !pl-0 min-w-[7rem]">Children</label>
+                        <label class="shrink !text-[.8rem] !pl-0 min-w-[7rem]">Children</label>
                         <span onclick="increaseInput(this)"> + </span>
                         <input type="number" name="BookingForm[children]" id="children" placeholder="Children" max="20" min="0" value="0"/>
                         <span onclick="decreaseInput(this)"> - </span>

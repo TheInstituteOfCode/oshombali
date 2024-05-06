@@ -1,5 +1,4 @@
-
-<section>
+<section style="{% if block.border-bottom-width %} border-bottom: {{block.border-bottom-width}} solid {{block.border-bottom-color}}; {% endif %}{% if block.border-top-width %} border-top: {{block.border-top-width}} solid {{block.border-top-color}}; {% endif %}">
       <div class="max-width">
         {% if block.block-content-html != null %} 
           <div class="mx-auto mb-12" style="text-align: {{block.text_alignment}};{% if block.content-max-width %}max-width: {{block.content-max-width}} {% endif %}">
@@ -30,7 +29,14 @@
             {% endif %}
 
             <div class="mt-4 text-{{block.text_alignment}}">
-              <div class="mx-auto" style='max-width: {{block.col-content-max-width}}'>
+              <div class="{% case col.text-alignment %}
+              {% when 'left' %}
+              mr-auto
+              {% when 'right' %}
+              ml-auto
+              {% else %}
+              mx-auto
+              {% endcase %}" style='max-width: {{block.col-content-max-width}}'>
                 {{col.col-content-html}}
 
               </div>

@@ -3,7 +3,7 @@ layout: default
 ---
 
 
-<div class="scheme-2">
+<div class="scheme-featured">
     <!-- text banner  -->
     <section class="flex items-center justify-center scheme-{{block.color-scheme}} min-h-90 bg-cover bg-center" style="background-image: url('{{page.featured_img_path}}');">
         <div class="max-width">
@@ -26,7 +26,7 @@ layout: default
 
 {% include block/booking_embed.html %}
 
-<div class="scheme-2" id="room-sec-2" style="scroll-margin-top: 5rem;">
+<div class="scheme-featured" id="room-sec-2" style="scroll-margin-top: 5rem;">
     <!-- text banner  -->
     <section class="flex items-center justify-center scheme-{{block.color-scheme}}">
         <div class="max-width">
@@ -84,6 +84,8 @@ layout: default
         height: 34vw;
         object-fit: cover;
         object-position: center;
+        border-left: 5px solid var(--bg-color);
+        border-right: 5px solid var(--bg-color);
     }
 
 }
@@ -95,13 +97,13 @@ layout: default
 
 {% for room in ordered-rooms %}
 {% if room.hotel-id == page.hotel-id %}
-<div class="scheme-2">
+<div class="scheme-base">
     <!-- text banner  -->
     <section class="p-0">
-        <divs class="gal gal-{{forloop.index}} grid md:grid-cols-3     ">
+        <div class="gal gal-{{forloop.index}} grid md:grid-cols-3 ">
             {% for image in room.imgs %}
-            <div class="inline-block item">
-                <img src="{{image.img_path}}" alt="{{img_alt}}" class="w-[34vw]">
+            <div class="inline-block item ">
+                <img src="{{image.img_path}}" alt="{{img_alt}}" class="w-[34vw] ">
             </div>
             <!-- <div class="">
             </div> -->
@@ -113,19 +115,22 @@ layout: default
 <!-- <img src="/uploads/placeholder-1.jpg" alt=""> -->
 
 
-<div class="scheme-1">
+<div class="scheme-base">
     <!-- text banner  -->
     <section class="">
         <div class="max-width">
-            <div class="grid md:grid-cols-2 gap-32">
+            <div class="grid md:grid-cols-2 gap-x-32 gap-y-o">
                 
                 <div class="">
                     <h2 class="base-heading">
                         {{room.title}}
                     </h2>
+                </div>
+                
+                <div class="row-start-3 md:row-start-2">
                     {% for set in room.features-sets %}
                     <div class="flex justify-between items-center accordian-trigger border-t border-[var(--text-color)]">
-                        <h3 class="sub-heading py-4 mb-0 ">{{set.heading}}</h3> <span class="m-0 accordian-svg">
+                        <h3 class="sub-heading py-4 mb-0">{{set.heading}}</h3> <span class="m-0 accordian-svg">
                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                           <path d="M7.29289 15.7071C7.68342 16.0976 8.31658 16.0976 8.70711 15.7071L15.0711 9.34315C15.4616 8.95262 15.4616 8.31946 15.0711 7.92893C14.6805 7.53841 14.0474 7.53841 13.6569 7.92893L8 13.5858L2.34315 7.92893C1.95262 7.53841 1.31946 7.53841 0.928933 7.92893C0.538408 8.31946 0.538408 8.95262 0.928933 9.34315L7.29289 15.7071ZM7 4.37114e-08L7 15L9 15L9 -4.37114e-08L7 4.37114e-08Z" fill="var(--text-color)"/>
                         </svg>
@@ -143,8 +148,17 @@ layout: default
                     {% endfor %}
                     <a href="https://booking.oshombali.com/" class="button button-featured mt-[30px]">Book now</a>
                 </div>
-                <div class="hidden md:block">
-                    {{room.description}}
+                <div class="row-start-2">
+                    <h3 class="flex justify-between md:hidden sub-heading hidden-accordian py-4 mb-0 mt-4 border-t border-[var(--text-color)]" onclick="{
+                            this.classList.toggle('active');
+                            gsapToggle(this.nextElementSibling);
+                            }">Room description<span class="m-0 accordian-svg">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                               <path d="M7.29289 15.7071C7.68342 16.0976 8.31658 16.0976 8.70711 15.7071L15.0711 9.34315C15.4616 8.95262 15.4616 8.31946 15.0711 7.92893C14.6805 7.53841 14.0474 7.53841 13.6569 7.92893L8 13.5858L2.34315 7.92893C1.95262 7.53841 1.31946 7.53841 0.928933 7.92893C0.538408 8.31946 0.538408 8.95262 0.928933 9.34315L7.29289 15.7071ZM7 4.37114e-08L7 15L9 15L9 -4.37114e-08L7 4.37114e-08Z" fill="var(--text-color)"/>
+                             </svg></h3>
+                    <div class="mobile-max closed">
+                        {{room.description}}
+                    </div>
                 </div>
                 
             </div> 
@@ -154,33 +168,4 @@ layout: default
 </div>
 {% endif %}
 {% endfor %}
-
-<!-- 
-<div class="scheme-{{page.experience-section.scheme}}">
-
     
-    <section class="flex items-center justify-center bg-center bg-cover min-h-50"
-    style="
-    {% if page.experience-section.banner-image %}
-    background-image: url({{page.experience-section.banner-image}});
-    {% endif %}
-    "
-    >
-    {% unless page.experience-section.overlay-opacity == 0 %}
-    <div class='inset-0 absolute' style='background-color: {{page.experience-section.overlay-color}}; opacity: {{page.experience-section.overlay-opacity}};'>
-
-    </div>
-    {% endunless %}
-        
-      <div class="max-width text-center relative z-10">
-        {{page.experience-section.block-content-html}}
-      </div> 
-    
-    </section>
-    
-</div> -->
-
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js" integrity="sha512-An4a3FEMyR5BbO9CRQQqgsBscxjM7uNNmccUSESNVtWn53EWx5B9oO7RVnPvPG6EcYcYPp0Gv3i/QQ4KUzB5WA==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
-<script src="/hotelsSlick.js" defer></script> -->
