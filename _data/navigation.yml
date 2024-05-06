@@ -1,6 +1,6 @@
 header:
   - text: Our Hotel
-    link-url: '/our-hotel'
+    link-url: /our-hotel
     sublinks:
   - text: Suite & Treehouse
     link-url: /accomodation.html
@@ -25,14 +25,12 @@ header:
     link-url: /offers.html
     sublinks:
 contact_links:
-  local_number_link:
+  local_number_link: /find-your-local-number.html
   reservation_number: 6281139408004
   reservation_number_text: +62 811-3940-8004
-  whatsapp_message: Hello Oshom Bali, i would like to book a reservation please.
+  whatsapp_message:
   email: hello@oshombali.com
-  location: >-
-    Nuanu City - JL. Pantai Nyanyi, Desa Beraban, Kec. Kediri, Kab. Tabanan,
-    Bali - 82121
+  location: Nuanu City - Jl. Pantai Nyanyi, Beraban, Tabanan, Bali 82121
 footer:
   text-block_html: >-
     <h3><strong>NUANU CITY</strong></h3><h4><a
@@ -81,9 +79,7 @@ social_links:
   youtube-link: https://www.youtube.com/@oshombali
 whatsapp:
   number: 6281139408004
-  mesage: >-
-    Hello Oshom Bali, I'm interested in learning more about your offerings.
-    Could you please provide more information?  Thank you.
+  mesage:
 header-button:
   text: Book now
   button_url: https://booking.oshombali.com
