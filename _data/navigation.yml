@@ -32,9 +32,7 @@ contact_links:
     Hello Oshom Bali, I'm interested in learning more about your offerings.
     Could you please provide more information?  Thank you.
   email: hello@oshombali.com
-  location: >-
-    Nuanu City - JL. Pantai Nyanyi, Desa Beraban, Kec. Kediri, Kab. Tabanan,
-    Bali - 82121
+  location: Nuanu City - Jl. Pantai Nyanyi, Beraban, Tabanan, Bali 82121
 footer:
   text-block_html: >-
     <h3><strong>NUANU CITY</strong></h3><h4><a
@@ -54,7 +52,7 @@ footer:
         - text: EAT AT OSHOM
           link-url: /dining.html
         - text: EXPERIENCES
-          link-url: /experiences.html
+          link-url: https://booking.oshombali.com/offers?hotel=OSHB&tab=voucher&id=2
         - text: CELEBRATIONS
           link-url: /celebration.html
         - text: WELLNESS
@@ -88,4 +86,4 @@ whatsapp:
     Could you please provide more information?  Thank you.
 header-button:
   text: Book now
-  button_url: https://booking.oshombali.com
+  button_url: https://booking.oshombali.com/
