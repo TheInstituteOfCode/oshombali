@@ -25,7 +25,7 @@ header:
     link-url: /offers.html
     sublinks:
 contact_links:
-  local_number_link: /local-number.html
+  local_number_link: /local-number
   reservation_number: 6281139408004
   reservation_number_text: +62 811-3940-8004
   whatsapp_message:

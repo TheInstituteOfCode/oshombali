@@ -116,15 +116,17 @@ accordianTriggers.forEach(trigger => {
 })
 
 function increaseInput(element){
-  if (element.nextElementSibling.value < 20 ){
-  element.nextElementSibling.value++
+  if (element.previousElementSibling.value < 20 ){
+    element.previousElementSibling.value++
   }
+  // console.log(element.previousElementSibling.value)
 }
 
 function decreaseInput(element){
-  if (element.previousElementSibling.value >= 1 ){
-    element.previousElementSibling.value--
+  if (element.nextElementSibling.value >= 1 ){
+    element.nextElementSibling.value--
   }
+  // console.log(element.nextElementSibling.value)
 }
 
 function toggleClass(element,toggledClass){
