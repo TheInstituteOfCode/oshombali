@@ -25,10 +25,12 @@ header:
     link-url: /offers.html
     sublinks:
 contact_links:
-  local_number_link: /find-your-local-number.html
+  local_number_link: /local-number.html
   reservation_number: 6281139408004
   reservation_number_text: +62 811-3940-8004
-  whatsapp_message:
+  whatsapp_message: >-
+    Hello Oshom Bali, I'm interested in learning more about your offerings.
+    Could you please provide more information?  Thank you.
   email: hello@oshombali.com
   location: Nuanu City - Jl. Pantai Nyanyi, Beraban, Tabanan, Bali 82121
 footer:
@@ -50,7 +52,7 @@ footer:
         - text: EAT AT OSHOM
           link-url: /dining.html
         - text: EXPERIENCES
-          link-url: /experiences.html
+          link-url: https://booking.oshombali.com/offers?hotel=OSHB&tab=voucher&id=2
         - text: CELEBRATIONS
           link-url: /celebration.html
         - text: WELLNESS
@@ -82,4 +84,4 @@ whatsapp:
   mesage:
 header-button:
   text: Book now
-  button_url: https://booking.oshombali.com
+  button_url: https://booking.oshombali.com/

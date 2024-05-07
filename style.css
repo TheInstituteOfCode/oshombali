@@ -657,6 +657,7 @@ body #ui-datepicker-div{
   width: fit-content;
   min-width: 100px !important;
   z-index: 20 !important;
+  --text-color: initial;
 }
 
 @media (max-width: 1000px) {
