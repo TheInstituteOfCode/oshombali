@@ -28,16 +28,14 @@ contact_links:
   local_number_link: /local-number.html
   reservation_number: 6281139408004
   reservation_number_text: +62 811-3940-8004
-  whatsapp_message: >-
-    Hello Oshom Bali, I'm interested in learning more about your offerings.
-    Could you please provide more information?  Thank you.
+  whatsapp_message:
   email: hello@oshombali.com
   location: Nuanu City - Jl. Pantai Nyanyi, Beraban, Tabanan, Bali 82121
 footer:
   text-block_html: >-
     <h3><strong>NUANU CITY</strong></h3><h4><a
     href="https://www.google.com/maps/dir//939W%2BP6J,+Oshom+Bali+Road,+Beraban,+Kec.+Kediri,+Kabupaten+Tabanan,+Bali+82121/@-8.6306787,115.0131606,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x2dd239da8a568055:0x42d5ae5e76816171!2m2!1d115.0955625!2d-8.6306875?entry=ttu"
-    target="_blank" rel="nofollow noopener"><strong>JL. Pantai Nyanyi, Desa
+    target="_blank" rel="nofollow noopener"><strong>Jl. Pantai Nyanyi, Desa
     Beraban, Kec. Kediri, Kab. Tabanan, Bali - 82121</strong></a><strong><br
     /></strong><a
     href="https://api.whatsapp.com/send/?phone=6281139408004&amp;text&amp;type=phone_number&amp;app_absent=0"
@@ -52,7 +50,7 @@ footer:
         - text: EAT AT OSHOM
           link-url: /dining.html
         - text: EXPERIENCES
-          link-url: https://booking.oshombali.com/offers?hotel=OSHB&tab=voucher&id=2
+          link-url: /experiences.html
         - text: CELEBRATIONS
           link-url: /celebration.html
         - text: WELLNESS
@@ -66,11 +64,11 @@ footer:
         - text: PRIVACY & POLICY
           link-url: /privacy-policy.html
         - text: SITE MAP
-          link-url: https://linktr.ee/oshombali
+          link-url:
         - text: CAREERS
           link-url: https://www.linkedin.com/company/oshom-bali/
         - text: FEEDBACK
-          link-url: /contact
+          link-url:
         - text: CONTACT US
           link-url: /contact.html
 social_links:
@@ -83,5 +81,5 @@ whatsapp:
   number: 6281139408004
   mesage:
 header-button:
-  text: Book now
+  text: Book Now
   button_url: https://booking.oshombali.com/
