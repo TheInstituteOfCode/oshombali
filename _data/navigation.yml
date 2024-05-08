@@ -9,17 +9,14 @@ header:
         link-url: /suites
       - text: Treehouse
         link-url: /treehouse
-  - text: Dining
-    link-url: /dining.html
-    sublinks:
-  - text: Wellness
-    link-url: /wellness.html
+  - text: Experiences
+    link-url: /experiences.html
     sublinks:
   - text: Celebrations
     link-url: /celebration.html
     sublinks:
-  - text: Experiences
-    link-url: /experiences.html
+  - text: Dining
+    link-url: /dining.html
     sublinks:
   - text: Offers
     link-url: /offers.html
