@@ -34,10 +34,10 @@ blocks:
     color-scheme: base
     top-space-collapse: false
     bottom-space-collapse: false
-    border-top-width:
-    border-top-color:
-    border-bottom-width:
-    border-bottom-color:
+    border-top-width: 1rem
+    border-top-color: '#ece5dd'
+    border-bottom-width: 1rem
+    border-bottom-color: '#ece5dd'
   - _id: col-section-basic
     block-content-html: <h2 class="base-heading-center">OUR PHILOSOPHY </h2>
     content-max-width: 985px
@@ -83,13 +83,13 @@ blocks:
     image_default_ratio: false
     text-alignment: center
     color-scheme: base
-    border-top-width:
-    border-top-color:
-    border-bottom-width:
-    border-bottom-color:
+    border-top-width: 1rem
+    border-top-color: '#ece5dd'
+    border-bottom-width: 0.5rem
+    border-bottom-color: '#ece5dd'
   - _id: sidebanner
     block-content-html: >-
-      <h2 class="larger-heading-center">OUR LOCATION</h2><p
+      <h2 class="base-heading-center">OUR LOCATION</h2><p
       class="text-center">Nestled inside the heart of Nuanu City, Oshom Bali is
       a luxury boutique hotel located at the stunning beachfront Pantai Nyanyi
       Tabanan overlooking the Indian Ocean, granting our guests direct access to
@@ -98,7 +98,9 @@ blocks:
       and vibrant mangrove forest. On the other side of our property, a tranquil
       river meanders through the landscape, offering a serene escape where you
       can immerse yourself in the natural wonders of the rich mangrove
-      ecosystem.</p>
+      ecosystem.<br /></p><p class="text-center"><a class="button"
+      href="https://www.google.com/maps/dir//939W%2BP6J,+Oshom+Bali+Road,+Beraban,+Kec.+Kediri,+Kabupaten+Tabanan,+Bali+82121/@-8.6306787,115.0131606,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x2dd239da8a568055:0x42d5ae5e76816171!2m2!1d115.0955625!2d-8.6306875?entry=ttu">GET
+      DIRECTIONS</a></p>
     img:
       img_path: /uploads/nuanu-site-render-6.jpeg
       img_alt:
@@ -108,8 +110,16 @@ blocks:
     mobile-img-position: top
     img_width_percentage: 50%
     top-space-collapse: false
-    bottom-space-collapse: false
+    bottom-space-collapse: true
     color-scheme: featured
+  - _id: share
+    block-content-html: >-
+      <p>Share your thoughts and inspirational stays at Oshom Bali on social
+      media using #OshomBali #JourneyToOshom</p>
+    x-share-text: article relevent text
+    color-scheme: featured
+    top-space-collapse: false
+    bottom-space-collapse: false
   - _id: text-banner
     block-content-html: >-
       <h2 class="larger-heading-center">STAY AT OSHOM</h2><p

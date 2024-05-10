@@ -21,17 +21,17 @@ blocks:
       voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
       sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
       mollit anim id est laborum.</p>
-    content-max-width: 650px
+    content-max-width: 785px
     text-alignment: center
     color-scheme: base
     top-space-collapse: false
     bottom-space-collapse: false
     border-top-color:
-    border-bottom-width: 0.5rem
-    border-bottom-color: '#9ca592'
+    border-bottom-width:
+    border-bottom-color:
   - _id: sidebanner
     block-content-html: >-
-      <h2 class="larger-heading">WEDDING</h2><p>Lorem ipsum dolor sit amet,
+      <h2 class="base-heading">WEDDING</h2><p>Lorem ipsum dolor sit amet,
       consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
       dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
       ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
@@ -47,13 +47,13 @@ blocks:
     desktop-img-horizontal-position: right
     desktop-content-vertical-position: center
     mobile-img-position: top
-    img_width_percentage: 55%
+    img_width_percentage: 50%
     top-space-collapse: false
     bottom-space-collapse: false
     color-scheme: base
   - _id: sidebanner
     block-content-html: >-
-      <h2 class="larger-heading">ANNIVERSARY</h2><p>Lorem ipsum dolor sit amet,
+      <h2 class="base-heading">ANNIVERSARY</h2><p>Lorem ipsum dolor sit amet,
       consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
       dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
       ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
@@ -70,19 +70,19 @@ blocks:
     desktop-img-horizontal-position: left
     desktop-content-vertical-position: center
     mobile-img-position: top
-    img_width_percentage: 55%
+    img_width_percentage: 50%
     top-space-collapse: false
     bottom-space-collapse: false
-    color-scheme: base
+    color-scheme: featured
   - _id: sidebanner
     block-content-html: >-
-      <h2 class="larger-heading">BIRTHDAY PARTY</h2><p>Lorem ipsum dolor sit
-      amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-      exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-      aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-      fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-      sunt in culpa qui officia deserunt mollit anim id est laborum.</p><p><a
+      <h2 class="base-heading">BIRTHDAY PARTY</h2><p>Lorem ipsum dolor sit amet,
+      consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+      dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+      ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+      dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+      nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+      culpa qui officia deserunt mollit anim id est laborum.</p><p><a
       class="button-featured" href="/birthday-party.html" target="_blank"
       rel="noopener">MAKE ENQUIRIES</a></p>
     img:
@@ -92,19 +92,19 @@ blocks:
     desktop-img-horizontal-position: right
     desktop-content-vertical-position: center
     mobile-img-position: top
-    img_width_percentage: 55%
+    img_width_percentage: 50%
     top-space-collapse: false
     bottom-space-collapse: false
-    color-scheme: base
+    color-scheme: featured
   - _id: sidebanner
     block-content-html: >-
-      <h2 class="larger-heading">Private events</h2><p>Lorem ipsum dolor sit
-      amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-      exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-      aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-      fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-      sunt in culpa qui officia deserunt mollit anim id est laborum.</p><p><a
+      <h2 class="base-heading">PRIVATE EVENTS</h2><p>Lorem ipsum dolor sit amet,
+      consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+      dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+      ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+      dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+      nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+      culpa qui officia deserunt mollit anim id est laborum.</p><p><a
       class="button-featured" href="/private-event.html" target="_blank"
       rel="noopener">MAKE ENQUIRIES </a></p>
     img:
@@ -114,10 +114,18 @@ blocks:
     desktop-img-horizontal-position: left
     desktop-content-vertical-position: center
     mobile-img-position: top
-    img_width_percentage: 55%
+    img_width_percentage: 50%
     top-space-collapse: false
-    bottom-space-collapse: false
+    bottom-space-collapse: true
     color-scheme: base
+  - _id: share
+    block-content-html: >-
+      <p>Share your thoughts and inspirational stays at Oshom Bali on social
+      media using #OshomBali #JourneyToOshom</p>
+    x-share-text: article relevent text
+    color-scheme: base
+    top-space-collapse: true
+    bottom-space-collapse: false
   - _id: text-banner
     block-content-html: >-
       <h2 class="base-heading-center">EXPLORE OUR MENU</h2><p><a class="button"
@@ -127,7 +135,7 @@ blocks:
     text-alignment: center
     desktop-content-vertical-position: top
     banner-image: /uploads/top-view-table-full-delicious-food-composition.jpeg
-    banner-height: 50vh
+    banner-height: 45vh
     overlay-color: '#1d1d1b'
     overlay-opacity: '0.5'
     color-scheme: dark
