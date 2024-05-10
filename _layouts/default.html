@@ -104,10 +104,10 @@
                     </h2>
                 </a>
 
-                <div class="text-right scheme-base">
+                <div class="text-right">
                   <span class="relative contact-link hidden lg:inline-block">
                     <span class="cursor-pointer" onclick="toggleClass(document.querySelector('#drop-contact'),'active')">contact</span>
-                   <div id="drop-contact" class="text-left" >
+                   <div id="drop-contact" class="text-left scheme-base" >
                       <div class="top-4 right-4 absolute cursor-pointer !bg-transparent close-x" onclick="toggleClass(document.querySelector('#drop-contact'),'active')">X</div>
                       <h3 class="sub-heading">Concierge</h3>
                       <a href="{{site.data.navigation.contact_links.local_number_link}}" class="flex gap-4 items-center">
@@ -1139,7 +1139,7 @@
 
 </div>
 
-<div class="scheme-base h-0">
+<div class="h-0">
 
     <div class="fixed right-0 bottom-[15vh] p-[19px_24px_18px_25px;] rounded-l-full bg-[var(--colored-button-bg)] z-50 border-0 whatsappParent">
         <a href="https://wa.me/{{site.data.navigation.whatsapp.number}}?text={{site.data.navigation.whatsapp.mesage | replace: ' ','%20'}}">
