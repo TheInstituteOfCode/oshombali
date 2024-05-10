@@ -42,24 +42,34 @@ blocks:
         mobile-img-position: top
         img_width_percentage: 40%
         top-space-collapse: false
-        bottom-space-collapse: false
+        bottom-space-collapse: true
         color-scheme: featured
     -
         _id: text-banner
         block-content-html: >-
             <h2 class="larger-heading">EXPERIENCES</h2><p><a class="button"
-            href="https://booking.oshombali.com/offers?hotel=OSHB&amp;tab=voucher&amp;id=2#"
-            target="_blank" rel="noopener">DISCOVER MORE </a></p>
-        content-max-width: 750px
+            href="/experiences.html" target="_blank" rel="noopener">DISCOVER
+            MORE </a></p>
+        content-max-width: 785px
         text-alignment: center
         desktop-content-vertical-position: top
         banner-image: /uploads/man-holding-his-surfing-board-ocean-4.jpeg
-        banner-height: 60vh
+        banner-height: 50vh
         overlay-color: '#1d1d1b'
         overlay-opacity: '.5'
         color-scheme: featured
-        border-top-color:
+        border-top-width: 2 rem
+        border-top-color: '#ece5dd'
         border-bottom-color:
+    -
+        _id: share
+        block-content-html: >-
+            <hr /><p>Share your thoughts and inspirational stays at Oshom Bali
+            on social media using #OshomBali #JourneyToOshom</p>
+        x-share-text: article relevent text
+        color-scheme: base
+        top-space-collapse: true
+        bottom-space-collapse: true
 ---
 <!-- rooms:
     - heading: Deluxe oshom 
