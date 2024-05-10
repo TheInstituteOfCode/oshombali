@@ -228,7 +228,7 @@ footer .footer-col-1 > p:nth-child(2){
 }
 
 .footer-text-box a{
-  text-transform: capitalize;
+  text-transform: initial;
 }
 
 
