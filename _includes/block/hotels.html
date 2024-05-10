@@ -8,11 +8,11 @@
         </div>
         <div class="py-8 md:p-0 ml-[--side-gap] md:ml-0 mr-[--side-gap] 
           {% case block.desktop-content-vertical-position %}
-          {% when top %}
+          {% when 'top' %}
           self-start
-          {% when center %}
+          {% when 'center' %}
           self-center
-          {% when bottom %}
+          {% when 'bottom' %}
           self-bottom
           {% endcase %}
         ">
