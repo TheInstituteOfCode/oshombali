@@ -41,6 +41,7 @@ _inputs:
   layout:
     type: text
     hidden: true
+    cascade: true
   block-content-html:
     type: html
     options:
@@ -48,14 +49,14 @@ _inputs:
       allow_custom_markup: false
       remove_custom_markup: false
       initial_height: 320
+      center: text-center
       format: p h2 h3 a img
       horizontalrule: true
       image: true
       image_size_attributes: true
       left: text-left
-      center: text-center
-      right: text-right
       link: true
+      right: text-right
       styles: /editor.css
     cascade: true
   col-content-html:
@@ -133,6 +134,7 @@ _inputs:
       min: 100
       max: 1100
       step: 50
+    cascade: true
   desktop-img-horizontal-position:
     type: select
     options:
@@ -293,7 +295,7 @@ _structures:
               img_path: /uploads/placeholder-1.jpg
               img_alt: image description
               img-link-url:
-              text-alignment: 
+              text-alignment:
           col-content-max-width: 500px
           img_apsect: '1'
           image_default_ratio: false
@@ -550,37 +552,63 @@ _structures:
           border-bottom-color:
       - label: lightbox gallery
         value:
-            _id: custom-light-box
-            block-content-html: <h2>section heading</h2>
-            lightbox_images:
-              - username:
-                instagram_handle:
-                img_path: /uploads/placeholder-1.jpg
-                img_alt:
-                col-content-html: <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quidem ut placeat architecto, velit officiis veritatis est iusto deserunt temporibus fugiat pariatur earum quae blanditiis perspiciatis atque. Ratione, rerum doloribus! Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              - username:
-                instagram_handle:
-                img_path: /uploads/placeholder-2.jpg
-                img_alt:
-                col-content-html: <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quidem ut placeat architecto, velit officiis veritatis est iusto deserunt temporibus fugiat pariatur earum quae blanditiis perspiciatis atque. Ratione, rerum doloribus! Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              - username:
-                instagram_handle: 
-                img_path: /uploads/placeholder-3.jpg
-                img_alt:
-                col-content-html: <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quidem ut placeat architecto, velit officiis veritatis est iusto deserunt temporibus fugiat pariatur earum quae blanditiis perspiciatis atque. Ratione, rerum doloribus! Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              - username:
-                instagram_handle: 
-                img_path: /uploads/placeholder-4.jpg
-                img_alt:
-                col-content-html: <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quidem ut placeat architecto, velit officiis veritatis est iusto deserunt temporibus fugiat pariatur earum quae blanditiis perspiciatis atque. Ratione, rerum doloribus! Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              - username:
-                instagram_handle: 
-                img_path: /uploads/placeholder-5.jpg
-                img_alt:
-                col-content-html: <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quidem ut placeat architecto, velit officiis veritatis est iusto deserunt temporibus fugiat pariatur earum quae blanditiis perspiciatis atque. Ratione, rerum doloribus! Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            color-scheme: base
-            border-top-width:
-            border-top-color:
-            border-bottom-width:
-            border-bottom-color:
-              
+          _id: custom-light-box
+          block-content-html: <h2>section heading</h2>
+          lightbox_images:
+            - username:
+              instagram_handle:
+              img_path: /uploads/placeholder-1.jpg
+              img_alt:
+              col-content-html: >-
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corporis quidem ut placeat architecto, velit officiis veritatis
+                est iusto deserunt temporibus fugiat pariatur earum quae
+                blanditiis perspiciatis atque. Ratione, rerum doloribus! Lorem
+                ipsum dolor sit amet consectetur adipisicing elit.</p>
+            - username:
+              instagram_handle:
+              img_path: /uploads/placeholder-2.jpg
+              img_alt:
+              col-content-html: >-
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corporis quidem ut placeat architecto, velit officiis veritatis
+                est iusto deserunt temporibus fugiat pariatur earum quae
+                blanditiis perspiciatis atque. Ratione, rerum doloribus! Lorem
+                ipsum dolor sit amet consectetur adipisicing elit.</p>
+            - username:
+              instagram_handle:
+              img_path: /uploads/placeholder-3.jpg
+              img_alt:
+              col-content-html: >-
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corporis quidem ut placeat architecto, velit officiis veritatis
+                est iusto deserunt temporibus fugiat pariatur earum quae
+                blanditiis perspiciatis atque. Ratione, rerum doloribus! Lorem
+                ipsum dolor sit amet consectetur adipisicing elit.</p>
+            - username:
+              instagram_handle:
+              img_path: /uploads/placeholder-4.jpg
+              img_alt:
+              col-content-html: >-
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corporis quidem ut placeat architecto, velit officiis veritatis
+                est iusto deserunt temporibus fugiat pariatur earum quae
+                blanditiis perspiciatis atque. Ratione, rerum doloribus! Lorem
+                ipsum dolor sit amet consectetur adipisicing elit.</p>
+            - username:
+              instagram_handle:
+              img_path: /uploads/placeholder-5.jpg
+              img_alt:
+              col-content-html: >-
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corporis quidem ut placeat architecto, velit officiis veritatis
+                est iusto deserunt temporibus fugiat pariatur earum quae
+                blanditiis perspiciatis atque. Ratione, rerum doloribus! Lorem
+                ipsum dolor sit amet consectetur adipisicing elit.</p>
+          color-scheme: base
+          border-top-width:
+          border-top-color:
+          border-bottom-width:
+          border-bottom-color:
+data_config: {}
+timezone: Etc/UTC
