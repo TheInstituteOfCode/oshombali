@@ -1,0 +1,17 @@
+
+collections:
+  accomodations:
+    output: true
+    permalink: /:title
+  rooms:
+    output: false
+    permalink: /:title
+  experiences:
+    output: true
+  events:
+    output: true
+
+
+url: "https://oshom.com" # the base hostname & protocol for your site
+plugins:
+  - jekyll-sitemap

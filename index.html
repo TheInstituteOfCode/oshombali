@@ -1,721 +1,328 @@
 ---
 layout: default
-bg-video:
-  - video_path: /uploads/sea-24216-540p.mp4
-    type: video/mp4
+blocks:
+  - _id: slider-banner
+    bottom-text: Scroll down to discover
+    fade_speed_transition_in_mili_second: 1000
+    slide_screen_time_in_mili_seconds: 4500
+    imgs:
+      - img_path: /uploads/nuanu-site-render-5.jpeg
+        img_alt:
+      - img_path: /uploads/popper-3.jpeg
+        img_alt:
+      - img_path: /uploads/render-nuanu-3-2.jpeg
+        img_alt:
+      - img_path: /uploads/elysium-venue.png
+        img_alt:
+      - img_path: /uploads/lighthouse-2-2.jpeg
+        img_alt:
+    color-scheme: featured
+    border-top-color:
+    border-bottom-color:
+  - _id: booking_embed
+    heading: Booking embed
+    color-scheme: featured
+  - _id: col-section-basic
+    block-content-html: >-
+      <p class="text-center">WELCOME TO OSHOM BALI</p><h2
+      class="larger-heading-center">BE THE FIRST TO REVEL IN PARADISE</h2><p
+      class="text-center">Nestled inside the heart of Nuanu City, Oshom Bali is
+      a luxury boutique hotel located at the stunning beach-front overlooking
+      the Indian Ocean, granting our guests direct access to the serene shores
+      where the ocean meets black sands. For a truly unique experience, we offer
+      exclusive suites and treehouse tucked away within a lush and vibrant
+      mangrove forest. A serene escape where you can immerse yourself in the
+      natural wonders of the rich mangrove ecosystem.</p>
+    content-max-width: 856px
+    cols:
+      - col-content-html: >-
+          <h2 class="base-heading-center">SUITE</h2><p class="text-center">Our
+          Suite is a haven of peace, blending modern comfort with a touch of
+          nature for a truly relaxing stay.</p><p class="text-center"><a
+          class="button" href="/suites">discover more</a></p>
+        img_path: /uploads/1-1.jpeg
+        img_alt: Suite
+        img-link-url: /suites
+      - col-content-html: >-
+          <h2 class="base-heading-center">TREEHOUSE</h2><p
+          class="text-center">Our Treehouse is a sanctuary of tranquility,
+          combining comfort with the essence of nature for a truly serene
+          escape.</p><p class="text-center"><a class="button"
+          href="/treehouse">discover more</a></p>
+        img_path: /uploads/balconie-treehouse-plot-3.jpeg
+        img_alt: Treehouse
+        img-link-url: /treehouse
+    col-content-max-width: 455px
+    img_apsect: initial
+    image_default_ratio: true
+    text-alignment: center
+    color-scheme: base
+    border-top-width:
+    border-top-color:
+    border-bottom-color:
+  - _id: horizontal-screen-gallery
+    desktop-content-vertical-position: center
+    block-content-html: <h2 class="larger-heading">UPCOMING EVENTS</h2><p></p><p>with bob</p>
+    slides:
+      - col-content-html:
+        img_path: /uploads/megatix-square.jpeg
+        img_alt: Nuanu Run
+        url: https://www.megatix.co.id/events/nuanu-run
+      - col-content-html:
+        img_path: /uploads/instasave.jpeg
+        img_alt: image description
+        url: https://www.ticketfairy.com/event/locus-bali-2024/
+      - col-content-html:
+        img_path: /uploads/mar-11-1.png
+        img_alt: image description
+        url: >-
+          https://suarafestival.com/?fbclid=PAZXh0bgNhZW0BMQABprjI_5MIFHi0ghlL8Om2nc9AdWV8oWJCvIU5_koVZ3jgE5STMoOG8EE_Tg_aem_AeEYH4kuRTSfuCix3uVq4sN24uJ4zfdbqoCgDE_7n4BgeYwB82tgT6By899diLn0Ukc
+    text-overlay: true
+    img_apsect: '1'
+    img_width: 400
+    color-scheme: featured
+  - _id: col-section-basic
+    block-content-html: >-
+      <h2 class="base-heading-center">Discover Our Experiences&nbsp;</h2><p
+      class="text-center">Embrace the essence of Oshom Bali, where nature's
+      beauty, wellness rituals, and artful expressions converge to craft
+      unforgettable experiences. Delight in the delicate dance of butterflies,
+      find balance with seaside yoga, and be inspired by timeless tribal
+      art—each moment with us is a step towards rediscovery and harmony.</p>
+    content-max-width: 850px
+    cols:
+      - col-content-html: >-
+          <h2 class="base-heading-center"><a
+          href="https://oshombali.com/experiences?Nature">NATURE</a></h2><p
+          class="text-center">Step into Oshom's natural haven, where every
+          corner offers a fresh embrace with the outdoors, inviting you to
+          unwind and recharge.</p>
+        img_path: /uploads/nature-2-1.jpeg
+        img_alt: image description
+        img-link-url: https://oshombali.com/experiences?Nature
+        text-alignment: center
+      - col-content-html: >-
+          <h2 class="base-heading-center"><a
+          href="https://oshombali.com/experiences?Wellness">WELLNESS</a></h2><p
+          class="text-center">Elevate your routine at Oshom, where wellness
+          activities rejuvenate your body and peace of mind is as natural as the
+          sunrise</p>
+        img_path: /uploads/yoga.jpeg
+        img_alt: image description
+        img-link-url: https://oshombali.com/experiences?Wellness
+        text-alignment: center
+      - col-content-html: >-
+          <h2 class="base-heading-center"><a
+          href="https://oshombali.com/experiences?All">ART</a></h2><p
+          class="text-center">Immerse yourself in Oshom's artful surroundings,
+          where every piece tells a story and every glance offers
+          inspiration</p>
+        img_path: /uploads/eco-path-3.jpeg
+        img_alt: image description
+        img-link-url: https://oshombali.com/experiences?All
+        text-alignment: center
+    col-content-max-width: 455px
+    img_apsect: 4/5
+    image_default_ratio: false
+    text-alignment: center
+    color-scheme: base
+    border-top-color:
+    border-bottom-color:
+  - _id: sidebanner
+    block-content-html: "<h2 class=\"larger-heading\">ABOUT NUANU</h2><p>Nuanu is a creative city spanning 44 hectares in Bali, Indonesia, that embodies a commitment to harmonious living. A vibrant community of creators, leaders, and changemakers are empowered here to foster a culture of positive change. Designed as an integrated ecosystem, the city features dedicated spaces for education, art &amp; culture, wellness, entertainment, and nature-inspired living, envisioning a future where these elements seamlessly intertwine.</p><p>\_</p><h3><a class=\"button\" target=\"_blank\" rel=\"noopener\" href=\"https://www.nuanu.com\">DISCOVER NUANU</a></h3><p>\_</p>"
+    img:
+      img_path: /uploads/the-head-1.jpeg
+      img_alt:
+      img_apsect: '1'
+    desktop-img-horizontal-position: left
+    desktop-content-vertical-position: center
+    mobile-img-position: top
+    img_width_percentage: 50%
+    top-space-collapse: false
+    bottom-space-collapse: false
+    color-scheme: featured
+  - _id: slider
+    block-content-html: <h2 class="larger-heading-center">FEATURES IN NUANU</h2>
+    slides:
+      - col-content-html: >-
+          <h3>THE EARTH SENTINELS</h3><p>"The Earth Sentinels", a sculpture by
+          South African artist Daniel Popper, represents long-forgotten ancient
+          ancestors, resembling fossilised trees. It serves as a reminder of our
+          cennection to nature and its purity.</p>
+        img_path: /uploads/earth-sentinel.jpeg
+        img_alt: image description
+        url:
+      - col-content-html: >-
+          <h3>THE LIGHTHOUSE</h3><p>In collaboration with French architect
+          Arthur Mamou-Mani, "The Tower of Bhuma", meaning 'Earth' in Sanskrit
+          is designed with three petals protecting its core, symbolising the
+          fragility of our Earth. The design is based on the golden ratio and to
+          be realised with reclaimed timber from an abandoned colonial bridge
+          and a twisting rattan skin.</p>
+        img_path: /uploads/y1owuviq-1.jpeg
+        img_alt: image description
+        url:
+      - col-content-html: >-
+          <h3>THE ECOPATH</h3><p>The Ecopath is Nuanu River Walk offers a
+          journey where art and nature merge beautifully in the jungle, creating
+          an immersive experience that highlights the delicate balance between
+          human creativity and the natural world. This path not only invites
+          visitors to explore the symbiotic relationship between these two
+          realms but also serves as a gentle reminder of our interconnectedness
+          with the earth.</p>
+        img_path: /uploads/eco-path-2.jpeg
+        img_alt: image description
+        url:
+    color-scheme: featured
+    border-top-color:
+    border-bottom-color:
+  - _id: slider
+    block-content-html: <h2 class="larger-heading-center">OUR COMMUNITY</h2>
+    slides:
+      - col-content-html: >-
+          <h3>LUNA BEACH CLUB</h3><p>LUNA is a place of ritual, escapism and
+          joy. An inclusive space that celebrates creativity, culture and
+          collaboration, harmoniously blended with enchanting music, culinary
+          pleasures and vivid artistry.</p>
+        img_path: /uploads/luna-beach-club-restaurant.jpeg
+        img_alt: image description
+        url: https://lunabeachclubbali.com
+      - col-content-html: >-
+          <h3>ASH</h3><p>ASH is a multi-functional venue, serving as a hub for
+          live and electronic music events, regular wellness and yoga classes,
+          workshops, kids edutainment programs and camps, and a café featuring
+          fusion cuisine.</p>
+        img_path: /uploads/78884744-3068523736494418-2028881763958259712-n.jpeg
+        img_alt: image description
+        url: https://ashnuanu.com
+      - col-content-html: >-
+          <h3>PACHA ALPACA</h3><p>"Pacha Alpaca" is an alpaca farm and an
+          ecotourism spot in the heart of Nuanu. It offers interaction with
+          alpacas, walks in Nuanu, photoshoots, and educational workshops.</p>
+        img_path: /uploads/image-25-03-24-at-10-49.jpeg
+        img_alt: image description
+        url:
+    color-scheme: featured
+    border-top-color:
+    border-bottom-color:
+  - _id: bali_map
+    block-content-html: >-
+      <h2 class="base-heading"></h2><h2 class="base-heading">the HIDDEN GEMS of
+      bali is right here</h2><p>Nestled inside of the creative city, our
+      property is a treasure chest of experiences. From our doorstep, the
+      vibrant tapestry of Bali unfolds in all directions—inviting you to explore
+      hidden trails, indulge in local wisdom, and uncover the artistic soul of
+      the island. At Oshom Bali, you're not just visiting Bali; you're living
+      its most authentic story.</p><p><a class="button"
+      href="https://maps.app.goo.gl/d3Ldy7sYgLDAWafi9" target="_blank"
+      rel="noopener">Directions</a>&nbsp;</p>
+    color-scheme: white
+  - _id: sidebanner
+    block-content-html: >-
+      <h3 class="sub-heading">LIMITED OFFERS</h3><h2
+      class="larger-heading">SPECIAL OPENING DEAL</h2><p>Be the first to
+      experience luxury for less with our pre-opening deal at Oshom Bali. Enjoy
+      discounted rates, complimentary upgrades, and special perks. Whether it's
+      a romantic getaway or a family vacation, seize this limited-time offer to
+      indulge in our serene surroundings, delicious cuisine, and rejuvenating
+      spa. Don't miss out on this opportunity to create unforgettable memories
+      at Oshom Bali. Book now and join our pre-opening
+      celebration!</p><p></p><p><a class="button-featured"
+      href="https://booking.oshombali.com/offers_promo?hotel=OSHB&amp;room_id=OSD"
+      target="_blank" rel="noopener">BOOK NOW</a></p>
+    img:
+      img_path: /uploads/gardenia.jpeg
+      img_alt:
+      img_apsect: '1'
+    desktop-img-horizontal-position: right
+    desktop-content-vertical-position: center
+    mobile-img-position: hide
+    img_width_percentage: 50%
+    top-space-collapse: false
+    bottom-space-collapse: true
+    color-scheme: base
+  - _id: custom-light-box
+    block-content-html: <hr /><h2 class="base-heading"><br />STAY INSPIRED</h2>
+    lightbox_images:
+      - username: Oshom Bali
+        instagram_handle: '@oshom_bali'
+        img_path: /uploads/royal-suite-1.jpeg
+        img_alt:
+        col-content-html: >-
+          <p class="text-center">Oshom Bali offers a peaceful escape in Bali's
+          serene landscapes. The suites and treehouses blend modern comfort with
+          Balinese charm, while the friendly staff ensures a pleasant stay. With
+          a lovely pool and spa, it's a perfect spot to unwind. Whether you're
+          exploring Bali or just seeking tranquility, Oshom Bali provides a
+          memorable retreat.<br />#OshomBali<br />#JourneyToOshom</p>
+      - username: Oshom Bali
+        instagram_handle: '@oshom_bali'
+        img_path: /uploads/1-8.jpeg
+        img_alt: image description
+        col-content-html: >-
+          <p class="text-center">Oshom Bali offers a peaceful escape in Bali's
+          serene landscapes. The suites and treehouses blend modern comfort with
+          Balinese charm, while the friendly staff ensures a pleasant stay. With
+          a lovely pool and spa, it's a perfect spot to unwind. Whether you're
+          exploring Bali or just seeking tranquility, Oshom Bali provides a
+          memorable retreat.<br />#OshomBali<br />#JourneyToOshom</p>
+      - username: Oshom Bali
+        instagram_handle: '@oshom_bali'
+        img_path: /uploads/treehouse-plot-3.jpeg
+        img_alt:
+        col-content-html: >-
+          <p class="text-center">Oshom Bali offers a peaceful escape in Bali's
+          serene landscapes. The suites and treehouses blend modern comfort with
+          Balinese charm, while the friendly staff ensures a pleasant stay. With
+          a lovely pool and spa, it's a perfect spot to unwind. Whether you're
+          exploring Bali or just seeking tranquility, Oshom Bali provides a
+          memorable retreat.<br />#OshomBali<br />#JourneyToOshom</p>
+      - username: Oshom Bali
+        instagram_handle: '@oshom_bali'
+        img_path: /uploads/royal-suite-3.jpeg
+        img_alt:
+        col-content-html: >-
+          <p class="text-center">Oshom Bali offers a peaceful escape in Bali's
+          serene landscapes. The suites and treehouses blend modern comfort with
+          Balinese charm, while the friendly staff ensures a pleasant stay. With
+          a lovely pool and spa, it's a perfect spot to unwind. Whether you're
+          exploring Bali or just seeking tranquility, Oshom Bali provides a
+          memorable retreat.<br />#OshomBali<br />#JourneyToOshom</p>
+      - username: Oshom Bali
+        instagram_handle: '@oshom_bali'
+        img_path: /uploads/panorama-ocean-view-2.jpeg
+        img_alt:
+        col-content-html: >-
+          <p class="text-center">Oshom Bali offers a peaceful escape in Bali's
+          serene landscapes. The suites and treehouses blend modern comfort with
+          Balinese charm, while the friendly staff ensures a pleasant stay. With
+          a lovely pool and spa, it's a perfect spot to unwind. Whether you're
+          exploring Bali or just seeking tranquility, Oshom Bali provides a
+          memorable retreat.<br />#OshomBali<br />#JourneyToOshom</p>
+    color-scheme: base
+    border-top-color:
+    border-bottom-color:
+  - _id: share
+    block-content-html: >-
+      <p>Share your thoughts and inspirational stays at Oshom Bali on social
+      media using #OshomBali #JourneyToOshom</p>
+    x-share-text: article relevent text
+    color-scheme: base
+    top-space-collapse: true
+    bottom-space-collapse: false
+  - _id: text-banner
+    block-content-html: >-
+      <h2 class="larger-heading">STAY AT OSHOM</h2><p><a class="button"
+      href="https://api.whatsapp.com/send/?phone=6281139408004&amp;text&amp;type=phone_number&amp;app_absent=0"
+      target="_blank" rel="noopener">BOOK NOW</a></p>
+    content-max-width: 785px
+    text-alignment: center
+    desktop-content-vertical-position: top
+    banner-image: /uploads/side-counter-lobby.jpg
+    banner-height: 50vh
+    overlay-color: '#1d1d1b'
+    overlay-opacity: '0.5'
+    color-scheme: featured
+    top-space-collapse: false
+    bottom-space-collapse: false
 ---
-
-
-<section class="flex justify-center items-center min-h-90">
-  <div class="absolute top-0 left-0 w-full h-full">
-    <video class="min-h-90 absolute top-0 left-0 h-full object-cover -z-10 grayscale" width="100%" height="100%" autoplay loop muted>
-        {% for video in page.bg-video %}
-        <source src="{{video.video_path}}" type="{{video.type}}" />
-        {% endfor %}
-        Your browser does not support the video tag.
-    </video>
-  
-  </div>
-
-  <div class="pb-12">
-     <img src="/logo.png" class="mx-auto max-w-sm"> 
-     <h2 class="uppercase text-white text-center text-xl">Opening Soon in Summer 2024 </h2> 
-  </div>
-
-  </section>
-
-  <section class="bg-light">
-
-  <div class="max-w-screen-md mx-auto p-4 mb-10vh text-center">
-    <h1 class="editable text-2xl editable">Elevated Boutique Experience</h1>
-    <p class="editable text-lg editable">Discover the perfect getaway at Oshom, nestled inside the heart of Nuanu City and just steps away from the enchanting Nyanyi beach. We offer
-      you more than just a stay - we offer you a unique escape, providing an unparalleled luxury experience for those seeking relaxation, adventure, and memories to treasure.</p>
-
-    <style type="text/css">@import url("https://assets.mlcdn.com/fonts.css?version=1699449");</style>
-    <style type="text/css">
-    /* LOADER */
-    .ml-form-embedSubmitLoad {
-      display: inline-block;
-      width: 20px;
-      height: 20px;
-    }
-
-    .g-recaptcha {
-    transform: scale(1);
-    -webkit-transform: scale(1);
-    transform-origin: 0 0;
-    -webkit-transform-origin: 0 0;
-    height: ;
-    }
-
-    .sr-only {
-      position: absolute;
-      width: 1px;
-      height: 1px;
-      padding: 0;
-      margin: -1px;
-      overflow: hidden;
-      clip: rect(0,0,0,0);
-      border: 0;
-    }
-
-    .ml-form-embedSubmitLoad:after {
-      content: " ";
-      display: block;
-      width: 11px;
-      height: 11px;
-      margin: 1px;
-      border-radius: 50%;
-      border: 4px solid #fff;
-    border-color: #000000 #000000 #000000 transparent;
-    animation: ml-form-embedSubmitLoad 1.2s linear infinite;
-    }
-    @keyframes ml-form-embedSubmitLoad {
-      0% {
-      transform: rotate(0deg);
-      }
-      100% {
-      transform: rotate(360deg);
-      }
-    }
-      #mlb2-9291945.ml-form-embedContainer {
-        box-sizing: border-box;
-        display: table;
-        margin: 0 auto;
-        position: static;
-        width: 100% !important;
-      }
-      #mlb2-9291945.ml-form-embedContainer h4,
-      #mlb2-9291945.ml-form-embedContainer p,
-      #mlb2-9291945.ml-form-embedContainer span,
-      #mlb2-9291945.ml-form-embedContainer button {
-        text-transform: none !important;
-        letter-spacing: normal !important;
-      }
-      #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper {
-        background-color: ;
-        
-        border-width: 0px;
-        border-color: transparent;
-        border-radius: 0px;
-        border-style: solid;
-        box-sizing: border-box;
-        display: inline-block !important;
-        margin: 0;
-        padding: 0;
-        position: relative;
-              }
-      #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper.embedPopup,
-      #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper.embedDefault { width: 100%; }
-      #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper.embedForm { width: 100%; }
-      #mlb2-9291945.ml-form-embedContainer .ml-form-align-left { text-align: left; }
-      #mlb2-9291945.ml-form-embedContainer .ml-form-align-center { text-align: center; }
-      #mlb2-9291945.ml-form-embedContainer .ml-form-align-default { display: table-cell !important; vertical-align: middle !important; text-align: center !important; }
-      #mlb2-9291945.ml-form-embedContainer .ml-form-align-right { text-align: right; }
-      #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedHeader img {
-        border-top-left-radius: 0px;
-        border-top-right-radius: 0px;
-        height: auto;
-        margin: 0 auto !important;
-        max-width: 100%;
-        width: undefinedpx;
-      }
-      #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody,
-      #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody {
-        padding: 20px 20px 0 20px;
-      }
-      #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody.ml-form-embedBodyHorizontal {
-        padding-bottom: 0;
-      }
-      #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent,
-      #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent {
-        text-align: left;
-        margin: 0;
-      }
-      #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent h4,
-      #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent h4 {
-        color: #000000;
-        font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-        font-size: 30px;
-        font-weight: 400;
-        margin: 0;
-        text-align: left;
-        word-break: break-word;
-      }
-      #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent p,
-      #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent p {
-        color: #000000;
-        font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 20px;
-        margin: 0;
-        text-align: left;
-      }
-      #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent ul,
-      #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent ol,
-      #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent ul,
-      #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent ol {
-        color: #000000;
-        font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-        font-size: 14px;
-      }
-      #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent ol ol,
-      #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent ol ol {
-        list-style-type: lower-alpha;
-      }
-      #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent ol ol ol,
-      #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent ol ol ol {
-        list-style-type: lower-roman;
-      }
-      #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent p a,
-      #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent p a {
-        color: #000000;
-        text-decoration: underline;
-      }
-
-      #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-block-form .ml-field-group {
-        text-align: left!important;
-      }
-
-      #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-block-form .ml-field-group label {
-        margin-bottom: 5px;
-        color: #333333;
-        font-size: 14px;
-        font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-        font-weight: bold; font-style: normal; text-decoration: none;;
-        display: inline-block;
-        line-height: 20px;
-      }
-      #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent p:last-child,
-      #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent p:last-child {
-        margin: 0;
-      }
-      #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody form {
-        margin: 0;
-        width: 100%;
-      }
-      #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-formContent,
-      #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow {
-        margin: 0;
-        width: 100%;
-      }
-      #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow {
-        float: left;
-      }
-      #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-formContent.horozintalForm {
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        height: auto;
-        float: left;
-      }
-      #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow {
-        margin: 0;
-        width: 100%;
-      }
-      #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow.ml-last-item {
-        margin: 0;
-      }
-      #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow.ml-formfieldHorizintal {
-        margin: 0;
-      }
-      #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow input {
-        background-color:  !important;
-        color: #333333 !important;
-        border-color: #D7B18D;
-        border-radius: 0px !important;
-        border-style: solid !important;
-        border-width: 1px !important;
-        font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-        font-size: 14px !important;
-        height: auto;
-        line-height: 21px !important;
-        margin-bottom: 0;
-        margin-top: 0;
-        margin-left: 0;
-        margin-right: 0;
-        padding: 10px 10px !important;
-        width: 100% !important;
-        box-sizing: border-box !important;
-        max-width: 100% !important;
-      }
-      #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow input::-webkit-input-placeholder,
-      #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow input::-webkit-input-placeholder { color: #333333; }
-
-      #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow input::-moz-placeholder,
-      #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow input::-moz-placeholder { color: #333333; }
-
-      #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow input:-ms-input-placeholder,
-      #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow input:-ms-input-placeholder { color: #333333; }
-
-      #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow input:-moz-placeholder,
-      #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow input:-moz-placeholder { color: #333333; }
-
-      #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow textarea, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow textarea {
-        background-color:  !important;
-        color: #333333 !important;
-        border-color: #D7B18D;
-        border-radius: 0px !important;
-        border-style: solid !important;
-        border-width: 1px !important;
-        font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-        font-size: 14px !important;
-        height: auto;
-        line-height: 21px !important;
-        margin-bottom: 0;
-        margin-top: 0;
-        padding: 10px 10px !important;
-        width: 100% !important;
-        box-sizing: border-box !important;
-        max-width: 100% !important;
-      }
-
-      #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-radio .custom-control-label::before, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-radio .custom-control-label::before, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-checkbox .custom-control-label::before, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-checkbox .custom-control-label::before, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsOptionsCheckbox .label-description::before, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-interestGroupsRow .ml-form-interestGroupsRowCheckbox .label-description::before, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow .label-description::before {
-          border-color: #D7B18D!important;
-          background-color: !important;
-      }
-
-      #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow input.custom-control-input[type="checkbox"]{
-        box-sizing: border-box;
-        padding: 0;
-        position: absolute;
-        z-index: -1;
-        opacity: 0;
-        margin-top: 5px;
-        margin-left: -1.5rem;
-        overflow: visible;
-      }
-
-      #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-checkbox .custom-control-label::before, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-checkbox .custom-control-label::before, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsOptionsCheckbox .label-description::before, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-interestGroupsRow .ml-form-interestGroupsRowCheckbox .label-description::before, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow .label-description::before {
-        border-radius: 4px!important;
-      }
-
-
-      #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow input[type=checkbox]:checked~.label-description::after, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsOptionsCheckbox input[type=checkbox]:checked~.label-description::after, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-checkbox .custom-control-input:checked~.custom-control-label::after, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-checkbox .custom-control-input:checked~.custom-control-label::after, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-interestGroupsRow .ml-form-interestGroupsRowCheckbox input[type=checkbox]:checked~.label-description::after {
-        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
-      }
-
-      #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-radio .custom-control-input:checked~.custom-control-label::after, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-radio .custom-control-input:checked~.custom-control-label::after {
-        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
-      }
-
-      #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-radio .custom-control-input:checked~.custom-control-label::before, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-radio .custom-control-input:checked~.custom-control-label::before, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-checkbox .custom-control-input:checked~.custom-control-label::before, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-checkbox .custom-control-input:checked~.custom-control-label::before, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsOptionsCheckbox input[type=checkbox]:checked~.label-description::before, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-interestGroupsRow .ml-form-interestGroupsRowCheckbox input[type=checkbox]:checked~.label-description::before, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow input[type=checkbox]:checked~.label-description::before  {
-          border-color: #000000!important;
-          background-color: #000000!important;
-      }
-
-      #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-radio .custom-control-label::before, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-radio .custom-control-label::before, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-radio .custom-control-label::after, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-radio .custom-control-label::after, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-checkbox .custom-control-label::before, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-checkbox .custom-control-label::after, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-checkbox .custom-control-label::before, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-checkbox .custom-control-label::after {
-           top: 2px;
-           box-sizing: border-box;
-      }
-
-      #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsOptionsCheckbox .label-description::before, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsOptionsCheckbox .label-description::after, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow .label-description::before, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow .label-description::after {
-           top: 0px!important;
-           box-sizing: border-box!important;
-      }
-
-      #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow .label-description::before, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow .label-description::after {
-        top: 0px!important;
-           box-sizing: border-box!important;
-      }
-
-       #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-interestGroupsRow .ml-form-interestGroupsRowCheckbox .label-description::after {
-            top: 0px!important;
-            box-sizing: border-box!important;
-            position: absolute;
-            left: -1.5rem;
-            display: block;
-            width: 1rem;
-            height: 1rem;
-            content: "";
-       }
-
-      #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-interestGroupsRow .ml-form-interestGroupsRowCheckbox .label-description::before {
-        top: 0px!important;
-        box-sizing: border-box!important;
-      }
-
-      #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .custom-control-label::before {
-          position: absolute;
-          top: 4px;
-          left: -1.5rem;
-          display: block;
-          width: 16px;
-          height: 16px;
-          pointer-events: none;
-          content: "";
-          background-color: #ffffff;
-          border: #adb5bd solid 1px;
-          border-radius: 50%;
-      }
-
-      #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .custom-control-label::after {
-          position: absolute;
-          top: 2px!important;
-          left: -1.5rem;
-          display: block;
-          width: 1rem;
-          height: 1rem;
-          content: "";
-      }
-
-      #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsOptionsCheckbox .label-description::before, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-interestGroupsRow .ml-form-interestGroupsRowCheckbox .label-description::before, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow .label-description::before {
-          position: absolute;
-          top: 4px;
-          left: -1.5rem;
-          display: block;
-          width: 16px;
-          height: 16px;
-          pointer-events: none;
-          content: "";
-          background-color: #ffffff;
-          border: #adb5bd solid 1px;
-          border-radius: 50%;
-      }
-
-      #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsOptionsCheckbox .label-description::after {
-          position: absolute;
-          top: 0px!important;
-          left: -1.5rem;
-          display: block;
-          width: 1rem;
-          height: 1rem;
-          content: "";
-      }
-
-      #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow .label-description::after {
-          position: absolute;
-          top: 0px!important;
-          left: -1.5rem;
-          display: block;
-          width: 1rem;
-          height: 1rem;
-          content: "";
-      }
-
-      #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .custom-radio .custom-control-label::after {
-          background: no-repeat 50%/50% 50%;
-      }
-      #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .custom-checkbox .custom-control-label::after, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsOptionsCheckbox .label-description::after, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-interestGroupsRow .ml-form-interestGroupsRowCheckbox .label-description::after, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow .label-description::after {
-          background: no-repeat 50%/50% 50%;
-      }
-
-      #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-control, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-control {
-        position: relative;
-        display: block;
-        min-height: 1.5rem;
-        padding-left: 1.5rem;
-      }
-
-      #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-radio .custom-control-input, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-radio .custom-control-input, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-checkbox .custom-control-input, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-checkbox .custom-control-input {
-          position: absolute;
-          z-index: -1;
-          opacity: 0;
-          box-sizing: border-box;
-          padding: 0;
-      }
-
-      #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-radio .custom-control-label, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-radio .custom-control-label, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-checkbox .custom-control-label, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-checkbox .custom-control-label {
-          color: #000000;
-          font-size: 12px!important;
-          font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-          line-height: 22px;
-          margin-bottom: 0;
-          position: relative;
-          vertical-align: top;
-          font-style: normal;
-          font-weight: 700;
-      }
-
-      #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-select, #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-select {
-        background-color:  !important;
-        color: #333333 !important;
-        border-color: #D7B18D;
-        border-radius: 0px !important;
-        border-style: solid !important;
-        border-width: 1px !important;
-        font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-        font-size: 14px !important;
-        line-height: 20px !important;
-        margin-bottom: 0;
-        margin-top: 0;
-        padding: 10px 28px 10px 12px !important;
-        width: 100% !important;
-        box-sizing: border-box !important;
-        max-width: 100% !important;
-        height: auto;
-        display: inline-block;
-        vertical-align: middle;
-        background: url('https://assets.mlcdn.com/ml/images/default/dropdown.svg') no-repeat right .75rem center/8px 10px;
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        appearance: none;
-      }
-
-
-      #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow {
-        height: auto;
-        width: 100%;
-        float: left;
-      }
-      .ml-form-formContent.horozintalForm .ml-form-horizontalRow .ml-input-horizontal { width: 70%; float: left; }
-      .ml-form-formContent.horozintalForm .ml-form-horizontalRow .ml-button-horizontal { width: 30%; float: left; }
-      .ml-form-formContent.horozintalForm .ml-form-horizontalRow .ml-button-horizontal.labelsOn { padding-top: 25px;  }
-      .ml-form-formContent.horozintalForm .ml-form-horizontalRow .horizontal-fields { box-sizing: border-box; float: left; padding-right: 10px;  }
-      #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow input {
-        background-color: ;
-        color: #333333;
-        border-color: #D7B18D;
-        border-radius: 0px;
-        border-style: solid;
-        border-width: 1px;
-        font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-        font-size: 14px;
-        line-height: 20px;
-        margin-bottom: 0;
-        margin-top: 0;
-        padding: 10px 10px;
-        width: 100%;
-        box-sizing: border-box;
-        overflow-y: initial;
-      }
-      #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow button {
-        background-color: #D7B18D !important;
-        border-color: #D7B18D;
-        border-style: solid;
-        border-width: 1px;
-        border-radius: 0px;
-        box-shadow: none;
-        color: #000000 !important;
-        cursor: pointer;
-        font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-        font-size: 14px !important;
-        font-weight: 400;
-        line-height: 20px;
-        margin: 0 !important;
-        padding: 10px !important;
-        width: 100%;
-        height: auto;
-      }
-      #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow button:hover {
-        background-color: #ffffff !important;
-        border-color: #ffffff !important;
-      }
-      #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow input[type="checkbox"] {
-        box-sizing: border-box;
-        padding: 0;
-        position: absolute;
-        z-index: -1;
-        opacity: 0;
-        margin-top: 5px;
-        margin-left: -1.5rem;
-        overflow: visible;
-      }
-      #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow .label-description {
-        color: #000000;
-        display: block;
-        font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-        font-size: 12px;
-        text-align: left;
-        margin-bottom: 0;
-        position: relative;
-        vertical-align: top;
-      }
-      #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow label {
-        font-weight: normal;
-        margin: 0;
-        padding: 0;
-        position: relative;
-        display: block;
-        min-height: 24px;
-        padding-left: 24px;
-
-      }
-      #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow label a {
-        color: #000000;
-        text-decoration: underline;
-      }
-      #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow label p {
-        color: #000000 !important;
-        font-family: 'Open Sans', Arial, Helvetica, sans-serif !important;
-        font-size: 12px !important;
-        font-weight: normal !important;
-        line-height: 18px !important;
-        padding: 0 !important;
-        margin: 0 5px 0 0 !important;
-      }
-      #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow label p:last-child {
-        margin: 0;
-      }
-      #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit {
-        margin: 0;
-        float: left;
-        width: 100%;
-      }
-      #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit button {
-        background-color: #D7B18D !important;
-        border: none !important;
-        border-radius: 0px !important;
-        box-shadow: none !important;
-        color: #000000 !important;
-        cursor: pointer;
-        font-family: 'Open Sans', Arial, Helvetica, sans-serif !important;
-        font-size: 14px !important;
-        font-weight: 400 !important;
-        line-height: 21px !important;
-        height: auto;
-        padding: 10px !important;
-        width: 100% !important;
-        box-sizing: border-box !important;
-      }
-      #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit button.loading {
-        display: none;
-      }
-      #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit button:hover {
-        background-color: #ffffff !important;
-      }
-      .ml-subscribe-close {
-        width: 30px;
-        height: 30px;
-        background: url('https://assets.mlcdn.com/ml/images/default/modal_close.png') no-repeat;
-        background-size: 30px;
-        cursor: pointer;
-        margin-top: -10px;
-        margin-right: -10px;
-        position: absolute;
-        top: 0;
-        right: 0;
-      }
-      .ml-error input, .ml-error textarea, .ml-error select {
-        border-color: red!important;
-      }
-
-      .ml-error .custom-checkbox-radio-list {
-        border: 1px solid red !important;
-        border-radius: 0px;
-        padding: 10px;
-      }
-
-      .ml-error .label-description,
-      .ml-error .label-description p,
-      .ml-error .label-description p a,
-      .ml-error label:first-child {
-        color: #ff0000 !important;
-      }
-
-      #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow.ml-error .label-description p,
-      #mlb2-9291945.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow.ml-error .label-description p:first-letter {
-        color: #ff0000 !important;
-      }
-            @media only screen and (max-width: 100%){
-
-        .ml-form-embedWrapper.embedDefault, .ml-form-embedWrapper.embedPopup { width: 100%!important; }
-        .ml-form-formContent.horozintalForm { float: left!important; }
-        .ml-form-formContent.horozintalForm .ml-form-horizontalRow { height: auto!important; width: 100%!important; float: left!important; }
-        .ml-form-formContent.horozintalForm .ml-form-horizontalRow .ml-input-horizontal { width: 100%!important; }
-        .ml-form-formContent.horozintalForm .ml-form-horizontalRow .ml-input-horizontal > div { padding-right: 0px!important; padding-bottom: 10px; }
-        .ml-form-formContent.horozintalForm .ml-button-horizontal { width: 100%!important; }
-        .ml-form-formContent.horozintalForm .ml-button-horizontal.labelsOn { padding-top: 0px!important; }
-
-      }
-    </style>
-
-    <!-- Mailerlite form  -->
-    <div id="mlb2-9291945" class="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-9291945">
-      <div class="ml-form-align-center ">
-        <div class="ml-form-embedWrapper embedForm">
-
-          <div class="ml-form-embedBody ml-form-embedBodyDefault row-form">
-
-            <div class="ml-form-embedContent" style="margin-bottom: 0px; ">
-              
-            </div>
-
-            <form class="ml-block-form" action="https://assets.mailerlite.com/jsonp/663673/forms/104696908200543763/subscribe" data-code="" method="post" target="_blank">
-              <div class="ml-form-formContent grid grid-cols-2">
-                        
-                  <div class="ml-form-fieldRow col-span-1 p-1">
-                    <div class="ml-field-group ml-field-name">
-
-                      <input aria-label="name" type="text" class="form-control" data-inputmask="" name="fields[name]" placeholder="Name" autocomplete="given-name">
-
-
-                    </div>
-                  </div>
-                  <div class="col-span-1 p-1 ml-form-fieldRow ml-last-item">
-                    <div class="ml-field-group ml-field-email ml-validate-email ml-validate-required">
-
-                      <input aria-label="email" aria-required="true" type="email" class="form-control" data-inputmask="" name="fields[email]" placeholder="Email" autocomplete="email">
-
-                    </div>
-                  </div>
-                
-              </div>
-              
-              <input type="hidden" name="ml-submit" value="1">
-
-              <div class="ml-form-embedSubmit col-span-full p-1">
-                
-                  <button type="submit" class="primary">Get on the list</button>
-                
-                <button disabled="disabled" style="display: none;" type="button" class="loading">
-                  <div class="ml-form-embedSubmitLoad"></div>
-                  <span class="sr-only">Loading...</span>
-                </button>
-              </div>
-
-              
-              <input type="hidden" name="anticsrf" value="true">
-            </form>
-          </div>
-
-          <div class="ml-form-successBody row-success" style="display: none">
-
-            <div class="ml-form-successContent">
-              
-                <h4>Thank you!</h4>
-                
-                  <p>You're on the list and we'll keep you updated with our progress as we launch. </p>
-                
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </div>
-
-    </div>
-  </section>
-   
-
-  <!-- Mailerlite scripts -->
-  <script>
-    function ml_webform_success_9291945() {
-      var $ = ml_jQuery || jQuery;
-      $('.ml-subscribe-form-9291945 .row-success').show();
-      $('.ml-subscribe-form-9291945 .row-form').hide();
-    }
-  </script>
-  <script src="https://groot.mailerlite.com/js/w/webforms.min.js?v1f25ee4b05f240a833e02c19975434a4" type="text/javascript"></script>
-  <script>
-     fetch("https://assets.mailerlite.com/jsonp/663673/forms/104696908200543763/takel")
-   </script>
-
-
-
-
-<style> 
-
-  .grayscale {
-  -webkit-filter: grayscale(0.7); 
-  filter: grayscale(70%) brightness(60%) saturate(2);
-
-}
-
-
-.text-white {
-  color: white;
-}
-
-</style>

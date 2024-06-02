@@ -1,0 +1,128 @@
+<section class="px-0" style="{% if block.border-bottom-width %} border-bottom: {{block.border-bottom-width}} solid {{block.border-bottom-color}}; {% endif %}{% if block.border-top-width %} border-top: {{block.border-top-width}} solid {{block.border-top-color}}; {% endif %}">
+        <div class="grid md:grid-cols-3 gap-8           {% case block.desktop-content-vertical-position %}
+        {% when top %}
+        items-start
+        {% when center %}
+        items-center
+        {% when bottom %}
+        items-bottom
+        {% endcase %}">
+            <div class="basis-1/3 flex-none flex-center ml-[var(--side-gap)] mr-[var(--side-gap)] md:mr-4">
+                    <div class="">
+                    {{block.block-content-html}}
+                    </div>
+            </div>
+            <div class="flex md:col-span-2 gap-[var(--side-gap)] md:gap-4 basis-2/3 flex-none overflow-scroll hide-scrollbars snap-x snap-mandatory horizontal-slider relative px-[var(--side-gap)]">
+                
+    {% assign blockid = forloop.index0 %}
+            {% for slide in block.slides %}
+            {% if block.text-overlay == true %}
+                    <div id="section-{{blockid}}-slide-{{forloop.index0}}" class="scroll-item flex flex-col justify-end relative max-w-[initial] {% if forloop.first %} ml-[var(--side-gap)] md:ml-0 {% endif %} {% if forloop.last %} mr-[var(--side-gap)] md:mr-0 {% endif %}" style="aspect-ratio:{{block.img_apsect}}; min-width: {{block.img_width}}px; flex: shrink 0;">
+                        <a href="{{slide.url}}">
+                            <img src="{{slide.img_path}}" alt="{{slide.img_alt}}"  class="object-cover block object-center h-full w-full absolute inset-0">
+                            {% if slide.col-content-html %}
+                            <div class="relative z-10 p-4 flex flex-col justify-end bg-[rgba(0,0,0,0.3)] h-full">
+                                {{slide.col-content-html}}
+                            </div>
+                            {% endif %}
+                        </a>
+                    </div>
+                    {% else %}
+                    <div id="section-{{blockid}}-slide-{{forloop.index0}}" class="scroll-item flex flex-col justify-end relative max-w-[initial] {% if forloop.first %} ml-[var(--side-gap)] md:ml-0 {% endif %} {% if forloop.last %} mr-[var(--side-gap)] md:mr-0 {% endif %}" style="min-width: min(calc(100vw - var(--vert-gap) - var(--vert-gap) ), {{block.img_width}}px) ; flex: shrink 0;">
+                        <a href="{{slide.url}}">
+                            
+                            <div class="relative w-full" style="aspect-ratio:{{block.img_apsect}};">
+                                <img src="{{slide.img_path}}" alt="{{slide.img_alt}}"  class="object-cover block object-center h-full w-full absolute inset-0">
+                            </div>
+                            {% if slide.col-content-html %}
+                            <div class="relative z-10 p-4">
+                                {{slide.col-content-html}}
+                            </div>
+                            {% endif %}
+                        </a>
+                    </div>
+                    {% endif %}
+                {% endfor %}
+        </div>
+        <div class="text-right md:mr-24 col-span-full">
+            <span href="" class="arrow-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="101" height="16" viewBox="0 0 101 16" fill="none" class="ml-auto md:mt-8 -mb-8 mr-4">
+                <path d="M100.212 8.70579C100.601 8.31459 100.6 7.68142 100.209 7.29158L93.8341 0.938738C93.4429 0.548896 92.8098 0.550001 92.4199 0.941206C92.0301 1.33241 92.0312 1.96558 92.4224 2.35542L98.0891 8.00239L92.4421 13.6691C92.0523 14.0603 92.0534 14.6935 92.4446 15.0833C92.8358 15.4732 93.469 15.4721 93.8588 15.0809L100.212 8.70579ZM0.00174528 9.17358L99.5051 8.99992L99.5016 6.99992L-0.00174528 7.17359L0.00174528 9.17358Z" fill="var(--text-color)"/>
+                </svg>
+            </span>
+        </div>
+        
+    </div>
+</section>
+
+<style>
+
+
+
+    .scroll-item{
+        scroll-snap-type: y mandatory;
+      scroll-snap-align: start;
+      scroll-snap-stop: normal;
+      scroll-margin-top: 10rem;
+      /* scroll-margin-left: var(--vert-gap); */
+    }
+
+    @media (max-width:768px ) {
+    .scroll-item{
+        scroll-snap-align: center;
+        min-width: calc(100vw - calc( var(--vert-gap) * 2)) !important;
+    }   
+        
+    }
+</style>
+
+<script>
+const slider = document.querySelector('#section-{{forloop.index0}} .horizontal-slider')
+const slides = slider.querySelectorAll('.scroll-item')
+const nextButton = slider.parentElement.parentElement.querySelector('.arrow-link')
+
+let next 
+
+function nextSlide(e) {
+    // debugger
+      console.log(slides, e.type)
+      let sliderBlock = slides[0].offsetWidth + 16
+      let gridLenght = slides.length * sliderBlock - 16
+      
+      
+      console.log(slider.scrollLeft + slider.offsetWidth > gridLenght - 16, gridLenght - slider.scrollLeft - slider.offsetWidth )
+      
+      if(slider.scrollLeft + slider.offsetWidth < gridLenght - 16) {
+          
+          let target = Math.ceil( slider.scrollLeft / sliderBlock )
+          console.log(target)
+          if (target + 1 <= slides.length){
+              next = target + 1
+              console.log('next',next)
+            }
+            console.log(target)
+            
+        } else {
+            
+            next = 0
+        }
+        
+        // nextButton.href = `#section-{{forloop.index0}}-slide-${next}`
+        
+    slider.scrollLeft = sliderBlock * next - (sliderBlock / 2 )
+
+    console.log('next',next,sliderBlock * next,slider.scrollLeft)
+    // console.log(slider.scrollLeft / slider.offsetWidth )
+  }
+
+  
+//   nextButton.addEventListener('touchstart',  function (e) {nextSlide(e)})
+
+  nextButton.addEventListener('click',  function (e) {nextSlide(e)})
+
+  
+  // debugger
+  
+</script>
+
+

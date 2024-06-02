@@ -1,0 +1,42 @@
+<section style="{% if block.border-bottom-width %} border-bottom: {{block.border-bottom-width}} solid {{block.border-bottom-color}}; {% endif %}{% if block.border-top-width %} border-top: {{block.border-top-width}} solid {{block.border-top-color}}; {% endif %}">
+  <div class="max-width">
+    <div>
+      {{block.block-content-html}}
+    </div>
+    <div class="grid grid-cols-2 gap-6 items-center">
+    <div class="relative h-full">
+      <img src="{{block.img_path}}" alt="{{block.img_alt}}" class="absolute h-full w-full inset-0 object-cover object-center">
+    </div> 
+    <div >
+      <form method="post" class="contact-form">
+        <input type="text" id="name" name="name" placeholder="Name">
+        <input type="email" id="email" name="email" placeholder="Email">
+        <input type="text" id="phone" name="phone" placeholder="Phone">
+        <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+        <input type="submit" value="submit">
+      </form>
+    </div>
+  </div>
+</div>
+</section>
+
+<style>
+  .contact-form input,
+.contact-form textarea {
+  background-color: var(--bg-color);
+  display: block;
+  width: 100%;
+  font-size: 17px;
+  border-bottom: 1px solid var(--text-color);
+  margin-bottom: 1.5rem;
+}
+.contact-form [type="submit"]{
+  border: 1px solid var(--text-color);
+  padding: 1rem;
+  margin-bottom: 0;
+}
+.contact-form input::placeholder,.contact-form textarea::placeholder{
+  color: var(--text-color);
+}
+
+</style>

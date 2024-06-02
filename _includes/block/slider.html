@@ -1,0 +1,25 @@
+<section style="{% if block.border-bottom-width %} border-bottom: {{block.border-bottom-width}} solid {{block.border-bottom-color}}; {% endif %}{% if block.border-top-width %} border-top: {{block.border-top-width}} solid {{block.border-top-color}}; {% endif %}">
+  <div class="max-width mb-6">
+    <div class="mx-auto" style="max-width: {{block.content-max-width}};">
+      {{block.block-content-html}}
+    </div>
+
+    <div class="slider grid grid-cols-3">
+      {% for slide in block.slides %}
+        <div  class="p-2">
+{% if slide.url %}
+          <a href="{{slide.url}}">
+{% endif %}
+            <img src="{{slide.img_path}}" alt="{{slide.img_alt}}" class="mb-4">
+            {% if slide.col-content-html %}
+              {{slide.col-content-html}}
+            {% endif %}            
+{% if slide.url %}
+          </a>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+  </div> 
+
+</section>

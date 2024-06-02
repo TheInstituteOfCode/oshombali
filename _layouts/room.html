@@ -1,0 +1,143 @@
+---
+layout: default
+---
+
+
+<div class="scheme-featured">
+    <!-- text banner  -->
+    <section class="flex items-center justify-center scheme-{{block.color-scheme}} min-h-90 bg-cover bg-center" style="background-image: url('{{page.featured_img_path}}');">
+        <div class="max-width">
+            <h2 class="larger-heading">{{page.title}}</h2>
+        </div>
+</section>
+
+<div class="scheme-featured">
+    <!-- text banner  -->
+    <section class="flex items-center justify-center scheme-{{block.color-scheme}}">
+        <div class="max-width">
+            {{page.description}}
+        </div> 
+        
+    </section>
+</div>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.css" integrity="sha512-WIWddQW7bHfs1gwICYIoXuifLb8gCPkE7Z/gq7QHk3pKuxjNs0E68Rn5c7Ig4cWguZW5CIvRroTj2GrSxsvUZQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <style>
+        .slick-prev {
+            left: 0px;
+        }
+
+        .slick-next{
+            right: 0px;
+        }
+
+        .slick-next,.slick-prev{
+            z-index: 999;
+            height: 40px; 
+            width:40px;
+        }
+        
+        .slick-prev::before, .slick-next::before{
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #fff;
+            color: #000;
+            padding: 10px;  
+        }
+
+
+        [class*=gal-] > .item:nth-child(n + 4){
+            display: none;
+        }
+        [class*=gal-] img{
+            width: 34vw;
+        }
+
+        .slick-slide{
+            border: 1px solid var(--bg-color);
+        }
+
+    </style>
+
+
+<div class="scheme-featured">
+    <section class="p-0">
+        <div class="gal-{{forloop.index}} grid grid-cols-3 bob">
+            {% for image in page.imgs %}
+            <div class="inline-block border-[1px] border-solid border-[var(--bg-color)]">
+                <img src="{{image.img_path}}" alt="{{img_alt}}" class="w-[34vw]">
+            </div>
+
+            {% endfor %}
+
+        </div>
+    </section>
+</div>
+
+
+<div class="scheme-featured">
+    <!-- text banner  -->
+    <section class="">
+        <div class="max-width">
+            <div class="grid md:grid-cols-2 gap-32">
+                
+                <div class="">
+                    <h2 class="larger-heading text-center">
+                        {{page.below-grid-heading}}
+                    </h2>
+                    {% for set in page.features-sets %}
+                    <div class="flex justify-between items-center accordian-trigger border-t">
+                        <span class="mt-2">{{set.heading}}</span> <span class="m-0 accordian-svg">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                          <path d="M7.29289 15.7071C7.68342 16.0976 8.31658 16.0976 8.70711 15.7071L15.0711 9.34315C15.4616 8.95262 15.4616 8.31946 15.0711 7.92893C14.6805 7.53841 14.0474 7.53841 13.6569 7.92893L8 13.5858L2.34315 7.92893C1.95262 7.53841 1.31946 7.53841 0.928933 7.92893C0.538408 8.31946 0.538408 8.95262 0.928933 9.34315L7.29289 15.7071ZM7 4.37114e-08L7 15L9 15L9 -4.37114e-08L7 4.37114e-08Z" fill="var(--text-color)"/>
+                        </svg>
+                      </span>
+                    </div>
+                    <div class="overflow-hidden closed" style="height:0px;">
+                        <ul class="list-disc list-inside pl-2 mb-2">
+                            {% for feature in set.features %}
+                          <li>
+                            {{feature}}
+                          </li>
+                          {% endfor %}
+                        </ul>
+                    </div>
+                    {% endfor %}
+                    <a href="{{page.button-url}}" class="button">book now</a>
+                </div>
+                <div class="text-center hidden md:block">
+                    {{page.description}}
+                </div>
+                
+            </div> 
+        </div>
+        
+    </section>
+</div>
+
+
+    <!-- slick -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js" integrity="sha512-An4a3FEMyR5BbO9CRQQqgsBscxjM7uNNmccUSESNVtWn53EWx5B9oO7RVnPvPG6EcYcYPp0Gv3i/QQ4KUzB5WA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+window.addEventListener('load', function () {
+//   console.log("It's loaded!")
+
+console.log('should have a slider');
+{% for room in page.rooms %}
+// debugger
+$('.gal-{{forloop.index}}').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: false,
+//   autoplaySpeed: 2000,
+});
+
+{% endfor %}
+
+
+})
+</script>

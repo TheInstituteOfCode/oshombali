@@ -1,0 +1,26 @@
+<section style="{% if block.border-bottom-width %} border-bottom: {{block.border-bottom-width}} solid {{block.border-bottom-color}}; {% endif %}{% if block.border-top-width %} border-top: {{block.border-top-width}} solid {{block.border-top-color}}; {% endif %}" class="{% if block.top-space-collapse  == true %} pt-0 {% endif %} {% if block.bottom-space-collapse  == true %} pb-0 {% endif %}">
+  <!-- {{block.desktop-img-horizontal-position }} -->
+  <!-- mobile position {{block.mobile-img-position}} -->
+  <div class="max-width">
+    <div class="flex flex-col md:grid gap-[60px] {% if block.desktop-content-vertical-position == 'top' %}items-start {% elsif block.desktop-content-vertical-position == 'center' %} items-center {% else %} items-end {% endif %}" style="grid-template-columns: {% if block.desktop-img-horizontal-position == 'left' %} {{ block.img_width_percentage }} {% endif %} 1fr {% if block.desktop-img-horizontal-position == 'right' %} {{ block.img_width_percentage }} {% endif %};">
+
+    
+  {% if block.desktop-img-horizontal-position == 'left' %} 
+  <div class="w-full {% if block.mobile-img-position == 'top' %} order-1 {% elsif block.mobile-img-position == 'bottom' %} order-3 {% else %} hidden md:block {% endif %} md:order-2  {% unless block.img.img_apsect == 'inital' %} relative" style="aspect-ratio: {{block.img.img_apsect}}; {% endunless %}">
+    <img src="{{block.img.img_path}}" alt="{{block.img.img_path}}" class="w-full {% unless block.img.img_apsect == 'inital' %} h-full object-cover object-center absolute inset-0 {% endunless %}">
+  </div>
+  {% endif %}
+
+  <div class="order-2">
+    {{block.block-content-html}}
+  </div> 
+  {% if block.desktop-img-horizontal-position == 'right' %} 
+  <div class="w-full {% if block.mobile-img-position == 'top' %} order-1 {% elsif block.mobile-img-position == 'bottom' %} order-3 {% else %} hidden md:block {% endif %} md:order-2 {% unless block.img.img_apsect == 'inital' %} relative"  style="aspect-ratio: {{block.img.img_apsect}}; {% endunless %}">
+    <img src="{{block.img.img_path}}" alt="{{block.img.img_path}}" class="w-full {% unless block.img.img_apsect == 'inital' %} h-full object-cover object-center absolute inset-0 {% endunless %}">
+  </div>
+  </div>
+  {% endif %}
+  </div>
+</div>
+</section>
+

@@ -1,0 +1,15 @@
+<section style="{% if block.border-bottom-width %} border-bottom: {{block.border-bottom-width}} solid {{block.border-bottom-color}}; {% endif %}{% if block.border-top-width %} border-top: {{block.border-top-width}} solid {{block.border-top-color}}; {% endif %}" class="{% if block.top-space-collapse  == true %} pt-0 {% endif %} {% if block.bottom-space-collapse  == true %} pb-0 {% endif %}">
+  <div class="social-share flex justify-between items-center flex-col md:flex-row">
+        <div class="text-left flex-grow-0">
+            {{block.block-content-html}}
+        </div>
+    
+        <nav class="flex justify-around gap-4">
+          <div class="flex gap-x-2">
+            {% include social_links.html %}
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div> 
+</section>

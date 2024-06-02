@@ -1,0 +1,26 @@
+<!-- videobanner -->
+<section class="flex justify-center items-center aspect-[1.77] md:aspect-auto md:min-h-screen scheme-{{block.color-scheme}}">
+    <div class="absolute top-0 left-0 w-full h-full">
+      <video class="absolute top-0 left-0 h-full object-contain md:object-cover -z-10" width="100%" height="100%" autoplay loop muted>
+          {% for video in block.bg-video %}
+          <source src="{{video.video_path}}" type="video/{{video.type}}" />
+          {% endfor %}
+          Your browser does not support the video tag.
+      </video>
+    
+    </div>
+  
+    <div class="pb-12 text-center">
+        {{block.block-content-html}}
+    </div>
+    <div class="absolute bottom-4 left-0 w-full justify-center hidden sm:flex">
+      <div class="flex-center flex-col">
+        <a href="#section-{{forloop.index}}" class="flex-center flex-col">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="68" viewBox="0 0 16 68" fill="none">
+            <path d="M7.30369 67.7177C7.70008 68.1023 8.33318 68.0927 8.71774 67.6963L14.9846 61.2367C15.3691 60.8403 15.3595 60.2072 14.9631 59.8226C14.5667 59.4381 13.9336 59.4476 13.5491 59.844L7.97857 65.5859L2.23667 60.0154C1.84027 59.6309 1.20718 59.6405 0.822618 60.0369C0.438055 60.4333 0.447647 61.0664 0.844043 61.4509L7.30369 67.7177ZM6.00011 1.01515L7.00011 67.0152L8.99989 66.9849L7.99989 0.98485L6.00011 1.01515Z" style="fill:var(--text-color);stroke:var(--text-color);"/>
+          </svg>
+          <p>{{block.bottom-text}}</p>
+        </a>
+      </div>
+    </div>
+  </section>

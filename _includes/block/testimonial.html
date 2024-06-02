@@ -1,0 +1,83 @@
+<section style="{% if block.border-bottom-width %} border-bottom: {{block.border-bottom-width}} solid {{block.border-bottom-color}}; {% endif %}{% if block.border-top-width %} border-top: {{block.border-top-width}} solid {{block.border-top-color}}; {% endif %}">
+      <div class="max-width">
+        <div class="heading-div" style="text-align: {{block.text_alignment}};">
+       
+          {{block.block-content-html}}
+ 
+        </div>
+        <div class="flex flex-col md:grid gap-8 gap-y-[10px]" style="grid-template-columns: repeat({{block.cols.size}}, minmax(0, 1fr));">
+        {% for col in block.cols %}
+          <div style="text-align: {{block.text_alignment}};">
+            {% if col.img_path %}
+
+                {% unless block.image_default_ratio %}
+                  <div class="relative" style="aspect-ratio:{{block.img_apsect}};">
+                    <img src="{{col.img_path}}" alt="{{col.img-alt}}" class="object-cover object-center absolute inset-0 h-full w-full">
+                  </div>
+                {% else %}
+                  <img src="{{col.img_path}}" alt="{{col.img-alt}}">
+                {% endunless %}
+            {% endif %}
+            <div class="mt-4 ">
+              <div class="svg-parent-inline flex justify-center gap-4 mb-4">
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="13" viewBox="0 0 14 13" fill="none">
+                <g clip-path="url(#clip0_51_49)">
+                <path d="M7.30733 0.216541L8.80149 4.71444H13.6731C13.9844 4.71444 14.1245 5.1082 13.8599 5.28993L9.92212 8.07651L11.4318 12.5744C11.5252 12.8622 11.1828 13.1045 10.9338 12.9227L6.99605 10.1513L3.0583 12.9379C2.80927 13.1196 2.4513 12.8773 2.56025 12.5896L4.06997 8.09166L0.132232 5.30356C-0.116796 5.12183 0.00771793 4.72807 0.319002 4.72807H5.1906L6.68476 0.216541C6.77815 -0.0712037 7.21394 -0.0712037 7.30733 0.216541Z" fill="var(--text-color)"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_51_49">
+                <rect width="14" height="13" fill="white"/>
+                </clipPath>
+                </defs>
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="13" viewBox="0 0 14 13" fill="none">
+                <g clip-path="url(#clip0_51_49)">
+                <path d="M7.30733 0.216541L8.80149 4.71444H13.6731C13.9844 4.71444 14.1245 5.1082 13.8599 5.28993L9.92212 8.07651L11.4318 12.5744C11.5252 12.8622 11.1828 13.1045 10.9338 12.9227L6.99605 10.1513L3.0583 12.9379C2.80927 13.1196 2.4513 12.8773 2.56025 12.5896L4.06997 8.09166L0.132232 5.30356C-0.116796 5.12183 0.00771793 4.72807 0.319002 4.72807H5.1906L6.68476 0.216541C6.77815 -0.0712037 7.21394 -0.0712037 7.30733 0.216541Z" fill="var(--text-color)"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_51_49">
+                <rect width="14" height="13" fill="white"/>
+                </clipPath>
+                </defs>
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="13" viewBox="0 0 14 13" fill="none">
+                <g clip-path="url(#clip0_51_49)">
+                <path d="M7.30733 0.216541L8.80149 4.71444H13.6731C13.9844 4.71444 14.1245 5.1082 13.8599 5.28993L9.92212 8.07651L11.4318 12.5744C11.5252 12.8622 11.1828 13.1045 10.9338 12.9227L6.99605 10.1513L3.0583 12.9379C2.80927 13.1196 2.4513 12.8773 2.56025 12.5896L4.06997 8.09166L0.132232 5.30356C-0.116796 5.12183 0.00771793 4.72807 0.319002 4.72807H5.1906L6.68476 0.216541C6.77815 -0.0712037 7.21394 -0.0712037 7.30733 0.216541Z" fill="var(--text-color)"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_51_49">
+                <rect width="14" height="13" fill="white"/>
+                </clipPath>
+                </defs>
+              </svg>    
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="13" viewBox="0 0 14 13" fill="none">
+                <g clip-path="url(#clip0_51_49)">
+                <path d="M7.30733 0.216541L8.80149 4.71444H13.6731C13.9844 4.71444 14.1245 5.1082 13.8599 5.28993L9.92212 8.07651L11.4318 12.5744C11.5252 12.8622 11.1828 13.1045 10.9338 12.9227L6.99605 10.1513L3.0583 12.9379C2.80927 13.1196 2.4513 12.8773 2.56025 12.5896L4.06997 8.09166L0.132232 5.30356C-0.116796 5.12183 0.00771793 4.72807 0.319002 4.72807H5.1906L6.68476 0.216541C6.77815 -0.0712037 7.21394 -0.0712037 7.30733 0.216541Z" fill="var(--text-color)"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_51_49">
+                <rect width="14" height="13" fill="white"/>
+                </clipPath>
+                </defs>
+              </svg>    
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="13" viewBox="0 0 14 13" fill="none">
+                <g clip-path="url(#clip0_51_49)">
+                <path d="M7.30733 0.216541L8.80149 4.71444H13.6731C13.9844 4.71444 14.1245 5.1082 13.8599 5.28993L9.92212 8.07651L11.4318 12.5744C11.5252 12.8622 11.1828 13.1045 10.9338 12.9227L6.99605 10.1513L3.0583 12.9379C2.80927 13.1196 2.4513 12.8773 2.56025 12.5896L4.06997 8.09166L0.132232 5.30356C-0.116796 5.12183 0.00771793 4.72807 0.319002 4.72807H5.1906L6.68476 0.216541C6.77815 -0.0712037 7.21394 -0.0712037 7.30733 0.216541Z" fill="var(--text-color)"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_51_49">
+                <rect width="14" height="13" fill="white"/>
+                </clipPath>
+                </defs>
+              </svg>          
+              
+            </div>    
+              {{col.col-content-html}}
+              <span></span>
+            </div>
+        </div>
+          {% endfor %}
+        </div>
+      </div>
+    </section>

@@ -1,0 +1,145 @@
+<!-- liquid banner  --><section style="{% if block.border-bottom-width %} border-bottom: {{block.border-bottom-width}} solid {{block.border-bottom-color}}; {% endif %}{% if block.border-top-width %} border-top: {{block.border-top-width}} solid {{block.border-top-color}}; {% endif %}" id="filter-grid-{{forloop.index}}">
+  <div class="max-width">
+    <div class="mx-auto mb-[80px]" style="max-width: {{block.content-max-width}};">
+      {{block.block-content-html}}
+    </div>
+    <div class="mb-[30px] flex justify-center items-center gap-y-1 gap-x-4 flex-wrap ">
+      <span class="filter-menu-link active mb-0" data-filter="all">all</span><span  class="hidden md:block mb-0">/</span>{% for collection in block.filter-collections %}<span class="filter-menu-link mb-0" data-filter="{{collection}}">{{collection}}</span>{% unless forloop.last %}<span class="hidden md:block mb-0">/</span>{% endunless %} {% endfor %}
+
+    </div>
+    <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-x-8 gap-y-[40px] filter-grid">
+      {% assign ordered-expe = site.experiences | sort: 'experiences-order' %}
+      {% for expe in ordered-expe %}
+      <div style="text-align: {{block.text-alignment}};" class="{{expe.experience-group}} grid-item">
+        <a href="{{expe.url}}" class="block">
+
+          {% if expe.img_path != '' %}
+            {% unless block.image_default_ratio %}
+              <div class="relative" style="aspect-ratio:{{block.img_apsect}};">
+                <img src="{{expe.featured_img_path}}" alt="{{expe.featured_img_alt}}" class="object-cover object-center absolute inset-0 h-full w-full">
+              </div>
+              
+            {% else %}
+        
+              <img src="{{expe.img_path}}" alt="{{expe.img-alt}}">
+            {% endunless %}
+          {% endif %}
+          <div class="mt-4">
+            <h3 class="sub-heading mb-[5px]">{{expe.experience-group}}</h3>
+            <h2 class="base-heading">{{expe.title}}</h2>
+            <p>{{expe.description}}</p>
+            <span></span>
+          </div>
+        </a>
+        <a href="https://wa.me/{{site.data.navigation.whatsapp.number}}?text={{expe.whatsapp-mesage | replace: ' ','%20'}}" class="button inline-block">book now</a>
+      </div>
+      {% endfor %}
+    </div> 
+  </div>
+</section>
+
+<style>
+  .filter-menu-link {
+    font-size: 25px;
+    text-transform: capitalize;
+    color: var(--colored-button-bg);
+  }
+  .filter-menu-link.active{
+    color: var(--text-color);
+  }
+</style>
+
+<script>
+
+const gallery_buttons = document.querySelectorAll('#filter-grid-{{forloop.index}} .filter-menu-link')
+const gallery_items = document.querySelectorAll('#filter-grid-{{forloop.index}} .grid-item')
+const initial = location.search.replace("?", "" );
+let matchs = 0
+// debugger
+    console.log('inital = ', initial)
+    if (initial != '' && initial != 'all'){
+
+      gallery_buttons.forEach(button => {
+        console.log(button.dataset.filter,button.dataset.filter === initial  )
+        if (button.dataset.filter === initial){
+          console.log(button.dataset.filter)
+          matchs++
+          button.classList.add('active')
+        }
+      })
+      console.log(matchs)
+
+      if (matchs >= 1 ){
+      
+        gallery_buttons[0].classList.remove('active')
+
+      gallery_items.forEach(item => {
+              if (initial == 'all') {
+              item.classList.remove('hidden');
+          } 
+          else {
+              if (item.classList.contains(initial)) {
+                  item.classList.remove('hidden'); // show those that do have the filter
+              } else {
+                  item.classList.add('hidden'); // hide those that don't have the filter
+              }
+          };
+      })
+    }
+
+  }
+
+
+
+   // 1) first up we need to define all of our constants. in this case we are looking for the buttons and the gallery items or gallery images. 
+    // we start with all our constants
+        
+    // 2) lets start our filter function. In this case i called it filter gallery incase i might want to filter other things on the page as well. Also some of you might of noticed that I added an e for an paremiter. this is the event (or thing that triggered the function)
+    function filterGallery(e) {
+      console.log(e.target)
+      // 3) So because i was using <a> elements i want to make sure that it doesn't link any where. we can skip this step if we are using a different element
+        e.preventDefault();
+        /* make this <a> class active and remove class 'active' from any other <a>s */
+          // 14) that worked but lets remove it from the others that weren't just clicked on
+          gallery_buttons.forEach(button => {
+            button.classList.remove('active')
+          });
+          // 13) At stage we have a fully functional filter gallery but lets add just a little fancyness to the filter. So when we click on a button lets add a class to jump it up a notch
+          this.classList.add('active');
+          
+        // 5) and lets makes sure its all working so far.
+        console.log(this)
+        /* get the name of the cateory from this link */
+        // 6) variable time :D we want to pull some  
+        let filterVal = this.dataset.filter;
+
+
+        // 7) then we need to loop over the gallery items  
+          gallery_items.forEach(item => {
+            
+                // 8) because we want a reset lets add an if statment that see's if we have clicked the all button (basically a reset button)
+                  if (filterVal == 'all') {
+                    // 8) if they did then remove hidden
+                  item.classList.remove('hidden');
+              } 
+              // 9) but what if they clicked on a different button 
+              else {
+                  // 10) then we need to  see if our filterval matches something. In this case we are seeing if the images class list contains our filterVal  
+                  if (item.classList.contains(filterVal)) {
+                    // 11) if it does remove the hidden class
+                      item.classList.remove('hidden'); // show those that do have the filter
+                  } else {
+                    // 12) if it doesnt then add it on
+                      item.classList.add('hidden'); // hide those that don't have the filter
+                  }
+              };
+            
+        })
+    }
+    // 4) lets add an eventListiner for each of our buttons 
+    gallery_buttons.forEach(button => {
+            button.addEventListener('click', filterGallery)
+    })
+
+console.log('experience grid init')
+</script>
